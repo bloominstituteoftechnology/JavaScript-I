@@ -17,7 +17,64 @@ let example = {
   "gender": "F"
 }
 
+console.log(example);
 // Write your intern objects here:
+// function internFun(i,e,n,g) {
+//   this.id = i;
+//   this.name = n; //"name": "Mitzi",
+//   this.email = e; //"email": "mmelloy0@psu.edu",
+//   this.gender = g; //"gender": "F"
+// }
+
+// const inter0 = new internFun(1,'mmelloy0@psu.edu','Mitzi','F');
+// const inter1 = new internFun(2,'kdiben1@tinypic.com','Kennan','M');
+// const inter2 = new internFun(3,'kmummery2@wikimedia.org','Keven','M');
+// const inter3 = new internFun(4,'gmartinson3@illinois.edu','Gannie','M');
+// const inter4 = new internFun(5,'adaine5@samsung.com','Antonietta','F');
+let inter0 = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "emmelloy0@psu.edu",
+  "gender": "F"
+}
+
+let inter1 = {
+  "id": 2,
+  "name": "Kenna",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+}
+
+let inter2 = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}
+
+let inter3 = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
+}
+
+let inter4 = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F"
+}
+
+
+console.log(inter0);
+console.log(inter1);
+console.log(inter2);
+console.log(inter3);
+console.log(inter4);
+
+
+
 
 
 // ==== Challenge 2: Reading Object Data ==== 
