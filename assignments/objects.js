@@ -19,37 +19,104 @@ let example = {
 
 // Write your intern objects here:
 
+let Mitzi ={
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+};
 
+let Kennan ={
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+};
+
+let Keven = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+};
+
+let Gannie = {
+  "id":4,
+  "name": "Gannie",
+  "email": "gmartinson3@uillinois.edu",
+  "gender": "M"
+};
+
+let Antonietta = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F"
+};
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(Mitzi.name); 
 // Kennan's ID
-
+console.log(Kennan.id);
 // Keven's email
-
+console.log(Keven.email);
 // Gannie's name
-
+console.log(Gannie.name);
 // Antonietta's Gender
-
+console.log(Antonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-
+Kennan.speak = function(){
+  console.log("Hello, my name is Kennan!");
+};
+console.log(Kennan.speak());
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+Antonietta.multiplyNums = function (a,b){
+  console.log(a*b);
+};
+console.log(Antonietta.multiplyNums(2,30));
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
 
 // 1. Create a parent object with properties for name and age.  Make the name Susan and the age 70.
+
+const family = {
+  "parent":{
+    "firstName":"Susan",
+    "age":70,
+    "speak": function(){
+      console.log("Hi, my name is "+ this.firstName +"!");
+    },
+    "child": {
+      "firstName":"George",
+      "age":50,
+      "speak": function(){
+      console.log("Hi, my name is "+ this.firstName +"!");
+      },
+      "grandchild": {
+        "firstName": "Sam",
+        "age":30,
+        "speak": function(){
+      console.log("Hi, my name is "+ this.firstName +"!");
+      },
+      }
+    }
+  }
+};
+
 // 2. Nest a child object in the parent object with name and age as well.  The name will be George and the age will be 50.
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-let parent = {}
+console.log(family.parent.firstName);
+console.log(family.parent.child.age);
+console.log(family.parent.child.grandchild.firstName, family.parent.child.grandchild.age);
+console.log(family.parent.speak());
 
 // Log the parent object's name
 
