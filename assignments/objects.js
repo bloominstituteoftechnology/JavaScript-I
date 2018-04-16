@@ -88,19 +88,19 @@ let parent = {
   "name": "Susan",
   "age": 70,
   "speak": function () {
-    return "My Name is " + this.name;
+    return `My Name is ${this.name}`;
   },
   child: {
     "name": "George",
     "age": 50,
     "speak": function () {
-      return "My Name is " + this.name;
+      return `My Name is ${this.name}`;
     },
     grandchild: {
       "name": "Sam",
       "age": 30,
       "speak": function () {
-        return "My Name is " + this.name;
+        return `My Name is ${this.name}`;
       },
     },
   }
