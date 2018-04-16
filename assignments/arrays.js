@@ -53,6 +53,8 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":49,"car_make":"Chrysler","car_model":"Sebring","car_year":1996},
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
 
+const length = inventory.length;
+
 // PROJECT RESTRICTION: You can't use map, reduce, or filter to solve these problems.  Only use native JavaScript for loops.
 
 // Example for loop:
@@ -77,7 +79,13 @@ console.log(`${lastCar.car_make} ${lastCar.car_model}`);
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
-console.log();
+
+for (let i = 0; i<length; ++i) {
+    // In order to correctly 'sort' the carModels it is neccesary to UpperCase the 'first-letter'
+    carModels.push(inventory[i].car_model.charAt(0).toUpperCase()+inventory[i].car_model.slice(1));
+}
+carModels.sort();
+console.log(carModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
