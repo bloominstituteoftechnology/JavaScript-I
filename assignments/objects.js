@@ -15,9 +15,44 @@ let example = {
   "name": "Example",
   "email": "examples@you.edu",
   "gender": "F"
-}
+};
 
-// Write your intern objects here:
+// Internship Objects:
+let intern1 = {
+  "id": "1",
+  "name": "Mitzi",
+  "email": "mmelloy@psu.edu",
+  "gender": "F"
+};
+
+let intern2 = {
+  "id": "2",
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+};
+
+let intern3 = {
+    "id": "3",
+    "name": "Keven",
+    "email": "gmartinson3@illinois.edu",
+    "gender": "M"
+};
+
+let intern4 = {
+    "id": "4",
+    "name": "Gannie",
+    "email": "kmummery@wikimedia.org",
+    "gender": "M"
+};
+
+let intern5 = {
+  "id": "5",
+    "name": "Antonietta",
+    "email": "adaine5@samsung.com",
+    "gender": "F"
+};
+
 
 
 // ==== Challenge 2: Reading Object Data ==== 
