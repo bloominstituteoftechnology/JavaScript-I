@@ -25,7 +25,7 @@ let example = {
 
 // Mitzi's name
 
-// Kenna's ID
+// Kennan's ID
 
 // Keven's email
 
