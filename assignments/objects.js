@@ -19,28 +19,57 @@ let example = {
 
 // Write your intern objects here:
 
-// Project START!!!
+const Employee = function(id, email, name, gender) {
+  this.id = id;
+  this.name = name;
+  this.email = email;
+  this.gender = gender;
+};
+
+// const employeeArray = [
+//   new Employee(0,"Example","examples@you.edu","F"),
+//   new Employee(1,"mmelloy0@psu.edu","Mitzi","F"),
+//   new Employee(2,"kdiben1@tinypic.com","Kennan","M"),
+//   new Employee(3,"kmummery2@wikimedia.org","Keven","M"),
+//   new Employee(4,"gmartinson3@illinois.edu","Gannie","M"),
+//   new Employee(5,"adaine5@samsung.com","Antonietta","F"),
+// ];
+// Maybe I should do an object of objects, using First Name as the key for each object?
+
+// Update: Yeah I probably should.
+const employees = {
+  "Example": new Employee(0,"Example","examples@you.edu","F"),
+  "Mitzi": new Employee(1,"mmelloy0@psu.edu","Mitzi","F"),
+  "Kennan": new Employee(2,"kdiben1@tinypic.com","Kennan","M"),
+  "Keven": new Employee(3,"kmummery2@wikimedia.org","Keven","M"),
+  "Gannie": new Employee(4,"gmartinson3@illinois.edu","Gannie","M"),
+  "Antonietta": new Employee(5,"adaine5@samsung.com","Antonietta","F"),
+};
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(employees.Mitzi.name);
 // Kennan's ID
-
+console.log(employees.Kennan.id);
 // Keven's email
-
+console.log(employees.Keven.email);
 // Gannie's name
-
+console.log(employees.Gannie.name);
 // Antonietta's Gender
+console.log(employees.Antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
-
+//console.log(kennan.speak());
+employees.Kennan.speak = function() {
+  return `Hello, my name is ${this.name}!`;
+}
+console.log(employees.Kennan.speak());
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+employees.Antonietta.multiply
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
