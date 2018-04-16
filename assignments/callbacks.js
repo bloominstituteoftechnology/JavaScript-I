@@ -45,15 +45,27 @@ function contains(item, list, cb) {
 contains('Pencil', items, cb);
 contains('Tape', items, cb);
 
-// Callback logging parameter
-function cb(x){
-  console.log(x);
-}
-
 /* STRETCH PROBLEM */
-
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  let uniqueArr = [];
+
+  array.forEach(function(val, ind, arr){
+    if(!uniqueArr.some(function(item){return item === val})){
+      uniqueArr.push(val);
+    }
+  });
+
+  cb(uniqueArr);
+}
+
+const duplicateArray = ['Pencil', 'Notebook', 'yo-yo', 'Gum', 'Notebook', 'Pen', 'Pencil', 'Tape'];
+removeDuplicates(duplicateArray, cb);
+
+
+// Callback logging parameter
+function cb(x) {
+  console.log(x);
 }
