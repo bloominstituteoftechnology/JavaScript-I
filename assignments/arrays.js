@@ -74,7 +74,9 @@ console.log(lastCar);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = inventory.sort();
+let carModels = inventory.sort((a, b) => {
+    return a.car_model < b.car_model ? -1 : 1
+});
 console.log(carModels);
 
 // ==== Challenge 4 ====
