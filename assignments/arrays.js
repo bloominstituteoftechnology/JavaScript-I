@@ -67,6 +67,17 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${inventory[32].car_model}`);
 
+// Alternate solution when given a car id
+const getCarData = function(id, inventory){
+  for(let i = 0; i < inventory.length; i++){
+    if (inventory[i].id === id){
+      return `Car ${inventory[i].id} is a ${inventory[i].car_year} ${inventory[i].car_make} ${inventory[i].car_model}`;
+    }
+  }
+}
+
+console.log(getCarData(33, inventory));
+
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = inventory[inventory.length -1];
