@@ -29,8 +29,8 @@ const intern2 = {
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M",
-  "speak": function () {
-    console.log("Hello, my name is Kennan!")
+  "speak": () => {
+    return `Hello, my name is ${intern2.name}`;
   }
 }
 const intern3 = {
@@ -50,8 +50,8 @@ const intern5 = {
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F",
-  "mutiplyNums": function (a, b) {
-    return a * b
+  "mutiplyNums": (a, b) => {
+    return a * b;
   }
 }
 
@@ -87,20 +87,20 @@ console.log(antonietta.multiplyNums(3, 4));
 let parent = {
   "name": "Susan",
   "age": 70,
-  "speak": function () {
-    return `My Name is ${this.name}`;
+  "speak": () => {
+    return `My Name is ${parent.name}`;
   },
   child: {
     "name": "George",
     "age": 50,
-    "speak": function () {
-      return `My Name is ${this.name}`;
+    "speak": () => {
+      return `My Name is ${parent.child.name}`;
     },
     grandchild: {
       "name": "Sam",
       "age": 30,
-      "speak": function () {
-        return `My Name is ${this.name}`;
+      "speak": () => {
+        return `My Name is ${parent.child.name}`;
       },
     },
   }
