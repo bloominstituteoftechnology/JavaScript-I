@@ -48,9 +48,12 @@ function removeDuplicates(array, cb) {
   for(let i =0; i < list.length; i++){
     for(let j =i+1; j < list.length; j++){
       if(list[i] === list[j]){
-        newArray.splice(i,1);
+        newArray.splice(j,1);
       }
     }
   }
   return cb(newArray);
 }
+
+
+//it works! tried and tested!

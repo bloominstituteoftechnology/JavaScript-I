@@ -54,9 +54,7 @@ let antonietta = {
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F",
-  multiplyNums : function(x, y) {
-    return x*y;
-  }
+  multiplyNums : (x, y) => (x*y),
 }
 
 
