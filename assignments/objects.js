@@ -18,35 +18,35 @@ let example = {
 }
 
 // Write your intern objects here:
-let internInfo = 
+const internInfo = 
     {
       "id":1,
       "name": "Mitzi,F",
       "email": "mmelloy0@psu.edu",
       "gender": "F",
     };
-let internInfo2 =
+const internInfo2 =
     {
       "id": 2,
       "name": "Kennan,M",
       "email": "kdiben1@tinypic.com",
       "gender": "M",
     };
-let internInfo3 =
+const internInfo3 =
     {
       "id":3,
       "name": "Keven,M",
       "email": "kmummery2@wikimedia.org",
       "gender": "M",
     };
-let internInfo4 =
+const internInfo4 =
     {
       "id":4,
       "name": "Gannie,M",
       "email": "gmartinson3@illinois",
       "gender": "M",
     };
-let internInfo5 =
+const internInfo5 =
     {
       "id":5,
       "name": "Antonietta,F",
