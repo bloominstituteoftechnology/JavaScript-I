@@ -1,4 +1,4 @@
-import { POINT_CONVERSION_COMPRESSED } from "constants";
+'use strict';
 
 // Let's get some practice writing a few objects for a new group of interns at a small business.
 

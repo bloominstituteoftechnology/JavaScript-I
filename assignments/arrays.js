@@ -1,3 +1,4 @@
+'use strict';
 // To help us use arrays with real world problems we are going to simulate a used car dealer that has 50 cars in their inventory.
 
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
@@ -90,7 +91,7 @@ console.log(carModels);
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-for ( car of inventory ) {
+for ( let car of inventory ) {
     carYears.push(car.car_year);
 }
 
@@ -98,13 +99,13 @@ for ( car of inventory ) {
 console.log(carYears);
 
 // This aggregate the values to avoid repeated ones.
-carYearAgregated = new Set ( carYears);
+let carYearAgregated = new Set ( carYears);
 console.log(carYearAgregated)
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars =[];
-for ( car of inventory ) {
+for ( let car of inventory ) {
     car.car_year < 2000 ? oldCars.push(car) : "";
 }
 console.log(`There are ${oldCars.length} cars from before 2000`);
@@ -114,7 +115,7 @@ oldCars.forEach( (car) => console.log(car) );
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi =[];
-for ( car of inventory ) {
+for ( let car of inventory ) {
     ( car.car_make === "BMW" || car.car_make === "Audi" ) ? BMWAndAudi.push(car) : "";
 }
 console.log(BMWAndAudi);
