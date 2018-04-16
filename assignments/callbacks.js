@@ -88,7 +88,7 @@ let removeDuplicates = (array, cb) => {
   let unique_array = [];
   for (let i = 0; i < array.length; i++){
     let new_item = true;
-    for (let j = 0; j < unique_array.length; j++) {
+    for (let j = 0; ((j < unique_array.length) && (new_item)); j++) {
       if (array[i] === unique_array[j]) new_item = false;
     }
     if (new_item) unique_array.push(array[i]);
