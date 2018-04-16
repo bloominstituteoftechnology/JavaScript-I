@@ -27,7 +27,7 @@ let example = {
 const intern1 = {
   "id": 1,
   "name": "Mitzi",
-  "email": "Mitizi@intern.org"
+  "email": "Mitizi@intern.org",
   "gender": "I Choose Not To Self Identify"
 }
 console.log(intern1.name);
@@ -35,8 +35,8 @@ console.log(intern1.name);
 const intern2 = {
   "id": 2,
   "name": "Kennan",
-  "email": "Kennan@ITintern.gov"
-  "gender": "F"
+  "email": "Kennan@ITintern.gov",
+  "gender": "F",
   talk: function() {
     console.log("Hello, my name is Kennan!")
   }
@@ -47,7 +47,7 @@ console.log(intern2.id);
 const intern3 = {
   "id": 3,
   "name": "Keven",
-  "email": "Keven@intern.org"
+  "email": "Keven@intern.org",
   "gender": "Bro"
 }
 console.log(intern3.email);
@@ -55,7 +55,7 @@ console.log(intern3.email);
 const intern4 = {
   "id": 4,
   "name": "Gannie",
-  "email": "Gannie@intern.org"
+  "email": "Gannie@intern.org",
   "gender": "F",
 }
 console.log(intern4.name);
@@ -64,13 +64,14 @@ console.log(intern4.name);
 const intern5 = {
   "id": 5,
   "name": "Antonietta",
-  "email": "Antonietta@intern.org"
+  "email": "Antonietta@intern.org",
   "gender": "M",
   "mutiplyNums": function (a, b) {
        return a * b
+  }
 }
-
 console.log(intern5.gender);
+
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
@@ -87,7 +88,7 @@ console.log(intern5.gender);
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-//let parent = {}
+let parent = {}
 
 // Log the parent object's name
 
