@@ -19,6 +19,7 @@ let example = {
 
 // Write your intern objects here:
 
+// Project START!!!
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
