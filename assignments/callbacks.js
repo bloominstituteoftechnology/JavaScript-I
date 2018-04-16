@@ -1,3 +1,4 @@
+'use strict';
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 let cb = () => "";
@@ -43,7 +44,7 @@ function removeDuplicates(array, cb) {
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
   const noDupes = [];
-  for ( value of array ) {
+  for ( let value of array ) {
     noDupes.includes(value) ? "" : noDupes.push( value );
   }
   return cb( noDupes );
