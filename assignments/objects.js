@@ -125,9 +125,13 @@ console.log(parent.name);
 console.log(parent.child.age);
 
 // Log the name and age of the grandchild
+console.log(parent.child.grandchild.name  + " " + parent.child.grandchild.age);
 
 // Have the parent speak
+console.log(parent.susanSpeaks());
 
 // Have the child speak
+console.log(parent.child.georgeSpeaks());
 
 // Have the grandchild speak
+console.log(parent.child.grandchild.samSpeaks());
