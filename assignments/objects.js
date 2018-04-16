@@ -91,11 +91,19 @@ console.log( interns.Antonietta.multiplyNums(3,4) );
 // ==== git push: Nested Objects and the this keyword ==== 
 
 // 1. Create a parent object with properties for name and age.  Make the name Susan and the age 70.
-const Person = function (name, age ) {
-  this.name = name;
-  this.age = age;
+// const Person = function (name, age ) {
+//   this.name = name;
+//   this.age = age;
+// }
+class Person {
+  constructor ( name, age ){
+    this.name = name;
+    this.age = age;
+  }
+  speak () {
+    return `My name is ${this.name}`;
+  }
 }
-
 
 const parent = new Person("Susan", 70);
 console.log(parent); //?
@@ -107,9 +115,9 @@ console.log(parent.child);
 parent.child.grandchild = new Person("Sam", 30);
 console.log(parent.child.grandchild);
 // 4. Give each of the objects the ability to speak their names using the this keyword.
-Person.prototype.speak = function () {
-  return `My name is ${this.name}`;
-}
+// Person.prototype.speak = function () {
+//   return `My name is ${this.name}`;
+// }
 
 
 // Log the parent object's name
