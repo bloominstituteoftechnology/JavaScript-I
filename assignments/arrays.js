@@ -109,12 +109,15 @@ for ( car of inventory ) {
 }
 console.log(`There are ${oldCars.length} cars from before 2000`);
 // console.log(oldCars);
-oldCars.forEach((car) => console.log(car)) 
+oldCars.forEach( (car) => console.log(car) );
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi =[];
-console.log();
+for ( car of inventory ) {
+    ( car.car_make === "BMW" || car.car_make === "Audi" ) ? BMWAndAudi.push(car) : "";
+}
+console.log(BMWAndAudi);
 
 
 
