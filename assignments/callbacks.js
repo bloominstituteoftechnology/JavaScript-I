@@ -68,6 +68,7 @@ function removeDuplicates(array, cb) {
 }
 
 // const numbers = [1, 1, 1, 3, 2, 2, 1];
-const numbers = ['Pencil', 'Notepad', 'Backpack', 'Paper'];
+const supplies = ['Pencil', 'Notepad', 'Pencil', 'Backpack', 'Paper'];
 
-removeDuplicates(numbers, arr => arr);
+// removeDuplicates(numbers, arr => arr);
+removeDuplicates(supplies, arr => arr);
