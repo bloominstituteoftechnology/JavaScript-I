@@ -47,7 +47,6 @@ const removeDuplicates = (array, cb) => {
       continue;
     } else {
       newArray.push(removeDuplicates[i]);
-      console.log(newArray);
     }
   }
   return cb(newArray);
