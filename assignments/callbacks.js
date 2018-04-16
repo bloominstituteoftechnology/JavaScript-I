@@ -74,8 +74,24 @@ console.log(contains("Gum", items, containsCallback));
 
 /* STRETCH PROBLEM */
 
+let removeDuplicatesCallback = function(array) {
+  var nonDuplicates = [];
+  for(let i = 0; i < array.length; i ++) {
+    if(!nonDuplicates.includes(array[i])) {
+      nonDuplicates.push(array[i]);
+    }
+  }
+  return nonDuplicates;
+};
+
+let test = [1, 2, 5, 2, 6, 1, 3, 7, 1];
+
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  return cb(array);
 }
+
+console.log(removeDuplicates(test, removeDuplicatesCallback));
+// should log // [ 1, 2, 5, 6, 3, 7 ]
