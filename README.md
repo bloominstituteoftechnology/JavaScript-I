@@ -7,7 +7,7 @@
 * Fork/Clone this repository.
 * Complete all the exercises as described inside each assignment file.
 * Use `console.log()` statements to check to see if your code does what it is supposed to do.
-* To test your `console` statements you can either run `node /assignments/<fileName>` and see what prints in your terminal. You can also use an online tool like `JSBin`, `REPL.it`, `JSFiddle` or even your `Chrome developer console`.
+* To test your `console` statements you can run `node /assignments/<fileName>` to see what prints in your terminal. You can also use an online tool like `JSBin`, `REPL.it`, `JSFiddle`. You can even use your `Chrome developer console`.
 * Once you finish the exercises in each file, commit your code, and push it to your fork. 
 
 ### Objects
@@ -28,4 +28,5 @@ The [arrays.js](assignments/arrays.js) assignment takes us through a large data 
 * In the [callbacks.js](assignments/callbacks.js) file you'll be receiving a lot of practice on how to use callbacks to pass around data.
 * Write out each function using the `ES5` `function` keyword syntax.
 * Remember that a callback function is simply a function that is being passed around to other functions.
-* **Stretch Problem** After you're done with all of the functions, go ahead and re-factor all of them to use `ES6` `Arrow Functions`
+
+## Stretch Task - After you're done with all of the functions, go ahead and re-factor all of them to use `ES6` `Arrow Functions`
