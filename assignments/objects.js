@@ -37,14 +37,19 @@ const internMitzi = createIntern(1, 'mmelloy0@psu.edu', 'Mitzi', 'F'),
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(internMitzi.name);
 
 // Kennan's ID
+console.log(internKennan.id);
 
 // Keven's email
+console.log(internKeven.email);
 
 // Gannie's name
+console.log(internGannie.name);
 
 // Antonietta's Gender
+console.log(internAntonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
