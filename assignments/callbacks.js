@@ -6,23 +6,35 @@ function firstItem(arr, cb) {
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
+  cb(arr.length);
 }
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
+  cb(arr[-1]);
 }
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  cb(x+y);
 }
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  cb(x*y);
 }
 
-function contains(item, list, cb) {
+function contains(item, list, cb) {     // ??? 
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  cb(list.length);
+
+    var count=list.length;
+    for(var i=0;i<count;i++)
+    {
+        if(list[i]===item){return true;}
+    }
+    return false;
 }
 
 /* STRETCH PROBLEM */
