@@ -42,4 +42,10 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  const noDupes = [];
+  for ( value of array ) {
+    noDupes.includes(value) ? "" : noDupes.push( value );
+  }
+  return cb( noDupes );
 }
+console.log(removeDuplicates([1,1,2,3], cb));
