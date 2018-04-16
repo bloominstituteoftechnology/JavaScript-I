@@ -81,7 +81,7 @@ console.log(`${lastCar.car_make} ${lastCar.car_model}`);
 let carModels = [];
 
 for (let i = 0; i<length; ++i) {
-    // In order to correctly 'sort' the carModels it is neccesary to UpperCase the 'first-letter'
+    // In order to correctly 'sort' the carModels it is neccesary to UpperCase the 'first-letter' of the 'car_model'
     carModels.push(inventory[i].car_model.charAt(0).toUpperCase()+inventory[i].car_model.slice(1));
 }
 carModels.sort();
@@ -90,7 +90,16 @@ console.log(carModels);
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-console.log();
+for ( car of inventory ) {
+    carYears.push(car.car_year);
+}
+
+// This log repeated values
+console.log(carYears);
+
+// This aggregate the values to avoid repeated ones.
+carYearAgregated = new Set ( carYears);
+console.log(carYearAgregated)
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
