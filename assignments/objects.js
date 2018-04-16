@@ -67,11 +67,11 @@ let inter4 = {
 }
 
 
-console.log(inter0);
-console.log(inter1);
-console.log(inter2);
-console.log(inter3);
-console.log(inter4);
+// console.log(inter0);
+// console.log(inter1);
+// console.log(inter2);
+// console.log(inter3);
+// console.log(inter4);
 
 
 
@@ -81,14 +81,19 @@ console.log(inter4);
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(inter0.name);
 
 // Kennan's ID
+console.log(inter1.id);
 
 // Keven's email
+console.log(inter2.email);
 
 // Gannie's name
+console.log(inter3.name);
 
 // Antonietta's Gender
+console.log(inter4.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
