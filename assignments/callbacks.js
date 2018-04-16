@@ -48,9 +48,9 @@ let multiplyNums = (x, y, cb) => cb(x * y)
     condition = false;
   }
   cb(condition);
-} */
+} */ 
 
-let contains = (item, list, cb) => (list.contains(item) ? true : false)
+let contains = (item, list, cb) => cb(list.contains(item) ? true : false)
 
 
 /* STRETCH PROBLEM */
