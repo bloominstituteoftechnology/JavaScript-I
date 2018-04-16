@@ -48,9 +48,9 @@ let sumNums = (x, y, cb) => {
 
 console.log(sumNums(3, 4, sumNumsCallback));
 
-let multiplyNumsCallback = function(a, b) {
+let multiplyNumsCallback = (a, b) => {
   return a * b;
-}
+};
 
 let multiplyNums = (x, y, cb) => {
   // multiplyNums multiplies two numbers and passes the result to the callback.
