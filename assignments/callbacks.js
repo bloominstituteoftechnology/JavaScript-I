@@ -46,15 +46,17 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
-  // let slimArray = [];
-  // for (let i=0; i<array.length; i++) {
-  //   for (let j=0; j<slimArray.length; j++) {
-  //     if (array[i] === slimArray[j] {
-
-  //     })
-  //   }
-  // }
-
-
+  let slimArray = [];
+  for (let i=0; i<array.length; i++) {
+    different = true;
+    for (let j=0; j<slimArray.length; j++) {
+      if (array[i] === slimArray[j]) {
+        different === false
+      }
+    }
+    if (different) {
+      slimArray.push(array[i]);
+    }
+  }
   cb(slimArray);
 }
