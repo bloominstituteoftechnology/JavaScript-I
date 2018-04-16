@@ -19,6 +19,39 @@ let example = {
 
 // Write your intern objects here:
 
+const interns = {}; //?
+
+// 1,mmelloy0@psu.edu,Mitzi,F
+interns["Mitzi"] = {
+  "email": "mmelloy0@psu",
+  "id": "1",
+  "gender": "F"
+} //?
+// 2,kdiben1@tinypic.com,Kennan,M
+interns["Kennan"] = {
+  "email": "kdiben1@tinypic.com",
+  "id": "2",
+  "gender": "M"
+}//?
+// 3,kmummery2@wikimedia.org,Keven,M
+interns["Keven"] = {
+  "email": "kmummery2@wikimedia.org",
+  "id": "3",
+  "gender": "M"
+}//?//?
+// 4,gmartinson3@illinois.edu,Gannie,M
+interns["Gannie"] = {
+  "email": "gmartinson3@illinois.edu",
+  "id": "4",
+  "gender": "M"
+}//?
+// 5,adaine5@samsung.com,Antonietta,F
+interns["Antonietta"] = {
+  "email": "adaine5@samsung.com",
+  "id": "5",
+  "gender": "F"
+} //?
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
