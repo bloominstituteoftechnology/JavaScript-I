@@ -5,35 +5,41 @@ function firstItem(arr, cb) {
   cb(arr[0]);
 }
 
-firstItem(items, cb);
+firstItem(items, callback);
+firstItem(items, x => console.log(x)); // Stretch ES6 Arrow function
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
   cb(arr.length);
 }
 
-getLength(items, cb);
+getLength(items, callback);
+getLength(items, x => console.log(x)); // Stretch ES6 Arrow function
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
   cb(arr[arr.length - 1]);
 }
 
-last(items, cb);
+last(items, callback);
+last(items, x => console.log(x)); // Stretch ES6 Arrow function
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
   cb(x+y);
 }
 
-sumNums(2, 3, cb);
+sumNums(2, 3, callback);
+sumNums(2, 3, x => console.log(x)); // Stretch ES6 Arrow function
+
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
   cb(x*y);
 }
 
-multiplyNums(4, 3, cb);
+multiplyNums(4, 3, callback);
+multiplyNums(4, 3, x => console.log(x)); // Stretch ES6 Arrow function
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
@@ -42,8 +48,10 @@ function contains(item, list, cb) {
   cb(hasItem);
 }
 
-contains('Pencil', items, cb);
-contains('Tape', items, cb);
+contains('Pencil', items, callback);
+contains('Tape', items, callback);
+contains('Pencil', items, x => console.log(x)); // Stretch ES6 Arrow function
+contains('Tape', items, x => console.log(x)); // Stretch ES6 Arrow function
 
 /* STRETCH PROBLEM */
 function removeDuplicates(array, cb) {
@@ -62,10 +70,11 @@ function removeDuplicates(array, cb) {
 }
 
 const duplicateArray = ['Pencil', 'Notebook', 'yo-yo', 'Gum', 'Notebook', 'Pen', 'Pencil', 'Tape'];
-removeDuplicates(duplicateArray, cb);
+removeDuplicates(duplicateArray, callback);
+removeDuplicates(duplicateArray, x => console.log(x)); // Stretch ES6 Arrow function
 
 
 // Callback logging parameter
-function cb(x) {
+function callback(x) {
   console.log(x);
 }
