@@ -28,7 +28,7 @@ function multiplyNums(x, y, cb) {
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  if (list.includes(item){
+  if (list.includes(item)){
     cb(true);
   }
   else{
