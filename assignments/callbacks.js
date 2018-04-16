@@ -44,12 +44,12 @@ last(items, callBackThree);
 
 // callBackFour
 function callBackFour (x, y) {
-  console.log(x * y);
+  return x * y;
 }
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
-  return cb;
+  return cb(x,y);
 }
 
 console.log(sumNums(2,3,callBackFour));
