@@ -65,31 +65,40 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 
 //Steps to solve:
-//1. create a for loop to iterate ovre the inventory array
-//2. log/return(?) the key value pairs of the index at id:33 within the for loop
-//3. log the information in the sentence using template string syntax
+//1. log the information in the sentence using template string syntax
 
 //1. create a for-loop to iterate over the array
-for(i=0; i < inventory.length; i++) {
-    var car33= inventory[32];
-    return car33;
-}
-console.log(`Car 33 is a ${car_year} ${car_make} ${car_model}`);
+
+console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${inventory[32].car_model}`);
 
 
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = 0;
-console.log();
+console.log(`The last car is a ${inventory[inventory.length-1].car_make} ${inventory[inventory.length-1].car_model}`);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
-console.log();
+
+//steps to solve:
+//1. create a place to store newly sorted array (carModels = [])
+//2. iterate through the array to find each unique car model and add them in the carModels array
+//3. Sort the array alphabetically 
+//4. log the newly sorted array of car models
+
+let carModels = []; //Step 1
+for (i= 0; i < inventory.length; i++) { 
+    carModels.push(inventory[i].car_model);
+} //Step 2
+
+carModels = carModels.sort(); //Step 3
+console.log(carModels); //Step 4
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
+
+//Steps to solve:
 let carYears = [];
 console.log();
 
