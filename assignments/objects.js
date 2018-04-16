@@ -69,7 +69,10 @@ employees.Kennan.speak = function() {
 console.log(employees.Kennan.speak());
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-employees.Antonietta.multiply
+employees.Antonietta.multiplyNums = function (a, b) {
+  return a * b;
+};
+console.log(employees.Antonietta.multiplyNums(3,4));
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
