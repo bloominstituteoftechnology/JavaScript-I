@@ -17,54 +17,55 @@ let example = {
   "gender": "F"
 }
 
-console.log(example);
+// console.log(example);
 // Write your intern objects here:
-// function internFun(i,e,n,g) {
-//   this.id = i;
-//   this.name = n; //"name": "Mitzi",
-//   this.email = e; //"email": "mmelloy0@psu.edu",
-//   this.gender = g; //"gender": "F"
+function InternFun(i,e,n,g) {
+  this.id = i;
+  this.name = n; //"name": "Mitzi",
+  this.email = e; //"email": "mmelloy0@psu.edu",
+  this.gender = g; //"gender": "F"
+}
+
+const inter0 = new InternFun(1,'mmelloy0@psu.edu','Mitzi','F');
+const inter1 = new InternFun(2,'kdiben1@tinypic.com','Kennan','M');
+const inter2 = new InternFun(3,'kmummery2@wikimedia.org','Keven','M');
+const inter3 = new InternFun(4,'gmartinson3@illinois.edu','Gannie','M');
+const inter4 = new InternFun(5,'adaine5@samsung.com','Antonietta','F');
+
+// let inter0 = {
+//   "id": 1,
+//   "name": "Mitzi",
+//   "email": "emmelloy0@psu.edu",
+//   "gender": "F"
 // }
 
-// const inter0 = new internFun(1,'mmelloy0@psu.edu','Mitzi','F');
-// const inter1 = new internFun(2,'kdiben1@tinypic.com','Kennan','M');
-// const inter2 = new internFun(3,'kmummery2@wikimedia.org','Keven','M');
-// const inter3 = new internFun(4,'gmartinson3@illinois.edu','Gannie','M');
-// const inter4 = new internFun(5,'adaine5@samsung.com','Antonietta','F');
-let inter0 = {
-  "id": 1,
-  "name": "Mitzi",
-  "email": "emmelloy0@psu.edu",
-  "gender": "F"
-}
+// let inter1 = {
+//   "id": 2,
+//   "name": "Kenna",
+//   "email": "kdiben1@tinypic.com",
+//   "gender": "M"
+// }
 
-let inter1 = {
-  "id": 2,
-  "name": "Kenna",
-  "email": "kdiben1@tinypic.com",
-  "gender": "M"
-}
+// let inter2 = {
+//   "id": 3,
+//   "name": "Keven",
+//   "email": "kmummery2@wikimedia.org",
+//   "gender": "M"
+// }
 
-let inter2 = {
-  "id": 3,
-  "name": "Keven",
-  "email": "kmummery2@wikimedia.org",
-  "gender": "M"
-}
+// let inter3 = {
+//   "id": 4,
+//   "name": "Gannie",
+//   "email": "gmartinson3@illinois.edu",
+//   "gender": "M"
+// }
 
-let inter3 = {
-  "id": 4,
-  "name": "Gannie",
-  "email": "gmartinson3@illinois.edu",
-  "gender": "M"
-}
-
-let inter4 = {
-  "id": 5,
-  "name": "Antonietta",
-  "email": "adaine5@samsung.com",
-  "gender": "F"
-}
+// let inter4 = {
+//   "id": 5,
+//   "name": "Antonietta",
+//   "email": "adaine5@samsung.com",
+//   "gender": "F"
+// }
 
 
 // console.log(inter0);
@@ -97,10 +98,17 @@ console.log(inter4.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+InternFun.prototype.speak = function(){
+  return `Hello, my name is ${inter1.name}!`;
+}
+console.log(inter1.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+InternFun.prototype.multiplyNums = function(a,b){
+  return a * b;
+}
+
+console.log(inter4.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
