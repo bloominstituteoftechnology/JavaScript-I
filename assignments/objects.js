@@ -30,6 +30,7 @@ const intern1 = {
   "email": "Mitizi@intern.org"
   "gender": "I Choose Not To Self Identify"
 }
+console.log(intern1.name);
 // Kennan's ID
 const intern2 = {
   "id": 2,
@@ -40,6 +41,7 @@ const intern2 = {
     console.log("Hello, my name is Kennan!")
   }
 }
+console.log(intern2.id);
 
 // Keven's email
 const intern3 = {
@@ -48,25 +50,27 @@ const intern3 = {
   "email": "Keven@intern.org"
   "gender": "Bro"
 }
-
+console.log(intern3.email);
 // Gannie's name
 const intern4 = {
   "id": 4,
   "name": "Gannie",
   "email": "Gannie@intern.org"
-  "gender": "F"
+  "gender": "F",
 }
+console.log(intern4.name);
 
 // Antonietta's Gender
 const intern5 = {
   "id": 5,
   "name": "Antonietta",
   "email": "Antonietta@intern.org"
-  "gender": "M"
+  "gender": "M",
   "mutiplyNums": function (a, b) {
        return a * b
 }
 
+console.log(intern5.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
@@ -83,7 +87,7 @@ const intern5 = {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-let parent = {}
+//let parent = {}
 
 // Log the parent object's name
 
