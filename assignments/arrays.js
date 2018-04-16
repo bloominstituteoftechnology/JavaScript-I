@@ -29,13 +29,13 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":25,"car_make":"BMW","car_model":"525","car_year":2005},
 {"id":26,"car_make":"Cadillac","car_model":"Escalade","car_year":2005},
 {"id":27,"car_make":"Infiniti","car_model":"Q","car_year":2000},
-{"id":28,"car_make":"Suzuki","car_model":"Aerio","car_year":2005},
+{"id":28,"car_make":"Suzuki","car_model":"aerio","car_year":2005},
 {"id":29,"car_make":"Mercury","car_model":"Topaz","car_year":1993},
 {"id":30,"car_make":"BMW","car_model":"6 Series","car_year":2010},
-{"id":31,"car_make":"Pontiac","car_model":"GTO","car_year":1964},
+{"id":31,"car_make":"Pontiac","car_model":"gTO","car_year":1964},
 {"id":32,"car_make":"Dodge","car_model":"Ram Van 3500","car_year":1999},
 {"id":33,"car_make":"Jeep","car_model":"Wrangler","car_year":2011},
-{"id":34,"car_make":"Ford","car_model":"Escort","car_year":1991},
+{"id":34,"car_make":"Ford","car_model":"escort","car_year":1991},
 {"id":35,"car_make":"Chrysler","car_model":"300M","car_year":2000},
 {"id":36,"car_make":"Volvo","car_model":"XC70","car_year":2003},
 {"id":37,"car_make":"Oldsmobile","car_model":"LSS","car_year":1997},
@@ -77,6 +77,9 @@ console.log(inventory[inventory.length - 1].car_make, inventory[inventory.length
 let carModels = [];
 
 for (let i = 0; i < inventory.length; i++) {
+    if (inventory[i].car_model[0].toLowerCase) {
+        inventory[i].car_model = inventory[i].car_model[0].toUpperCase() + inventory[i].car_model.substr(1);
+    }
     carModels.push(inventory[i].car_model)
 }
 console.log(carModels.sort());  
