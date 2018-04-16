@@ -2,7 +2,12 @@
 
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
 
-let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
+let inventory = [
+    {"id":1,
+    "car_make":"Lincoln",
+    "car_model":"Navigator",
+    "car_year":2009},
+
 {"id":2,"car_make":"Mazda","car_model":"Miata MX-5","car_year":2001},
 {"id":3,"car_make":"Land Rover","car_model":"Defender Ice Edition","car_year":2010},
 {"id":4,"car_make":"Honda","car_model":"Accord","car_year":1983},
@@ -61,36 +66,219 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 //     arr[i]; // 1,2,3,4
 // }
 
+// let inventory = [
+//     {"id":1,
+//     "car_make":"Lincoln",
+//     "car_model":"Navigator",
+//     "car_year":2009},
+
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 
-
+console.log("==== Challenge 1 ==== \n");
+for(let i = 0; i < inventory.length; i++) {
+    if(inventory[i].id === 33) {
+        console.log(`Car 33 is a ${inventory[i].car_year} ${inventory[i].car_make} ${inventory[i].car_model}\n` );
+    }
+}
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log();
+
+console.log("==== Challenge 2 ==== \n");
+let lastCar = inventory.length -1;
+console.log(`Last car is a ${inventory[lastCar].car_make} ${inventory[lastCar].car_model}\n` );
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
+
+console.log("==== Challenge 3 ==== \n");
 let carModels = [];
+for(let i = 0; i < inventory.length; i++) {
+        carModels.push(inventory[i].car_model);
+}
+carModels.sort();
+for(let i = 0; i < carModels.length; i++) {
+    console.log(carModels[i]);
+}
+
 console.log();
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
+
+console.log("==== Challenge 4 ==== \n");
 let carYears = [];
+
+for(let i = 0; i < inventory.length; i++) {
+    carYears.push(inventory[i].car_year);
+}
+for(let i = 0; i < carYears.length; i++) {
+console.log(carYears[i]);
+}
+
 console.log();
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
+
+console.log("==== Challenge 5 ==== \n");
 let oldCars =[];
-console.log(); 
+
+for(let i = 0; i < carYears.length; i++) {
+    if(carYears[i] <= 2000) {
+        oldCars.push(carYears[i].car_year);
+    }
+}
+
+console.log(`We have ${oldCars.length} cars older than the year 2000 \n`); 
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
+
+console.log("==== Challenge 6 ==== \n");
 let BMWAndAudi =[];
+for(let i = 0; i < inventory.length; i++) {
+    if(inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi') {
+        BMWAndAudi.push(inventory[i]);
+    }
+}
+
+console.log();
+
+console.log(JSON.stringify(BMWAndAudi));
+
 console.log();
 
 
+/*
 
+$ node assignments/arrays.js
+
+==== Challenge 1 ====
+
+Car 33 is a 2011 Jeep Wrangler
+
+==== Challenge 2 ====
+
+Last car is a Lincoln Town Car
+
+==== Challenge 3 ====
+
+300M
+4000CS Quattro
+525
+6 Series
+Accord
+Aerio
+Bravada
+Camry
+Cavalier
+Ciera
+Defender Ice Edition
+E-Class
+Econoline E250
+Escalade
+Escort
+Esprit
+Evora
+Express 1500
+Familia
+Fortwo
+G35
+GTO
+Galant
+Intrepid
+Jetta
+LSS
+MR2
+Magnum
+Miata MX-5
+Montero Sport
+Mustang
+Navigator
+Prizm
+Q
+Q7
+R-Class
+Ram Van 1500
+Ram Van 3500
+Sebring
+Skylark
+TT
+Talon
+Topaz
+Town Car
+Windstar
+Wrangler
+Wrangler
+XC70
+Yukon
+riolet
+
+==== Challenge 4 ====
+
+2009
+2001
+2010
+1983
+1990
+1995
+2009
+1987
+1996
+2000
+2004
+2004
+1997
+1999
+2000
+2001
+1987
+1995
+1994
+1985
+2003
+1997
+1992
+2003
+2005
+2005
+2000
+2005
+1993
+2010
+1964
+1999
+2011
+1991
+2000
+2003
+1997
+1992
+1998
+2012
+1965
+1996
+2009
+2012
+2008
+1995
+2007
+2008
+1996
+1999
+
+==== Challenge 5 ====
+
+We have 29 cars older than the year 2000
+
+==== Challenge 6 ====
+
+
+[{"id":6,"car_make":"Audi","car_model":"riolet","car_year":1995},{"id":8,"car_make":"Audi","car_model":"4000CS Quattro",
+"car_year":1987},{"id":25,"car_make":"BMW","car_model":"525","car_year":2005},{"id":30,"car_make":"BMW","car_model":"6 S
+eries","car_year":2010},{"id":44,"car_make":"Audi","car_model":"Q7","car_year":2012},{"id":45,"car_make":"Audi","car_mod
+el":"TT","car_year":2008}]
+
+*/
