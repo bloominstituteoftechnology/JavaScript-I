@@ -88,7 +88,7 @@ console.log( interns.Antonietta.multiplyNums(3,4) );
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
-// ==== Stretch Challenge: Nested Objects and the this keyword ==== 
+// ==== git push: Nested Objects and the this keyword ==== 
 
 // 1. Create a parent object with properties for name and age.  Make the name Susan and the age 70.
 const Person = function (name, age ) {
@@ -110,7 +110,6 @@ console.log(parent.child.grandchild);
 Person.prototype.speak = function () {
   return `My name is ${this.name}`;
 }
-
 
 
 // Log the parent object's name
