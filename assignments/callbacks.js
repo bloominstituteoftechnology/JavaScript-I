@@ -1,8 +1,9 @@
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
+const redundant = [1, 2, 3, 3, 4, 5, 6, 6, 6, 6, 7, 8, 9, 9]
 
 function firstItem(arr, cb) {
   // firstItem passes the first item of the given array to the callback function.
-  return cb(arr);
+  return cb(arr[0]);
 }
 
 function getLength(arr, cb) {
@@ -40,4 +41,18 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  noDuplicates = [];
+  for (i=0 ; i < array.length ; i++) {
+    unique = true;
+    for (j=0 ; j < noDuplicates.length ; j++) {
+      if (array[i] === noDuplicates[j]) {
+        unique = false;
+      }
+    }
+    if (unique === true) noDuplicates.push(array[i]);
+  }
+  
+  return cb(noDuplicates);
 }
+
+removeDuplicates(redundant, console.log);
