@@ -24,14 +24,48 @@ let example = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+const intern1 = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "Mitizi@intern.org"
+  "gender": "I Choose Not To Self Identify"
+}
 // Kennan's ID
+const intern2 = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "Kennan@ITintern.gov"
+  "gender": "F"
+  talk: function() {
+    console.log("Hello, my name is Kennan!")
+  }
+}
 
 // Keven's email
+const intern3 = {
+  "id": 3,
+  "name": "Keven",
+  "email": "Keven@intern.org"
+  "gender": "Bro"
+}
 
 // Gannie's name
+const intern4 = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "Gannie@intern.org"
+  "gender": "F"
+}
 
 // Antonietta's Gender
+const intern5 = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "Antonietta@intern.org"
+  "gender": "M"
+  "mutiplyNums": function (a, b) {
+       return a * b
+}
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
