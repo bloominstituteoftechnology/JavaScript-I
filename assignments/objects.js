@@ -57,14 +57,19 @@ interns["Antonietta"] = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(Object.keys(interns)[0]);
 
 // Kennan's ID
+console.log(interns.Kennan.id);
 
 // Keven's email
+console.log(interns.Keven.email);
 
 // Gannie's name
+console.log(Object.keys(interns)[3]);
 
 // Antonietta's Gender
+console.log(interns.Antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
