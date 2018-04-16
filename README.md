@@ -11,7 +11,7 @@
 * Once you finish the exercises in each file, commit your code, and push it to your fork. 
 
 ### Objects
-To better understand objects, you really just need to write more of them. The [objects.js](assignments/objects.js) file contains several challenges centered around a theme of interns starting at a new job. The Human Resources team needs information about the new hires. Use your new found object skills answer vital questions for HR.
+To better understand objects, you really just need to write more of them. The [objects.js](assignments/objects.js) file contains several challenges centered around a theme of interns starting at a new job. The Human Resources team needs information about the new hires. Use your new found object skills to answer vital questions for HR.
 
 * Read the instructions found within the file carefully to finish the challenges. 
 * Complete each challenge presented before moving on to Arrays.
@@ -19,7 +19,7 @@ To better understand objects, you really just need to write more of them. The [o
 ### Arrays
 The [arrays.js](assignments/arrays.js) assignment takes us through a large data set of used cars.  You have been asked to help a used car business with some customer requests based on their inventory.  Use for loops and arrays to solve their problems.
 
-* Utilize the the array `inventory` to complete your challenges
+* Utilize the the array `inventory` to complete your challenges.
 * You can't use map, reduce, or filter to solve these problems.  Only use native JavaScript for loops.
 * Complete each challenge presented before moving on to Callbacks.
 
