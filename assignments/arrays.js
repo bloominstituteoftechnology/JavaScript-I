@@ -81,6 +81,7 @@ let carModels = [];
 for (i = 0; i < inventory.length; i++) {
   inventory[i].car_model;
   carModels.push(inventory[i].car_model);
+  carModels.sort();
 }
 console.log(carModels);
 
