@@ -26,7 +26,7 @@ console.log(sumNums(1,2,cb));
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
-
+  return cb( x*y );
 }
 
 function contains(item, list, cb) {
