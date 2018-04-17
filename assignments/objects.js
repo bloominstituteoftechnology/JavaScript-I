@@ -95,10 +95,13 @@ console.log(internAntonietta.multiplyNums(12,6));
 let parent = {}
 
 // Log the parent object's name
+let parent.name = "Dad"
 
 // Log the child's age
+let parent.child.age = 9
 
 // Log the name and age of the grandchild
+console.log(parent.child.grandchild.name)
 
 // Have the parent speak
 
