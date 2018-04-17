@@ -17,43 +17,38 @@ let example = {
   gender: 'F',
 };
 
-let interns = [
-  {
-    id: 1,
-    name: 'Mitzi',
-    email: 'mmelloy0@psu.edu',
-    gender: 'F',
+let interns = [{
+    "id": 1,
+    "name": 'Mitzi',
+    "email": 'mmelloy0@psu.edu',
+    "gender": 'F',
   },
   {
-    id: 2,
-    name: 'Kennan',
-    email: 'kdiben1@tinypic.com',
-    gender: 'M',
-    speak: function() {
-      return `Hello my name is ${interns[1].name}!`;
-    },
+    "id": 2,
+    "name": 'Kennan',
+    "email": 'kdiben1@tinypic.com',
+    "gender": 'M',
+    "speak": () => `Hello my name is ${interns[1].name}!`
   },
   {
-    id: 3,
-    name: 'Keven',
-    email: 'kmummery2@wikimedia.org',
-    gender: 'M',
+    "id": 3,
+    "name": 'Keven',
+    "email": 'kmummery2@wikimedia.org',
+    "gender": 'M',
   },
   {
-    id: 4,
-    name: 'Gannie',
-    email: 'gmartinson3@illinois.edu',
-    gender: 'M',
+    "id": 4,
+    "name": 'Gannie',
+    "email": 'gmartinson3@illinois.edu',
+    "gender": 'M',
   },
   {
-    id: 5,
-    name: 'Antonietta',
-    email: 'adaine5@samsung.com',
-    gender: 'F',
-    multiplyNums: function(x, y) {
-      return x * y;
-    },
-  },
+    "id": 5,
+    "name": 'Antonietta',
+    "email": 'adaine5@samsung.com',
+    "gender": 'F',
+    "multiplyNums": (x, y) => x * y
+  }
 ];
 
 // Write your intern objects here:
@@ -90,21 +85,15 @@ console.log(interns[4].multiplyNums(3, 4));
 let parent = {
   name: 'Susan',
   age: 70,
-  speak: function() {
-    return `My name is ${this.name}!`;
-  },
+  speak: () => `My name is ${parent.name}!`,
   child: {
     name: 'George',
     age: 50,
-    speak: function() {
-      return `My name is ${this.name}!`;
-    },
+    speak: () => `My name is ${parent.child.name}!`,
     grandchild: {
       name: 'Sam',
       age: 30,
-      speak: function() {
-        return `My name is ${this.name}!`;
-      },
+      speak: () => `My name is ${parent.child.grandchild.name}!`,
     },
   },
 };
