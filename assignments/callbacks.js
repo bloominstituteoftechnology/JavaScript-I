@@ -2,27 +2,42 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 function firstItem(arr, cb) {
   // firstItem passes the first item of the given array to the callback function.
+  return cb(arr[0]);
 }
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
+  return cb(arr.length);
 }
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
+  return cb(arr[i].length - 1)
 }
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb(x + y);
 }
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x * y);
 }
 
+//Steps to solve:
+//1. iterate the array with a for loop
+//2. use if statement to check if the item is in the array
+//3. pass appropriate values
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  for (let i = 0; i < list.length; i++) {
+    if (item === list[i]) {
+     return cb(true);
+    } 
+   return cb(false);
+  }
 }
 
 /* STRETCH PROBLEM */
