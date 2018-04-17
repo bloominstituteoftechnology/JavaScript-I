@@ -108,7 +108,7 @@ InternFun.prototype.multiplyNums = function(a,b){
   return a * b;
 }
 
-console.log(inter4.multiplyNums(3,4));
+console.log(`multiplyNums: ${inter4.multiplyNums(3,4)}`);
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -119,16 +119,46 @@ console.log(inter4.multiplyNums(3,4));
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-let parent = {}
+// function speak(a) {
+//   return `Hello, my name is ${a}`;
+// }
+let parent = {
+  "name": "Susan",
+  "age": 70,
+  // "speak": speak(this.name),
+  "speak": function(){
+    return `Hello, my nme is ${this.name}`
+  },
+  "child": {
+    "name": "George",
+    "age": 50,
+    "speak": function(){
+      return `Hello, my nme is ${this.name}`
+    },
+    "grandchild": {
+      "name": "Sam",
+      "age": 30,
+      "speak": function(){
+        return `Hello, my nme is ${this.name}`
+      },
+    }
+  }
+}
+
+
 
 // Log the parent object's name
+console.log(`parent name: ${parent.name}`);
 
 // Log the child's age
-
+console.log(`child's age: ${parent.child.age}`);
 // Log the name and age of the grandchild
-
+console.log(`Grandchild's name & age: ${parent.child.grandchild.name} ${parent.child.grandchild.age}`);
 // Have the parent speak
+console.log(parent.speak());
 
 // Have the child speak
+console.log(parent.child.speak());
 
 // Have the grandchild speak
+console.log(parent.child.grandchild.speak());
