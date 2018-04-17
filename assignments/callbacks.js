@@ -42,9 +42,9 @@ function last(arr, cb) {
 
 last(items, callBackThree);
 
-// callBackFour
+// callBackFour  for sumNums ()
 function callBackFour (x, y) {
-  return x * y;
+  return x + y;
 }
 
 function sumNums(x, y, cb) {
@@ -55,14 +55,38 @@ function sumNums(x, y, cb) {
 console.log(sumNums(2,3,callBackFour));
 
 
+//callBackFive for multiplyNums ()
+function callBackFive (x) {
+  console.log(x); 
+}
+
+
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x * y);
 }
+
+multiplyNums(2, 7, callBackFive);
+
+// callBackSix for contains ()
+function callBackSix (x) {
+  console.log(x);
+}
+
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  for (let i = 0; i < list.length ; i++) {
+    if (list.indexOf(item) !== -1) {
+      return cb(true);
+    }  else {
+    return cb(false);
+    }
+  }
 }
+
+contains("Gum", items, callBackSix);
 
 /* STRETCH PROBLEM */
 
