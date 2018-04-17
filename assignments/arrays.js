@@ -55,11 +55,6 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // PROJECT RESTRICTION: You can't use map, reduce, or filter to solve these problems.  Only use native JavaScript for loops.
 
-// Example for loop:
-// arr = [1,2,3,4];
-// for (i = 0; i < arr.length; i++) {
-//     arr[i]; // 1,2,3,4
-// }
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
@@ -116,7 +111,13 @@ console.log(oldCars[i]);
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi = [];
-console.log();
+
+for (let i = 0; i < inventory.length; i++) { 
+    if(inventory[i].car_make ==='BMW' || inventory[i].car_make ==='Audi') {
+        BMWAndAudi.push(inventory[i]);
+    }
+}
+console.log(JSON.stringify(BMWAndAudi));
 
 
 
