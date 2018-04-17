@@ -49,8 +49,20 @@ contains('Gum',items,print);
 
 /* STRETCH PROBLEM */
 
+const stretchItems = ['Pencil', 'Notebook', 'yo-yo', 'Gum','Pencil', 'Notebook', 'yo-yo', 'Gum','Pencil', 'Notebook', 'yo-yo', 'Gum','Cup'];
+
 function removeDuplicates(array, cb) {
+  let newArray = [];
+  for (i = 0; i < array.length; i++) {
+    if(!(newArray.includes(array[i]))) {
+      newArray.push(array[i]);
+    }
+    
+  }
+ cb(`Stretch Problem: ${newArray}`);
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
 }
+
+removeDuplicates(stretchItems,print);
