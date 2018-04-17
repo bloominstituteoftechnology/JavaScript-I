@@ -19,14 +19,14 @@ To better understand objects, you really just need to write more of them. The [o
 ### Arrays
 The [arrays.js](assignments/arrays.js) assignment takes us through a large data set of used cars.  You have been asked to help a used car business with some customer requests based on their inventory.  Use for loops and arrays to solve their problems.
 
-* Utilize the the array `inventory` to complete your challenges.
-* You can't use map, reduce, or filter to solve these problems.  Only use native JavaScript for loops.
-* Complete each challenge presented before moving on to Callbacks.
+- [ ] Utilize the the array `inventory` to complete your challenges.
+- [ ] You can't use map, reduce, or filter to solve these problems.  Only use native JavaScript for loops.
+- [ ] Complete each challenge presented before moving on to Callbacks.
 
 ### Callbacks
 
-* In the [callbacks.js](assignments/callbacks.js) file you'll be receiving a lot of practice on how to use callbacks to pass around data.
-* Write out each function using the `ES5` `function` keyword syntax.
-* Remember that a callback function is simply a function that is being passed around to other functions.
+- [ ] In the [callbacks.js](assignments/callbacks.js) file you'll be receiving a lot of practice on how to use callbacks to pass around data.
+- [ ] Write out each function using the `ES5` `function` keyword syntax.
+- [ ] Remember that a callback function is simply a function that is being passed around to other functions.
 
 ## Stretch Task - After you're done with all of the functions, go ahead and re-factor all of them to use `ES6` `Arrow Functions`

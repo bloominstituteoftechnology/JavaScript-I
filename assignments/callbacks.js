@@ -1,34 +1,45 @@
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
+const log = (result) => console.log(result);
 
-function firstItem(arr, cb) {
-  // firstItem passes the first item of the given array to the callback function.
-}
+const firstItem = (arr, cb) => cb(arr[0]);
+firstItem(items, log);
 
-function getLength(arr, cb) {
-  // getLength passes the length of the array into the callback.
-}
+const getLength = (arr, cb) => cb(arr.length);
+getLength(items, log);
 
-function last(arr, cb) {
-  // last passes the last item of the array into the callback.
-}
+const last = (arr, cb) => cb(arr[arr.length -1]);
+last(items, log);
 
-function sumNums(x, y, cb) {
-  // sumNums adds two numbers (x, y) and passes the result to the callback.
-}
+const sumNums = (x, y, cb) => cb(x + y);
+sumNums(35, 34, log);
 
-function multiplyNums(x, y, cb) {
-  // multiplyNums multiplies two numbers and passes the result to the callback.
-}
+const multiplyNums = (x, y, cb) => cb(x * y);
+multiplyNums(35, 34, log);
 
-function contains(item, list, cb) {
-  // contains checks if an item is present inside of the given array/list.
-  // Pass true to the callback if it is, otherwise pass false.
-}
+const contains = (item, list, cb) => {
+  if (list.includes(item)) {
+    cb(true);
+  } else {
+    cb(false);
+  }
+};
+contains('Backpack', items, log);
 
 /* STRETCH PROBLEM */
 
-function removeDuplicates(array, cb) {
+const removeDuplicates = (array, cb) => {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  const newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if(newArray.includes(array[i])) {
+      continue;
+    }
+    newArray.push(array[i]);
+  }
+  return cb(newArray);
 }
+
+array = [1, 2, 3, 4, 5, 6, 6, 7, 8];
+removeDuplicates(array, log);
