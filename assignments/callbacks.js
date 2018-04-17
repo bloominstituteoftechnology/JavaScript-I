@@ -67,7 +67,9 @@ function contains(item, list, cb) {
 contains('Pencil', items, a => {
   console.log(a);
 });
-// contains('car', items);
+// contains('car', items, a => {
+//   console.log(a);
+// });
 
 /* STRETCH PROBLEM */
 
