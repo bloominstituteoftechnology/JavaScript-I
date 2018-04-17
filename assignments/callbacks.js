@@ -1,5 +1,7 @@
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
+const cb = (x) => {console.log(x)};
+
 /* function firstItem(arr, cb) {
   // firstItem passes the first item of the given array to the callback function.
   return cb(arr[0]);
@@ -38,19 +40,20 @@ let sumNums = (x, y, cb) => cb(x + y)
 
 let multiplyNums = (x, y, cb) => cb(x * y)
 
-/* function contains(item, list, cb) {
+
+/* function contains(item, items, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
   let condition = false;
-  if (list.contains(item)) {
+  if (items.includes(item)) {
     condition = true;
   } else {
     condition = false;
   }
   cb(condition);
-} */ 
+}    */
 
-let contains = (item, list, cb) => cb(list.contains(item) ? true : false)
+ let contains = (item, items, cb) => cb(items.includes(item) ? true : false)
 
 
 /* STRETCH PROBLEM */
