@@ -1,5 +1,5 @@
 // Let's get some practice writing a few objects for a new group of interns at a small business.
-
+const cl = output => console.log(output);
 // ==== Challenge 1: Writing Objects ==== 
 // HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
 
@@ -66,13 +66,14 @@ console.log(employees.Antonietta.gender);
 // employees.Kennan.speak = () => 
 employees.Kennan.speak = function() {
   return `Hello! My name is ${this.name}`;
-};
+}; //I'm leaving this alone, because ES6 arrow function breaks `this`
 
 console.log(employees.Kennan.speak());
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 employees.Antonietta.multiplyNums = (a, b) => a * b;
 console.log(employees.Antonietta.multiplyNums(3,4));
+
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
