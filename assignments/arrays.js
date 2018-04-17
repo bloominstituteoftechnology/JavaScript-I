@@ -115,7 +115,7 @@ for (var i = 0; i<inventory.length; i++){
    BMWAndAudi.push(inventory[i]);
   }
 }
-var myJSON = JSON.stringify(BMWAndAudi)
+var myJSON = JSON.stringify(BMWAndAudi);
 console.log(myJSON);
 
 
