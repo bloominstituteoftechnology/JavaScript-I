@@ -93,19 +93,19 @@ let parent = {
   name: "Susan",
   age: 70,
   speak: function () {
-    console.log(`My name is ${this.name}`);
+    return(`My name is ${this.name}`);
   },
   child: {
     name: "George",
     age: 50,
     speak: function () {
-      console.log(`My name is ${this.name}`);
+      return(`My name is ${this.name}`);
     },
     grandchild: {
       name: "Sam",
       age: 30,
       speak: function () {
-        console.log(`My name is ${this.name}`);
+        return(`My name is ${this.name}`);
       }
     }
   }
@@ -122,8 +122,8 @@ console.log(parent.child.name);
 // Log the name and age of the grandchild
 console.log(`${parent.child.grandchild.name} ${parent.child.grandchild.age}`)
 // Have the parent speak
-parent.speak();
+console.log(parent.speak());
 // Have the child speak
-parent.child.speak();
+console.log(parent.child.speak());
 // Have the grandchild speak
-parent.child.grandchild.speak();
+console.log(parent.child.grandchild.speak());
