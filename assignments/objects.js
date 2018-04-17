@@ -97,31 +97,42 @@ let parent = {
   "id": 0,
   "name": "Susan",
   "age": "70",
+  "speak": function () {
+    return "My name is: " + this.name;
+  },
 
-  "child" = {
+  "child": {
     "id": 2,
     "name": "George",
     "age": "50",
+    "speak": function () {
+      return "My name is: " + this.name;
+    },
     
-    "grandchild" = {
+    "grandchild": {
       "id": 3,
       "name": "Sam",
       "age": "30",
+      "speak": function () {
+        return "My name is: " + this.name;
+      }
 
     }//grandchild
   }//child
-   
+}
 
 };//<----parent
 
 // Log the parent object's name
-
+console.log(parent.name);
 // Log the child's age
+console.log(parent.child.name); //?
 
 // Log the name and age of the grandchild
-
+console.log(parent.child.grandchild.name, parent.child.grandchild.age)
 // Have the parent speak
-
+console.log(parent.speak());
 // Have the child speak
-
+console.log(parent.speak());
 // Have the grandchild speak
+console.log(parent.child.grandchild.speak());
