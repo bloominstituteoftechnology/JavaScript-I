@@ -17,39 +17,39 @@ let example = {
   "name": "Example",
   "email": "examples@you.edu",
   "gender": "F"
-};
-let Mitzi = {
+},
+ Mitzi = {
   "id": 1,
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
   "gender": "F",
-};
-let Keenan = {
+},
+ Keenan = {
   "id": 2,
   "name": "Keenan",
   "email": "kdiben1@tinypic.com",
   "gender": "M",
-};
-let Keven = {
+},
+Keven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M",
-};
+},
 
-let Gannie = {
+Gannie = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
   "gender": "M",
-};
+},
 
-let Antonietta = {
+Antonietta = {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F",
-};
+}
 
 
 
