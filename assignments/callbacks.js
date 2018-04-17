@@ -34,10 +34,8 @@ function contains(item, list, cb) {
     if(list[i] === item){
       cb(true);
     }//if
-    else if(list[i] !== item){
-      cb(false);
-    }//else if
   }//for loop
+  cb(false);
 }//function
 
 /* STRETCH PROBLEM */
