@@ -1,7 +1,11 @@
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
-function callBack(output) {
-  console.log(output);
+function callBack(output, bool) {
+  console.log(output, bool);
+}
+
+function boolCheck(bool) {
+  console.log(bool);
 }
 
 function firstItem(arr, cb) {
@@ -37,16 +41,12 @@ multiplyNums(5, 5, callBack);
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  const findItem = list.find(function(el) {
+  const findItem = list.find( el => {
     return el === item;
   });
-  if (findItem) {
-    return cb('list contains ' + item);
-  } else {
-    return cb('list does Not contain ' + item);
-  }
+  return findItem ? cb(true) : cb(false);
 }
-contains('yo-yo', items, callBack);
+ contains('Pencil', items, boolCheck);
 
 /* STRETCH PROBLEM */
 
@@ -54,7 +54,15 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
-
+  const dup = [];
+  for (let i = 0; i < array.length; i++) {
+    if (dup.indexOf(array[i]) === -1) {
+      dup.push(array[i]);
+    }
+  }
+  return cb(dup);
 }
+removeDuplicates(items, callBack);
+
 
 
