@@ -61,10 +61,11 @@ function removeDuplicates(array, cb) {
   const dup = [];
   for (let i = 0; i < array.length; i++) {
     if (dup.indexOf(array[i]) === -1) {
-      cb(dup.push(array[i]));
+      dup.push(array[i]);
     }
   }
+  return cb(dup);
 }
-// removeDuplicates(items, work);
+removeDuplicates(items, work);
  
 
