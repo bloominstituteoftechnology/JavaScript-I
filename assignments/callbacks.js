@@ -1,9 +1,12 @@
-const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
-const numbers = [1, 1, 2, 2, 3, 3, 4, 4];
+//Start test assignments
+const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum', 'Gum', 'Pencil'];
+const numbers = [1, 5, 2, 2, 10, 11, 22, 22, 22, 11, 9, 10, 12];
 
 let numOne = function (arr) {
   return arr;
 };
+// End test assignments
+
 
 function firstItem(arr, cb) {
   // firstItem passes the first item of the given array to the callback function.
@@ -49,14 +52,12 @@ function removeDuplicates(array, cb) {
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
   let newArr = [];
-  for (i = 0; i < array.length; i++) {
-    newArr.push(array[i]);
-  }
-    for (let a = i + 1; a < array.length; a++) {
-      if (a === i) {
-        newArr.pop(array[a]);
-      }
-    
+  array.sort();
+  for (let i = 0; i < array.length; i++) {
+    let a = array[i + 1];
+    if (a !== array[i]) {
+      newArr.push(array[i]);
+    }
   }
 
   return cb(newArr);
