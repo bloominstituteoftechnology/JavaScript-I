@@ -117,6 +117,8 @@ console.log(family.parent.firstName);
 console.log(family.parent.child.age);
 console.log(family.parent.child.grandchild.firstName, family.parent.child.grandchild.age);
 console.log(family.parent.speak());
+console.log(family.parent.child.speak());
+console.log(family.parent.child.grandchild.speak());
 
 // Log the parent object's name
 
