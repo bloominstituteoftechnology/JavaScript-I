@@ -104,5 +104,5 @@ let BMWAndAudi = [];
 for(let i = 0; i < inventory.length; i++){
     if(inventory[i].car_make === "Audi" || inventory[i].car_make === "BMW") {
     BMWAndAudi.push(inventory[i].car_make)}
-    }
-console.log(BMWAndAudi);
+}
+console.log("This is a list of all the BMW abd Audi cars on the lot: " + JSON.stringify(BMWAndAudi);
