@@ -2,77 +2,82 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 function firstItem(arr, callback) {
   // firstItem passes the first item of the given array to the callback function.
-  callback(arr[0]);
+  return callback(arr[0]);
   }
-  function print(item){
+  function getItem(item){
     console.log(item);
     
   }
-  firstItem(items, print);
+  firstItem(items, getItem);
 
 
 function getLength(arr, callback) {
   // getLength passes the length of the array into the callback.
- let length =(arr.length);  
- return length;
- 
+    return callback(arr);
 }
-function print(item){
-  console.log(item);
-}
-console.log(getLength(items, print));
+  function size(arr){
+    console.log(arr.length);
+  }
 
-
-function last(arr, callback) {
+  getLength(items, size);
+  function last(arr, callback) {
   // last passes the last item of the array into the callback.
-callback(arr[arr.length-1]);
+    return callback(arr);
 }
-function print(item){
-  console.log(item);
+function lastItem (arr){
+  console.log(arr[arr.length-1]);
 }
-last(items,print);
+last(items,lastItem);
 
 
 function sumNums(x, y, callback) {
-  return callback(x,y);
-  // sumNums adds two numbers (x, y) and passes the result to the callback.
+ return callback(x,y);
 }
-let add = function(x,y){
-    return x+y;
-};
-// console.log(sumNums(1,2,add));
+function addTwo(x,y){
+  console.log(x+y);
+}
+sumNums(5, 2, addTwo);
+  // sumNums adds two numbers (x, y) and passes the result to the callback.
 
-sumNums(1,2,add);
 
 function multiplyNums(x, y, callback) {
   return callback(x,y);
-  // multiplyNums multiplies two numbers and passes the result to the callback.
 }
-let product = function(x,y){
-  return x*y;
-};
-// console.log(multiplyNums(5,6,product));
-multiplyNums(5,6,product);
+  function product(x,y){
+    console.log(x*y);
+  }
+
+multiplyNums(4,5,product);
 
 function contains(item, arr, cb) {
   return cb(item, arr);
-  // contains checks if an item is present inside of the given array/arr.
-  // Pass true to the callback if it is, otherwise pass false.
 }
-let find = function(item, list){
-  for(let i=0; i<list.length; i++){
-     if(list[i] === item){
-      return (true);
-     }
+function find (item, arr){
+  for(let i=0; i<arr.length;i++){
+    if (arr[i]===item){
+      console.log (true);
+    }
+    console.log(false);
   }
-  return (false);
 }
+contains("Gum", items, find);
+//   // contains checks if an item is present inside of the given array/arr.
+//   // Pass true to the callback if it is, otherwise pass false.
+// 
 
-console.log(contains("Gum", items, find));
-/* STRETCH PROBLEM */
+// /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
-  // removeDuplicates removes all duplicate values from the given array.
-  // Pass the duplicate free array to the callback function.
-  // Do not mutate the original array.
+  console.log(cb(array));
 }
+
+function unique(array){
+let unique = [] //declare empty array variable
+    for(let i = 0;i < array.length; i++){ //for loop looping over array
+        if(unique.indexOf(array[i]) == -1){ //if index is not contained in array, -1 will come back - signals to push to array
+            unique.push(array[i]);
+        }
+    }
+    console.log(unique);
+}
+removeDuplicates([1,1,4,3,7,4], unique);
