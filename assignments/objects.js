@@ -77,11 +77,21 @@ kennan.speak = function() {
 }
 console.log(kennan.speak());
 
+
+//Arrow Function
+kennan.speak2 = () => ("Hello!, my name is " + kennan.name);
+console.log(kennan.speak2());
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 antonietta.multiplyNums = function(a, b) {
   return a * b;
 }
 console.log(antonietta.multiplyNums(3,4));
+
+//Arrow Function
+antonietta.multiplyNums2 = (a, b) => a * b;
+console.log(antonietta.multiplyNums2(3,4));
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
