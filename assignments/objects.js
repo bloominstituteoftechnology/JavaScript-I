@@ -4,29 +4,7 @@
 // HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
 
 
-class Intern {
-  constructor (id, email, name, gender) {
-    this.id = id;
-    this.name = name;
-    this.email = email;
-    this.name = name;
-    this.gender = gender;
-  }
-}
 
-let intern1 = new Intern(1, 'mmelloy0@psu.edu', 'Mitzi', 'F');
-let intern2 = new Intern(2, 'kdiben1@tinypic.com', 'Kennan', 'M');
-let intern3 = new Intern(3, 'kmummery2@wikimedia.org', 'Keven', 'M');
-let intern4 = new Intern(4, 'gmartinson3@illinois.edu', 'Gannie', 'M');
-let intern5 = new Intern(5, 'adaine5@samsung.com', 'Antonietta', 'F');
-
-
-
-console.log(intern1);
-console.log(intern2);
-console.log(intern3);
-console.log(intern4);
-console.log(intern5);
 
 // is this you right here> Yeah I guess so lol
 // i actually think this is better. Than Zoom? or Atom? I guess I still like audio I think.
@@ -43,34 +21,65 @@ let example = {
 
 // Write your intern objects here:
 
+class Intern {
+  constructor(id, email, name, gender) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+    this.name = name;
+    this.gender = gender;
+    this.speak = function () {
+      console.log('Hi, my name is ' + this.name)
+    },
+    this.multiplyNums = function (x, y) {
+      console.log(x * y);
+      return x * y;
+    }
+  }
+}
+
+let mitzi = new Intern(1, 'mmelloy0@psu.edu', 'Mitzi', 'F');
+let kennan = new Intern(2, 'kdiben1@tinypic.com', 'Kennan', 'M');
+let keven = new Intern(3, 'kmummery2@wikimedia.org', 'Keven', 'M');
+let gannie = new Intern(4, 'gmartinson3@illinois.edu', 'Gannie', 'M');
+let antonietta = new Intern(5, 'adaine5@samsung.com', 'Antonietta', 'F');
+
+
+
+console.log(mitzi);
+console.log(kennan);
+console.log(keven);
+console.log(gannie);
+console.log(antonietta);
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
 
-console.log(intern1.name);
+console.log(mitzi.name);
 
 // Kennan's ID
 
-console.log(intern2.id);
+console.log(kennan.id);
 // Keven's email
-console.log(intern3.email);
+console.log(keven.email);
 
 // Gannie's name
-console.log(intern4.name);
+console.log(gannie.name);
 // Antonietta's Gender
-console.log(intern5.gender);
+console.log(antonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.'
 
-Intern.speak = function () {
-  console.log('Hi, my name is ' + this.name)
-}
+kennan.speak();
 
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+
+antonietta.multiplyNums(3, 5); 
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
