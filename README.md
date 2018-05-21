@@ -30,3 +30,5 @@ The [arrays.js](assignments/arrays.js) assignment takes us through a large data 
 * Remember that a callback function is simply a function that is being passed around to other functions.
 
 ## Stretch Task - After you're done with all of the functions, go ahead and re-factor all of them to use `ES6` `Arrow Functions`
+
+Initial Pull Request
