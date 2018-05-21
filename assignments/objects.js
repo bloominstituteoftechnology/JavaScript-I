@@ -10,38 +10,45 @@
 // 5,adaine5@samsung.com,Antonietta,F
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
-let employeeOne = {
+let employee = {
+  "id": 0,
+  "name": "Example",
+  "email": "examples@you.edu",
+  "gender": "F"
+}
+
+
+// Write your intern objects here:
+let internOne = {
   "id": 1,
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
   "gender": "F"
 }
-let employeeTwo = {
+let internTwo = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M"
 }
-let employeeThree = {
+let internThree = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M"
 }
-let employeeFour = {
+let internFour = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
   "gender": "M"
 }
-let employeeFive = {
+let internFive = {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F"
 }
-
-// Write your intern objects here:
 
 
 // ==== Challenge 2: Reading Object Data ==== 
