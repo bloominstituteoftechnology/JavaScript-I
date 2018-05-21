@@ -63,6 +63,8 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
+
+// Old solution
 // let year = '';
 // let make = '';
 // let model = '';
@@ -79,6 +81,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // console.log(`Car 33 is a ${year} ${make} ${model}`);
 
+// New Solution, since we can see that the array index and Id numbers are just off by 1
 carray = [inventory[34].car_year, inventory[34].car_make, inventory[34].car_model];
 console.log(`Car 33 is a ${carray[0]} ${carray[1]} ${carray[2]}`);
 
@@ -91,11 +94,14 @@ inventory.push(lastCar);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
-for (let i = 0; i < inventory.length; i++) {
-  carModels.push(inventory[i].car_model.toUpperCase());
-}
-carModels = Array.from(new Set(carModels)).sort();
+// let carModels = [];
+// for (let i = 0; i < inventory.length; i++) {
+//   carModels.push(inventory[i].car_model.toUpperCase());
+// }
+// carModels = Array.from(new Set(carModels)).sort();
+// console.log(carModels);
+
+let carModels = inventory.map(car => car.car_model.split('')[0].toUpperCase() + car.car_model.slice(1)).sort();
 console.log(carModels);
 
 // ==== Challenge 4 ====
