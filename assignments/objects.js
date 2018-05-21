@@ -19,11 +19,42 @@ let example = {
 
 // Write your intern objects here:
 
+let intOne = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "Mitzi@you.edu",
+  "gender": "F"
+}
+let intTwo = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "Kennan@you.edu",
+  "gender": "M"
+}
+let intThree = {
+  "id": 3,
+  "name": "Keven",
+  "email": "Keven@you.edu",
+  "gender": "M"
+}
+let intFour = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "Gannie@you.edu",
+  "gender": "F"
+}
+let intFive = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "Antonietta.edu",
+  "gender": "F"
+}
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(intTwo.name); //?
 
 // Kennan's ID
 
