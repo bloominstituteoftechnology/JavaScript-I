@@ -67,7 +67,7 @@ console.log(interns[2].email);
 console.log(interns[3].name);
 
 // Antonietta's Gender
-console.log(interns[5].gender);
+console.log(interns[4].gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
@@ -78,7 +78,7 @@ interns[1].speak = function(){
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-interns[5].multipleNum = function(num1, num2){
+interns[4].multipleNum = function(num1, num2){
   return num1*num2;
 }
 
