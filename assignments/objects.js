@@ -83,10 +83,7 @@ intern2.speak();
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
-intern5.multiplyNums = function (a,b) {
-  return (a*b);
-}
-
+intern5.multiplyNums = (a,b) => a*b;
 console.log(intern5.multiplyNums(2,5));
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
