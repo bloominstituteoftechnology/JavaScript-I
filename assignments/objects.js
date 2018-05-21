@@ -69,7 +69,7 @@ console.log(aDaine['gender']);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-kMummery.speak = () => "Hello, my name is " + kMummery['name'] + "!";
+kMummery.speak = () => `Hello, my name is ${kMummery['name']}!`;
 console.log(kMummery.speak());
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
@@ -103,8 +103,8 @@ console.log(parent['child']['age']);
 // Log the name and age of the grandchild
 console.log(parent['child']['grandchild']);
 // Have the parent speak
-parent.speak = () => "Hello, my name is " + parent['name'] + "!";
+parent.speak = () => `Hello, my name is ${parent['name']}!`;
 // Have the child speak
-parent.child.speak = () => "Hello, my name is " + parent.child['name'] + "!";
+parent.child.speak = () => `Hello, my name is ${parent.child['name']}!`;
 // Have the grandchild speak
-parent.child.grandchild.speak = () => "Hello, my name is " + parent.child.grandchild['name'] + "!";
+parent.child.grandchild.speak = () => `Hello, my name is ${parent.child.grandchild['name']}!`;
