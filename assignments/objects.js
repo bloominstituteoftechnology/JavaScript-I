@@ -98,7 +98,7 @@ let parent = {
   "name": "Susan",
   "age": 70,
   speak: function () {
-    console.log("My name is", this.name);
+    console.log(`My name is ${this.name}`);
   },
   "child": {"name": "George", "age": 50,
     speak: function () {
