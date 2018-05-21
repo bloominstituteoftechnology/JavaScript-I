@@ -54,9 +54,7 @@ let antonietta = {
   "name": "Antionetta",
   "email": "adaine5@samsung.com",
   "gender": "F",
-  "multiplyNums": function(a,b){
-    return a * b;
-  }
+  "multiplyNums": (a,b) => a * b
 }
 
 // ==== Challenge 2: Reading Object Data ==== 
