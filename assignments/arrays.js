@@ -78,7 +78,7 @@ console.log(`Car 33 is a ${car33.car_year} ${car33.car_make} ${car33.car_model}`
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let car50;
 inventory.forEach(car=> { 
-if (car.id === 50){
+if (car.id === 50) {
     car50 = car;
 }
 })
