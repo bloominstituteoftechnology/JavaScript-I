@@ -57,14 +57,15 @@ let antionetta = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(mitzi.name);
 // Kennan's ID
-
+console.log(kennan.id);
 // Keven's email
-
+console.log(keven.email);
 // Gannie's name
-
-// Antonietta's Gender
+console.log(gannie.name);
+// Antonietta's Gendercon
+console.log(antionetta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
