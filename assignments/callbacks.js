@@ -38,10 +38,6 @@ const removeDuplicates = (array, cb) => {
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
   const newArr = [];
-  for(let i = 0; i < array.length; i++) {
-    if(newArr.includes(array[i])) {
-      newArr.push(array[i]);
-    }
-  }
+  array.forEach((item) => {if(!newArr.includes(item)) newArr.push(item)});
   return cb(newArr);
 }
