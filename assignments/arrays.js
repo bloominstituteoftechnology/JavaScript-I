@@ -78,11 +78,11 @@ console.log(`Car ${lastCar.id} is a ${lastCar.car_year} ${lastCar.car_make} ${la
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = inventory;
-let alphabet = carModels.sort(function(a, b){
-    let modelA = a.car_make.toLowerCase(), modelB = b.car_make.toLowerCase()
-    if (modelA < modelB) //sort string ascending
+let alphabet = carModels.sort(function(first, second){
+    let modelFirst = first.car_model.toLowerCase(), modelSecond = second.car_model.toLowerCase()
+    if (modelFirst < modelSecond) //sort string ascending
         return -1 
-    if (modelA > modelB)
+    if (modelFirst > modelSecond)
         return 1
     return 0 //default return value (no sorting)
 }) 
