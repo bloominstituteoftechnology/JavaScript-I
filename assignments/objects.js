@@ -16,10 +16,53 @@ let example = {
   "email": "examples@you.edu",
   "gender": "F"
 }
+console.log(example);
 
 // Write your intern objects here:
+let mitzi = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmeloy0@psu.edu",
+  "gender": "F",
+}
 
+console.log(mitzi);
 
+let kennan = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben@tinypic.com",
+  "gender": "M",
+}
+
+console.log(kennan);
+
+let keven = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M",
+}
+
+console.log(keven)
+
+let gannie = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M",
+}
+
+console.log(gannie);
+
+let antonietta = {
+  "id": 5,
+  "name": "Anotonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F",
+}
+
+console.log(antonietta);
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
