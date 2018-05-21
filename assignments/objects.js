@@ -10,10 +10,34 @@
 // 5,adaine5@samsung.com,Antonietta,F
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
-let example = {
-  "id": 0,
-  "name": "Example",
-  "email": "examples@you.edu",
+let employeeOne = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}
+let employeeTwo = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+}
+let employeeThree = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}
+let employeeFour = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
+}
+let employeeFive = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
   "gender": "F"
 }
 
