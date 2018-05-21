@@ -49,9 +49,9 @@ let internList = [{
 	"gender": "F"
 }];
 
-for(let i = 0; i < internList.length; i++){
-  internList[i]["id"]
-}
+// for(let i = 0; i < internList.length; i++){
+//   internList[i]["id"]
+// }
 
 // ==== Challenge 2: Reading Object Data ====
 // Once your objects are created, log out the following requests from HR into the console:
