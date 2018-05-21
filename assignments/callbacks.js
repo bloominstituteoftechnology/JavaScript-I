@@ -28,7 +28,7 @@ function multiplyNums(x, y, cb) {
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  if (list.contains(item)) {
+  if (list.includes(item)) {
     cb(true);
   }
   else cb(false);
@@ -42,7 +42,7 @@ function removeDuplicates(array, cb) {
   // Do not mutate the original array.
   let newArray = [];
   for (let i = 0; i < array.length ; i++) {
-    if (newArray.contains(!array[i])) {
+    if (!newArray.includes(array[i])) {
         newArray.push(array[i]);//code
     }
   }
