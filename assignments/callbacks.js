@@ -31,9 +31,10 @@ function contains(item, list, cb) {
   for(let i = 0; i < list.length; i++) {
     if(item === list[i]) {
       cb(true);
-    } 
+    } else {
+      cb(false);
+    }
   }
-  cb(false);
 }
 
 /* STRETCH PROBLEM */
