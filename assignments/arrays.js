@@ -75,6 +75,8 @@ for (i=0; i<inventory.length;i++){
 
 
 
+
+
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = inventory.length - 1;
@@ -123,4 +125,53 @@ for (let i=0; i<inventory.length; i++){
 console.log(JSON.stringify(BMWAndAudi));
 
 
+//Arrays questions in homework packet
 
+const justiceLeague = ['Robin', 'Batman', 'Wonder Woman', 'Flash', 'Aquaman'];
+justiceLeague.shift();
+justiceLeague.push("Green Lantern");
+justiceLeague.unshift("Superman");
+console.log(justiceLeague);
+
+const middleEarth = ['Frodo', 'Samwise', 'Gandalf', 'Sauraman', 'Treebeard'];
+let saura = [];
+for (let i = 0; i<middleEarth.length;i++){
+    if (middleEarth[i] != "Sauraman"){
+        saura.push(middleEarth[i])
+    }
+}
+//this is a super complicated solution but it worked.  I couldn't get a basic .shift .slice .pop etc to work.  Good news is, I am understanding for loops.  
+console.log(saura);
+
+const numbers = [2, 3, 4, 5, 6];
+
+const numsByTen = numbers.map(num => num * 10); 
+
+console.log(numsByTen);
+
+
+const friends = [
+    { name: 'Monica', gender: 'F' },
+    { name: 'Chandler', gender: 'M' },
+    { name: 'Ross', gender: 'M' },
+    { name: 'Phoebe', gender: 'F' },
+    { name: 'Joey', gender: 'M' },
+    { name: 'Rachel', gender: 'M' }
+  ];
+  
+  //const femaleFriends = friends.filter(gender = 1); 
+ // const male = friends.filter(gender = 0);
+
+
+ const student = { name: 'Jonas', age: '12', gender: 'M', role: 'Receiver' };
+const studentKeys = Object; // finish this.
+console.log(studentKeys.keys(student));
+
+const studentValues = Object;
+console.log(studentValues.values(student));
+
+const listOfChars = student.characters;
+
+   
+
+  
