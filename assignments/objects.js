@@ -27,7 +27,11 @@ let internList = [{
 	"id": 1,
 	"email": "kdiben1@tinypic.com",
 	"first_name": "Kennan",
-	"gender": "M"
+	"gender": "M",
+	"speak": function() {
+		console.log("what's up");
+		return "what's up" + internList["first_name"];
+	}
 }, {
 	"id": 2,
 	"email": "kmummery2@wikimedia.org",
@@ -45,25 +49,53 @@ let internList = [{
 	"gender": "F"
 }];
 
+for(let i = 0; i < internList.length; i++){
+  internList[i]["id"]
+}
+
 // ==== Challenge 2: Reading Object Data ====
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+internList[0].first_name;
 
-// Kennan's ID
+
+//Kennen's ID
+internList[1].id;
 
 // Keven's email
+internList[2].email;
 
 // Gannie's name
+internList[3].first_name;
 
 // Antonietta's Gender
+internList[4].gender;
+
 
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+let internList = {
+
+	"id": 1,
+	"email": "kdiben1@tinypic.com",
+	"first_name": "Kennan",
+	"gender": "M",
+	"speak": function() {
+		return "what's up" + internList["first_name"];
+  }
+};
+internList.speak();
+
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+function multiplyNums(a,b) {
+	return a * b
+}
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -87,3 +119,12 @@ let parent = {}
 // Have the child speak
 
 // Have the grandchild speak
+
+console.log("hello world");
+
+
+
+
+
+
+
