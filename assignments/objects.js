@@ -60,14 +60,20 @@ let intern5 = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+intern1["name"];
 
 // Kennan's ID
+intern2["id"];
 
 // Keven's email
+intern3["email"];
 
 // Gannie's name
+intern4["name"];
 
 // Antonietta's Gender
+intern5["gender"];
+
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
