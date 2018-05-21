@@ -63,25 +63,83 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
+// console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 
-
-
-inventory[0] = 'Ryan';
-console.log(inventory[0]);
+console.log( 'Car 33 is a', inventory[32].car_year, inventory[32].car_make, inventory[32].car_model);
 
 
 
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log();
+
+
+let lastCar = inventory[(inventory.length -1)].car_make +" "+ inventory[(inventory.length -1)].car_model;
+console.log(lastCar);
+
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
+// let carModels = [];
+// console.log();
+
 let carModels = [];
-console.log();
+let newIndex =[];
+let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+console.log(alphabet.length);
+let UpperCaseAlphabet =[];
+
+function changeToUpperCase() {
+    for (let i = 0; i< alphabet.length; i++) {
+        UpperCaseAlphabet[i]= alphabet[i].toUpperCase();
+    }
+    return UpperCaseAlphabet;
+}
+console.log(changeToUpperCase())
+
+newAlphabet = changeToUpperCase();
+console.log(newAlphabet.indexOf("Q"));
+console.log(newAlphabet[13]);
+
+function carmodels() {  
+    for (let i=0; i < inventory.length; i++) {
+        for (let k=0; k < newAlphabet.length; k++) {
+            
+            if (inventory[i].car_model[0] === newAlphabet[k] && newAlphabet.indexOf(newAlphabet[k]) < newAlphabet.indexOf(inventory[z].car_model[0]) ) {
+                
+                carModels.unshift(inventory[i].car_model); 
+            }
+          }
+       
+    }
+    
+     
+    return carModels;
+}
+
+console.log(carmodels());
+
+var carModelsMultiple = carmodels();
+console.log(carModelsMultiple);
+
+let carModelsSingle = [];
+function removecopies() {
+    for (let i=1; i< carModelsMultiple.length; i++) {
+        if (carModelsMultiple[i] != carModelsMultiple[i-1]) {
+            // carModelsSingle.push(carModelsMultiple[i]) ;
+            carModelsSingle.push(carModelsMultiple[i]);
+        }
+        
+    }
+    return carModelsSingle;
+    
+}
+
+console.log(removecopies());
+
+console.log(carModelsSingle);
+
+
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
