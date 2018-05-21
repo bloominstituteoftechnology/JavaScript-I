@@ -23,35 +23,35 @@ let mitzi = {
   "id": 1,
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
-  "gender": "F",
+  "gender": "F"
 }
 
 let kennan = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
-  "gender": "M",
+  "gender": "M"
 }
 
 let keven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
-  "gender": "M",
+  "gender": "M"
 }
 
 let gannie = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
-  "gender": "M",
+  "gender": "M"
 }
 
 let antonietta = {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
-  "gender": "F",
+  "gender": "F"
 }
 
 
