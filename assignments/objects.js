@@ -94,19 +94,19 @@ let parent = {
   name: "Susan",
   age: 70,
   speak: function () {
-    return "Hello, my name is " + this.name; //?
+    return "Hello, my name is ", this.name; //?
   },
   child: {
     name: "George",
     age: 50,
     speak: function () {
-      return "Hello, my name is " + this.name; //?
+      return "Hello, my name is ", this.name; //?
     },
     grandchild: {
       name: "Sam",
       age: 30,
       speak: function () {
-        return "Hello, my name is " + this.name; //?
+        return "Hello, my name is ", this.name; //?
       }
 
     }
@@ -120,7 +120,7 @@ console.log(parent.name);
 console.log(parent.child.age);
 
 // Log the name and age of the grandchild
-console.log(parent.child.grandchild.age + " " + parent.child.grandchild.name);
+console.log(parent.child.grandchild.age, parent.child.grandchild.name);
 
 // Have the parent speak
 console.log(parent.speak());
