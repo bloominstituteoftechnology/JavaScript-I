@@ -29,7 +29,9 @@ let intern = [
   "id": 2,
   "email": "kdiben1@tinypic.com",
   "name": "Kennan",
-  "gender": "M"
+  "gender": "M",
+  speak: () => {
+    console.log("Hi, my name is", this.name);
   },
   {
   "id": 3,
