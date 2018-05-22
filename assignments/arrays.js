@@ -83,68 +83,192 @@ console.log(lastCar);
 // let carModels = [];
 // console.log();
 
-let carModels = [];
-let newIndex =[];
-let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-console.log(alphabet.length);
-let UpperCaseAlphabet =[];
 
-function changeToUpperCase() {
-    for (let i = 0; i< alphabet.length; i++) {
-        UpperCaseAlphabet[i]= alphabet[i].toUpperCase();
-    }
-    return UpperCaseAlphabet;
-}
-console.log(changeToUpperCase())
 
-newAlphabet = changeToUpperCase();
-console.log(newAlphabet.indexOf("Q"));
-console.log(newAlphabet[13]);
 
-function carmodels() {  
-    for (let i=0; i < inventory.length; i++) {
-        for (let k=0; k < newAlphabet.length; k++) {
+
+
+// function changeToUpperCase() {
+//     for (let i = 0; i< alphabet.length; i++) {
+//         UpperCaseAlphabet[i]= alphabet[i].toUpperCase();
+//     }
+//     return UpperCaseAlphabet;
+// }
+// console.log(changeToUpperCase())
+
+// newAlphabet = changeToUpperCase();
+
+
+// function carmodels() {  
+//     for (let i=0; i < inventory.length; i++) {
+//         for (let k=0; k < newAlphabet.length; k++) {
             
-            if (inventory[i].car_model[0] === newAlphabet[k] && newAlphabet.indexOf(newAlphabet[k]) < newAlphabet.indexOf(inventory[z].car_model[0]) ) {
+//             // if (inventory[i].car_model[0] === newAlphabet[k] && newAlphabet.indexOf(newAlphabet[k]) < newAlphabet.indexOf(inventory[z].car_model[0]) ) {
                 
-                carModels.unshift(inventory[i].car_model); 
-            }
-          }
+//             //     carModels.unshift(inventory[i].car_model); 
+//             // }
+//             if (inventory[i].car_model[0] === newAlphabet[k] ) {
+//                 index = newAlphabet.indexOf(newAlphabet[k]);
+//             }
+            
+//           }
        
-    }
+//     }
     
      
-    return carModels;
-}
+//     return index;
+// }
 
-console.log(carmodels());
+// var carsInAlphabeticalOrder = [];
+// function carmodels() {  
+//     for (let i=0; i < inventory.length; i++) {
+//         for (let k=0; k<inventory.length; k++) {
+//             if (newAlphabet.indexOf(inventory[k].car_model[0]) > newAlphabet.indexOf(inventory[i].car_model[0])  ) {
+//                 // if 13 > 12 
+//                 carsInAlphabeticalOrder.push(inventory[i].car_model[0])
 
-var carModelsMultiple = carmodels();
-console.log(carModelsMultiple);
+// var new;
 
-let carModelsSingle = [];
-function removecopies() {
-    for (let i=1; i< carModelsMultiple.length; i++) {
-        if (carModelsMultiple[i] != carModelsMultiple[i-1]) {
-            // carModelsSingle.push(carModelsMultiple[i]) ;
-            carModelsSingle.push(carModelsMultiple[i]);
-        }
-        
-    }
-    return carModelsSingle;
+
+// console.log(newAlphabet.indexOf(carsInAlphabeticalOrder[0][0]));
+
+// carsInAlphabeticalOrder.unshift(inventory[1].car_model);
+
+
+
+// carsInAlphabeticalOrder = inventory[0].car_model;
+
+// console.log(newAlphabet.indexOf(inventory[0].car_model[0]));
+// console.log(newAlphabet.indexOf(carsInAlphabeticalOrder[0][0]));
+// console.log(newAlphabet.indexOf(carsInAlphabeticalOrder[2-1][0]));
+
+
+// var random = carsInAlphabeticalOrder.unshift(inventory[0].car_model)
+// console.log(random)
+
+
+// var bucket = [];
+
+// function carModelsInOrder() {
     
+//    for (let i = 1; i< inventory.length; i++) {
+//        bucket = carsInAlphabeticalOrder;
+//     for(let k = 0; k < alphabet.length ; k++) {
+//         // var xxx = [];
+//     if (alphabet.indexOf(inventory[i].car_model[0]) < alphabet.indexOf(carsInAlphabeticalOrder[k][0]) === true) {
+//         // carsInAlphabeticalOrder.unshift(inventory[i].car_model)
+//         // carsInAlphabeticalOrder.unshift('pizzs');
+//         // carsInAlphabeticalOrder = carsInAlphabeticalOrder.unshift(inventory[i].car_model);
+//         carsInAlphabeticalOrder.unshift(inventory[i].car_model);
+//             }
+    
+        
+//       }
+//     }
+    
+//     return carsInAlphabeticalOrder;
+
+// }
+// console.log(carModelsInOrder());
+// console.log(carsInAlphabeticalOrder.length);
+
+
+// function carModelsInOrder() {
+    
+//     for (let i = 1; i< inventory.length; i++) {
+//         if ( for (let k =0; k < carsInAlphabeticalOrder.length; k++) {
+//             if (alphabet.indexOf(inventory[i].car_model[0]) < alphabet.indexOf(carsInAlphabeticalOrder[k][0]) === false) {
+//                  carsInAlphabeticalOrder = carsInAlphabeticalOrder;
+            
+//             else {carsInAlphabeticalOrder.unshift(inventory[i].car_model)} 
+//             }
+//         }
+    
+//       }
+     
+
+//      return carsInAlphabeticalOrder;
+ 
+//  }
+//  console.log(carModelsInOrder());
+//  console.log(carsInAlphabeticalOrder.length);
+
+
+
+// function carModelsInOrder() {
+    
+//     for (let i = 1; i< inventory.length; i++) {
+//         for (let k =0; k < carsInAlphabeticalOrder.length; k++) {
+//             if (alphabet.indexOf(inventory[i].car_model[0]) > alphabet.indexOf(carsInAlphabeticalOrder[k][0])) {
+//                  carsInAlphabeticalOrder = carsInAlphabeticalOrder;
+//             } else {carsInAlphabeticalOrder.unshift(inventory[i].car_model)
+//             }
+//         }
+//     carsInAlphabeticalOrder = carsInAlphabeticalOrder;
+//       }
+     
+
+//      return carsInAlphabeticalOrder;
+ 
+//  }
+//  console.log(carModelsInOrder());
+//  console.log(carsInAlphabeticalOrder);
+
+var carsInAlphabeticalOrder = [inventory[0].car_model];
+let alphabet = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "a","A", "b","B", "c", "C", "d","D", "e","E", "f", "F", "g","G", "h","H", "i","I", "j", "J", "k", "K", "l","L", "m","M", "n","N", "o","O", "p","P", "q","Q", "r","R", "s", "S", "t", "T", "u","U", "v","V" ,"w","W", "x","X", "y","Y", "z","Z"];
+
+
+
+console.log(alphabet.length);
+console.log(carsInAlphabeticalOrder);
+console.log(carsInAlphabeticalOrder[0][0]);
+console.log(inventory[0].car_model);
+console.log(inventory.length);
+console.log(carsInAlphabeticalOrder.length);
+
+console.log(alphabet.indexOf(inventory[1].car_model[0]));
+console.log(alphabet.indexOf(inventory[2].car_model[0]));
+console.log(alphabet.indexOf(inventory[3].car_model[0]));
+console.log(alphabet.indexOf(inventory[4].car_model[0]));
+
+console.log(alphabet.indexOf(carsInAlphabeticalOrder[0][0]));
+// console.log(alphabet.indexOf(carsInAlphabeticalOrder[1][0]));
+
+
+console.log(carsInAlphabeticalOrder.length)
+function carModelsInOrder() {
+    for (let i = 3; i < 6; i++) {
+        
+        for (let k = 0; k < carsInAlphabeticalOrder.length; k++) {
+              if (alphabet.indexOf(inventory[i].car_model[0]) <= alphabet.indexOf(carsInAlphabeticalOrder[k][0]) === true) {
+                
+                // carsInAlphabeticalOrder.push(inventory[i].car_model)
+                            
+            }
+                            
+          }
+        }
+        return carsInAlphabeticalOrder;
 }
 
-console.log(removecopies());
 
-console.log(carModelsSingle);
+
+ console.log(carModelsInOrder());
+ console.log(carsInAlphabeticalOrder);
+
+
+
 
 
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-console.log();
+for (let i = 0; i< inventory.length; i++) {
+    carYears.push(inventory[i].car_year);
+    
+}
+console.log(carYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
@@ -155,6 +279,4 @@ console.log();
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi =[];
 console.log();
-
-
 
