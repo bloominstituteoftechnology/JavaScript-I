@@ -75,9 +75,7 @@ console.log(antoinetta["gender"]);
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-kennan.speak = function () {
-  console.log(`Hello, my name is ${this.name}`);
-}
+kennan.speak = () => console.log("Hello, my name is", kennan.name);
 
 kennan.speak();
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
@@ -102,11 +100,11 @@ let parent = {
   },
   "child": {"name": "George", "age": 50,
     speak: function () {
-      console.log("My name is", this.name);
+      console.log(`My name is ${this.name}`);
     },
     "grandchild": { "name": "Sam", "age": 30,
       speak: function () {
-        console.log("My name is", this.name);
+        console.log(`My name is ${this.name}`);
       }
     }
   }

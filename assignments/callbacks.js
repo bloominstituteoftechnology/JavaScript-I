@@ -40,15 +40,10 @@ multiplyNums(2,4,callback);
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  if(list.includes(item))
-  { cb(true); }
-  else {
-  { cb(false);  }
-  }
+  list.includes(item) ? cb(true) : cb(false);
 }
 
 contains('yo-yo', items, callback);
-
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
