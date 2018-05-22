@@ -63,34 +63,115 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
+console.log(`Car 33 is a *2011* *Jeep* *Wrangler*` );
+
+for (i=0; i<inventory.length;i++){
+    if (inventory[i].id === 33) {
+        console.log(inventory[i]["car_make"] + inventory[i]["car_model"] + inventory[i]["car_year"]);
+    }
+}
+
+
+
+
 
 
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log();
+let lastCar = inventory.length - 1;
+
+
+console.log(inventory[lastCar]["car_make"]+inventory[lastCar]["car_model"]);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
-console.log();
+for (i=0; i<inventory.length; i++)
+    {carModels.push(inventory[i]["car_model"])
+    carModels.sort();
+}
+console.log(carModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-console.log();
+for (i=0; i<inventory.length;i++){
+    carYears.push(inventory[i]["car_year"])
+
+}    
+
+console.log(carYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars =[];
-console.log(); 
+for (i=0; i<carYears.length;i++){
+    if (carYears[i] < 2000){
+        oldCars.push(carYears[i])
+    }
+}
+console.log(oldCars.length); 
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi =[];
-console.log();
+for (let i=0; i<inventory.length; i++){
+    if (inventory[i]["car_make"] === "BMW" || inventory[i]["car_make"] === "Audi"){
+        BMWAndAudi.push(inventory[i])
+    }
+}
+
+console.log(JSON.stringify(BMWAndAudi));
 
 
+//Arrays questions in homework packet
 
+const justiceLeague = ['Robin', 'Batman', 'Wonder Woman', 'Flash', 'Aquaman'];
+justiceLeague.shift();
+justiceLeague.push("Green Lantern");
+justiceLeague.unshift("Superman");
+console.log(justiceLeague);
+
+const middleEarth = ['Frodo', 'Samwise', 'Gandalf', 'Sauraman', 'Treebeard'];
+let saura = [];
+for (let i = 0; i<middleEarth.length;i++){
+    if (middleEarth[i] != "Sauraman"){
+        saura.push(middleEarth[i])
+    }
+}
+//this is a super complicated solution but it worked.  I couldn't get a basic .shift .slice .pop etc to work.  Good news is, I am understanding for loops.  
+console.log(saura);
+
+const numbers = [2, 3, 4, 5, 6];
+
+const numsByTen = numbers.map(num => num * 10); 
+
+console.log(numsByTen);
+
+
+const friends = [
+    { name: 'Monica', gender: 'F' },
+    { name: 'Chandler', gender: 'M' },
+    { name: 'Ross', gender: 'M' },
+    { name: 'Phoebe', gender: 'F' },
+    { name: 'Joey', gender: 'M' },
+    { name: 'Rachel', gender: 'M' }
+  ];
+  
+  //const femaleFriends = friends.filter(gender = 1); 
+ // const male = friends.filter(gender = 0);
+
+
+ const student = { name: 'Jonas', age: '12', gender: 'M', role: 'Receiver' };
+const studentKeys = Object; // finish this.
+console.log(studentKeys.keys(student));
+
+const studentValues = Object;
+console.log(studentValues.values(student));
+
+const listOfChars = student.characters;
+
+   
+
+  

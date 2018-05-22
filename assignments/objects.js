@@ -18,27 +18,83 @@ let example = {
 }
 
 // Write your intern objects here:
+let Mitzi = {
+  "id":0,
+  "first name":"Mitzi",
+  "email":"mmelloy0@psu.edu",
+  "gender": "F"
+}
+
+let Kennan = {
+  "id":1,
+  "first name":"Kennan",
+  "email":"kdiben1@tinypic.com",
+  "gender":"M"
+}
+
+let Keven = {
+  "id":2,
+  "first name":"Keven",
+  "email":"kmummery2@wikimedia.org",
+  "gender":"M"
+}
+
+let Gannie = {
+  "id":3,
+  "first name":"Gannie",
+  "email":"gmartinson3@illinois.edu",
+  "gender":"M"
+}
+
+let Antonietta = {
+  "id":4,
+  "first name":"Antionietta",
+  "email":"adaine5@samsung.com",
+  "gender":"F"
+}
+
+
+
+
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+Mitzi["first name"];
 
 // Kennan's ID
+Kennan.id;
+//or
+Kennan["id"];
 
 // Keven's email
+Keven["email"];
 
 // Gannie's name
+Gannie["first name"];
 
 // Antonietta's Gender
+Antonietta["gender"];
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+Kennan.speak = function(){
+  return "Hello, my name is" + " " + Kennan["first name"];
+}
+
+console.log(Kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+Antonietta.multiply = function(a,b){
+  return a * b;
+}
+
+console.log(Antonietta.multiply(5,5));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -49,7 +105,10 @@ let example = {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-let parent = {}
+let parent = {
+  "name":"Susan",
+  "age":70
+}
 
 // Log the parent object's name
 
