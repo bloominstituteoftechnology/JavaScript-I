@@ -48,10 +48,7 @@ const antonietta = {
   "email": "adaine5@samsung.com",
   "first name": "Antonietta",
   "gender": "F",
-  "multiplyNums": function(x,y){
-    let result = x*y;
-    return result;
-  }
+  "multiplyNums": (x,y) => {x * y;}
 }
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -89,7 +86,7 @@ console.log(antonietta.multiplyNums(3,4));
 let parent = {
   "name": "Susan", 
   "age": 70,
-  speak: function() {
+  speak: () => {
     result = "My name is " + this.name + "!";
     return result;
   }, 
