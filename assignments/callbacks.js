@@ -2,7 +2,7 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 function firstItem(arr, cb) {
   // firstItem passes the first item of the given array to the callback function.
-}
+  cb(items[0]),
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
