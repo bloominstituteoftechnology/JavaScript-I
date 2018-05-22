@@ -56,21 +56,15 @@ contains('Pencil', items, log); //?
 
 
 /* STRETCH PROBLEM */
-let nums = [1, 3, 5, 3, 8, 1];
+let nums = [1, 3, 5, 3, 8, 1]; 
 
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
-  let newArray = [];
-  for (let i = 0; i < array.length; i++) {
-  for(let j = array.length - 1; j > 0; j--) {
-    if (array[i] != array[j]) {
-    newArray.push(array[i]); //?
-    }
-  }
-}
-return cb(newArray);
+  noDupes = new Set(array);
+
+  return cb(noDupes); //?
 }
 
 removeDuplicates(nums, log); //?
