@@ -18,18 +18,27 @@ let example = {
 }
 
 // Write your intern objects here:
-// let internList = [];
-// function Intern (id, email, firstName, gender) {  
-//   this.id = id ,
-//   this.email = email ,
-//   this.firstName = firstName,
-//   this.gender = gender   
-// }
-// let intenr1 = internList.push(new Intern(1,"mmelloy0@psu.edu","Mitzi","F")) ;
-// let intern2 = new Intern(2,"kdiben1@tinypic.com","Kennan","M") ;
-// let intern3 = new Intern(3,'kmummery2@wikimedia.org','Keven','M') ;
-// let intern4 = new Intern(4,'gmartinson3@illinois.edu','Gannie','M') ;
-// let intern5 = new Intern(5,'adaine5@samsung.com','Antonietta','F') ;
+let internList = [];
+// function Intern (email, firstName, gender) {
+  function Intern (email, firstName, gender) {
+  // this.id = id,
+  this.id = internList.length + 1,
+  this.email= email,
+  this.firstName = firstName,
+  this.gender = gender ;  
+ 
+  { internList.push(this) }
+}   
+
+new Intern("mmelloy0@psu.edu","Mitzi","F") ;
+new Intern("kdiben1@tinypic.com","Kennan","M") ;
+new Intern('kmummery2@wikimedia.org','Keven','M') ;
+new Intern('gmartinson3@illinois.edu','Gannie','M') ;
+new Intern('adaine5@samsung.com','Antonietta','F') ;
+// console.log(internList[1].email);
+
+
+
 let intern1 = {
   "id": 1,
   "email": "mmelloy0@psu.edu", 
@@ -103,25 +112,25 @@ let parent =
   name: 'Susan',
   age: 70,
   speak: function(){
-    console.log(`HEY! My name ${this.name}`)},
+    console.log(`HEY! My name is ${this.name}`)},
   child: 
     {
       name: 'George',
       age: 50,
       speak: function(){
-        console.log(`HEY! My name ${this.name}`)},    
+        console.log(`HEY! My name is ${this.name}`)},    
       grandChild: 
         {
           name: 'Sam',
           age: 30,
           speak: function(){
-            console.log(`HEY! My name ${this.name}`)},        
+            console.log(`HEY! My name is ${this.name}`)},        
         }
     }
 } ;
 
 // Log the parent object's name
-
+console.log(parent.name) ;
 // Log the child's age
 console.log(parent.child.age) ;
 // Log the name and age of the grandchild
