@@ -69,13 +69,13 @@ console.log(internFive["gender"]);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 internTwo.speak = function() {
-  return "Hello, my name is " + internTwo.name + "!";
+  return `Hello, my name is ${internTwo.name} !`;
 }
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 internFive.multiplyNums = function(a,b) {
-  return a*b;
+  return a * b;
 }
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
@@ -114,7 +114,7 @@ console.log(parent.name)
 // Log the child's age
 console.log(parent.child.age)
 // Log the name and age of the grandchild
-console.log(parent.child.grandchild.name + " " + parent.child.grandchild.age)
+console.log(parent.child.grandchild.name, parent.child.grandchild.age)
 // Have the parent speak
 console.log(parent.speak())
 // Have the child speak
