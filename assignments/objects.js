@@ -18,10 +18,10 @@ let example = {
 }
 
 // Write your intern objects here:
-function Intern(id, email, first, gender){
+function Intern(id, email, name, gender){
   this.id = id;
   this.email = email;
-  this.first = first;
+  this.name = name;
   this.gender = gender;
 }
 
@@ -56,7 +56,7 @@ kennan.speak = function(){
 console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-antonietta.multiplyNum = function(a,b){
+antonietta.multiplyNums = function(a,b){
   return a*b;
 }
 console.log(antonietta.multiplyNums(3,4));
@@ -74,10 +74,10 @@ let parent = {
   name: 'Susan',
   age: 70,
   child: {
-    name: George,
+    name: 'George',
     age:50,
     child:{
-      name:Sam,
+      name:"Sam",
       age:30,
       speak: function(){return "My Name is " + this.name;}
     },
@@ -89,11 +89,15 @@ let parent = {
 // Log the parent object's name
 console.log(parent.name);
 // Log the child's age
+console.log(parent.child.name);
 
 // Log the name and age of the grandchild
+console.log(parent.child.child.name);
+console.log(parent.child.child.age);
 
 // Have the parent speak
-
+console.log(parent.speak());
 // Have the child speak
-
+console.log(parent.child.speak());
 // Have the grandchild speak
+console.log(parent.child.child.speak());
