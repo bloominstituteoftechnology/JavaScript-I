@@ -30,8 +30,9 @@ let intern = [
   "email": "kdiben1@tinypic.com",
   "name": "Kennan",
   "gender": "M",
-  speak: () => {
+  speak: function () {
     console.log("Hi, my name is", this.name);
+  }
   },
   {
   "id": 3,
@@ -49,7 +50,10 @@ let intern = [
   "id": 5,
   "email": "adaine@samsung.com",
   "name": "Antonietta",
-  "gender": "F"
+  "gender": "F",
+  math: function (a,b) {
+    console.log(a * b);
+  }
 }]
 
 
