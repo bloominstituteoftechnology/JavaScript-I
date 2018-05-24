@@ -68,11 +68,8 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 console.log( 'Car 33 is a', inventory[32].car_year, inventory[32].car_make, inventory[32].car_model);
 
 
-
-
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-
 
 let lastCar = inventory[(inventory.length -1)].car_make +" "+ inventory[(inventory.length -1)].car_model;
 console.log(lastCar);
@@ -82,6 +79,7 @@ console.log(lastCar);
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 // let carModels = [];
 // console.log();
+
 let carModelsSimpleWay = [];
 
 for (let i = 0; i < inventory.length; i++) {
@@ -90,140 +88,9 @@ for (let i = 0; i < inventory.length; i++) {
 // carModelsSimpleWay = 
 console.log(carModelsSimpleWay.sort());
 
-
-
-
-
-// function changeToUpperCase() {
-//     for (let i = 0; i< alphabet.length; i++) {
-//         UpperCaseAlphabet[i]= alphabet[i].toUpperCase();
-//     }
-//     return UpperCaseAlphabet;
-// }
-// console.log(changeToUpperCase())
-
-// newAlphabet = changeToUpperCase();
-
-
-// function carmodels() {  
-//     for (let i=0; i < inventory.length; i++) {
-//         for (let k=0; k < newAlphabet.length; k++) {
-            
-//             // if (inventory[i].car_model[0] === newAlphabet[k] && newAlphabet.indexOf(newAlphabet[k]) < newAlphabet.indexOf(inventory[z].car_model[0]) ) {
-                
-//             //     carModels.unshift(inventory[i].car_model); 
-//             // }
-//             if (inventory[i].car_model[0] === newAlphabet[k] ) {
-//                 index = newAlphabet.indexOf(newAlphabet[k]);
-//             }
-            
-//           }
-       
-//     }
-    
-     
-//     return index;
-// }
-
-// var carsInAlphabeticalOrder = [];
-// function carmodels() {  
-//     for (let i=0; i < inventory.length; i++) {
-//         for (let k=0; k<inventory.length; k++) {
-//             if (newAlphabet.indexOf(inventory[k].car_model[0]) > newAlphabet.indexOf(inventory[i].car_model[0])  ) {
-//                 // if 13 > 12 
-//                 carsInAlphabeticalOrder.push(inventory[i].car_model[0])
-
-// var new;
-
-
-// console.log(newAlphabet.indexOf(carsInAlphabeticalOrder[0][0]));
-
-// carsInAlphabeticalOrder.unshift(inventory[1].car_model);
-
-
-
-// carsInAlphabeticalOrder = inventory[0].car_model;
-
-// console.log(newAlphabet.indexOf(inventory[0].car_model[0]));
-// console.log(newAlphabet.indexOf(carsInAlphabeticalOrder[0][0]));
-// console.log(newAlphabet.indexOf(carsInAlphabeticalOrder[2-1][0]));
-
-
-// var random = carsInAlphabeticalOrder.unshift(inventory[0].car_model)
-// console.log(random)
-
-
-// var bucket = [];
-
-// function carModelsInOrder() {
-    
-//    for (let i = 1; i< inventory.length; i++) {
-//        bucket = carsInAlphabeticalOrder;
-//     for(let k = 0; k < alphabet.length ; k++) {
-//         // var xxx = [];
-//     if (alphabet.indexOf(inventory[i].car_model[0]) < alphabet.indexOf(carsInAlphabeticalOrder[k][0]) === true) {
-//         // carsInAlphabeticalOrder.unshift(inventory[i].car_model)
-//         // carsInAlphabeticalOrder.unshift('pizzs');
-//         // carsInAlphabeticalOrder = carsInAlphabeticalOrder.unshift(inventory[i].car_model);
-//         carsInAlphabeticalOrder.unshift(inventory[i].car_model);
-//             }
-    
-        
-//       }
-//     }
-    
-//     return carsInAlphabeticalOrder;
-
-// }
-// console.log(carModelsInOrder());
-// console.log(carsInAlphabeticalOrder.length);
-
-
-// function carModelsInOrder() {
-    
-//     for (let i = 1; i< inventory.length; i++) {
-//         if ( for (let k =0; k < carsInAlphabeticalOrder.length; k++) {
-//             if (alphabet.indexOf(inventory[i].car_model[0]) < alphabet.indexOf(carsInAlphabeticalOrder[k][0]) === false) {
-//                  carsInAlphabeticalOrder = carsInAlphabeticalOrder;
-            
-//             else {carsInAlphabeticalOrder.unshift(inventory[i].car_model)} 
-//             }
-//         }
-    
-//       }
-     
-
-//      return carsInAlphabeticalOrder;
- 
-//  }
-//  console.log(carModelsInOrder());
-//  console.log(carsInAlphabeticalOrder.length);
-
-
-
-// function carModelsInOrder() {
-    
-//     for (let i = 1; i< inventory.length; i++) {
-//         for (let k =0; k < carsInAlphabeticalOrder.length; k++) {
-//             if (alphabet.indexOf(inventory[i].car_model[0]) > alphabet.indexOf(carsInAlphabeticalOrder[k][0])) {
-//                  carsInAlphabeticalOrder = carsInAlphabeticalOrder;
-//             } else {carsInAlphabeticalOrder.unshift(inventory[i].car_model)
-//             }
-//         }
-//     carsInAlphabeticalOrder = carsInAlphabeticalOrder;
-//       }
-     
-
-//      return carsInAlphabeticalOrder;
- 
-//  }
-//  console.log(carModelsInOrder());
-//  console.log(carsInAlphabeticalOrder);
-
+// carModelsOverlyComplicatedWay (failed attempt)
 var carsInAlphabeticalOrder = [inventory[0].car_model];
 let alphabet = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "a","A", "b","B", "c", "C", "d","D", "e","E", "f", "F", "g","G", "h","H", "i","I", "j", "J", "k", "K", "l","L", "m","M", "n","N", "o","O", "p","P", "q","Q", "r","R", "s", "S", "t", "T", "u","U", "v","V" ,"w","W", "x","X", "y","Y", "z","Z"];
-
-
 
 console.log(alphabet.length);
 console.log(carsInAlphabeticalOrder);
@@ -240,7 +107,6 @@ console.log(alphabet.indexOf(inventory[4].car_model[0]));
 console.log(alphabet.indexOf(carsInAlphabeticalOrder[0][0]));
 // console.log(alphabet.indexOf(carsInAlphabeticalOrder[1][0]));
 
-
 console.log(carsInAlphabeticalOrder.length)
 function carModelsInOrder() {
     for (let i = 3; i < 6; i++) {
@@ -256,15 +122,8 @@ function carModelsInOrder() {
         }
         return carsInAlphabeticalOrder;
 }
-
-
-
  console.log(carModelsInOrder());
  console.log(carsInAlphabeticalOrder);
-
-
-
-
 
 
 // ==== Challenge 4 ====
@@ -288,19 +147,6 @@ console.log(oldCars.length);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
-
-//Attempt 1
-
-// let BMWAndAudi =[];
-// for (let i=0; i < inventory.length; i++) {
-//  if (inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi') {
-//      BMWAndAudi.push(inventory[i].car_make)
-//  }
-// }
-// console.log(BMWAndAudi);
-// JSON.stringify(BMWAndAudi);
-
-//Attempt 2
 
 let BMWAndAudi =[];
 for (let i=0; i < inventory.length; i++) {
