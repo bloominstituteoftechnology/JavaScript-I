@@ -3,6 +3,7 @@
 // ==== Challenge 1: Writing Objects ==== 
 // HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
 
+
 // 1,mmelloy0@psu.edu,Mitzi,F
 // 2,kdiben1@tinypic.com,Kennan,M
 // 3,kmummery2@wikimedia.org,Keven,M
@@ -18,28 +19,80 @@ let example = {
 }
 
 // Write your intern objects here:
+// let intern= {
+//   "id": 0,1,2,3,4,5;
+//   "name": "Example", "Mitzi", "Kennan", "Keven", "Gannie", "Antoinetta";
+//   "email": "examples@you.edu", "mmelloy0@psu.edu", "kmummery2@wikimedia.org", "gmartinson3@illinois.edu", "adaine5@samsung.com";
+//   "gender": "F", "F", "M", "M","M","F";
+// }
+let intern1 ={
+  "id": 1,
+  name: "Mitzi",
+  email: "mmelloy0@psu.edu",
+  geneder: "F",
+}
+let intern2= {
+  "id": 2,
+  name: "Kennan",
+  email: "kmummery2@wikimedia.org",
+  geneder: "M",
+  speak: function () {
+    // let greet = `hello my name is ${intern2.name}!`
+    return `hello my name is ` + this.name
 
+//     speak: function (greet) {
+//     return {
+//       greeting: `hello my name is ${greet.name}`
+//     }
+  } 
+}
 
+let intern3= {
+  "id": 3,
+  name: "Keven",
+  email: "kkmummery2@wikimedia.org",
+  geneder: "M",
+
+}
+let intern4= {
+  "id": 4,
+  name: "Gannie",
+  email: "gmartinson3@illinois.edu",
+  geneder: "M",
+}
+let intern5= {
+  "id": 5,
+  name: "Antoinette",
+  email: "adaine5@samsung.com",
+  geneder: "F",
+multiplyNums: function(x,y) {
+  return x * y
+}
+}
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(intern1.name)
 // Kennan's ID
-
+console.log(intern2.email)
 // Keven's email
-
+console.log(intern3.email)
 // Gannie's name
-
+console.log(intern4.email)
 // Antonietta's Gender
+
+console.log(intern5.geneder)
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-
+// let greetong = speak(intern2)
+// console.log(greetong.greeting)
+console.log(intern2.speak())
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+console.log(intern5.multiplyNums(4,5))
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
