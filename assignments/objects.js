@@ -30,7 +30,7 @@ let kennan = {
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M",
-  speak: function() {
+  speak: () => {
     return "Hello, my name is Kennan!"
   }
 }
@@ -54,7 +54,7 @@ let antonietta = {
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F",
-  multiplyNums: function(a,b) {
+  multiplyNums: (a,b) => {
     return a*b;
   }
 }
@@ -96,16 +96,16 @@ let parent = {"name": "Susan",
   "grandchild": {
     "name": "Sam",
     "age": 30,
-    speak: function() {
+    speak: () => {
       console.log("Hi, my name is", this.name);
     }
   },
-  speak: function() {
+  speak: () => {
     console.log("Hi, my name is", this.name);
   }
 },
-speak: function() {
-  console.log("Hi, my name is", this.name)
+speak: (name) => {
+    console.log("Hi, my name is", this.name);
 }
 }
 
@@ -117,7 +117,7 @@ console.log(parent.child.age);
 console.log(parent.child.grandchild.name);
 console.log(parent.child.grandchild.age);
 // Have the parent speak
-parent.speak();
+parent.speak(this.name);
 // Have the child speak
 parent.child.speak();
 // Have the grandchild speak
