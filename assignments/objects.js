@@ -96,15 +96,15 @@ let parent = {"name": "Susan",
   "grandchild": {
     "name": "Sam",
     "age": 30,
-    speak: () => {
+    speak: function() {
       console.log("Hi, my name is", this.name);
     }
   },
-  speak: () => {
+  speak: function() {
     console.log("Hi, my name is", this.name);
   }
 },
-speak: (name) => {
+speak: function(name) {
     console.log("Hi, my name is", this.name);
 }
 }
