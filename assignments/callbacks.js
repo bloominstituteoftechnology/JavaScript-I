@@ -61,8 +61,18 @@ console.log(contains("yo-yo", items, (result) => {
 
 /* STRETCH PROBLEM */
 
+const testArray = ['a','b','c','c','c','b','c','d','e','f','f','e','c','a','a','g']
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+const seen = {};
+for (let i = 0; i < array.length; i++) {
+  seen[array[i]] = true;
 }
+return cb(Object.keys(seen));
+}
+
+console.log(removeDuplicates(testArray, (resultArray) => {
+  return resultArray;
+}));
