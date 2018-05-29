@@ -1,13 +1,25 @@
-const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
+const items = ["Pencil", "Notebook", "yo-yo", "Gum"];
 
 function firstItem(arr, cb) {
-  // firstItem passes the first item of the given array to the callback function.
+  cb(arr[0]);
+}
+firstItem(items, callback);
+function callback(a) {
+  console.log(a);
+}
+// firstItem passes the first item of the given array to the callback function.
+function getLength(arr, cb) {
+  cb(arr.length);
 }
 
-function getLength(arr, cb) {
+getLength(items, function(length) {
+  console.log(length);
+});
+
+
   // getLength passes the length of the array into the callback.
 }
-
+getLength(items, callback);
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
 }
