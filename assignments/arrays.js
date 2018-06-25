@@ -81,7 +81,19 @@ console.log(lastCar);
 let carModels = [];
 for (let car of inventory) {
     carModels.push(car.car_model);
-    carModels.sort();
+    carModels.sort(function(a, b) {
+        var nameA = a.toUpperCase(); // ignore upper and lowercase
+        var nameB = b.toUpperCase(); // ignore upper and lowercase
+        if (nameA < nameB) {
+          return -1;
+        }
+        if (nameA > nameB) {
+          return 1;
+        }
+      
+        // names must be equal
+        return 0;
+      });
 }
 console.log(carModels);
 
@@ -112,6 +124,5 @@ for (let germanCar of inventory) {
     }
 }
 console.log(JSON.stringify(BMWAndAudi));
-
 
 
