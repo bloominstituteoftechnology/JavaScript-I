@@ -23,7 +23,7 @@ let example = {
 }
 
 // Write your intern objects here:
-const newInterns = {mitzi, kennan, keven, gannie, antonietta}
+
 // for(d in data){
 //   newObject = {}
 //   newObject.id = data[d][0];
@@ -50,7 +50,7 @@ const antonietta = { id: 5,
   email: 'adaine5@samsung.com',
   name: 'Antonietta',
   gender: 'F' }
-
+  const newInterns = {mitzi, kennan, keven, gannie, antonietta}
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
