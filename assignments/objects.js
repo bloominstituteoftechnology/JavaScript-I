@@ -30,8 +30,7 @@ let intern2 = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
-  "gender": "M",
-  "speak": function () {return "Hello, my name is Kennan";}
+  "gender": "M"
 }
 
 let intern3 = {
@@ -53,7 +52,6 @@ let intern5 = {
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F",
-  "multiplyNums": function (x,y) { return x * y;}
 }
 
 
@@ -84,12 +82,14 @@ console.log(intern5.gender);
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-
+intern2.speak = function () {return "Hello, my name is Kennan";}
 
 console.log(intern2.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+intern5.multiplyNums = function (x,y) { return x * y;}
 
 console.log(intern5.multiplyNums(2,3));
 
