@@ -1,28 +1,21 @@
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
+const cb = param => console.log(param);
 
-function firstItem(arr, cb) {
-  cb(arr[0]);
-}
+const firstItem = (arr, cb) => cb(arr[0]);
 
-function getLength(arr, cb) {
- cb(arr.length);
-}
 
-function last(arr, cb) {
-  cb(arr[arr.length-1]);
-}
+const getLength = (arr, cb) => cb(arr.length);
 
-function sumNums(x, y, cb) {
-  let sum = x+y;
-  cb(sum);
-}
 
-function multiplyNums(x, y, cb) {
-  let mult = x*y;
-  cb(mult);
-}
+const last = (arr, cb) => cb(arr[arr.length-1]);
 
-function contains(item, list, cb) {
+
+const sumNums = (x, y, cb) => cb(x+y);
+
+
+const multiplyNums = (x, y, cb) => cb(x*y);
+
+const contains = (item, list, cb) => {
   if (list.includes(item)) {
     cb(true);
   } else {
@@ -32,13 +25,13 @@ function contains(item, list, cb) {
 
 /* STRETCH PROBLEM */
 
-function removeDuplicates(array, cb) {
+const removeDuplicates = (array, cb) => {
   let newArray = [];
-  for (let i = 0; i < array.length; i++) {
-    if (!(newArray.includes(array[i]))) {
-      newArray.push(array[i]);
+  array.forEach(function(item) {
+    if (!(newArray.includes(item))) {
+      newArray.push(item);
     }
-  }
+  });
   cb(newArray);
 }
 

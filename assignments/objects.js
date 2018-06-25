@@ -73,16 +73,14 @@ console.log(antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-kennan.speak = function() {
-  return "Hello, my name is " + this.name + "!";
-};
+kennan.speak = ()  => `Hello, my name is ${kennan.name}!`;
+
  console.log(kennan.speak());
 
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-antonietta.multiplyNums = function(num1, num2) {
-  return num1 * num2;
-}
+antonietta.multiplyNums = (num1, num2) => num1 * num2;
+
 console.log(antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
@@ -97,24 +95,19 @@ console.log(antonietta.multiplyNums(3,4));
 let parent = {
   name: "Susan",
   age: 70,
-  speak: function() {
-    return "Hi, my name is " + this.name;
-  },
+  speak: () => `Hi, my name is ${parent.name}`,
   child: {
     name: "George",
     age: 50,
-    speak: function() {
-      return "Hi, my name is " + this.name;
-    },
+    speak: () => `Hi, my name is ${parent.child.name}`,
     grandchild: {
       name: "Sam",
       age: 30,
-      speak: function() {
-        return "Hi, my name is " + this.name;
-      }
+      speak: () => `Hi, my name is ${parent.child.grandchild.name}`,
     }
   }
 }
+
 
 // Log the parent object's name
 console.log(parent.name);
