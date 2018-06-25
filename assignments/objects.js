@@ -18,21 +18,60 @@ let example = {
 }
 
 // Write your intern objects here:
+let intern1 = {
+  id: 1,
+  name: "Mitzi",
+  email: "mmelloy0@psu.edu",
+  gender: "F"
+}
 
+let intern2 = {
+  id: 2,
+  name: "Kennan",
+  email: "kdiben1@tinypic.com",
+  gender: "M",
+  speak: function(){
+    console.log('Hello, my name is Kennan!')
+  }
+}
+
+let intern3 = {
+  id: 3,
+  name: "Keven",
+  email: "kmummery2@wikimedia.org",
+  gender: "M"
+}
+
+let intern4 = {
+  id: 4,
+  name: "Gannie",
+  email: "gmartinson3@illinois.edu",
+  gender: "M"
+}
+
+let intern5 = {
+  id: 5,
+  name: "Antonietta",
+  email: "adaine5@samsung.com",
+  gender: "F"
+  multiplyNums: function(x,y){
+    return x*y;
+  }
+}
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(intern1.name);
 // Kennan's ID
-
+console.log(intern2.id);
 // Keven's email
-
+console.log(intern3.email);
 // Gannie's name
-
+console.log(intern4.name);
 // Antonietta's Gender
-
+console.log(intern5.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
