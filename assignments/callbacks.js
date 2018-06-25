@@ -28,13 +28,7 @@ function multiplyNums(x, y, cb) {
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  let doesContain = false;
-  for (let i = 0; i < list.length; i++) {
-    if (item === list[i]) {
-      doesContain = true;
-    }
-  }
-  cb(doesContain); // could do cb(list.includes)
+  cb(list.includes(item));
 }
 
 /* STRETCH PROBLEM */
@@ -43,4 +37,13 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  const duplicateFree = [];
+  const uniqueKeys = {};
+  for (let item of array) {
+    uniqueKeys[item] = 0;
+  }
+  for (let unique in uniqueKeys) {
+    duplicateFree.push(unique);
+  }
+  return duplicateFree;
 }
