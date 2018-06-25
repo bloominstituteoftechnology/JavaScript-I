@@ -72,14 +72,14 @@ console.log(antonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-kennan.speak = function() {
+kennan.speak = () => {
   return "Hello, my name is Kennan!";
 }
 console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-antonietta.multiplyNums = function(param1, param2) {
+antonietta.multiplyNums = (param1, param2) => {
   return param1 * param2;
 }
 
@@ -97,15 +97,24 @@ console.log(antonietta.multiplyNums(3, 4));
 let parent = {
   "name": "Susan",
   "age": 70,
-  "speak": function() {console.log(`Hello, my name is ${this.name}.`)},
+  // "speak": function() {console.log(`Hello, my name is ${this.name}.`)},
+  speak() {
+    return `Hello, my name is ${this.name}.`
+  },
   "child": {
     "name": "George",
     "age": 50,
-    "speak": function() {console.log(`Hello, my name is ${this.name}.`)},
+    // "speak": function() {console.log(`Hello, my name is ${this.name}.`)},
+    speak() {
+      return `Hello, my name is ${this.name}.`
+    },
     "grandchild": {
       "name": "Sam",
       "age": 30,
-      "speak": function() {console.log(`Hello, my name is ${this.name}.`)},
+      // "speak": function() {console.log(`Hello, my name is ${this.name}.`)},
+      speak() {
+        return `Hello, my name is ${this.name}.`
+      },
     }
   }
 }
@@ -122,3 +131,7 @@ parent.speak();
 parent.child.speak();
 // Have the grandchild speak
 parent.child.grandchild.speak();
+
+console.log(parent.speak());
+console.log(parent.child.speak());
+console.log(parent.child.grandchild.speak());
