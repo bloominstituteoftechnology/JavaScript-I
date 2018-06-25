@@ -19,63 +19,63 @@ let example = {
 
 // Write your intern objects here:
 
-let firstIntern = {
+let Mitzi = {
   "id": 1,
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
   "gender": "F"
 }
 
-console.log(firstIntern);
-
-let secondIntern = {
+let Kennan = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M"
 }
 
-console.log(secondIntern);
-
-let thirdIntern = {
+let Keven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M"
 }
 
-console.log(thirdIntern);
-
-let fourthIntern = {
+let Gannie = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
   "gender": "F"
 }
 
-console.log(fourthIntern);
-
-let fifthIntern = {
+let Antonietta = {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F"
 }
 
-console.log(fifthIntern);
-
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
-// Mitzi's name
+// Mitzi's name 
+
+console.log(Mitzi.name);
 
 // Kennan's ID
 
+console.log(Kennan.id);
+
 // Keven's email
+
+console.log(Keven.email);
 
 // Gannie's name
 
+console.log(Gannie.name);
+
 // Antonietta's Gender
+
+console.log(Antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
