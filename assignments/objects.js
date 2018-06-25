@@ -3,19 +3,99 @@
 // ==== Challenge 1: Writing Objects ==== 
 // HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
 
-// 1,mmelloy0@psu.edu,Mitzi,F
-// 2,kdiben1@tinypic.com,Kennan,M
-// 3,kmummery2@wikimedia.org,Keven,M
-// 4,gmartinson3@illinois.edu,Gannie,M
-// 5,adaine5@samsung.com,Antonietta,F
+/** Proven Challenge 1:
+ *** https://repl.it/@ErikKimsey/Creating-Objects */
+// let interns = ["1,mmelloy0@psu.edu,Mitzi,F",
+//   "2,kdiben1@tinypic.com,Kennan,M",
+//   "3,kmummery2@wikimedia.org,Keven,M",
+//   "4,gmartinson3@illinois.edu,Gannie,M",
+//   "5,adaine5@samsung.com,Antonietta,F"
+// ]
+
+let Mitzi = {
+  id: 1,
+  name: "Mitzi",
+  email: "mmelloy0@psu.edu",
+  gender: "F"
+};
+
+let Kennan = {
+  id: 2,
+  name: "Kennan",
+  email: "kdiben1@tinypic.com",
+  gender: "M"
+};
+
+let Keven = {
+  id: 3,
+  name: "Keven",
+  email: "kmummery2@wikimedia.org",
+  gender: "M"
+};
+
+let Gannie = {
+  id: 4,
+  name: "Gannie",
+  email: "gmartinson3@illinois.edu",
+  gender: "M"
+};
+
+let Antonietta = {
+  id: 5,
+  name: "Antonietta",
+  email: "adaine5@samsung.com",
+  gender: "F"
+};
+
+// let interArr = interns.split(',');
+// const keyArr = ["id", "name", "email", "gender"];
+// const dataBase = {};
+
+// function splitStrings(arr) {
+//   // let splitArr = []
+//   let splitArr = [],
+//     tempArr = [];
+//   arr.forEach((elem, i) => {
+//     tempArr = elem.split(',');
+//     splitArr[i] = tempArr;
+//     // console.log(tempArr)
+//   });
+
+//   // splitArr = arr;
+//   // console.log(splitArr)
+//   return splitArr;
+// }
+
+// function createObject(ntrn) {
+//   let nuIntern = {};
+//   ntrn.forEach((elem, i) => {
+//     nuIntern[keyArr[i]] = elem;
+//     // console.log(nuIntern);
+//   });
+//   // console.log(nuIntern);
+//   return nuIntern;
+// }
+
+// function createDatabase() {
+//   let nuArr = splitStrings(interns);
+//   // console.log("nu arr ", nuArr)
+//   nuArr.forEach((elem, i) => {
+//     dataBase[i + 1] = createObject(elem);
+//   })
+//   console.log(dataBase);
+// }
+// createDatabase();
+
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
-let example = {
-  "id": 0,
-  "name": "Example",
-  "email": "examples@you.edu",
-  "gender": "F"
-}
+// let example = {
+//   "id": 0,
+//   "name": "Example",
+//   "email": "examples@you.edu",
+//   "gender": "F"
+// }
+
+
 
 // Write your intern objects here:
 
@@ -24,18 +104,22 @@ let example = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(Mitzi.name);
 // Kennan's ID
-
+console.log(Kennan.id)
 // Keven's email
-
+console.log(Keven.email);
 // Gannie's name
-
+console.log(Gannie.name);
 // Antonietta's Gender
+console.log(Antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+Kennan.speak = function(){
+  return `Hello, my name is ${Kennan.name}`
+}
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
