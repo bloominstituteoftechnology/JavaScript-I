@@ -19,6 +19,50 @@ let example = {
 
 // Write your intern objects here:
 
+let firstIntern = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}
+
+console.log(firstIntern);
+
+let secondIntern = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+}
+
+console.log(secondIntern);
+
+let thirdIntern = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}
+
+console.log(thirdIntern);
+
+let fourthIntern = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "F"
+}
+
+console.log(fourthIntern);
+
+let fifthIntern = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F"
+}
+
+console.log(fifthIntern);
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
