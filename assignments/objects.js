@@ -19,35 +19,35 @@ let example = {
 
 // Write your intern objects here:
 let Mitzi = {
-  "id": 0,
+  "id": 1, //Are we supposed to change these to zero-index values, i.e. 1 turns into 0?
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
   "gender": "F"
 }
 
 let Kennan = { 
-  "id": 1,
+  "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M"
 }
 
 let Keven = {
-  "id": 2,
+  "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M"
 }
 
 let Gannie = {
-  "id": 3,
+  "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
   "gender": "M"
 }
 
 let Antonietta = {
-  "id": 4,
+  "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F"
