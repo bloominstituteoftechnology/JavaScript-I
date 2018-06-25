@@ -27,7 +27,7 @@ let Mitzi = {
 
 let Kennan = { 
   "id": 1,
-  "name": "Mitzi",
+  "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M"
 }
@@ -70,7 +70,10 @@ console.log(Antonietta.gender)
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-
+Kennan.speak = function() {
+  return `Hello, my name is ${Kennan.name}!`; // Used return instead of console.log because console.log returned undefined in addition to what I wanted
+}
+console.log(Kennan.speak())
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
