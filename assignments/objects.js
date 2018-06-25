@@ -31,6 +31,9 @@ let intern2 = {
   email: "kdiben1@tinypic.com",
   firstName: "Kennan",
   gender: "M",
+  speak: function() {
+    console.log("Hello my name is " + intern2.firstName + "!")
+  },
 }
 
 let intern3 = {
@@ -53,6 +56,9 @@ let intern5 = {
   email: "adaine5@samsung.com",
   firstName: "Antonietta",
   gender: "F",
+  multiplyNums: function(x, y) {
+    return result = x * y;
+  },
 }
 
 
@@ -60,21 +66,28 @@ let intern5 = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(inter1.firstName);
 
 // Kennan's ID
+console.log(intern2.id);
 
 // Keven's email
-
+console.log(intern3.email);
 // Gannie's name
-
+console.log(intern4.firstName);
 // Antonietta's Gender
+console.log(intern5.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+intern2.push
+console.log(("Hello, my name is " + intern2.firstName + "!"));
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+console.log(antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -85,7 +98,10 @@ let intern5 = {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-let parent = {}
+let parent = {
+  name:"Kristen Bostrom-Leon",
+  age: 56,
+}
 
 // Log the parent object's name
 
