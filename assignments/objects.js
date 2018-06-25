@@ -98,18 +98,19 @@ antonietta.multiplyNums = (num1, num2) => {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
+function speak () {return `${this.name}`};
 let parent = {
   name: `Susan`,
   age: 70,
-  speak : () => {return `${this.name}`},
+  speak,
  child: {
     name: `George`,
     age: 50,
-    speak : () => {return `${this.name}`},
+    speak,
     grandChild: {
       name: `Sam`,
       age: 30,
-      speak: () => {return `${this.name}`}
+      speak
     }
   }
 }
