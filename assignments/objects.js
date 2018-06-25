@@ -19,39 +19,39 @@ let employe = {
 
 // Write your intern objects here:
 const mitzi = {
-  id: 1
-  name: `Mitzi`
-  email: `mmelloy0@psu.edu`
+  id: 1,
+  name: `Mitzi`,
+  email: `mmelloy0@psu.edu`,
   gender: `F`
 }
 
 const kennan = {
-  id: 2
-  name: `kennan`
-  email: `kdiben1@tinypic.com`
+  id: 2,
+  name: `kennan`,
+  email: `kdiben1@tinypic.com`,
   gender: `M`
 }
 
 const kevan = {
-  id: 3
-  name: `Keven`
-  email: `kmummery2@wikimedia.org`
+  id: 3,
+  name: `Keven`,
+  email: `kmummery2@wikimedia.org`,
   gender: `M`
 }
 
 
-const Gannie = {
-  id: 4
-  name: `Gannie`
-  email: `gmartinson3@illinois.edu`
+const gannie = {
+  id: 4,
+  name: `Gannie`,
+  email: `gmartinson3@illinois.edu`,
   gender: `M`
 }
 
 
-const Antonietta ={
-  id: 5
-  name: `Antonietta`
-  email: `adaine5@samsung.com`
+const antonietta ={
+  id: 5,
+  name: `Antonietta`,
+  email: `adaine5@samsung.com`,
   gender: `F`
 }
 
@@ -66,7 +66,7 @@ console.log(mitzi.name)
 // Kennan's ID
 console.log(kennan.id)
 // Keven's email
-console.log(keven.email)
+console.log(kevan.email)
 
 // Gannie's name
 console.log(gannie.name);
@@ -80,12 +80,12 @@ kennan.speak = () => {
   return `Hello, my name is Kennan!`
 }
 
-console.log(kennan.speak)
+console.log(kennan.speak())
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
-antonietta.multiplyNums = (let num1, let num2) => {
+antonietta.multiplyNums = (num1, num2) => {
   return num1 * num2
 }
 
@@ -98,16 +98,35 @@ antonietta.multiplyNums = (let num1, let num2) => {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-let parent = {}
+let parent = {
+  name: `Susan`,
+  age: 70,
+  speak : () => {return `${this.name}`},
+ child: {
+    name: `George`,
+    age: 50,
+    speak : () => {return `${this.name}`},
+    grandChild: {
+      name: `Sam`,
+      age: 30,
+      speak: () => {return `${this.name}`}
+    }
+  }
+}
 
 // Log the parent object's name
+console.log(parent.name);
 
 // Log the child's age
+console.log(parent.child.age);
 
 // Log the name and age of the grandchild
-
+console.log(parent.child.grandChild.age + ' ' + parent.child.grandChild.name)
 // Have the parent speak
+console.log(parent.speak())
 
 // Have the child speak
+console.log(parent.child.speak())
 
 // Have the grandchild speak
+console.log(parent.child.grandChild.speak())
