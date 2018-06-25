@@ -110,4 +110,4 @@ for (const model of inventory){
     carYears.push(model.car_model)
   }
 }
-console.log(BMWAndAudi);
+console.log(JSON.stringify(BMWAndAudi));
