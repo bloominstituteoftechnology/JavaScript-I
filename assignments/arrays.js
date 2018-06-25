@@ -109,14 +109,20 @@ console.log(inventory.map(car=> car.car_year));
 // }
 console.log(inventory.map(car => car.car_year).filter(year => year < 2000)); 
 
+
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
-let BMWAndAudi =[];
-for (let i=0; i<len; i++) {
-  if ((inventory[i].car_make === 'BMW') || (inventory[i].car_make === 'Audi')) {
-    BMWAndAudi.push(inventory[i]);
-  }
+function germanLux(array) {
+  return JSON.stringify(inventory.filter(obj => (obj.car_make === 'BMW') || (obj.car_make === 'Audi')));
 }
-for (car of Object.entries(BMWAndAudi)) {
-  console.log(JSON.stringify(car));
-}
+console.log(germanLux(inventory));
+
+// let BMWAndAudi =[];
+// for (let i=0; i<len; i++) {
+//   if ((inventory[i].car_make === 'BMW') || (inventory[i].car_make === 'Audi')) {
+//     BMWAndAudi.push(inventory[i]);
+//   }
+// }
+// for (car of Object.entries(BMWAndAudi)) {
+//   console.log(JSON.stringify(car));
+// }
