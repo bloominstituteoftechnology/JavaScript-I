@@ -36,10 +36,29 @@ function contains(item, list, cb) {
     }
     cb(false);
   }
+}
 /* STRETCH PROBLEM */
 
+// let test = [1,2,3,4,5,6,3];
+
 function removeDuplicates(array, cb) {
-  // removeDuplicates removes all duplicate values from the given array.
-  // Pass the duplicate free array to the callback function.
-  // Do not mutate the original array.
+  let newArray = array.filter(//I'm looping over the array.  Will push current to newArray if true, otherwise moves on to next item.
+    function(item, pos) {//Because I'm about to compare the position of the current item in the loop and the position of the first time the item is encountered in the array I need these two arguments
+      return array.indexOf(item) == pos;//If the position of the first time this item is encounterd (indexOf) is = the position of the current item (the .filter loop) this will return true.
+});
+  cb(newArray);//this simply passes newArray as an arg to w/e cb is going to be.
+}
+// removeDuplicates removes all duplicate values from the given array.
+// Pass the duplicate free array to the callback function.
+// Do not mutate the original array.
+
+// console.log(test.indexOf(3));//me figuring out what indexOf does
+
+
+function removeDuplicates(array, cb) {
+  let newArray = array.filter(
+    (item, pos) => {
+      return array.indexOf(item) == pos;
+});
+  cb(newArray);
 }
