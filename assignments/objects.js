@@ -19,6 +19,40 @@ let example = {
 
 // Write your intern objects here:
 
+let Mitzi = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}
+
+let Kennan = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+}
+
+let Kevan = {
+  "id": 3,
+  "name": "Kevan",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}
+
+let Gannie = {
+  "id": 4,
+  "name": "Mitzi",
+  "email": "mitzi@you.edu",
+  "gender": "M"
+}
+
+let Antonietta = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F"
+}
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
