@@ -3,7 +3,7 @@
 * The point of these assignments is to take your knowledge of JavaScript and start putting into practice the principles learned throughout JavaScript I.
 
 ## Assignment Description
-
+ 
 * Fork/Clone this repository.
 * Complete all the exercises as described inside each assignment file.
 * Use `console.log()` statements to check to see if your code does what it is supposed to do.
