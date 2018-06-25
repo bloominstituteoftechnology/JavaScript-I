@@ -171,4 +171,4 @@ for (i=0; i< inventory.length; i++) {
 
   else {continue;}
 }
-console.log(BMWAndAudi);
+JSON.stringify(BMWAndAudi);
