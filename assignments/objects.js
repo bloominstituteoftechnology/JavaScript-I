@@ -73,7 +73,7 @@ console.log(antonietta.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 kennan.speak = () => {
-  return "Hello, my name is Kennan!";
+  return `Hello, my name is ${kennan.name}!`;
 }
 console.log(kennan.speak());
 
