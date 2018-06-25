@@ -1,4 +1,4 @@
-// Let's get some practice writing a few objects for a new group of interns at a small business.
+// / Let's get some practice writing a few objects for a new group of interns at a small business.
 
 // ==== Challenge 1: Writing Objects ==== 
 // HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
@@ -18,21 +18,26 @@ let example = {
 }
 
 // Write your intern objects here:
-
+let mMelloy0 = {id:'mmelloy0', email:'mmelloy0@psu.edu', firstName:'Mitzi',gender:'F' };
+let kDiben1 =  {id:'kdiben1', email:'kdiben1@tinypic.com', firstName:'Kennan',gender:'M'};
+let kMummery =  {id:'kmummery2', email:'kmummery2@wikimedia.org', firstName:'Keven',gender:'M' };
+let gMartinson =  {id:'gmartinson3', email:'gmartinson3@illinois.edu', firstName:'Gannie',gender:'M' };
+let aDaine  =  {id:'adaine5', email:'adaine5@samsung.com', firstName:'Antonietta',gender:'F' };
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log("Mitzis\'name " + mMelloy0.firstName);
 
 // Kennan's ID
-
+console.log("Kennan's ID " + kDiben1.id);
 // Keven's email
-
+console.log("Keven's email "  + kDiben1.email);
 // Gannie's name
-
+console.log("Gannie's name "  + gMartinson.firstName);
 // Antonietta's Gender
-
+console.log("Antonietta's Gender " + aDaine.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
