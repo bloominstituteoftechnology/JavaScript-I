@@ -30,7 +30,7 @@ let kennan = {
   "name": "Kennan Diben",
   "email": "kdiben1@tinypic.com",
   "gender": "M",
-  speak: function() {
+  speak: () => {
     return "Hello, my name is Kennan!";
   }
 }
@@ -54,7 +54,7 @@ let antonietta = {
   "name": "Antonietta Daine",
   "email": "adaine5@samsung.com",
   "gender": "F",
-  multiplyNums: function(a, b) {
+  multiplyNums: (a, b) => {
     return a * b;
   }
 }
@@ -96,21 +96,21 @@ console.log(antonietta.multiplyNums(3,4));
 let parent = {
   name: "Susan",
   age: 70,
-  speak: function() {
+  speak: () => {
     return "My name is " + this.name + ".";
   },
   
   child: {
     name: "George",
     age: 50,
-    speak: function() {
+    speak: () => {
       return "My name is " + this.name + ".";
     },
     
     grandchild: {
       name: "Sam",
       age: 30,
-      speak: function() {
+      speak: () => {
         return "My name is " + this.name + ".";
       },
     },
