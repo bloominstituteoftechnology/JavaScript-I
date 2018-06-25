@@ -18,35 +18,35 @@ let example = {
 }
 
 // Write your intern objects here:
-let intern_1 = {
+let Mitzi = {
   "id": 1,
   "name": 'Mitzi',
   "email": 'mmelloy0@psu.edu',
   "gender": 'F'
 }
 
-let intern_2 = {
+let Kennan = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M"
 }
 
-let intern_3 = {
+let Keven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M"
 }
 
-let intern_4 = {
+let Gannie = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
   "gender": "M"
 }
 
-let intern_5 = {
+let Antonietta = {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
@@ -57,26 +57,46 @@ let intern_5 = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(intern_1.name);
+console.log(Mitzi.name);
 
 // Kennan's ID
-console.log(intern_2.id);
+console.log(Kennan.id);
 
 // Keven's email
-console.log(intern_3.email);
+console.log(Keven.email);
 
 // Gannie's name
-console.log(intern_4.name);
+console.log(Gannie.name);
 
 // Antonietta's Gender
-console.log(intern_5.gender);
+console.log(Antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+let Kennan = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M",
+  "speak": "Hello my name is Kennan",
+}
+console.log(Kennan.speak);
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+let Antonietta = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F",
+  "multiplyNum": function(num1, num2){
+    return result = num1 * num2;
+  }
+}
+
+console.log(Antonietta.multiplyNum(3, 4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
