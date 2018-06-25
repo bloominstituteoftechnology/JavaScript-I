@@ -21,58 +21,58 @@
 
 // Write your intern objects here:
 
-let Mitzi = {
+let mitzi = {
   "id": 1,
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
   "gender": "F"
-}
+};
 
-let Kennan = {
+let kennan = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M"
-}
-let Keven = {
+};
+let keven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M",
   "speak": "Hello, my name is Keven"
-}
-let Gannie = {
+};
+let gannie = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
   "gender": "M"
-}
-let Antonietta = {
+};
+let antonietta = {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F",
-  
-  }
-
-}
-
-multiplyNums = function (a,b) {
-  return a*b;
-}
-
-console.log(Keven.speak);
+  multiplyNums: function(a, b) {
+   return a * b;
+  },
+  };
 
 
-console.log(Mitzi.name);
+console.log(antonietta.multiplyNums(3,4));
 
-console.log(Kennan.id);
 
-console.log(Keven.email);
+console.log(keven.speak);
 
-console.log(Gannie.name);
 
-console.log(Antonietta.gender);
+console.log(mitzi.name);
+
+console.log(kennan.id);
+
+console.log(keven.email);
+
+console.log(gannie.name);
+
+console.log(antonietta.gender);
 
 
 
