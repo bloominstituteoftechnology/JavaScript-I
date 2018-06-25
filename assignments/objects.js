@@ -72,7 +72,7 @@ console.log(intern5.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 intern2.speak = function speak() {
-  return('Hello, my name is ' + intern2.name);
+  return('Hello, my name is ' + intern2.name + '!');
 }
 console.log(intern2.speak());
 
@@ -91,16 +91,44 @@ console.log(intern5.multiplyNums(3,4));
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-let parent = {}
+let parent = {
+  name: 'Susan',
+  age: 70,
+},
+  child = {
+    name: 'George',
+    age: 50,
+  },
+    grandchild = {
+      name: 'Sam',
+      age: 30,
+    };
+    
+ 
 
 // Log the parent object's name
+console.log(parent.name);
 
 // Log the child's age
+console.log(child.age);
 
 // Log the name and age of the grandchild
-
+console.log(grandchild.name, grandchild.age);
 // Have the parent speak
+parent.speak = function speak() {
+  return ('Hello, my name is '+ parent.name + '!');
+}
+console.log(parent.speak());
 
 // Have the child speak
+child.speak = function speak() {
+  return ('Hello, my name is '+ child.name + '!');
+}
+console.log(child.speak());
+
 
 // Have the grandchild speak
+grandchild.speak = function speak() {
+  return ('Hello, my name is '+ grandchild.name + '!');
+}
+console.log(grandchild.speak());
