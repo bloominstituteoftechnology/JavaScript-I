@@ -3,19 +3,74 @@
 // ==== Challenge 1: Writing Objects ==== 
 // HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
 
-// 1,mmelloy0@psu.edu,Mitzi,F
-// 2,kdiben1@tinypic.com,Kennan,M
-// 3,kmummery2@wikimedia.org,Keven,M
-// 4,gmartinson3@illinois.edu,Gannie,M
-// 5,adaine5@samsung.com,Antonietta,F
+/** Proven Challenge 1:
+*** https://repl.it/@ErikKimsey/Creating-Objects */
+let interns = ["1,mmelloy0@psu.edu,Mitzi,F",
+  "2,kdiben1@tinypic.com,Kennan,M",
+  "3,kmummery2@wikimedia.org,Keven,M",
+  "4,gmartinson3@illinois.edu,Gannie,M",
+  "5,adaine5@samsung.com,Antonietta,F"]
+// let interArr = interns.split(',');
+const keyArr = ["id", "name", "email", "gender"];
+const dataBase = {};
+
+function splitStrings(arr) {
+  // let splitArr = []
+  let splitArr = [], tempArr = [];
+  arr.forEach((elem, i) => {
+    tempArr = elem.split(',');
+    splitArr[i] = tempArr;
+    // console.log(tempArr)
+  });
+
+  // splitArr = arr;
+  // console.log(splitArr)
+  return splitArr;
+}
+
+function createObject(ntrn) {
+  let nuIntern = {};
+  ntrn.forEach((elem, i) => {
+    nuIntern[keyArr[i]] = elem;
+    // console.log(nuIntern);
+  });
+  // console.log(nuIntern);
+  return nuIntern;
+}
+
+function createDatabase() {
+  let nuArr = splitStrings(interns);
+  // console.log("nu arr ", nuArr)
+  nuArr.forEach((elem, i) => {
+    dataBase[i + 1] = createObject(elem);
+  })
+  console.log(dataBase);
+}
+createDatabase();
+
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
-let example = {
-  "id": 0,
-  "name": "Example",
-  "email": "examples@you.edu",
-  "gender": "F"
-}
+// let example = {
+//   "id": 0,
+//   "name": "Example",
+//   "email": "examples@you.edu",
+//   "gender": "F"
+// }
+
+// let database = {
+//   {
+//     id : 1,
+//     name : "",
+//     email: "",
+//     gender : ""
+//   },
+// {
+//   id: 1,
+//     name : "",
+//       email: "",
+//         gender : ""
+// }
+// };
 
 // Write your intern objects here:
 
