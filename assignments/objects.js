@@ -108,6 +108,7 @@ let parent = {
   }
 }
 
+
 // Log the parent object's name
 console.log(parent.name);
 // Log the child's age
