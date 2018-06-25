@@ -17,6 +17,13 @@ let example = {
   "gender": "F"
 }
 
+let example = {
+  "id": 0,
+  "name": "Example",
+  "email": "examples@you.edu",
+  "gender": "F"
+}
+
 // Write your intern objects here:
 
 
