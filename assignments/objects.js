@@ -10,14 +10,71 @@
 // 5,adaine5@samsung.com,Antonietta,F
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
-let example = {
-  "id": 0,
-  "name": "Example",
-  "email": "examples@you.edu",
+
+
+// let example = {
+//   "id": 1,
+//   "name": "Example",
+//   "email": "examples@you.edu",
+//   "gender": "F"
+// }
+
+// Write your intern objects here:
+
+let Mitzi = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
   "gender": "F"
 }
 
-// Write your intern objects here:
+let Kennan = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+}
+let Keven = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M",
+  "speak": "Hello, my name is Keven"
+}
+let Gannie = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
+}
+let Antonietta = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F",
+  
+  }
+
+}
+
+multiplyNums = function (a,b) {
+  return a*b;
+}
+
+console.log(Keven.speak);
+
+
+console.log(Mitzi.name);
+
+console.log(Kennan.id);
+
+console.log(Keven.email);
+
+console.log(Gannie.name);
+
+console.log(Antonietta.gender);
+
+
 
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -25,7 +82,7 @@ let example = {
 
 // Mitzi's name
 
-// Kennan's ID
+// Kennan's ID 
 
 // Keven's email
 
