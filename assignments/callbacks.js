@@ -66,10 +66,29 @@ function multiplyNums(x, y, cb) {
 
 multiplyNums(3, 4, cb);
 
+
+
+const list = ['cats', 'dogs', 'fish', 'birds'];
+
+
+let item = 'fish';
+
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+    for(i = 0; i < list.length; i++){
+
+    if(list[i] === item) {
+      item = true;
+    } 
+  } if(item != true){
+    item = false;
+  }
+  
+cb(item);
 }
+
+contains(item, list, cb);
 
 /* STRETCH PROBLEM */
 
