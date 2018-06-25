@@ -36,8 +36,6 @@ function contains(item, list, cb) {
     }
     cb(false);
   }
-  contains("trevor", ["ash", "trevor"], console.log);
-
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
