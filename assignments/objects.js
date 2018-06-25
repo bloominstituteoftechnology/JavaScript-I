@@ -96,21 +96,21 @@ console.log(antonietta.multiplyNums(3,4));
 let parent = {
   name: "Susan",
   age: 70,
-  speak: () => {
+  speak: function() {
     return "My name is " + this.name + ".";
   },
   
   child: {
     name: "George",
     age: 50,
-    speak: () => {
+    speak: function() {
       return "My name is " + this.name + ".";
     },
     
     grandchild: {
       name: "Sam",
       age: 30,
-      speak: () => {
+      speak: function() {
         return "My name is " + this.name + ".";
       },
     },
