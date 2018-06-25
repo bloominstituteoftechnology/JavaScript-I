@@ -101,14 +101,50 @@ console.log(antonietta.multiplyNums(3,4))
 
 let parent = {}
 
+// 1.
+parent.name = 'Susan';
+parent.age = 70;
+
 // Log the parent object's name
+console.log(parent.name);
+
+// 2.
+parent.child = {};
+parent.child.name = 'George';
+parent.child.age = 50;
 
 // Log the child's age
 
+console.log(parent.child.age);
+
+// 3. 
+parent.child.grandchild = {};
+parent.child.grandchild.name = 'Sam';
+parent.child.grandchild.age = 30;
+
 // Log the name and age of the grandchild
+console.log(parent.child.grandchild.name + ' ' + parent.child.grandchild.age);
 
 // Have the parent speak
 
+parent.speak = function() {
+  return 'Hello, my name is ' + parent.name;
+}
+
+console.log(parent.speak());
+
 // Have the child speak
 
+parent.child.speak = function() {
+  return 'Hello, my name is ' + this.name;
+}
+
+console.log(parent.child.speak());
+
 // Have the grandchild speak
+
+parent.child.grandchild.speak = function() {
+  return 'Hello, my name is ' + this.name;
+}
+
+console.log(parent.child.grandchild.speak());
