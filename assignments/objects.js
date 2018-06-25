@@ -1,4 +1,4 @@
-// Let's get some practice writing a few objects for a new group of interns at a small business.
+// Let's get some practice writing a few objects for a new group of interns at a small business. 
 
 // ==== Challenge 1: Writing Objects ==== 
 // HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
