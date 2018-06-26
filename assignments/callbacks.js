@@ -1,29 +1,28 @@
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
+// return the first item in given array, then pass it on
 // function firstItem(arr, cb) {
-//   // firstItem passes the first item of the given array to the callback function.
 //   cb(arr[0]);
 // }
 
-let firstItem = (arr, cb) => {
-  cb(arr[0]);
-}
+let firstItem = (arr, cb) => { cb(arr[0]); }
 
+// get length of given array and pass it on
 // function getLength(arr, cb) {
 //   cb(arr.length);
 // }
 
 let getLength = (arr, cb) => { cb(arr.length);}
 
+// get the last item in given array and pass it on
 // function last(arr, cb) {
-//   // last passes the last item of the array into the callback.
 //   cb(arr[arr.length-1]);
 // }
 
 let last = (arr, cb) => { cb(arr[arr.length-1]); }
 
+// add two given numbers together and pass on the sum
 // function sumNums(x, y, cb) {
-//   // sumNums adds two numbers (x, y) and passes the result to the callback.
 //   let sum = x + y;
 //   cb(sum);
 // }
@@ -33,8 +32,8 @@ let sumNums = (x, y, cb) => {
   cb(sum);
 }
 
+// multiply two numbers and pass on the result
 // function multiplyNums(x, y, cb) {
-//   // multiplyNums multiplies two numbers and passes the result to the callback.
 //   let mult = x * y;
 //   cb(mult);
 // }
@@ -44,9 +43,8 @@ let multiplyNums = (x, y, cb) => {
   cb(mult);
 }
 
+// true/false if list contains given item, pass on boolean
 // function contains(item, list, cb) {
-//   // contains checks if an item is present inside of the given array/list.
-//   // Pass true to the callback if it is, otherwise pass false.
 //   let bool = list.includes(item);
 //   cb(bool);
 // }
@@ -58,15 +56,18 @@ let contains = (item, list, cb) => {
 
 /* STRETCH PROBLEM */
 
-// function removeDuplicates(array, cb) {
 //   // removeDuplicates removes all duplicate values from the given array.
 //   // Pass the duplicate free array to the callback function.
 //   // Do not mutate the original array.
-//
-//   let arr2 = array.filter(function(item, index){
-//     return array.indexOf(item) >= index;
-//   });
-//   cb(arr2);
+
+// function removeDuplicates(array, cb) {
+//   let newArr = [];
+//   for(let i = 0; i<array.length; i++){
+//     if(!newArr.contain(i)){
+//       newArr.push(i);
+//     }
+//   }
+//   cb(newArr);
 // }
 
 let removeDuplicates = (array, cb) => {
