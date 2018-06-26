@@ -20,9 +20,15 @@ contains=(item, list, cb)=>(list.indexOf(item)!==-1)?cb(true):cb(false);
   // Pass true to the callback if it is, otherwise pass false.
 
 /* STRETCH PROBLEM */
-removeDuplicates=(array,cb)=>cb(array.map(x=>x*2);
 
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
  
+removeDuplicates=(arr,cb)=>{
+  const singlesOnly={};
+  for (let i=0; i<arr.length; i++) {
+    singlesOnly[arr[i]]=false;
+  }
+  cb(Object.keys(singlesOnly));
+};
