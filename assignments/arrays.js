@@ -73,14 +73,6 @@ console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${i
 
 let lastCar = 0;
 
-// for (let i = 0; i < inventory.length; i++) {
-//     lastCar += 1;
-// }
-
-
-// console.log(inventory[inventory.length-1])
-
-
 // console.log(inventory[inventory.length - 1]); 
 
 console.log(`The last car in the inventory is a ${inventory[inventory.length - 1].car_make} ${inventory[inventory.length - 1].car_model}`)

@@ -1,4 +1,5 @@
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
+const list2 = ['Pencil', 'Notebook', 'yo-yo', 'Gum', 'Pencil', 'Notebook', 'yo-yo', 'Gum', 'Shoe', 'Hat', 'Hat']
 
 function firstItem(arr, cb) {
     // firstItem passes the first item of the given array to the callback function.
@@ -57,4 +58,17 @@ function removeDuplicates(array, cb) {
     // removeDuplicates removes all duplicate values from the given array.
     // Pass the duplicate free array to the callback function.
     // Do not mutate the original array.
+    // Sort the array
+    var sorted_arr = array.sort(); // Make new array of unicode-sorted org_array for better comparison
+    // console.log(sorted_arr)
+    var results = []; // Empty array
+    for (var i = 0; i < sorted_arr.length - 1; i++) { // For loop to sort to the end of the array
+        if (sorted_arr[i + 1] != sorted_arr[i]) { // If element is not equal to the element next to it, since they're in alphabetically order now, it goes to resuls array
+        results.push(sorted_arr[i]); // Push elements that don't have dups to new array
+        }
+    }
+
+    cb(results);
 }
+
+removeDuplicates(list2, console.log)
