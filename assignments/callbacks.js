@@ -17,12 +17,14 @@ function last(arr, cb) {
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
-  cb(x + y)
+  let result = x + y
+  cb(result)
 }
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
-  cb(x * y)
+  let result = x * y;
+  cb(result);
 }
 
 function contains(item, list, cb) {
@@ -38,4 +40,8 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  const result = array.filter(function(item, pos) {
+    return array.indexOf(item) === pos;
+  });
+  cb(result);
 }
