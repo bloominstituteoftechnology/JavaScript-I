@@ -4,6 +4,9 @@ function firstItem(arr, cb) {
   // firstItem passes the first item of the given array to the callback function.
 }
 
+function cb(items){
+}
+
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
 }
@@ -14,11 +17,30 @@ function last(arr, cb) {
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  const sum = cb(x,y);
+  console.log (sum);
 }
+
+function add(x,y){
+	return x+y;
+	]
+	
+sumNums(2,1,add);
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+
+  const mult = cb(x,y);
+  console.log (mult);
 }
+
+
+
+function mult(x,y){
+	return x*y;
+}
+	
+multiplyNums(2,5,mult);
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
