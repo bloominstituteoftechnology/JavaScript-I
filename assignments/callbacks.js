@@ -35,8 +35,21 @@ firstItem(items,printLength)
 
 
 function last(arr, cb) {
-  // last passes the last item of the array into the callback.
+  // last passes the last item of the array into the callback
+  
+  const item =cb(arr);
+  console.log(item);
 }
+
+function printItem(items){
+return items[items.length-1];;
+}
+
+last(items,printItem)
+
+
+
+
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
