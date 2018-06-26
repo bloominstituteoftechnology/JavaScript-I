@@ -18,31 +18,31 @@ let example = {
 }
 
 // Write your intern objects here:
-let Mitzi={
+const Mitzi={
   "id":1,
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
   "gender": "F"
 }
-let Kennan={
+const Kennan={
   "id":2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M"
 }
-let Keven={
+const Keven={
   "id":3,
   "name":"Keven",
   "email":"kmummery2@wikimedia.org",
   "gender":"M"
 }
-let Gannie={
+const Gannie={
   "id":4,
   "name":"Gannie",
   "email":"gmartinson3@illinois.edu",
   "gender":"M"
 }
-let Antonietta={
+const Antonietta={
   "id":5,
   "name":"Antonietta",
   "email":"adaine5@samsung.com",
@@ -77,7 +77,7 @@ Antonietta.multiplyNums=function multiplyNums(a,b){return a*b};
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-let parent = {
+const parent = {
   "name": "Susan",
   "age": 70,
   "speak":function(){console.log(this.name)},
