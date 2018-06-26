@@ -35,8 +35,7 @@ const last = (arr, cb) => cb(arr[arr.length - 1]);
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
-  let result = x + y;
-  cb(result);
+  cb(x + y);
 }
 
 /*
