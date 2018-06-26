@@ -29,4 +29,4 @@ The [arrays.js](assignments/arrays.js) assignment takes us through a large data 
 * Write out each function using the `ES5` `function` keyword syntax.
 * Remember that a callback function is simply a function that is being passed around to other functions.
 
-## Stretch Task - After you're done with all of the functions, go ahead and re-factor all of them to use `ES6` `Arrow Functions`
+#### Stretch Task - After you're done with all of the functions, go ahead and re-factor all of them to use `ES6` `Arrow Functions`
