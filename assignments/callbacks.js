@@ -8,7 +8,7 @@ function firstItem(arr, cb) {
 }
 
 function printItem(items){
-return item[0];;
+return items[0];;
 }
 
 firstItem(items,printItem)
@@ -19,7 +19,20 @@ firstItem(items,printItem)
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
+  
+  const item = cb(arr);
+  console.log(item);
 }
+
+
+function printLength(items){
+return items.length;;
+}
+
+firstItem(items,printLength)
+
+
+
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
