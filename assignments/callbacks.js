@@ -34,10 +34,13 @@ function contains(item, list, cb) {
   // Pass true to the callback if it is, otherwise pass false.
   // if (item in list) 
   for (let i=0; i<list.length; i++) {
-    
+    if (list[i] === item) {
+        return cb(true);
+        } 
+  }; return cb(false);
 }
-console.log(contains)
-// contains('Pencil', items, console.log);
+
+// contains('Gum', items, console.log);
 // if (list[i] === item) {
 //   return cb(true);
 //   } else return cb(false);
