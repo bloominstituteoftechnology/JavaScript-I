@@ -81,7 +81,37 @@ multiplyNums(2,5,mult);
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  let vlaue = cb(item,list);
+  console.log(value);
+  
 }
+
+function contains(item, list, cb) {
+  // contains checks if an item is present inside of the given array/list.
+  // Pass true to the callback if it is, otherwise pass false.
+  console.log(item)
+  let value = cb(item,list);
+  console.log(value);
+  
+}
+
+function printMatch(item,list) {
+	// for(i=0; i<list.length;  i++){
+	// if(list[i] != item) {
+    
+	// return true } else {
+	// return false }
+  // }}
+  let i = list.indexOf(item)
+  console.log(i)
+  if(i<0){
+    return false}else{
+      return true
+    }
+  }
+
+
+contains('Notebook',items, printMatch)
 
 /* STRETCH PROBLEM */
 
