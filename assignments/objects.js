@@ -32,14 +32,14 @@ let kennan = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
-  "gender": "M"
+  "gender": "M",
+  "speak": "Hello, my name is Keven"
 };
 let keven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M",
-  "speak": "Hello, my name is Keven"
 };
 let gannie = {
   "id": 4,
@@ -60,8 +60,8 @@ let antonietta = {
 
 console.log(antonietta.multiplyNums(3,4));
 
-
-console.log(keven.speak);
+x8
+console.log(kennan.speak);
 
 
 console.log(mitzi.name);
