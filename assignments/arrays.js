@@ -88,6 +88,7 @@ for(let i = 0; i < len; i++){
   carModels[i] = sortedByCarModelArr[i]["car_model"];
 }
 console.log('All Vehicle objects sorted by model', carModels);
+console.log(inventory);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
