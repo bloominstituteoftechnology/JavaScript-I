@@ -43,7 +43,7 @@ const interns = [{
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F"
-  
+
 }]
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -68,15 +68,20 @@ console.log(interns[4]["gender"]);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-function speak(name) {
+interns["speak"] = function(name) {
   console.log("Hello, my name is " + name);
 }
 
-speak(interns[1]["name"]);
+interns.speak(interns[1]["name"]);
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
+interns["multiplyNums"] = function(num1, num2) {
+  console.log(num1 * num2);
+}
+
+interns.multiplyNums(4,5);
 
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
