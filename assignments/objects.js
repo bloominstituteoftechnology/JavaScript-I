@@ -10,7 +10,7 @@
 // 5,adaine5@samsung.com,Antonietta,F
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
-let example = {
+const example = {
   "id": 0,
   "name": "Example",
   "email": "examples@you.edu",
@@ -49,7 +49,7 @@ let example = {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-let parent = {}
+const parent = {}
 
 // Log the parent object's name
 
