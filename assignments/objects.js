@@ -19,26 +19,100 @@ const example = {
 
 // Write your intern objects here:
 
+const interns = [
+  {
+    "id": 1,
+    "email": "mmelloy0@psu.edu",
+    "name": "Mitzi",
+    "gender": "F",
+  },
+  {
+    "id": 2,
+    "email": "kdiben1@tinypic.com",
+    "name": "Kennan",
+    "gender": "M",
+  },
+  {
+    "id": 3,
+    "email": "kmummery2@wikimedia.org",
+    "name": "Kevan",
+    "gender": "M",
+  },
+  {
+    "id": 4,
+    "email": "gmartinson3@illinois.edu",
+    "name": "Gannie",
+    "gender": "M",
+  },
+  {
+    "id": 5,
+    "email": "adaine5@samsung.com",
+    "name": "Antonietta",
+    "gender": "F",
+  }
+]
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+Object.keys(interns).map(intern => {
+  if(interns[intern]["name"] === "Mitzi"){
+    console.log(interns[intern]["name"])
+  }
+})
 
-// Kennan's ID
+// // Kennan's ID
+Object.keys(interns).map(intern => {
+  if(interns[intern]["name"] === "Kennan"){
+    console.log(interns[intern]["id"]);
+  }
+})
 
-// Keven's email
 
-// Gannie's name
+// // Keven's email
+Object.keys(interns).map(intern => {
+  if(interns[intern]["name"] === "Kevan"){
+    console.log(interns[intern]["email"]);
+  }
+})
 
-// Antonietta's Gender
+// // Gannie's name
+Object.keys(interns).map(intern => {
+  if(interns[intern]["name"] === "Gannie"){
+    console.log("Gannie");
+  }
+});
+
+// // Antonietta's Gender
+Object.keys(interns).map(intern => {
+  if(interns[intern]["name"] === "Antonietta"){
+    console.log(interns[intern]["gender"]);
+  }
+})
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+Object.keys(interns).map(intern => {
+  if(interns[intern]["name"] === "Kennan"){
+    interns[intern]["speak"] = function(){
+      return "Hello, my name is Kennan";
+    }
+    console.log(interns[intern]["speak"]());
+  }
+});
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+Object.keys(interns).map(intern => {
+  if(interns[intern]["name"] === "Antonietta"){
+    interns[intern]["multiplyNums"] = function(a,b){
+      return a * b;
+    }
+    console.log(interns[intern]["multiplyNums"](3,4));
+  }
+});
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
