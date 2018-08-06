@@ -23,9 +23,6 @@ The [arrays.js](assignments/arrays.js) assignment takes us through a large data 
 * You can't use map, reduce, or filter to solve these problems.  Only use native JavaScript for loops.
 * Complete each challenge presented before moving on to Callbacks.
 
-### Callbacks
-
-* In the [callbacks.js](assignments/callbacks.js) file you'll be receiving a lot of practice on how to use callbacks to pass around data.
-* Write out each function using the `ES5` `function` keyword syntax.
-* Remember that a callback function is simply a function that is being passed around to other functions.
-* **Stretch Problem** After you're done with all of the functions, go ahead and re-factor all of them to use `ES6` `Arrow Functions`
+### Stretch
+* Move on to tomorrow's content and start studying callbacks, write a few of your own to get the hang of it.
+* Look at array methods like .map(), .reduce(), .filter(). use them on the data in the arrays assignment to accomplish the same things you did with the ES5 for loop.
