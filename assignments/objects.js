@@ -99,18 +99,46 @@ console.log(intern5.multiplyNums(3,4));
 
 const parent = {
   "name": "Susan",
-  "age": 70
-  
+  "age": 70,
+  "child": {
+    "name": "George",
+    "age": 50,
+    "grandchild": {
+      "name": "Sam",
+      "age": 30
+    }
+  }
 }
 
+parent["speak"] = function() {
+  console.log("My name is " + this.name + "!");
+}
+parent.child["speak"] = function() {
+  console.log("My name is " + this.name + "!");
+}
+parent.child.grandchild["speak"] = function() {
+  console.log("My name is " + this.name + "!");
+}
+
+
+  //formula for accessing nested objects
+  //((user || {}).personalInfo || {}).name;
+  //
+
+
+
 // Log the parent object's name
-
+console.log(parent.name);
 // Log the child's age
-
+console.log(parent.child.age);
 // Log the name and age of the grandchild
-
+const grandchildName = parent && parent.child && parent.child.grandchild ? parent.child.grandchild.name : null;
+console.log(grandchildName);
+const grandchildAge = parent && parent.child && parent.child.grandchild ? parent.child.grandchild.age : null;
+console.log(grandchildAge);
 // Have the parent speak
-
+parent.speak();
 // Have the child speak
-
+parent.child.speak();
 // Have the grandchild speak
+parent.child.grandchild.speak();
