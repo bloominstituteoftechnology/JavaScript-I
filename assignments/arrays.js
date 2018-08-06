@@ -143,7 +143,7 @@ for (let i = 0; i < carYears.length; i++) {
 function carsOlderThan2k(arr) {
   let older = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr > 2000) {
+    if (arr < 2000) {
       older[i] = arr[i];
     }
   }
