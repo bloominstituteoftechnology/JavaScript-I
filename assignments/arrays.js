@@ -78,6 +78,9 @@ inventory.filter(car => car['id'] === 33 ? console.log(`Car ${car['id']} is a ${
 let lastCar = inventory.length-1;
 console.log(inventory[lastCar]['car_make'], inventory[lastCar]['car_model']);
 
+// Challenge 2 STRETCH
+const lastCar = inventory.map((car, i) => car["id"] === inventory.length ? console.log(car["car_make"], car["car_model"]) : '');
+
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
