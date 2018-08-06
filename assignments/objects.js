@@ -78,14 +78,14 @@ console.log(antoniettaObj["gender"]);
 kennanObj.prototype.speak = function () {
     return "Hello, my name is Kennan!";
 }
-console.log(kennan.speak());
+console.log(kennanObj.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 
 antoniettaObj.prototype.multiplyNums = function (a,b) {
     return a * b;
 }
-console.log(antonietta.multiplyNums(3, 4));
+console.log(antoniettaObj.multiplyNums(3, 4));
 
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
