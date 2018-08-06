@@ -43,3 +43,40 @@ for (var i = 0; i < inventory.length; i++) {
   }
 }
 console.log(JSON.stringify(array));
+
+/////////////////////////////////////////////
+
+// OBJECT CHALLENGE;
+
+// Challenge 1
+
+let obj = {
+{id: 1, email: 'mmelloy0@psu.edu', name: 'Mitzi', gender:'F'},
+{id: 2, email: 'kdiben1@tinypic.com', name: 'Kennan', gender: 'M'},
+{id: 3, email: 'kmummery2@wikimedia.org', name: 'Keven', gender: 'M'},
+{id: 4, email: 'gmartinson3@illinois.edu', name: 'Gannie', gender: 'M'},
+{id: 5, email: 'adaine5@samsung.com', name: 'Antonietta', gender: 'F'};
+}
+
+// Challenge 2
+
+console.log(obj[0].name);
+console.log(obj[1].id);
+console.log(obj[2].email);
+console.log(obj[3].name);
+console.log(obj[4].gender);
+
+// Challenge 3
+
+console.log('Hello, my name is', obj[1].name);
+
+// Challenge 4
+
+let obj = [
+{id: 1, email: 'mmelloy0@psu.edu', name: 'Mitzi', gender:'F'},
+{id: 2, email: 'kdiben1@tinypic.com', name: 'Kennan', gender: 'M'},
+{id: 3, email: 'kmummery2@wikimedia.org', name: 'Keven', gender: 'M'},
+{id: 4, email: 'gmartinson3@illinois.edu', name: 'Gannie', gender: 'M'},
+{id: 5, email: 'adaine5@samsung.com', name: 'Antonietta', gender: 'F', numbers: function(num1, num2) {return num1 + num2}}
+];
+obj[4].numbers(5, 10);
