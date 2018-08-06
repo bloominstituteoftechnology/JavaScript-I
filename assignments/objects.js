@@ -66,8 +66,23 @@ console.log (intern4.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+const kennanGreeting = 'Hello, my name is ' + intern1.name + '!';
+console.log(kennanGreeting);
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+function multiplyNums (x, y) {
+  let multiplyNumsAnswer = x * y;
+  return multiplyNumsAnswer;
+}
+
+console.log (multiplyNums(5,3));
+
+
+
+
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
