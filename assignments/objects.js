@@ -101,9 +101,15 @@ let parent = {
   'child': {
     'name': 'George', 
     'age': 50,
+    'speak': function(){
+      return this.name + 'is speaking'}
+    ,
     'grandChild': {
       'name': 'Sam',
       'age': 30,
+      'speak': function(){
+    return this.name + ' is speaking'
+      },
     }
   }
 }
@@ -113,4 +119,9 @@ console.log(parent['name']);
 // Log the child's age
 console.log(parent['child']['name']);
 // Log the name and age of the grandchild
-console.log(parent['child']['grandChild']);
+console.log(parent['child']['grandChild']['name']);
+console.log(parent['child']['grandChild']['age'])
+
+console.log(parent.child.speak());
+
+console.log(parent.child.grandChild.speak())

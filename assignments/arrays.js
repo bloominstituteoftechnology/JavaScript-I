@@ -117,7 +117,7 @@ function germanFind(){
   }
 }
 germanFind();
-console.log(BMWAndAudi);
+console.log(JSON.stringify(BMWAndAudi));
 
 
 
