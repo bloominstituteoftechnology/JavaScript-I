@@ -70,6 +70,9 @@ for (let i=0; i < inventory.length; i++) {
 	}
 }
 
+// Challenge 1 STRETCH
+inventory.filter(car => car['id'] === 33 ? console.log(`Car ${car['id']} is a ${car['car_year']} ${car['car_make']} ${car['car_model']}`) : '');
+
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = inventory.length-1;
