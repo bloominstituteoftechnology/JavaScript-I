@@ -17,6 +17,8 @@ const example = {
   "gender": "F"
 }
 
+console.log('hellow world');
+
 // Write your intern objects here:
 
 
