@@ -27,32 +27,34 @@ const mitzi = {
 }
 
 const kennan = {
-  "id" = 2,
-  "name": "Kennan"
+  "id": 2,
+  "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M"
 }
 
 const keven = {
-  "id" = 3,
-  "name" = "Keven",
-  "email", "kmummery2@wikimedia.org",
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
   "gender": "M"
 }
 
 const gannie = {
-  "id" = 4,
-  "name" = "Gannie",
-  "email" = "gmartinson3@illinois.edu",
-  "gender" = "M"
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
 }
 
 const antoinetta = {
-  "id" = 5,
-  "name" = "Antoinetta",
-  "email" = "adaine5@samsung.com",
-  "gender" = "F"
+  "id": 5,
+  "name": "Antoinetta",
+  "email": "adaine5@samsung.com",
+  "gender": "F"
 }
+
+
 
 // ==== Challenge 2: Reading Object Data ====
 // Once your objects are created, log out the following requests from HR into the console:
