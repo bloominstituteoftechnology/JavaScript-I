@@ -79,7 +79,7 @@ intern2.speak = function() {
   console.log("Hello, my name is " + intern2.name + "!");
 }
 
-console.log(intern2.speak());
+intern2.speak;
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
