@@ -54,24 +54,24 @@ let Antonietta = {
 
 // Mitzi's name
 
-console.log(companyList[0]["name"])
+console.log(Mitzi["name"])
 
 // Kennan's ID
 
-console.log(companyList[1]["id"])
+console.log(Kennan["id"])
 
 // Keven's email
 
-console.log(companyList[2]["email"])
+console.log(Keven["email"])
 
 // Gannie's name
 
-console.log(companyList[3]["name"])
+console.log(Gannie["name"])
 
 
 // Antonietta's Gender
 
-console.log(companyList[4]["gender"])
+console.log(Antonietta["gender"])
 
 
 // ==== Challenge 3: Object Methods ==== 
