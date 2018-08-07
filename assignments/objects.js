@@ -117,18 +117,22 @@ console.log(internAntoinietta.multiply(10,3));
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {
-  "name": "Susan",
-  "age": 70,
-  let child = {
-    "name": "George",
-     "age": 50,
-     let gC = {
-       "name": "Sam",
-       "age": 30
-     }
-  }
-}
+// const parent = {
+//   "name": "Susan",
+//   "age": 70,
+//    this.child = { 
+//     "name": "George",
+//      "age": 50,
+//    };
+  
+//      this.grandChld = {
+//        "name": "Sam",
+//        "age": 30
+//      };
+//    }  
+
+
+
 
 
 
