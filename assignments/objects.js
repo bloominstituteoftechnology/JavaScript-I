@@ -1,13 +1,88 @@
-// Let's get some practice writing a few objects for a new group of interns at a small business.
+// // Don't modify this array of objects
+// let arcadeGames = [
+//   {
+//     'id': 1,
+//     'title': 'Arkanoid',
+//     'year': 1986,
+//     'manufacturer': 'Taito',
+//     'genre': 'breakout',
+//     'max_players': 2,
+//     'url': 'https://en.wikipedia.org/wiki/Arkanoid',
+//   },
+//   {
+//     'id': 2,
+//     'title': 'Asteroids',
+//     'year': 1979,
+//     'manufacturer': 'Atari',
+//     'genre': 'multi-directional shooter',
+//     'max_players': 2,
+//     'url': 'https://en.wikipedia.org/wiki/Asteroids_(video_game)',
+//   },
+//   {
+//     'id': 3,
+//     'title': 'Defender',
+//     'year': 1981,
+//     'manufacturer': 'Williams',
+//     'genre': 'scrolling shooter',
+//     'max_players': 2,
+//     'url': 'https://en.wikipedia.org/wiki/Defender_(video_game)',
+//   },
+//   {
+//     'id': 4,
+//     'title': 'Rush\'n\'Attack',
+//     'year': 1985,
+//     'manufacturer': 'Konami',
+//     'genre': 'run and gun',
+//     'max_players': 2,
+//     'url': 'https://en.wikipedia.org/wiki/Rush%27n_Attack',
+//   },
+//   {
+//     'id': 5,
+//     'title': 'Sinistar',
+//     'year': 1982,
+//     'manufacturer': 'Williams',
+//     'genre': 'scrolling shooter',
+//     'max_players': 2,
+//     'url': 'https://en.wikipedia.org/wiki/Sinistar',
+//   },
+//   {
+//     'id': 6,
+//     'title': 'Skate or Die!',
+//     'year': 1988,
+//     'manufacturer': 'Electronic Arts',
+//     'genre': 'skateboarding',
+//     'max_players': 1,
+//     'url': 'https://en.wikipedia.org/wiki/Skate_or_Die!',
+//   },
+// ];
 
-// ==== Challenge 1: Writing Objects ==== 
-// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
+// // Don't modify this function
+// function titleMfrYearString (arr, index) {
+//   return `${arr[index].title} was made by ${arr[index].manufacturer} in ${arr[index].year}`;
+// }
 
-// 1,mmelloy0@psu.edu,Mitzi,F
-// 2,kdiben1@tinypic.com,Kennan,M
-// 3,kmummery2@wikimedia.org,Keven,M
-// 4,gmartinson3@illinois.edu,Gannie,M
-// 5,adaine5@samsung.com,Antonietta,F
+// function whoMadeWhatWhen(arr, mfrStr, cb) {
+//   // Your code goes here
+//   let counter = 0;
+//   let arr1 = [];
+//   for (let i = 0; i < arr.length; i++){
+//     if (arr[i]["manufacturer"] === mfrStr){
+//       counter++;
+//       arr1.push(arr[i])
+//     }
+//   }
+//   if (counter > 0){
+//     for (let i = 0; i < arr1.length; i++){
+//       cb(arr1, arr[i]);
+//     }
+//   } else {
+//     console.log(` We don't have anything by ${mfrStr} in our inventory`);
+//   }
+// }
+
+// whoMadeWhatWhen(arcadeGames, "EA", titleMfrYearString)
+
+// console.log(whoMadeWhatWhen(arcadeGames, 'Williams', titleMfrYearString));
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
 const example = {
@@ -20,44 +95,44 @@ const example = {
 // Write your intern objects here:
 
 const intern1 = {
-	"id": 1,
-	"name": "Mitzi",
-	"email": "mmelloy0@psu.edu",
-	"gender": "F"
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
 }
 
 const intern2 = {
-	"id": 2,
-	"name": "Kennan",
-	"email": "kdiben1@tinypic.com",
-	"gender": "M",
-	"speak": function(){
-		return "Hello, my name is Kennan!"
-	},
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M",
+  "speak": function(){
+    return "Hello, my name is Kennan!"
+  },
 }
 
 "Hello, my name is Kennan!"
 
 const intern3 = {
-	"id": 3,
-	"name": "Keven",
-	"email": "kmummery2@wikimedia.org",
-	"gender": "M",
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M",
 }
 
 const intern4 = {
-	"id": 4,
-	"name": "Gannie",
-	"email": "gmartinson3@illinois.edu",
-	"gender": "M",
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M",
 }
 
 const intern5 = {
-	"id": 5,
-	"name": "Antonietta",
-	"email": "adaine5@samsung.com",
-	"gender": "F",
-	"multiplyNums": function(a, b){
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F",
+  "multiplyNums": function(a, b){
     return a * b;
   },
 }
@@ -76,20 +151,20 @@ console.log(intern2.id);
 console.log(intern3.email);
 
 // Gannie's name
-console.log(intern4.name)
+console.log(intern4.name);
 
 // Antonietta's Gender
-consoole.log(intern5.gender)
+console.log(intern5.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-console.log(kennan.speak();
+console.log(intern2.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-console.log(antonietta.multiplyNums(3,4))
+console.log(intern5.multiplyNums(3,4))
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
