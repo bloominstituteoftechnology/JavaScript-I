@@ -18,27 +18,93 @@ const example = {
 }
 
 // Write your intern objects here:
+ 
+const internInfo = [{
+	studentNumber: 1,
+	name: "Mitzi",
+	gender: "F",
+	email: "mmelloy0@psu.edu"
+}, { 
+	studentNumber: 2,
+	name: "Kennan",
+	gender: "M",
+	email: "kdiben1@tinypic.com"
+}, {
+	studentNumber: 3,
+	name: "Keven",
+	gender: "M",
+	email: "kmummery2@wikimedia.org"
+}, {
+	studentNumber: 4,
+	name: "Gannie",
+	gender: "M",
+	email: "gmartinson3@illinois.edu"
+}, {
+	studentNumber: 5,
+	name: "Antonietta",
+	gender: "F",
+	email: "adaine5@samsung.com"
+};
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+for (let i=0; i<internInfo.length; i++) {
+  for (let prop in internInfo[i]) {
+    console.log("name", internInfo[1]["name"]);
+  }
+}
 
 // Kennan's ID
+ for (let i=0; i<internInfo.length; i++) {
+  for (let prop in internInfo[i]) {
+    console.log("studentNumber", internInfo[1]["studentNumber"]);
+  }
+}
 
 // Keven's email
+for (let i=0; i<internInfo.length; i++) {
+  for (let prop in internInfo[i]) {
+    console.log("email", internInfo[2]["email"]);
+  }
+}
 
 // Gannie's name
+for (let i=0; i<internInfo.length; i++) {
+  for (let prop in internInfo[i]) {
+    console.log("name", internInfo[3]["name"]);
+  }
+}
 
 // Antonietta's Gender
+for (let i=0; i<internInfo.length; i++) {
+  for (let prop in internInfo[i]) {
+    console.log("gender", internInfo[4]["gender"]);
+  }
+}
+
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+//not my code; Solution..need to study
+const Kennan.speak = function() {
+  return "Hi I'm Kennan!";
+}
+console.log(Kennan.speak());
+
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+//not my code; Solution..need to study
+antonietta.multiplyNums = function(a,b) {
+  return a * b;
+}
+console.log(antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
