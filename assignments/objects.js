@@ -19,42 +19,44 @@ const example = {
 
 // Write your intern objects here:
 
-const intern = {
-	id: internID,
-	name: internName,
-	email: internEmail,
-	gender: internGender,
-};
+/* function Intern(id, name, email, gender) {
+	this.id = id,
+	this.name = name,
+	this.email = email,
+	this.gender = gender
+}
 
-const Mitzi = {
+const lavon = new Intern(6,'Lavon','tenees.lavon@gmail.com','F'); */
+
+const mitzi = {
 	id: 1,
 	name: 'Mitzi',
 	email: 'mmelloy0@psu.edu',
 	gender: 'F',
 };
 
-const Kennan = {
+const kennan = {
 	id: 2,
 	name: 'Kennan',
 	email: 'kdiben1@tinypic.com',
 	gender: 'M',
 };
 
-const Keven = {
+const keven = {
 	id: 3,
 	name: 'Keven',
 	email: 'kmummery2@wikimedia.org',
 	gender: 'M',
 };
 
-const Gannie = {
+const gannie = {
 	id: 4,
 	name: 'Gannie',
 	email: 'gmartinson3@illinois.edu',
 	gender: 'M',
 };
 
-const Antonietta = {
+const antonietta = {
 	id: 5,
 	name: 'Antonietta',
 	email: 'adaine5@samsung.com',
@@ -115,20 +117,70 @@ console.log(antonietta.multiplyNums(3, 4));
 // ==== Stretch Challenge: Nested Objects and the this keyword ====
 
 // 1. Create a parent object with properties for name and age. Make the name Susan and the age 70.
-// 2. Nest a child object in the parent object with name and age as well. The name will be George and the age will be 50.
-// 3. Nest a grandchild object in the child object with properties for name and age. The name will be Sam and the age will be 30
-// 4. Give each of the objects the ability to speak their names using the this keyword.
+const parent = {
+	name: 'Susan',
+	age: 70,
+};
 
-const parent = {};
+// 2. Nest a child object in the parent object with name and age as well. The name will be George and the age will be 50.
+const parent = {
+	name: 'Susan',
+	age: 70,
+	child: {
+		name: 'George',
+		age: 50,
+	},
+};
+// 3. Nest a grandchild object in the child object with properties for name and age. The name will be Sam and the age will be 30
+const parent = {
+	name: 'Susan',
+	age: 70,
+	child: {
+		name: 'George',
+		age: 50,
+		grandchild: {
+			name: 'Sam',
+			age: 30,
+		},
+	},
+};
+// 4. Give each of the objects the ability to speak their names using the this keyword
+const parent = {
+	name: 'Susan',
+	age: 70,
+	speak: function() {
+		return 'My name is ' + this.name;
+	},
+	child: {
+		name: 'George',
+		age: 50,
+		speak: function() {
+			return 'My name is ' + this.name;
+		},
+		grandchild: {
+			name: 'Sam',
+			age: 30,
+			speak: function() {
+				return 'My name is ' + this.name;
+			},
+		},
+	},
+};
 
 // Log the parent object's name
+console.log(parent.name);
 
 // Log the child's age
+console.log(parent.child.age);
 
 // Log the name and age of the grandchild
+console.log(parent.child.grandchild);
 
 // Have the parent speak
+console.log(parent.speak());
 
 // Have the child speak
+console.log(parent.child.grandchild);
 
 // Have the grandchild speak
+console.log(parent.child.grandchild.speak());
