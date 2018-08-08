@@ -18,27 +18,83 @@ const example = {
 }
 
 // Write your intern objects here:
-
+const internList = [ Mitzi = {
+  "id": 0,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}, Kennan = {
+  "id": 1,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M",
+  "speak": function() {
+    console.log("Hello, my name is " + Kennan.name + "!");
+  }
+}, Keven = {
+  "id": 2,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}, Gannie = {
+  "id": 3,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
+}, Antonietta = {
+  "id": 4,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F"
+}];
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(internList[0]["name"]);
+console.log(internList[0].name);
+console.log(Mitzi.name);
+console.log(Mitzi["name"]);
 
 // Kennan's ID
+console.log(internList[1]["id"]);
+console.log(internList[1].id);
+console.log(Kennan["id"]);
+console.log(Kennan.id);
 
 // Keven's email
+console.log(internList[2]["email"]);
+console.log(internList[2].email);
+console.log(Keven["email"]);
+console.log(Keven.email);
+
 
 // Gannie's name
+console.log(internList[3]["name"]);
+console.log(internList[3].name);
+console.log(Gannie["name"]);
+console.log(Gannie.name);
 
 // Antonietta's Gender
+console.log(internList[4]["gender"]);
+console.log(internList[4].gender);
+console.log(Antonietta["gender"]);
+console.log(Antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+console.log(Kennan.speak());
+// in this case, I went back up to the original object definition to include my method there. However, in the example w/ Antonietta below, I wrote it outside of the original object for practice. It seems better to include everything in one place, not to get confused, but it's good to know the option exists and also how to do it!
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+Antonietta["multiplyNums"] = function(a,b) {
+  return a*b;
+}
+console.log(Antonietta.multiplyNums(2,4));
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
