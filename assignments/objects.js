@@ -110,17 +110,17 @@ const parent =
         {
             'name': "Same",
             'age': 30,
-            speak : function()
+            'speak': function()
             {
                 console.log( "Hello, my name is " + this.name + "!");
             }
         },
-        speak : function()
+        'speak': function()
         {
             console.log( "Hello, my name is " + this.name + "!");
         }
     },
-    speak : function()
+    'speak': function()
     {
         console.log( "Hello, my name is " + this.name + "!");
     }
