@@ -73,9 +73,10 @@ for(let i = 0; i < inventory.length; i++){
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
+let lastCar = inventory[inventory.length-1];
 
-console.log();
+console.log(inventory[inventory.length-1].car_make + " " + inventory[inventory.length-1].car_model); 
+
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
