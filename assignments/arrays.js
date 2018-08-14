@@ -95,10 +95,15 @@ console.log("*****************");
 let carYears = [];
 for(i = 0; i < inventory.length; i++) {
 	carYearInventory = inventory[i].car_year;
-	console.log("Number: ", i + "\t" + "\tCar year: ",carYearInventory);
+	carYears.push(carYearInventory);
+	console.log("Number: ", i + "\t" + "\tCar years: ",carYearInventory);
 }
-carYears.push(carYearInventory);
-console.log(carYears);
+// carYears.push(carYearInventory);
+// console.log(carYears);
+console.log("*****************");
+
+console.log("Array of Car years: ",carYears);
+
 console.log("*****************");
 
 // ==== Challenge 5 ====
