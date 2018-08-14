@@ -58,17 +58,28 @@ const intern = [
 
 // Mitzi's name
 
+console.log(intern[0].name);
+
 // Kennan's ID
+
+console.log(intern[1].id);
 
 // Keven's email
 
+console.log(intern[2].email);
+
 // Gannie's name
 
+console.log(intern[3].name);
+
 // Antonietta's Gender
+
+console.log(intern[4].gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
