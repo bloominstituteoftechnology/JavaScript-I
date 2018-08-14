@@ -127,6 +127,21 @@ allYears();
 let oldCars =[];
 console.log(); 
 
+// Answer
+function allYears() {
+    let oldCars = []
+    for (i = 0; i < inventory.length; i++) {
+      // check if car_year is < 2000
+      if (inventory[i].car_year < 2000) {
+        oldCars.push(inventory[i].car_year);
+      }
+    }
+    // return length of oldCars array
+    return oldCars.length;
+  }
+
+allYears();
+
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi =[];
