@@ -69,49 +69,55 @@ console.log(`Car 33 is a 2011 Jeep Wrangler` );
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
+// let lastCar = 0;
 
-let index = inventory.length -1 ;
+// let index = inventory.length -1 ;
 
-console.log(inventory[index]);
+// console.log(inventory[index]);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
+// let carModels = [];
 
-let init = 0;
+// let init = 0;
 
 const inventoryDex = inventory.length - 1;
 
-let testChar = 'A';
+// let testChar = 'A';
 
-let inventoryTester = inventory;
+// let inventoryTester = inventory;
 
-for (init; init > inventoryDex; init += 1) {
+// for (init; init > inventoryDex; init += 1) {
 
-  inventoryTester = inventory[init].car_model.charAt(1);
+//   inventoryTester = inventory[init].car_model.charAt(1);
 
-  for (let key in inventory[init]) {
+//   for (let key in inventory[init]) {
 
-    if (inventoryTester >= testChar) {
+//     if (inventoryTester >= testChar) {
 
-      carModels.push(inventory[init].car_model);
+//       carModels.push(inventory[init].car_model);
 
-    }
+//     }
 
-  }
+//   }
 
-}
+// }
 
     /*
     Loop through the array with array[i], then interact with the objects at i using dot or bracket notation, to do an alphabetical sort.
     */
 
-}
+
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-console.log();
+
+for (let i = 0; i < inventoryDex; i++){
+
+ carYears.push(inventory[i].car_year);
+    
+}
+console.log(carYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
