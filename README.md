@@ -5,7 +5,7 @@
 ## Assignment Description
 
 - [x] Fork/Clone this repository.
-- [ ] Complete all the exercises as described inside each assignment file.
+- [x] Complete all the exercises as described inside each assignment file.
 - [x] Use `console.log()` statements to check to see if your code does what it is supposed to do.
 - [x] To test your `console` statements you can either run `node /assignments/<fileName>` and see what prints in your terminal. You can also use an online tool like `JSBin`, `REPL.it`, `JSFiddle` or even your `Chrome developer console`.
 - [x] Once you finish the exercises in each file, commit your code, and push it to your fork. 
@@ -19,9 +19,9 @@ To better understand objects, you really just need to write more of them. The [o
 ### Arrays
 The [arrays.js](assignments/arrays.js) assignment takes us through a large data set of used cars.  You have been asked to help a used car business with some customer requests based on their inventory.  Use for loops and arrays to solve their problems.
 
-- [ ] Utilize the array `inventory` to complete your challenges
-- [ ] You are not permitted to use map, reduce, or filter to solve these problems.  Only use a basic for loop.
-- [ ] Complete each challenge presented before moving on to stretch.
+- [x] Utilize the array `inventory` to complete your challenges
+- [x] You are not permitted to use map, reduce, or filter to solve these problems.  Only use a basic for loop.
+- [x] Complete each challenge presented before moving on to stretch.
 
 ### Stretch
 - [ ] Move on to tomorrow's content and start studying callbacks, write a few of your own to get the hang of it.
