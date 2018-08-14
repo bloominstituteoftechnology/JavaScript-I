@@ -37,31 +37,42 @@ intObj0 = {
   id: 0,
   name: 'Mitzi',
   email: 'mmelloy0@psu.edu',
-  gender: 'female' } 
-
+  gender: 'female', } 
 intObj1 = {
   id: 1,
   name: 'Kennan',
   email: 'kdiben1@tinypic.com',
-  gender: 'M' }
+  gender: 'M',
+  speak: function () {
+    return `Hello, my name is ${intObj1.name}!`;
+  },
+}
 
-  intObj2 = {
-    id: 1,
-    name: 'Kevin',
-    email: 'kmummery2@wikimedia.org',
-    gender: 'M' }
+intObj2 = {
+  id: 1,
+  name: 'Kevin',
+  email: 'kmummery2@wikimedia.org',
+  gender: 'M',
+}
 
-  intObj3 = {
-    id: '2',
-    name: 'Gannie',
-    email: 'gmartinson3@illinois.edu',
-    gender: 'M' }
+intObj3 = {
+  id: '2',
+  name: 'Gannie',
+  email: 'gmartinson3@illinois.edu',
+  gender: 'M',
+}
 
-  intObj4 = {
-    id: 3,
-    name: 'adaine5@samsung.com',
-    email: 'Antonietta',
-    gender: 'F' }
+intObj4 = {
+  id: 3,
+  name: 'adaine5@samsung.com',
+  email: 'Antonietta',
+  gender: 'F',
+  doMaths: function(x, y){
+
+    return x * y ;
+
+  }
+}
 
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -74,15 +85,15 @@ console.log(intObj1.id);
 // Keven's email
 console.log(intObj2.email);
 // Gannie's name
-console.log(intObj3)
+console.log(intObj3.name);
 // Antonietta's Gender
-
+console.log(intObj4.gender)
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+console.log(intObj1.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+console.log(intObj4.doMaths(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
