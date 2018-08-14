@@ -19,18 +19,62 @@ const example = {
 
 // Write your intern objects here:
 
+/* 
+
+function example (id, name, email, gender){
+  this.id = id;
+
+  this.name = name;
+
+  this.email = email;
+
+  this.gender = gender;
+}
+
+*/
+
+intObj0 = {
+  id: 0,
+  name: 'Mitzi',
+  email: 'mmelloy0@psu.edu',
+  gender: 'female' } 
+
+intObj1 = {
+  id: 1,
+  name: 'Kennan',
+  email: 'kdiben1@tinypic.com',
+  gender: 'M' }
+
+  intObj2 = {
+    id: 1,
+    name: 'Kevin',
+    email: 'kmummery2@wikimedia.org',
+    gender: 'M' }
+
+  intObj3 = {
+    id: '2',
+    name: 'Gannie',
+    email: 'gmartinson3@illinois.edu',
+    gender: 'M' }
+
+  intObj4 = {
+    id: 3,
+    name: 'adaine5@samsung.com',
+    email: 'Antonietta',
+    gender: 'F' }
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(intObj0.name);
 // Kennan's ID
-
+console.log(intObj1.id);
 // Keven's email
-
+console.log(intObj2.email);
 // Gannie's name
-
+console.log(intObj3)
 // Antonietta's Gender
 
 // ==== Challenge 3: Object Methods ==== 
