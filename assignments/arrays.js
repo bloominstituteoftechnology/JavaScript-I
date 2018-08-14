@@ -69,12 +69,9 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 //  has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 for (var i = 0; i < inventory.length; i++) {
     if (inventory[i].id === 33) {
-      let year = inventory[i].car_year;
-      let make = inventory[i].car_make;
-      let model = inventory[i].car_model;
-      console.log(`Car 33 is a`, year, make, model);
-    };
-  }
+       console.log(`Car 33 is a ${inventory[i].car_year} ${inventory[i].car_make} ${inventory[i].car_model}`); 
+    }
+}
 
 
 // ==== Challenge 2 ====
@@ -91,6 +88,9 @@ for (var i = 0; i < inventory.length; i++) {
   carModels.push(inventory[i].car_model);
 }
 console.log(carModels.sort());
+
+let carModels = inventory.map(inventory => inventory.car_model);
+console.log(carModels.sort());
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data 
 // containing only the car years and log the result in the console.
@@ -98,6 +98,9 @@ let carYears = [];
 for (var i=0; i < inventory.length; i++) {
     carYears.push(inventory[i].car_year);
 }
+console.log(carYears);
+
+let carYears = inventory.map(inventory => inventory.car_year);
 console.log(carYears);
 
 // ==== Challenge 5 ====
@@ -112,6 +115,9 @@ for (var i=0; i < carYears.length; i++) {
 }
 console.log(oldCars.length); 
 
+let oldCars = carYears.filter(carYears => carYears < 2000);
+console.log(oldCars.length);
+
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains 
 // BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the 
@@ -122,6 +128,9 @@ for (var i = 0; i < inventory.length; i++) {
         BMWAndAudi.push(inventory[i]);
     };
 }
+console.log(JSON.stringify(BMWAndAudi));
+
+let BMWAndAudi = inventory.filter(inventory => inventory.car_make === "BMW" || inventory.car_make === "Audi");
 console.log(JSON.stringify(BMWAndAudi));
 
 
