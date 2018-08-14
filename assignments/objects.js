@@ -29,8 +29,11 @@ const internDatabase = [
   id: 1,
   name: "Keenan", 
   email: "kdiben1@tinypic.com",
-  gender: "M"
-  },
+  gender: "M",
+  speak: function(){
+    console.log("Hello, my name is " + internDatabase[1].name); 
+   }
+},
 {
   id: 3,
   name: "Keven", 
@@ -47,7 +50,10 @@ const internDatabase = [
   id: 5,
   name: "Antonietta", 
   email: "adaine5@samsung.com",
-  gender: "F"
+  gender: "F",
+  multiplyNums: function(x, y){
+    return x * y; 
+  }
 }
 ];
 
@@ -65,7 +71,7 @@ const internDatabase = [
 
 // Antonietta's Gender
 
-
+  
   console.log(internDatabase[0].name); 
   console.log(internDatabase[1].id); 
   console.log(internDatabase[2].email); 
@@ -75,10 +81,11 @@ const internDatabase = [
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+  console.log(internDatabase[1].speak()); 
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+  console.log(internDatabase[5].multiplyNums(3, 4)); 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
