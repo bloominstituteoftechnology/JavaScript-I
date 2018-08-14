@@ -18,6 +18,38 @@ const example = {
 }
 
 // Write your intern objects here:
+const internDatabase = [
+{
+  id: 0,
+  name: "Mitzi", 
+  email: "mmelloy0@psu.edu",
+  gender: "F"
+},
+{
+  id: 1,
+  name: "Keenan", 
+  email: "kdiben1@tinypic.com",
+  gender: "M"
+  },
+{
+  id: 3,
+  name: "Keven", 
+  email: "kmummery2@wikimedia.org",
+  gender: "M"
+},
+{
+  id: 4,
+  name: "Gannie", 
+  email: "gmartinson3@illinois.edu",
+  gender: "M"
+},
+{
+  id: 5,
+  name: "Antonietta", 
+  email: "adaine5@samsung.com",
+  gender: "F"
+}
+];
 
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -32,6 +64,13 @@ const example = {
 // Gannie's name
 
 // Antonietta's Gender
+
+
+  console.log(internDatabase[0].name); 
+  console.log(internDatabase[1].id); 
+  console.log(internDatabase[2].email); 
+  console.log(internDatabase[3].name); 
+  console.log(internDatabase[4].gender); 
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
