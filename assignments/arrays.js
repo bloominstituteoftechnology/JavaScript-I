@@ -95,7 +95,7 @@ console.log("*****************");
 let carYears = [];
 for(i = 0; i < inventory.length; i++) {
 	carYearInventory = inventory[i].car_year;
-	console.log("Number: ", i + " " + "\tCar year: ",carYearInventory);
+	console.log("Number: ", i + "\t" + "\tCar year: ",carYearInventory);
 }
 carYears.push(carYearInventory);
 console.log(carYears);
