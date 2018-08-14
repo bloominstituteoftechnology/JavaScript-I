@@ -52,7 +52,7 @@ const antonietta = {
   "gender": "F",
   multiplyNums(x, y){
     return x * y;
-  }
+  },
 };
 
 // ==== Challenge 2: Reading Object Data ==== 

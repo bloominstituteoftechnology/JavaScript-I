@@ -77,7 +77,7 @@ console.log(`${lastCar.car_year} ${lastCar.car_make} ${lastCar.car_model}`);
 let carModels = [];
 let index = 0;
 inventory.forEach(function (element){
-    carModels.push(inventory[index].car_model);
+    carModels.push(`${inventory[index].car_model}`);
     index++;
 });
 console.log(carModels.sort());
@@ -87,7 +87,7 @@ console.log(carModels.sort());
 let carYears = [];
 index = 0;
 inventory.forEach(function(element){
-    carYears.push(inventory[index].car_year);
+    carYears.push(`${inventory[index].car_year}`);
     index++;
 });
 console.log(carYears);
@@ -98,7 +98,7 @@ let oldCars =[];
 index = 0;
 carYears.forEach(function(element){
     if(element > 2000){
-        oldCars.push(carYears[index]);
+        oldCars.push(`${carYears[index]}`);
     }
 });
 console.log(oldCars.length); 
@@ -109,9 +109,7 @@ let BMWAndAudi =[];
 index = 0;
 inventory.forEach(function(element){
     if(Object.values(element).includes("BMW") || Object.values(element).includes("Audi")){
-        BMWAndAudi.push(inventory[index].car_year);
-        BMWAndAudi.push(inventory[index].car_make);
-        BMWAndAudi.push(inventory[index].car_model);
+        BMWAndAudi.push(`${inventory[index].car_year} ${inventory[index].car_make} ${inventory[index].car_model}`);
     }
     index++;
 });
