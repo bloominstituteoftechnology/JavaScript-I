@@ -4,12 +4,11 @@
 
 ## Assignment Description
 
-* Fork/Clone this repository.
+*  **COMPLETE** Fork/Clone this repository.
 * Complete all the exercises as described inside each assignment file.
 * Use `console.log()` statements to check to see if your code does what it is supposed to do.
 * To test your `console` statements you can either run `node /assignments/<fileName>` and see what prints in your terminal. You can also use an online tool like `JSBin`, `REPL.it`, `JSFiddle` or even your `Chrome developer console`.
 * Once you finish the exercises in each file, commit your code, and push it to your fork. 
-
 ### Objects
 To better understand objects, you really just need to write more of them. The [objects.js](assignments/objects.js) file contains several challenges centered around a theme of interns starting at a new job. The Human Resources team needs information about the new hires. Use your new found object skills answer vital questions for HR.
 
