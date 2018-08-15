@@ -58,12 +58,12 @@ console.log(`Antonietta's gender is ${intern[4].gender}`);
 //console.log(kennan.speak());
 console.log(intern[1].speak());
 
-var kennan = intern.find(function (kennan) { return kennan.name === "Kennan"; });
+let kennan = intern.find(function (kennan) { return kennan.name === "Kennan"; });
 console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-var antonietta = intern.find(function (antonietta) { return antonietta.name === "Antonietta"; });
+let antonietta = intern.find(function (antonietta) { return antonietta.name === "Antonietta"; });
 console.log(antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
