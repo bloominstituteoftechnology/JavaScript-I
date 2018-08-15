@@ -98,7 +98,7 @@ console.log();
 function sortModel() {
     let carModels = [];
     for (i = 0; i < inventory.length; i++) {
-      carModels.push(inventory[i].car_model);
+      carModels.push(inventory[i].car_model.toUpperCase());
     }
     carModels.sort();
     return carModels;
