@@ -18,7 +18,7 @@ const example = {
 }
 
 // Write your intern objects here:
-const intern = [{
+const interns = [{
   "id": 1,
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
