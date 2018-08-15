@@ -31,7 +31,7 @@ const kennan = {
   "email": "kdiben1@tinypic.com",
   "gender": "M",
 
-  speak(){
+  speak() {
     return `Hello, my name is ${kennan.name}!`;
   },
 };
