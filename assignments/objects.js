@@ -18,61 +18,79 @@ const example = {
 }
 
 // Write your intern objects here:
-const interns = {
-  "id": 0,
-  "email": "email.net",
-  "firstName": "firstName",
-  "gender": "F",
-}
+function Interns (id, email, firstName, gender) {
+  this.id = id;
+  this.email = email;
+  this.firstName = firstName;
+  this.gender = gender;
+};
+
+
+let Mitzi = new Interns("1", "mmelloy0@psu.edu", "Mitzi", "F", );
+
+let Kennan = new Interns("2", "kdiben1@tinypic.com", "Kennan", "M", );
+
+let Keven = new Interns("3", "kmummery2@wikimedia.org", "Keven", "M", );
+
+let Gannie = new Interns("4", "gmartinson3@illinois.edu", "Gannie", "M", );
+
+let Antonietta = new Interns("5", "adaine5@samsung.com", "Antonietta", "F", );
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-for (let key in interns) {
+console.log(Mitzi.firstName);
+
+/* for (let key in interns) {
   if (interns[key].firstName = "Mitzi") {
     console.log(interns[key].firstName);
   }
-}
+} */
 // Kennan's ID
-for (let key in interns) {
+console.log(Kennan.id);
+
+/* for (let key in interns) {
   if (interns[key].firstName = "Kennan") {
     console.log(interns[key].id);
   }
-}
+} */
 // Keven's email
-for (let key in interns) {
+console.log(Keven.email);
+/* for (let key in interns) {
   if (interns[key].firstName = "Keven") {
     console.log(interns[key].email);
   }
-}
+} */
 // Gannie's name
+console.log(Gannie.firstName);
 
 // Antonietta's Gender
-for (let key in interns) {
+console.log(Antonietta.gender);
+
+/* for (let key in interns) {
   if (interns[key].firstName = "Antonietta") {
     console.log(interns[key].gender);
   }
-}
+} */
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-for (let key in interns) {
-  if (interns[key].firstName = "Kennan") {
-    interns[key].speak = "Hello, my name is Kennan!";
-  }
-}
+Kennan.speak = "Hello, my name is Kennan!";
+
+console.log(Kennan.speak);
+
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-for (let key in interns) {
+/* for (let key in interns) {
   if (interns[key].firstName = "Antonietta") {
     interns[key].multiplyNums = function (x, y) {
       return x * y;
     }
   }
 }
-// === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
+ */// === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
 
