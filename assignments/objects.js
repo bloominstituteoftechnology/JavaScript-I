@@ -14,7 +14,7 @@ const example = {
   "id": 0,
   "name": "Example",
   "email": "examples@you.edu",
-  "gender": "F"
+  "gender": "F",
 }
 
 // Write your intern objects here:
@@ -23,35 +23,35 @@ const internOne = {
   "id": 0,
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
-  "gender": "F"
+  "gender": "F",
 }
 
 const internTwo = {
   "id": 1,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
-  "gender": "M"
+  "gender": "M",
 }
 
 const internThree = {
   "id": 2,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
-  "gender": "M"
+  "gender": "M",
 }
 
 const internFour = {
   "id": 3,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
-  "gender": "M"
+  "gender": "M",
 }
 
 const internFive = {
   "id": 4,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
-  "gender": "F"
+  "gender": "F",
 }
 
 
@@ -82,8 +82,32 @@ console.log(internFive.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+const internTwo = {
+  "id": 1,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M",
+  speak: function() {
+	  return "Hello, my name is " + this.name;
+  }
+}
+
+console.log(internTwo.speak());
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+const internFive = {
+  "id": 4,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F",
+  multiplyNums: function(x,y) {
+	  return x * y;
+  }
+}
+
+console.log(internFive.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
