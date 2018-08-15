@@ -15,6 +15,7 @@ To better understand objects, you really just need to write more of them. The [o
 
 - [x] Read the instructions found within the file carefully to finish the challenges. 
 - [x] Complete each challenge presented before moving on to Arrays.
+- [x] Complete Objects Stretch Challenge.
 
 ### Arrays
 The [arrays.js](assignments/arrays.js) assignment takes us through a large data set of used cars.  You have been asked to help a used car business with some customer requests based on their inventory.  Use for loops and arrays to solve their problems.
