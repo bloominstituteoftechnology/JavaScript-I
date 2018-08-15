@@ -114,9 +114,15 @@ const parent = {
   child : {
     "name": "George",
     "age" : 50,
+    this: function speak (str){
+      return `My name is ${this.name}`
+    },
     grandchild : {
       "name": "Sam",
       "age": 30,
+      this: function speak (str){
+        return `My name is ${this.name}`
+      },
     }
   }
 }
