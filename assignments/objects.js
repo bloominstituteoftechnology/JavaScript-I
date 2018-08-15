@@ -19,26 +19,77 @@ const example = {
 
 // Write your intern objects here:
 
+const intern1 = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.ed",
+  "gender": "F",
+}
+
+const intern2 = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M",
+}
+
+const intern3 = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M",
+}
+
+const intern4 = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M",
+}
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
 
+console.log(Object.entries(intern1)[1]);
+
 // Kennan's ID
+
+console.log(Object.values(intern2)[0]);
 
 // Keven's email
 
+console.log(Object.values(intern3)[1], Object.keys(intern3)[2], Object.values(intern3)[2]);
+
 // Gannie's name
 
+console.log(Object.keys(intern4)[1], ":", Object.values(intern4)[1]); 
+
 // Antonietta's Gender
+
+console.log(Object.keys(intern5)[3], ":" ,Object.values(intern5)[3]);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+
+kennan.speak = function() {
+  return `Hello, my name is ${this.name}`
+}
+
+console.log(kennan.speak());
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+antonietta.multiplyNums = function(a, b) {
+  return a * b;
+}
+
+console.log(antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -51,6 +102,13 @@ const example = {
 
 const parent = {}
 
+
+function newFunction() {
+  antonietta.multiplyNums = function (a, b) {
+    return a * b;
+  };
+  console.log(antonietta.multiplyNums(3, 4));
+}
 // Log the parent object's name
 
 // Log the child's age
