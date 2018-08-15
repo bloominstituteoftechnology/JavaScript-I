@@ -89,11 +89,11 @@ console.log(kennan.speak());
 // Use the console.log provided as a hint.
 // console.log(antonietta.multiplyNums(3,4));
 
-antonietta.muliplyNums = function(a, b) {
+antonietta.multiplyNums = function(a, b) {
     return a * b;
 };
 
-console.log(antonietta.muliplyNums(3, 4));
+console.log(antonietta.multiplyNums(3, 4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -107,8 +107,10 @@ console.log(antonietta.muliplyNums(3, 4));
 //    be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-// Nested? Does this mean inheritence? Because nesting doesn't make
-// sense to me with item 4, which suggests inheritence instead.
+
+  // Nested? Does this mean inheritence? Because nesting doesn't make
+  // sense to me with item 4, which suggests inheritence instead of nesting.
+  // I think I'm going to pass on this challenge.
 
 
 // Log the parent object's name
@@ -116,7 +118,6 @@ console.log(antonietta.muliplyNums(3, 4));
 // Log the child's age
 
 // Log the name and age of the grandchild
-
 
 // Have the parent speak
 
