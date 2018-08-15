@@ -91,7 +91,33 @@ carModels.sort();
 console.log(carModels);
 
 // Stretch Goal
-const resultC3 = inventory.map(element => element.car_model).sort();
+const bubbleSort = function(arr){
+    result = arr;
+    let marker = result.length;
+    while(marker > 0){
+        for(let i = 0; i < marker - 1; i++){
+            const resultI = result[i].toUpperCase();
+            const resultIp1 = result[i + 1].toUpperCase();
+            for(let character = 0; character < resultI.length && character < resultIp1.length; character++){
+                if(resultI.charCodeAt(character) > resultIp1.charCodeAt(character)){
+                    let temp = result[i];
+                    result[i] = result[i + 1];
+                    result[i + 1] = temp;
+                    break;
+                }
+
+                else if(resultI.charCodeAt(character) < resultIp1.charCodeAt(character)){
+                    break;
+                }
+            }
+        }
+
+        marker--;
+    }
+
+    return result;
+}
+const resultC3 = bubbleSort(inventory.map(element => element.car_model));
 console.log(resultC3);
 
 // ==== Challenge 4 ====
