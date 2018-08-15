@@ -91,7 +91,7 @@ function carModelSort(arr) {
         swapped = false;
         for (let i = 0; i < arr.length - 1; i++) {
 
-            if (arr[i].charCodeAt(0) > arr[i + 1].charCodeAt(0)) {
+            if (arr[i].toUpperCase().charCodeAt(0) > arr[i + 1].toUpperCase().charCodeAt(0)) {
                 temp = arr[i];
                 arr[i] = arr[i + 1];
                 arr[i + 1] = temp;
