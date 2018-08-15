@@ -124,7 +124,7 @@ console.log(findOldCars());
 let BMWAndAudi =[];
 function findBMWAndAudi(){
   for (let i = 0; i < inventory.length; i++){
-    if(inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi'){
+    if(inventory[i].car_make.toUpperCase() === 'BMW' || inventory[i].car_make.toUpperCase() === 'AUDI'){
       BMWAndAudi.push(inventory[i])
     }
   }
@@ -132,6 +132,10 @@ function findBMWAndAudi(){
 }
 
 console.log(findBMWAndAudi());
+
+
+let filterBMWAndAudi = inventory.filter(car => car.car_make.toUpperCase() === "BMW" || car.car_make.toUpperCase() === "AUDI");
+console.log(JSON.stringify(filterBMWAndAudi));
 
 
 
