@@ -92,7 +92,7 @@ console.log(carYears);
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars =[];
 carYears.forEach(function(element){
-    if(element > 2000){
+    if(element < 2000){
         oldCars.push(`${element}`);
     }
 });
