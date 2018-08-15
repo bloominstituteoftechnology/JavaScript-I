@@ -107,20 +107,47 @@ console.log(antonietta.multiplyNums(3, 4));
 //    be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
+const parent = {
+    "name": "Susan",
+    "age": 70,
+    "child": {
+        "name": "George",
+        "age": 50,
+        "grandchild": {
+            "name": "Sam",
+            "age": 30
+        }
+    }
+};
 
-  // Nested? Does this mean inheritence? Because nesting doesn't make
-  // sense to me with item 4, which suggests inheritence instead of nesting.
-  // I think I'm going to pass on this challenge.
+parent.speak = function() {
+    return `My name is ${this.name}`;
+};
 
+parent.child.speak = function() {
+    return `My name is ${this.name}`;
+};
+
+parent.child.grandchild.speak = function() {
+    return `My name is ${this.name}`;
+};
 
 // Log the parent object's name
+console.log(parent.name);
 
 // Log the child's age
+console.log(parent.child.age);
 
 // Log the name and age of the grandchild
+console.log(parent.child.grandchild.name);
+console.log(parent.child.grandchild.age);
 
 // Have the parent speak
+console.log(parent.speak());
 
 // Have the child speak
+console.log(parent.child.speak());
 
 // Have the grandchild speak
+console.log(parent.child.grandchild.speak());
+
