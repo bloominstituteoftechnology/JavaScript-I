@@ -49,8 +49,8 @@ const gannie = {
 
 const antonietta = {
   "id": 5,
-  "name": "Example",
-  "email": "examples@you.edu",
+  "name": "Antonietta,F",
+  "email": "adaine5@samsung.com",
   "gender": "F"
 }
 
@@ -72,6 +72,16 @@ console.log(antonietta.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+const kennan = {
+  "id": 2,
+  "name": "Kennan, M",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M",
+  "speak": "Hello, my name is Kennan!",
+}
+
+console.log(kennan.speak);
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
@@ -86,6 +96,10 @@ console.log(antonietta.gender);
 
 const parent = {}
 
+
+function newFunction() {
+  console.log(kennan.speak);
+}
 // Log the parent object's name
 
 // Log the child's age
