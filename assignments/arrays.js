@@ -77,7 +77,7 @@ for (let i = 0; i < inventory.length; i++) {
 let lastCar = 0;
 
 for (let i = 0; i < inventory.length; i++) {
-    if (inventory[i] = inventory.length - 1) {
+    if (inventory[i] === inventory[inventory.length - 1]) {
         console.log(inventory[i].car_make, inventory[i].car_model);
     }    
 }
@@ -128,7 +128,7 @@ for (let i = 0; i < inventory.length; i++) {
     }
 }
 
-console.log(BMWAndAudi);
+console.log(JSON.stringify(BMWAndAudi));
 
 
 
