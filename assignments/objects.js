@@ -69,16 +69,17 @@ console.log(intern.multiplyNums(3,4));
 
 const parent = {
 "name": "Susan",
-"age": 70},
-"child": {
+"age": 70,
+"child" : {
       "name": "George",
-        "age": 50
+        "age": 50,
         "child" : {
               "name": "Sam",
                 "age": 30}}
       }
 
-// Log the parent object's name
+// Log the parent object's nam
+console.log(parent.name);
 
 // Log the child's age
 
