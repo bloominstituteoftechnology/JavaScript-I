@@ -71,8 +71,8 @@ for(let i = 0; i < inventory.length; i++){
 }
 
 // Stretch Goal
-const resultC1 = inventory.filter(element => element.id === 33);
-console.log(`Car 33 is a ${resultC1[0].car_year} ${resultC1[0].car_make} ${resultC1[0].car_model}`);
+const resultC1 = inventory.filter(element => element.id === 33)[0];
+console.log(`Car 33 is a ${resultC1.car_year} ${resultC1.car_make} ${resultC1.car_model}`);
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  
