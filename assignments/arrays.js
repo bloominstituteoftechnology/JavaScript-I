@@ -120,6 +120,19 @@ function sortModel() {
 
 sortModel();
 
+// Alternative Answer with map()
+function sortModel() {
+  let carModels = [];
+  inventory.map(e => {
+    carModels.push(e.car_model.toUpperCase());
+  });
+  carModels.sort();
+  return carModels;
+}
+
+sortModel();
+
+
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
@@ -148,6 +161,16 @@ function allYears() {
 
 allYears();
 
+//Alternative Answer using map()
+function allYears() {
+  let carYears = [];
+  inventory.map(e => {
+    carYears.push(e.car_year);
+  });
+  return carYears;
+}
+
+allYears();
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
@@ -169,11 +192,25 @@ function allYears() {
 
 allYears();
 
+
 // ALTERNATIVE Answer with forEach()
 
 function allYears() {
   let oldCars = [];
   inventory.forEach((e,i) => {
+    if (e.car_year < 2000) {
+      oldCars.push(e.car_year);
+    }
+  });
+  return oldCars.length;
+}
+
+allYears();
+
+//Alternative Answer with map()
+function allYears() {
+  let oldCars = [];
+  inventory.map(e => {
     if (e.car_year < 2000) {
       oldCars.push(e.car_year);
     }
@@ -202,7 +239,7 @@ function selectCars() {
   
   selectCars();
 
-  //ALTERNATIVE
+  //ALTERNATIVE using forEach()
 
   function selectCars() {
     let BMWAndAudi = [];
@@ -216,3 +253,15 @@ function selectCars() {
   
   selectCars();
   
+  // Alternative using map()
+  function selectCars() {
+    let BMWAndAudi = [];
+    inventory.map(e => {
+      if (e.car_make === "BMW" || e.car_make === "Audi") {
+        BMWAndAudi.push(e);
+      }
+    });
+    return JSON.stringify(BMWAndAudi);
+  }
+
+  selectCars();
