@@ -275,3 +275,17 @@ function selectCars() {
   }
 
   selectCars();
+
+  //Third Alternative using filter()
+
+
+  function selectCars() {
+    let BMWAndAudi = inventory.filter(e => {
+      if (e.car_make === "BMW" || e.car_make === "Audi") {
+        return e;
+      }
+    });
+    return JSON.stringify(BMWAndAudi);
+  }
+  
+    selectCars();
