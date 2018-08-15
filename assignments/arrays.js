@@ -65,7 +65,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 // console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 
-console.log(`Car 33 is a *2011* *Jeep* *Wrangler*` );
+console.log(`Car 33 is a ${car_year} ${car_make} ${car_model}` );
 
 //Answer
 console.log(inventory[32]);
@@ -120,7 +120,7 @@ function sortModel() {
 
 sortModel();
 
-// Alternative Answer with map()
+// Second Alternative Answer with map()
 function sortModel() {
   let carModels = [];
   inventory.map(e => {
@@ -161,7 +161,7 @@ function allYears() {
 
 allYears();
 
-//Alternative Answer using map()
+//Second Alternative Answer using map()
 function allYears() {
   let carYears = [];
   inventory.map(e => {
@@ -207,7 +207,7 @@ function allYears() {
 
 allYears();
 
-//Alternative Answer with map()
+//Second Alternative Answer with map()
 function allYears() {
   let oldCars = [];
   inventory.map(e => {
@@ -220,6 +220,16 @@ function allYears() {
 
 allYears();
 
+// Third Alternative Answer with filter()
+
+function allYears() {
+  let oldCars = inventory.filter(e => {
+    return e.car_year < 2000;
+  });
+  return oldCars.length;
+}
+
+allYears();
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
@@ -253,7 +263,7 @@ function selectCars() {
   
   selectCars();
   
-  // Alternative using map()
+  //Second Alternative using map()
   function selectCars() {
     let BMWAndAudi = [];
     inventory.map(e => {
