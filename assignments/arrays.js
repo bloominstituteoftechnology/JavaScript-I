@@ -106,6 +106,20 @@ function sortModel() {
  
   sortModel();
 
+// ALTERNATIVE ANSWER with forEach()
+function sortModel() {
+  let carModels = [];
+// forEach object 'e' within 'i' index of inventory-array
+  inventory.forEach((e,i) => {   
+    // access car_model property of object 'e', push into empty array carModels
+    carModels.push(e.car_model.toUpperCase());
+  });
+  carModels.sort();
+  return carModels;
+}
+
+sortModel();
+
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
