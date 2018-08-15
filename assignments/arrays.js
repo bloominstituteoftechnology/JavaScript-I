@@ -111,6 +111,3 @@ for (let i = 0; i < inventory.length; i++) {
   }
 }
 console.log(JSON.stringify(BMWAndAudi));
-
-
-
