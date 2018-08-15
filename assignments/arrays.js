@@ -107,9 +107,18 @@ for (i = 0; i < inventory.length; i++) {
 console.log(oldCars.sort());
  
 
-
-
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi =[];
-console.log();
+
+let carMake = inventory[i].car_make;
+for (i = 0; i < inventory.length; i++) {
+if (carMake === 'BMW' || carMake === 'Audi') {
+BMWAndAudi.push(inventory[i]);
+}
+}
+
+
+const BMWAudi = JSON.stringify(BMWAndAudi)
+
+console.log(BMWAndAudi.sort());
