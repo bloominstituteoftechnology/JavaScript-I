@@ -22,13 +22,13 @@ const example = {
 /* 
 
 function example (id, name, email, gender){
-  this.id = id;
+  speech.id = id;
 
-  this.name = name;
+  speech.name = name;
 
-  this.email = email;
+  speech.email = email;
 
-  this.gender = gender;
+  speech.gender = gender;
 }
 
 */
@@ -108,19 +108,19 @@ const parent = {
 
   "name": "Susan",
   "age" : 70,
-  this: function speak (str){
+  speech: function speak (str){
     return `My name is ${this.name}`
   },
   child : {
     "name": "George",
     "age" : 50,
-    this: function speak (str){
+    speech: function speak (str){
       return `My name is ${this.name}`
     },
     grandchild : {
       "name": "Sam",
       "age": 30,
-      this: function speak (str){
+      speech: function speak (str){
         return `My name is ${this.name}`
       },
     }
@@ -130,11 +130,12 @@ const parent = {
 // Log the parent object's name
 console.log(parent.name);
 // Log the child's age
-console.log(child.name);
+console.log(parent.child.name);
 // Log the name and age of the grandchild
-
+console.log(`${parent.child.grandchild.name} + ${parent.child.grandchild.age}`)
 // Have the parent speak
-
+console.log(parent.speech());
 // Have the child speak
-
+console.log(parent.child.speech());
 // Have the grandchild speak
+console.log(parent.child.grandchild.speech());
