@@ -63,33 +63,50 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-for (i = 0; i < inventory.length; i++) {
+for (let i = 0; i < inventory.length; i++) {
   if (inventory[i].id === 33) {
     console.log(`Car 33 is a ${inventory[i].car_year} ${inventory[i].car_make} ${inventory[i].car_model}` );
   }
 }
 
-
-
-
 // ==== Challenge 2 ====
-// The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
+// The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console
+// TODO: NEED TO FINISH THIS
 let lastCar = 0;
+for (let j = 0; j < inventory.length; j++) {
+  if (lastCar < inventory[j].id) {
+    lastCar = inventory[j];
+    console.log(lastCar);
+  }
+
+}
 console.log();
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
-console.log();
+for (let k = 0; k < inventory.length; k++) {
+  carModels.push(inventory[k].car_model);
+}
+console.log(carModels.sort());
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-console.log();
+for (let l = 0; l < inventory.length; l++) {
+  carYears.push(inventory[l].car_year);
+}
+console.log(carYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars =[];
+for (let u = 0; u < inventory.length; u++) {
+  if (inventory[u].car_year < 2000) {
+    oldCars.push(inventory[u]);
+    console.log(oldCars); // logs old cars but with dupes
+  }
+}
 console.log();
 
 // ==== Challenge 6 ====
