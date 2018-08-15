@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42ae2ac6-d5f8-43f0-89f8-aaa24ca3bfbb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignments/arrays.js" afterPath="$PROJECT_DIR$/assignments/arrays.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignments/objects.js" afterPath="$PROJECT_DIR$/assignments/objects.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="arrays.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assignments/arrays.js">
+      <file leaf-file-name="objects.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assignments/objects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="123" column="1" lean-forward="true" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+            <state relative-caret-position="391">
+              <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -32,6 +32,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/assignments/arrays.js" />
+        <option value="$PROJECT_DIR$/assignments/objects.js" />
       </list>
     </option>
   </component>
@@ -124,12 +125,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534297131818</updated>
-      <workItem from="1534297142801" duration="2090000" />
+      <workItem from="1534297142801" duration="3565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2090000" />
+    <option name="totallyTimeSpent" value="3565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -180,6 +181,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="123" column="1" lean-forward="true" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignments/objects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="23" />
           <folding />
         </state>
       </provider>
