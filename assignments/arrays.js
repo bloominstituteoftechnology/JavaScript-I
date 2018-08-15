@@ -72,14 +72,21 @@ for(i = 0; i < inventory.length; i++){
      year  = item.car_year;
      model = item.car_model;
      make  = item.car_make;
-    }
+    } 
  }
  console.log(`Car 33 is a ${year} ${make} ${model}`);
 
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = inventory.pop();
+let lastCar;
+for(i=0; i < inventory.length; i++){
+  curIndex  = inventory.indexOf(inventory[i]);
+  arrLength = inventory.length - 1;
+  if (arrLength === curIndex){
+    lastCar = inventory[i];
+  }
+}
 console.log(`${lastCar.car_make} ${lastCar.car_year}`);
 
 // ==== Challenge 3 ====
