@@ -21,30 +21,30 @@ const example = {
 
 const intern1 = {
   "id":1,
-  "email":"mmelloy0@psu.edu:,
-  "fName":"Mitzi"
+  "email":"mmelloy0@psu.edu:",
+  "fName":"Mitzi",
   "gender":"F",
 }
 
-const intern1 = {
-  "id":2
+const intern2 = {
+  "id":2,
   "email":"kdiben1@tinypic.com",
   "fName": "Kennan",
   "gender":"M",
 }
-const intern1 = {
-  "id":3
+const intern3 = {
+  "id":3,
   "email":"kmummery2@wikimedia.org",
   "fName":"Keven",
   "gender": "M",
 }
-const intern1 = {
-  "id":4
+const intern4 = {
+  "id":4,
   "email": "gmartinson3@illinois.edu",
   "fName":"Gannie",
   "gender":"M",
 }
-const intern1 = {
+const intern5 = {
   "id":5,
   "email": "adaine5@samsung.com",
   "fName":"Antonietta",
@@ -56,13 +56,24 @@ const intern1 = {
 
 // Mitzi's name
 
+console.log(intern1.fName);
+
 // Kennan's ID
+
+console.log(intern2.id);
 
 // Keven's email
 
+console.log(intern3.email);
+
 // Gannie's name
 
+console.log(intern4.fName);
+
+
 // Antonietta's Gender
+
+console.log(intern5.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
