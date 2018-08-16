@@ -18,12 +18,14 @@ const example = {
 }
 
 // Write your intern objects here:
+//In the future it will be better to create non-personal assignments for nested blocks
+
 
 const interns = {
 
       Mitzi : {id: 1,name: 'Mitzi', email: 'mmelloy0@psu.edu', gender: "F"},
       Kennan : { id: 2, name: 'Kennan', email: 'kdiben1@tinypic.com', gender: "M"},
-      Keven : {id: 3, name: 'Keven', emai: 'kmummery2@wikimedia.org', gender: "M"},
+      Keven : {id: 3, name: 'Keven', email: 'kmummery2@wikimedia.org', gender: "M"},
       Gannie : {id: 4, name: 'Gannie', email: 'gmartinson3@illinois.edu', gender: "F"},
       Antonietta : {id: 5, name: 'Antonietta', email: 'adaine5@samsung.com', gender: "F"}
       
