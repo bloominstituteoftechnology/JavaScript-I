@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1012591f-005b-4bdf-bd13-5bbcbfcaf639" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/arrays.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/arrays.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/objects.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/objects.js" afterDir="false" />
     </list>
@@ -17,8 +18,8 @@
       <file leaf-file-name="arrays.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignments/arrays.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="927">
-              <caret line="147" column="18" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
+            <state relative-caret-position="424">
+              <caret line="173" column="7" selection-start-line="173" selection-start-column="2" selection-end-line="178" selection-end-column="3" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -29,8 +30,8 @@
       <file leaf-file-name="objects.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/objects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
+            <state relative-caret-position="350">
+              <caret line="91" column="4" lean-forward="true" selection-start-line="91" selection-end-line="95" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -52,8 +53,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assignments/arrays.js" />
         <option value="$PROJECT_DIR$/assignments/objects.js" />
+        <option value="$PROJECT_DIR$/assignments/arrays.js" />
       </list>
     </option>
   </component>
@@ -71,8 +72,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2582" />
-    <option name="y" value="41" />
+    <option name="x" value="2568" />
+    <option name="y" value="145" />
     <option name="width" value="1151" />
     <option name="height" value="879" />
   </component>
@@ -80,25 +81,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JavaScript-I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaScript-I" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaScript-I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaScript-I" type="462c0819:PsiDirectoryNode" />
-              <item name="assignments" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -147,15 +130,15 @@
       <updated>1534207500375</updated>
       <workItem from="1534207502149" duration="83000" />
       <workItem from="1534207691066" duration="12628000" />
-      <workItem from="1534300257483" duration="2892000" />
+      <workItem from="1534300257483" duration="9997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15603000" />
+    <option name="totallyTimeSpent" value="22708000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2582" y="41" width="1151" height="879" extended-state="0" />
+    <frame x="2568" y="145" width="1151" height="879" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -191,12 +174,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/assignments/arrays.js</url>
-          <line>145</line>
+          <line>147</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assignments/arrays.js</url>
+          <line>91</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -252,8 +241,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignments/arrays.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="927">
-          <caret line="147" column="18" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
+        <state relative-caret-position="424">
+          <caret line="173" column="7" selection-start-line="173" selection-start-column="2" selection-end-line="178" selection-end-column="3" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -262,8 +251,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignments/objects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
+        <state relative-caret-position="350">
+          <caret line="91" column="4" lean-forward="true" selection-start-line="91" selection-end-line="95" selection-end-column="2" />
         </state>
       </provider>
     </entry>

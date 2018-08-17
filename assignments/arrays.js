@@ -79,7 +79,7 @@ console.log(`Car ${c1.id} is a ${c1.car_year} ${c1.car_make} ${c1.car_model}`);
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car
 // in the inventory?  Log the make and model into the console.
-let lastCar = inventory[49];;
+let lastCar = inventory[49];
 console.log(`The last car is a ${lastCar.car_make} ${lastCar.car_model}`);
 
 // ==== Challenge 3 ====
@@ -87,13 +87,15 @@ console.log(`The last car is a ${lastCar.car_make} ${lastCar.car_model}`);
 // alphabetical order and log the results in the console
 
 
-var sortArr = JSON.parse(JSON.stringify(inventory));   // deep copy orig array so we don't mutate
+
 
 function sortByModel(arrObj) {
- // var sortArr = JSON.parse(JSON.stringify(arrObj));   // deep copy orig array so we don't mutate
+  let clonedArr = JSON.parse(JSON.stringify(arrObj));   // deep copy orig array so we don't mutate
+  sortArr = [];
 
-  for(let i = 0; i < sortArr.length; i++) {    // verify first letter of Model is UpperCase
-    sortArr[i].car_model[0] = sortArr[i].car_model[0].toUpperCase();
+
+  for(let i = 0; i < clonedArr.length; i++) {    // verify first letter of Model is UpperCase
+    sortArr.push( {clonedArr[i].id, clonedArr[i].car_make, clonedArr[i].car_model[0].toUpperCase() + clonedArr[i].car_model[0].slice(1) , clonedArr[i].car_year} );
   }
 
   sortArr.sort(function (a,b) {
