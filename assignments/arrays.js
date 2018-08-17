@@ -67,7 +67,7 @@ let year33 = 1990;
 let make33 = "Jeep"; 
 let model33 = "Wrangler";
 for (i=0; i<inventory.length; i++) {
-  if(inventory[i].id == 33) {
+  if(inventory[i].id === 33) {
       year33 = inventory[i].car_year;
       make33 = inventory[i].car_make;
       model33 = inventory[i].car_model;

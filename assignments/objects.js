@@ -1,6 +1,6 @@
 // Write your intern objects here:
 const Intern = {
-  InternOne: {
+  internOne: {
     "id": 1,
     "name": "Mitzi",
     "email": "mmelloy0@psu.edu",
@@ -41,7 +41,7 @@ const Intern = {
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 // Mitzi's name
-console.log(Intern.InternOne.name);
+console.log(intern.InternOne.name);
 // Kennan's ID
 console.log(Intern.internTwo.id)
 // Keven's email
