@@ -88,7 +88,20 @@ console.log('Make: ' + lastCar.car_make + ' Model: ' + lastCar.car_model);
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
-console.log();
+for (i = 0; i < inventory.length; i++) {
+  var item = inventory[i];
+  var keys = Object.keys(item);
+  var values = Object.values(item);
+  for (g = 0; g <keys.length; g++) {
+    var key = keys[g];
+    var value = values[g];
+    if (key == 'car_model') {
+        carModels.push(value.toUpperCase());
+        carModels.sort(); // I got this far and thought I couldn't use sort, then read the instructions again, found out I could. 
+    }
+  }
+}
+console.log(carModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
