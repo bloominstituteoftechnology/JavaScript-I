@@ -106,16 +106,14 @@ const parent = {
   "age": 70,
   speak: function() {
     return this.name;
-  }
-
-  const child = {
+  },
+  child: {
     "name": "George",
     "age": 50,
     speak: function() {
       return this.name;
-    }
-
-    const grandchild = {
+    },
+    grandchild: {
       "name": "Sam",
       "age": 30,
       speak: function() {
