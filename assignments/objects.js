@@ -65,7 +65,7 @@ console.log(interns[0].name);
 console.log(interns[1].id);
 
 // Keven's email
-console.log(interns[2].email);a
+console.log(interns[2].email);
 
 // Gannie's name
 console.log(interns[3].name);
