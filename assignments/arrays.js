@@ -71,7 +71,7 @@ for(let i = 0; i < inventory.length; i++){
 }
 
 // Stretch Goal
-const resultC1 = inventory.filter(element => element.id === 33)[0];
+const resultC1 = inventory.filter((element) => {return element.id === 33})[0];
 console.log(`Car 33 is a ${resultC1.car_year} ${resultC1.car_make} ${resultC1.car_model}`);
 
 // ==== Challenge 2 ====
@@ -117,7 +117,7 @@ const bubbleSort = function(arr){
 
     return result;
 }
-const resultC3 = bubbleSort(inventory.map(element => element.car_model));
+const resultC3 = bubbleSort(inventory.map((element) => {return element.car_model}));
 console.log(resultC3);
 
 // ==== Challenge 4 ====
@@ -130,7 +130,7 @@ for(let i = 0; i < inventory.length; i++){
 console.log(carYears);
 
 // Stretch Goal
-const resultC4 = inventory.map(element => element.car_year);
+const resultC4 = inventory.map((element) => {return element.car_year});
 console.log(resultC4);
 
 // ==== Challenge 5 ====
@@ -145,7 +145,7 @@ for(let i = 0; i < carYears.length; i++){
 console.log(oldCars.length); 
 
 // Stretch Goal
-const resultC5 = carYears.filter(element => element < 2000);
+const resultC5 = carYears.filter((element) => {return element < 2000});
 console.log(resultC5.length);
 
 // ==== Challenge 6 ====
@@ -160,6 +160,6 @@ for(let i = 0; i < inventory.length; i++){
 console.log(JSON.stringify(BMWAndAudi));
 
 // Stretch Goal
-const resultC6 = inventory.filter(element => element.car_make === 'BMW' || element.car_make === 'Audi');
+const resultC6 = inventory.filter((element) => {return element.car_make === 'BMW' || element.car_make === 'Audi'});
 console.log(JSON.stringify(resultC6));
 
