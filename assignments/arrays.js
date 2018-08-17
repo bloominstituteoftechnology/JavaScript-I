@@ -101,6 +101,11 @@ for (i = 0; i < inventory.length; i++) {
 let carYears = [];
 console.log();
 
+for (i=0; i<inventory.length; i++) {
+  carYears.push(inventory[i].car_year);
+  carYears.sort();
+}
+console.log(carYears);
 
 
 // ==== Challenge 5 ====
@@ -108,7 +113,28 @@ console.log();
 let oldCars =[];
 console.log();
 
+let oldCars =[];
+ console.log();
+ for (i=0; i<carYears.length; i++) {
+   if (carYears[i] < 2000) {
+     oldCars.push(carYears[i]);
+   }
+ }
+ console.log(oldCars.length);
+
+
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi =[];
 console.log();
+
+for (i = 0; i < inventory.length; i++) {
+	//determine if "car_make" equals Audi or BMW
+	if (inventory[i].car_make === "Audi" || inventory[i].car_make === "BMW") {
+	//push the matching results into one array
+		BMWAndAudi.push(`${inventory[i].car_year}, ${inventory[i].car_make}, ${inventory[i].car_model}`);
+	}
+}
+
+ console.log(BMWAndAudi);
+ JSON.stringify(BMWAndAudi);
