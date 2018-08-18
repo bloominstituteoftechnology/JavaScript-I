@@ -118,7 +118,7 @@ const parent = {
       return `My name is ${this.name}`
     },
     grandchild : {
-      "name": "Sam",
+      "name": "Sam", 
       "age": 30,
       speech: function speak (str){
         return `My name is ${this.name}`
