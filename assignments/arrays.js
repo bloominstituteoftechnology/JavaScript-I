@@ -79,42 +79,27 @@ console.log(inventory[index]);
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
 
+for (let i =0 ; i < inventory.length -1; i++){
+    carModels.push(inventory[i].car_model)
+}
+
+carModels.sort(); 
+
+console.log(carModels);
 // try sort
 
-let init = 0;
-
-const inventoryDex = inventory.length - 1;
-
-let testChar = 'A';
-
-let inventoryTester = inventory;
-
-for (init; init > inventoryDex; init += 1) {
-
-  inventoryTester = inventory[init].car_model.charAt(0);
-
-  for (let key in inventory[init]) {
-
-    if (inventoryTester >= testChar) {
-
-      carModels.push(inventory[init].car_model);
-
-    }
-
-  }
-
-}
 
     /*
     Loop through the array with array[i], then interact with the objects at i using dot or bracket notation, to do an alphabetical sort.
     */
 
+  
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
 
-for (let i = 0; i <= inventoryDex; i++){
+for (let i = 0; i <= inventory.length - 1; i++){
 
  carYears.push(inventory[i].car_year);
     
@@ -144,7 +129,7 @@ console.log(oldCars);
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi = [];
 
-for (let i = 0; i <= inventoryDex; i++) {
+for (let i = 0; i <= inventory.length - 1; i++) {
     let carCases = inventory[i].car_make;
     if (carCases === 'BMW') {
         BMWAndAudi.push(inventory[i]);
