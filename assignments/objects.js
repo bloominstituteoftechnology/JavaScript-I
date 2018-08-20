@@ -15,46 +15,41 @@
 
 // Write your intern objects here:
 const intern = [{
-  "id": 1,
-  "name": "Mitzi",
-  "email": "mmelloy0@psu.edu",
-  "gender": "F"
+  id: 1,
+  name: "Mitzi",
+  email: "mmelloy0@psu.edu",
+  gender: "F"
   },
   {
-    "id": 2,
-    "name": "Kennan",
-    "email": "kdiben1@tinypic.com",
-    "gender": "M",
-    'speak': function() {
+    id: 2,
+    'name': "Kennan",
+    email: "kdiben1@tinypic.com",
+    gender: "M",
+    speak: function() {
       return `Hello, my name is $(this.name)`;  // " Hello, my name is Kennan "
     }
   },
   {
-    "id": 3,
-    "name": "Keven",
-    "email": "kmummery2@wikimedia.org",
-    "gender": "M"
+    id: 3,
+    name: "Keven",
+    email: "kmummery2@wikimedia.org",
+    gender: "M"
   },
   {
-    "id": 4,
-    "name": "Gannie",
-    "email": "gmartinson3@illinois.edu",
-    "gender": "M"
+    id: 4,
+    name: "Gannie",
+    email: "gmartinson3@illinois.edu",
+    gender: "M"
   },
   {
-    "id": 5,
-    "name": "Antonietta",
-    "email": "adaine5@samsung.com",
-    "gender": "F",
-    'multiplyNums' : function(first, second) {
+    id: 5,
+    name: "Antonietta",
+    email: "adaine5@samsung.com",
+    gender: "F",
+    multiplyNums : function(first, second) {
       return first * second;
     }
-
-
   }
-
-
-
 ];
 
 
@@ -108,16 +103,43 @@ const antonietta = {
 //    age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {};
+//const parent = {};
+
+var parent = {
+  name: 'Susan',
+  age: 70,
+  speak: function() {
+   // return (parent.name + ' is speaking');
+    return (`${this.name} is speaking`);
+  },
+  child: {
+    name: 'George',
+    age: 50,
+    speak: function () {
+      // return (parent.child.name + ' is speaking now');
+      return (`${this.name} is speaking now`);
+    },
+    grandchild: {
+      name: 'Sam',
+      age: 30,
+      speak: function() {
+        // return(parent.child.grandchild.name + ' finally gets to say something')
+        return (`${this.name} finally gets to say something`);
+      }
+    }
+  }
+}
+
 
 // Log the parent object's name
-
+console.log(parent.name);
 // Log the child's age
-
+console.log(parent.child.age);
 // Log the name and age of the grandchild
-
+console.log(parent.child.grandchild.name + ' ' + parent.child.grandchild.age);
 // Have the parent speak
-
+console.log( parent.speak() );
 // Have the child speak
-
+console.log( parent.child.speak() );
 // Have the grandchild speak
+console.log( parent.child.grandchild.speak() );

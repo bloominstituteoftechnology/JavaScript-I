@@ -67,6 +67,19 @@ let inventory = [{"id":1,
 //     arr[i]; // 1,2,3,4
 // }
 
+
+///////////////////////    Added expression helper function
+var resetArr = function(arr) {                     // Easier helper function expression to deep clone
+  return JSON.parse(JSON.stringify(arr));
+};
+
+
+
+
+
+
+
+
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which
 // car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
@@ -158,16 +171,18 @@ function before2000(arrObj) {
   console.log(oldCars.length);
 }
 
+
+
+
 before2000(inventory);
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains
 // BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the
 // array in the console.
-let BMWAndAudi =[];
-console.log();
 
 function onlyBMW_Audi(arrObj) {
-  let filteredArr = JSON.parse(JSON.stringify(arrObj));
+  //let filteredArr = JSON.parse(JSON.stringify(arrObj));
+  filteredArr = resetArr(inventory);
   let BMWAndAudi =[];
 
 
@@ -178,8 +193,8 @@ function onlyBMW_Audi(arrObj) {
 
   }
 
-  // return BMWAndAudi;
-  console.log(JSON.stringify(BMWAndAudi));
+   return BMWAndAudi;
+  // console.log(JSON.stringify(BMWAndAudi));
 
 }
 

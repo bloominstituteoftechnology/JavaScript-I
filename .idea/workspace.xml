@@ -15,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="arrays.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="arrays.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignments/arrays.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="173" column="7" selection-start-line="173" selection-start-column="2" selection-end-line="178" selection-end-column="3" />
+            <state relative-caret-position="2018">
+              <caret line="182" column="3" selection-start-line="182" selection-end-line="200" selection-end-column="24" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -27,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="objects.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="objects.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignments/objects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="91" column="4" lean-forward="true" selection-start-line="91" selection-end-line="95" selection-end-column="2" />
+            <state relative-caret-position="168">
+              <caret line="105" column="2" selection-start-line="105" selection-start-column="2" selection-end-line="105" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -53,8 +53,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assignments/objects.js" />
         <option value="$PROJECT_DIR$/assignments/arrays.js" />
+        <option value="$PROJECT_DIR$/assignments/objects.js" />
       </list>
     </option>
   </component>
@@ -71,9 +71,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2568" />
-    <option name="y" value="145" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="2621" />
+    <option name="y" value="51" />
     <option name="width" value="1151" />
     <option name="height" value="879" />
   </component>
@@ -130,15 +130,15 @@
       <updated>1534207500375</updated>
       <workItem from="1534207502149" duration="83000" />
       <workItem from="1534207691066" duration="12628000" />
-      <workItem from="1534300257483" duration="9997000" />
+      <workItem from="1534300257483" duration="16299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22708000" />
+    <option name="totallyTimeSpent" value="29010000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2568" y="145" width="1151" height="879" extended-state="0" />
+    <frame x="2621" y="51" width="1151" height="879" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -174,13 +174,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/assignments/arrays.js</url>
-          <line>147</line>
+          <line>160</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/assignments/arrays.js</url>
-          <line>91</line>
+          <line>104</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -239,20 +239,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignments/arrays.js">
+    <entry file="file://$PROJECT_DIR$/assignments/objects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="173" column="7" selection-start-line="173" selection-start-column="2" selection-end-line="178" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="105" column="2" selection-start-line="105" selection-start-column="2" selection-end-line="105" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignments/objects.js">
+    <entry file="file://$PROJECT_DIR$/assignments/arrays.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="91" column="4" lean-forward="true" selection-start-line="91" selection-end-line="95" selection-end-column="2" />
+        <state relative-caret-position="2018">
+          <caret line="182" column="3" selection-start-line="182" selection-end-line="200" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
