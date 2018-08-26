@@ -1,7 +1,8 @@
 // Let's get some practice writing a few objects for a new group of interns at a small business.
 
 // ==== Challenge 1: Writing Objects ====
-// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
+// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. 
+// Create an object for each person in the company list:
 
 // 1,mmelloy0@psu.edu,Mitzi,F
 // 2,kdiben1@tinypic.com,Kennan,M
@@ -46,18 +47,11 @@ const Gannie = {
   gender: "M"
 };
 
-const Gannie = {
-  id: 3,
-  name: "Gannie",
-  email: "gmartinson3@illinois.edu",
-  gender: "M"
-};
-
 const Antonietta = {
   id: 4,
   name: "Antonietta",
   email: "adaine5@samsung.com",
-  gender: "F"
+  gender: "F",
 };
 
 // ==== Challenge 2: Reading Object Data ====
@@ -74,22 +68,23 @@ const Antonietta = {
 // Antonietta's Gender: console.log(Anoinetta.gender);
 
 // ==== Challenge 3: Object Methods ====
-// Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
+// Give Kennan the ability to say "Hello, my name is Kennan!" 
+// Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-const Kennan = {
-  id: 1,
-  name: "Kennan",
-  email: "kdiben1@tinypic.com",
-  gender: "M"
-};
 
 var speak = "Hi my name is "
 
 console.log(speak + Kennan.name + " !");
 
-// Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+// Antonietta loves math, give her the ability to multiply two numbers 
+//together and return the product.Use the console.log provided as a hint.
+Antonietta["multiplyNums"] = function(num1, num2) {
+    console.log (num1 * num2);
+  }
+  Antonietta.multiplyNums(3,4);
+
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -100,16 +95,41 @@ console.log(speak + Kennan.name + " !");
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {};
+let parent = {
+  name: "Susan ",
+  age: 70,
+  
+  child: {
+    name: "George ",
+    age: 50
+  },
+
+  grandchild: {
+    name: "Sam ",
+    age: 30
+  }
+};
+
+
+ 
+var speak = "Hi my name is "
+
+console.log(speak + parent.name + " !");
 
 // Log the parent object's name
+console.log(parent.name);
 
 // Log the child's age
+console.log(parent.child.age);
 
 // Log the name and age of the grandchild
+console.log(parent.child.name + parent.child.age);
 
-// Have the parent speak
+// Have the parent speak 
+console.log(speak + parent.name + " !");
 
 // Have the child speak
+console.log(speak + parent.child.name + " !");
 
-// Have the grandchild speak
+// Have the grandchild 
+console.log(speak + parent.grandchild.name + " !");
