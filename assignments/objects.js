@@ -18,13 +18,25 @@ const example = {
 }
 
 // Write your intern objects here:
+function interns(id, email, name, gender){
+    let intern = {
+        "id" : id,
+        "name" : name,
+        "email": email,
+        "gender": gender
+    }
 
+    return intern;
+}
+
+intern1 = interns(1,"mmelloy0@psu.edu","Mitzi","F");
+intern2 = interns(2,"kdiben1@tinypic.com","Kennan","M");
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(intern1.name);
 // Kennan's ID
 
 // Keven's email
