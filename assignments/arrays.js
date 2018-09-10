@@ -68,7 +68,7 @@ console.log(`Car ${inventory[32].id} is a ${inventory[32].car_year} ${inventory[
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = inventory[49];
+let lastCar = inventory[inventory.length-1];
 console.log(`The last car is a ${lastCar.car_make} ${lastCar.car_model}`);
 
 
@@ -77,8 +77,8 @@ console.log(`The last car is a ${lastCar.car_make} ${lastCar.car_model}`);
 let carModels = [];
 for (i = 0; i < inventory.length; i++) {
     carModels.push(inventory[i].car_model);
-    carModels.sort();
 }
+carModels.sort();
 console.log(carModels);
 
 
