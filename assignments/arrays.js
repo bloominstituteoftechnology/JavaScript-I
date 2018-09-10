@@ -83,7 +83,7 @@ for (let i = 0; i < inventory.length; i++) {
   carModels.push(inventory[i].car_model);
 }
 carModels.sort(function (a,b){
-return a.localeCompare(b, 'en', {'sensitivity': 'base'});
+return a.localeCompare(b, 'en', {'numeric': true, 'sensitivity': 'base'});
 });
 console.log(carModels);
 
