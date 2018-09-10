@@ -17,6 +17,8 @@ const example = {
   "gender": "F"
 }
 
+
+
 // Write your intern objects here:
 const companyList = [
   {
@@ -24,6 +26,7 @@ const companyList = [
     "name": "Mitzi",
     "email": "mmelloy0@psu.edu",
     "gender": "F"
+
   },
   KennanObj,
   {
@@ -68,6 +71,8 @@ const KennanObj = {
     console.log('Hello, my name is Kennan');
   }
 };
+
+
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
