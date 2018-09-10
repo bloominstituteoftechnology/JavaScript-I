@@ -59,28 +59,28 @@ const antonietta = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(mitzi.name);
+//console.log(mitzi.name);
 // Kennan's ID
-console.log(kennan.id);
+//console.log(kennan.id);
 // Keven's email
-console.log(keven.email);
+//console.log(keven.email);
 // Gannie's name
-console.log(gannie.name);
+//console.log(gannie.name);
 // Antonietta's Gender
-console.log(antonietta.gender);
+//console.log(antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 
 kennan.speak = (`Hello, my name is ${kennan.name}`);
-console.log(`${kennan.speak}`);
+//console.log(`${kennan.speak}`);
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 
 antonietta.multiplyNums = function(value1, value2){
   return value1 * value2;
 };
-console.log(antonietta.multiplyNums(3,4));
+//console.log(antonietta.multiplyNums(3,4));
 
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
@@ -119,19 +119,20 @@ const parent = {
 
 // Log the parent object's name
 
-console.log(parent.name);
+//console.log(parent.name);
 
 // Log the child's age
 
-console.log(parent.child.age);
+//console.log(parent.child.age);
 
 // Log the name and age of the grandchild
 
-console.log(parent.child.grandchild.name, parent.child.grandchild.age);
+//console.log(parent.child.grandchild.name, parent.child.grandchild.age);
+console.log(parent['child']['grandchild']['name'],parent['child']['grandchild']['age']);
 
 // Have the parent speak
-console.log(parent.speak());
+//console.log(parent.speak());
 // Have the child speak
-console.log(parent.child.speak());
+//console.log(parent.child.speak());
 // Have the grandchild speak
-console.log(parent.child.grandchild.speak());
+//console.log(parent.child.grandchild.speak());
