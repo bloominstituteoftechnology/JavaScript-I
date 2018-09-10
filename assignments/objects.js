@@ -18,27 +18,76 @@ const example = {
 }
 
 // Write your intern objects here:
+const intern01 = {
+	'id'  : 1,
+  'name'  : "Mitzi",
+  'email' : "mmelloy0@psu.edu",
+  'gender': "F" 
+};
+
+const intern02 = { 
+	'id'  : 2,
+  'name'  : "Kennan",
+  'email' : "kdiben1@tinypic.com",
+  'gender': "M" 
+};
+
+const intern03 = {  
+	'id'  : 3,
+  'name'  : "Keven",
+  'email' : "kmummery2@wikimedia.org",
+  'gender': "M" 
+};
+
+const intern04 = {  
+	'id'  : 4,
+  'name'  : "Gannie",
+  'email' : "gmartinson3@illinois.edu",
+  'gender': "M" 
+};
+
+const intern05 = {  
+	'id'  : 5,
+  'name'  : "Antonietta",
+  'email' : "adaine5@samsung.com",
+  'gender': "F" 
+};
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(intern01.name);
 
 // Kennan's ID
+console.log(intern02.id);
 
 // Keven's email
+console.log(intern03.email);
 
 // Gannie's name
+console.log(intern04.name);
 
 // Antonietta's Gender
+console.log(intern05.gender);
+
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
+intern02.speak = function() {
+	return `Hello, my name is ${this.name}!`;
+}
+
 // console.log(kennan.speak());
+console.log(intern02.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
+intern05.multiplyNums = function(num1, num2) {
+	return num1 * num2;
+}
 //console.log(antonietta.multiplyNums(3,4));
+console.log(intern05.multiplyNums(10,10));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -49,7 +98,13 @@ const example = {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {}
+const parent = {
+	'name'  : "Susan",
+	'age'	:  70,
+	speak 	:  function() {
+		return `My name is ${this.name}`;
+	}
+};
 
 // Log the parent object's name
 
