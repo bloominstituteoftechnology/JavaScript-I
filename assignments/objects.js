@@ -17,26 +17,66 @@ const example = {
   "gender": "F"
 }
 
-// Write your intern objects here:
 
+const mitzi = {
+  'id': 1,
+  'name': 'Mitzi',
+  'email': 'mmelloy0@psu',
+  'gender': 'F'
+}
 
+const kennan = {
+  'id': 2,
+  'name': 'Kennan',
+  'email': 'mkdiben1@tinypic.com',
+  'gender': 'M',
+  speak: function() {
+    return `Hello, my name is ${this.name}.`;
+  }
+}
+const keven = {
+  'id': 3,
+  'name': 'Keven',
+  'email': 'kmummery20@wikimedia.org',
+  'gender': 'M'
+}
+const gannie= {
+  'id': 4,
+  'name': 'Gannie',
+  'email': 'gmartinson3@illinois.edu',
+  'gender': 'M'
+}
+const antonietta = {
+  'id': 5,
+  'name': 'Antonietta',
+  'email': 'adaine5@samsung.com',
+  'gender': 'F',
+  multiplyNums: function(a, b) { 
+    return a * b; 
+  }
+}
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
-
+console.log(mitzi.name);
 // Mitzi's name
 
+console.log(kennan.id);
 // Kennan's ID
 
+console.log(keven.email);
 // Keven's email
 
+console.log(gannie.name);
 // Gannie's name
 
+console.log(antonietta.gender);
 // Antonietta's Gender
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
+console.log(kennan.speak());
 // console.log(kennan.speak());
-
+console.log(antonietta.multiplyNums(2, 3));
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
