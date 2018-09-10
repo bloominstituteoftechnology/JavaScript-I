@@ -1,4 +1,4 @@
-console.log('******* Stretch Answers *******')
+console.log('******* Arrow Functions *******')
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
 // let myFunction = function () {};

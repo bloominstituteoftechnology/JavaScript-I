@@ -72,6 +72,8 @@ console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${i
 let lastCar = `${inventory[inventory.length - 1].car_make} ${inventory[inventory.length - 1].car_model}`;
 console.log(lastCar);
 
+
+
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
@@ -82,8 +84,14 @@ for(let i = 0; i < inventory.length; i++){
     carModels.push(inventory[i].car_model);
     // carModels.sort();
 }
-
 console.log(carModels.sort());
+
+// STRETCH **********
+const carModelsMap = inventory.map(model => model.car_model);
+console.log('STRETCH **********\n', carModelsMap.sort())
+
+
+
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
@@ -113,7 +121,9 @@ console.log(oldCars, oldCars.length);
 //     }
 // })
 const oldCarsFilter = carYears.filter(year => year < 2000);
-console.log(oldCarsFilter, oldCarsFilter.length);
+console.log('STRETCH **********\n', oldCarsFilter, oldCarsFilter.length);
+
+
 
 
 // ==== Challenge 6 ====
@@ -128,5 +138,5 @@ console.log(JSON.stringify(BMWAndAudi));
 
 // STRETCH **********
 const BMWAndAudiFilter = inventory.filter(BMWaudi => BMWaudi.car_make === 'BMW' || BMWaudi.car_make === 'Audi');
-console.log(BMWAndAudiFilter);
+console.log('STRETCH **********\n', BMWAndAudiFilter);
 
