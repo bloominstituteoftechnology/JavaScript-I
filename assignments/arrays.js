@@ -68,19 +68,41 @@ for(let i =  0; i < inventory.length; i++){
         console.log(`Car 33 is a ${inventory[i].car_year} *car make goes here* ${inventory[i].car_make} ${inventory[i].car_model}`);
     };
 }
-console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
+//console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 
 
 
-// // ==== Challenge 2 ====
-// // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-// let lastCar = 0;
-// console.log();
+// ==== Challenge 2 ====
+// The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
+let lastCar = 0;
+
+for(let i = 0; i < inventory.length-1; i++){
+    console.log(inventory[i]);
+}
+//console.log();
 
 // // ==== Challenge 3 ====
 // // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-// let carModels = [];
-// console.log();
+let carModels = [];
+let sortedArray  = inventory.sort(function(a, b){ 
+    let carModelA = a.car_model.toUpperCase();
+    let carModelB = b.car_model.toUpperCase();
+
+    if (carModelA < carModelB){
+        return -1;
+    }
+
+    if(carModelA > carModelB){
+        return 1;
+    }
+    return 0;
+});
+
+for(let i = 0; i < sortedArray.length; i++){
+   
+    carModels.push(sortedArray[i]);
+}
+console.log(carModels);
 
 // // ==== Challenge 4 ====
 // // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
