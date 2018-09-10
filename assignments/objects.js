@@ -35,18 +35,18 @@ const keenan = {
 
 };
 
-const kevan = {
+const keven = {
   "id": 2,
-  "name": 'Kevan',
+  "name": 'Keven',
   "email": "gmartinson3@illinois.edu",
   "gender": "M"
 
 };
 
 
-const ganie = {
+const gannie = {
   "id": 3,
-  "name": 'Ganie',
+  "name": 'Gannie',
   "email": "kdiben1@tinypic.com",
   "gender": "M"
 
@@ -68,13 +68,22 @@ const antonietta = {
 
 // Mitzi's name
 
+console.log(mitzi.name);
+
 // Kennan's ID
 
+console.log(keenan.id);
 // Keven's email
+
+console.log(keven.email);
 
 // Gannie's name
 
+console.log(gannie.name);
+
 // Antonietta's Gender
+
+console.log(antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
