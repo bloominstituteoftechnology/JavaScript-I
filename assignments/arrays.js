@@ -106,15 +106,13 @@ for(let i = 0; i < carYears.length; i++){
 }
 console.log(oldCars, oldCars.length); 
 
-// STRETCH
+// STRETCH **********
 // const oldCarsFilter = carYears.filter(function(year){
 //     if(year < 2000){
 //         return true;
 //     }
 // })
-
 const oldCarsFilter = carYears.filter(year => year < 2000);
-
 console.log(oldCarsFilter, oldCarsFilter.length);
 
 
@@ -128,5 +126,7 @@ for(let i = 0; i < inventory.length; i++){
 }
 console.log(JSON.stringify(BMWAndAudi));
 
-
+// STRETCH **********
+const BMWAndAudiFilter = inventory.filter(BMWaudi => BMWaudi.car_make === 'BMW' || BMWaudi.car_make === 'Audi');
+console.log(BMWAndAudiFilter);
 
