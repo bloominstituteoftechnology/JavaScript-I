@@ -107,6 +107,12 @@ console.log(carModels);
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
+for(let inventoryIndex = 0; inventoryIndex < inventory.length; inventoryIndex++){
+    var indexedYear = inventory[inventoryIndex].car_year;
+    if(carYears.indexOf(indexedYear) === -1){
+        carYears.push(indexedYear);
+    }
+}
 console.log();
 
 // ==== Challenge 5 ====
