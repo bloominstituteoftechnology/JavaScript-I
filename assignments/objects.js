@@ -30,7 +30,10 @@ const kennan = {
   "id": 2,
   "email": "kdiben1@tinypic.com",
   "name": "Kennan",
-  "gender": "M"
+  "gender": "M",
+  speak: function() {
+    return("Hello, my name is Kennan!");
+  }
 }
 
 const keven = {
@@ -51,7 +54,10 @@ const antonietta = {
   "id": 5,
   "email": "adaine5@samsung.com",
   "name": "Antonietta",
-  "gender": "F"
+  "gender": "F",
+  multiplyNums: function(x,y) {
+    return(x*y);
+  }
 }
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -79,16 +85,13 @@ console.log(antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-//console.log(Kennan.speak());
+//console.log(kennan.speak());
 
 
-console.log('Hello, my name is ${kennan.name}!');
+console.log(kennan.speak());
 
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-function multiplyNums(a,b) {
-  return (a * b);
-}
 
 console.log(antonietta.multiplyNums(3,4));
 
