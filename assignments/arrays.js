@@ -68,21 +68,19 @@ for(let i =  0; i < inventory.length; i++){
         console.log(`Car 33 is a ${inventory[i].car_year} *car make goes here* ${inventory[i].car_make} ${inventory[i].car_model}`);
     };
 }
-//console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
+console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 
 
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 // let lastCar = 0;
+let lastcar = inventory[inventory.length -1];
 
-// for(let i = 0; i < inventory.length-1; i++){
-//     console.log(inventory[i]);
-// }
-// console.log();
+console.log(`${lastcar.car_make} ${lastcar.car_model}`);
 
-// // ==== Challenge 3 ====
-// // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
+// // // ==== Challenge 3 ====
+// // // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
 let sortedArray  = inventory.sort(function(a, b){ 
     let carModelA = a.car_model.toUpperCase();
@@ -123,7 +121,6 @@ for(let i = 0; i < carYears.length; i++){
     }
 
 }
-console.log(oldCars);
 console.log(oldCars.length); 
 
 
@@ -138,7 +135,3 @@ for(let i = 0; i < inventory.length; i++){
     }
 }
 console.log(JSON.stringify(BMWAndAudi));
-
-
-
-
