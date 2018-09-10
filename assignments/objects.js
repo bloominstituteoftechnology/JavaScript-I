@@ -131,11 +131,10 @@ console.log(parent.child.age);
 console.log(parent.child.grandchild.name, parent.name.child.grandchild.age)
 
 // Have the parent speak
-// const letSpeak = function() {
-//   return `Hello, my name is ${parent.name}!`;  } 
-//   parent.speak = letSpeak;
-//   console.log(parent.speak());
+console.log(parent.speak());
 
-// Have the child spea
+// Have the child speak
+console.log(parent.child.speak());
 
 // Have the grandchild speak
+console.log(parent.child.grandchild.speak());
