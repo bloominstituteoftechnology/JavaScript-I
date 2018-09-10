@@ -64,18 +64,18 @@ let inventory = [
   
   // ==== Challenge 1 ====
   // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-  // console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
-  // for(let i = 0; i < inventory.length; i++){
-  //   if(i === 33) {
-  //     console.log(`Car 33 is a ${inventory[33].car_year} ${inventory[33].car_make} ${inventory[33].car_model}`);
-  //   }
-  // }
+  console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
+  for(let i = 0; i < inventory.length; i++){
+    if(i === 33) {
+      console.log(`Car 33 is a ${inventory[33].car_year} ${inventory[33].car_make} ${inventory[33].car_model}`);
+    }
+  }
   
   
   
   // ==== Challenge 2 ====
   // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-  // console.log(`${inventory[inventory.length-1].car_make} ${inventory[inventory.length-1].car_model} `);
+  console.log(`${inventory[inventory.length-1].car_make} ${inventory[inventory.length-1].car_model} `);
   
   // ==== Challenge 3 ====
   // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
@@ -85,11 +85,13 @@ let inventory = [
     for (let i = 0; i < inventory.length; i++) {
       let first = inventory[i].car_make;
       let second = inventory[i+1].car_make;
+    
+      console.log(second);
   
-      if (first.charAt(0) > second.charAt(0)) {
-        carModels.pop(first);
-      } else {
+      if (inventory[i].car_make > second.charAt(0) ) {
         carModels.push(first);
+      } else {
+        carModels.pop(first);
       }
     }
   
