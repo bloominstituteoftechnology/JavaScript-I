@@ -26,15 +26,15 @@ const internsRaw = `1,mmelloy0@psu.edu,Mitzi,F,
 5,adaine5@samsung.com,Antonietta,F`
   .split('\n')
   .map(chunk => chunk.split(','))
-  .map(student => ({
-    id: student[0],
-    name: student[2],
-    email: student[1],
-    gender: student[3]
+  .map(intern => ({
+    id: intern[0],
+    name: intern[2],
+    email: intern[1],
+    gender: intern[3]
   }))
-  .map(student => {
+  .map(intern => {
     console.log(
-      `const ${student.name} = ${JSON.stringify(student)
+      `const ${intern.name} = ${JSON.stringify(intern)
         .split('')
         .map(
           char =>
@@ -91,21 +91,32 @@ const Antonietta = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(Mitzi.name)
 
 // Kennan's ID
+console.log(Kennan.id)
 
 // Keven's email
+console.log(Keven.email)
 
 // Gannie's name
+console.log(Gannie.name)
 
 // Antonietta's Gender
+console.log(Antonietta.gender)
 
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+Kennan.speak = function() {console.log(`Hello, my name is ${this.name}`)}
+Kennan.speak()
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+Antonietta.multiplyNums = (a,b) => a * b
+console.log(Antonietta.multiplyNums(3,4))
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
