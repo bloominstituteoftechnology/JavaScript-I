@@ -10,9 +10,9 @@
 // 5,adaine5@samsung.com,Antonietta,F
 const info = [[501, 'mmelloy0@psu.edu', 'Mitzi', 'F']
 [502, 'kdiben1@tinypic.com', 'Kennan', 'M']
-[503. 'kmummery2@wikimedia.org', 'Keven', 'M']
+[503, 'kmummery2@wikimedia.org', 'Keven', 'M']
 [504, 'gmartinson3@illinois.edu', 'Gannie', 'M']
-[505, 'adaine5@samsung.com'. 'Antonietta', 'F']]
+[505, 'adaine5@samsung.com', 'Antonietta', 'F']]
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
 const example = {
@@ -34,28 +34,28 @@ const mitzi = {
 }
 
 const kennan = {
-  id = 502,
+  id: 502,
   email: 'kdiben1@tinypic.com',
   name: 'Kennan',
   gender: 'M' 
 }
 
 const keven = {
-  id = 503,
+  id: 503,
   email: 'kkmummery2@wikimedia.org',
   name: 'Keven',
   gender: 'M' 
 }
 
 const gannie = {
-  id = 504,
+  id: 504,
   email: 'gmartinson3@illinois.edu',
   name: 'Gannie',
   gender: 'M' 
 }
 
 const antonietta = {
-  id = 505,
+  id : 505,
   email: 'adaine5@samsung.com',
   name: 'Antonietta',
   gender: 'F' 
@@ -136,10 +136,6 @@ console.log(parent.child.grandchild.name, parent.name.child.grandchild.age)
 //   parent.speak = letSpeak;
 //   console.log(parent.speak());
 
-// Have the child speak
-parent.child.speak = letSpeak;
-console.log(parent.child.speak());
+// Have the child spea
 
 // Have the grandchild speak
-parent.child.grandchild.speak = letSpeak;
-console.log(parent.child.grandchild.speak());
