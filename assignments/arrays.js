@@ -107,8 +107,8 @@ console.log(
 let carModels = [];
 for (let i = 0; i < inventory.length; i++) {
   carModels.push(inventory[i].car_model);
-  console.log(carModels.sort());
 }
+console.log(carModels.sort());
 
 // Challenge 3 stretch version using map!
 // let carModels= inventory.map((item)=>item.car_model)
