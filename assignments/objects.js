@@ -8,6 +8,11 @@
 // 3,kmummery2@wikimedia.org,Keven,M
 // 4,gmartinson3@illinois.edu,Gannie,M
 // 5,adaine5@samsung.com,Antonietta,F
+const info = [[501, 'mmelloy0@psu.edu', 'Mitzi', 'F']
+[502, 'kdiben1@tinypic.com', 'Kennan', 'M']
+[503. 'kmummery2@wikimedia.org', 'Keven', 'M']
+[504, 'gmartinson3@illinois.edu', 'Gannie', 'M']
+[505, 'adaine5@samsung.com'. 'Antonietta', 'F']]
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
 const example = {
@@ -19,26 +24,80 @@ const example = {
 
 // Write your intern objects here:
 
+const newInterns = {Mitzi, Kennan, Keven, Gannie, Antonietta}
 
+const mitzi = {
+  id: 501, 
+  email: 'mmelloy0@psu.edu',
+  name: 'Mitzi',
+  gender: 'F'
+}
+
+const kennan = {
+  id = 502,
+  email: 'kdiben1@tinypic.com',
+  name: 'Kennan',
+  gender: 'M' 
+}
+
+const keven = {
+  id = 503,
+  email: 'kkmummery2@wikimedia.org',
+  name: 'Keven',
+  gender: 'M' 
+}
+
+const gannie = {
+  id = 504,
+  email: 'gmartinson3@illinois.edu',
+  name: 'Gannie',
+  gender: 'M' 
+}
+
+const antonietta = {
+  id = 505,
+  email: 'adaine5@samsung.com',
+  name: 'Antonietta',
+  gender: 'F' 
+}
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(mitzi.name);
 
 // Kennan's ID
+console.log(kennan.id);
 
 // Keven's email
+console.log(keven.email);
 
 // Gannie's name
+console.log(gannie.name);
 
 // Antonietta's Gender
+console.log(antoinetta.gender);
+
+
+
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+const letSpeak = function() {
+  return `Hello, my name is ${this.name}!`;  } 
+  kennan.speak = letSpeak;
+  console.log(kennan.speak());
+
+
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+const letMultiply = function (x,u)
+{return x*u};
+antonietta.multiplyNums = letMultiply;
+console.log(antonietta.multiplyNums(5,8));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -50,15 +109,37 @@ const example = {
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
 const parent = {}
+parent.name = 'Susan';
+parent.age = 70;
+
+parent.child = {}
+parent.child.name = 'George';
+parent.child.age = 5;
+
+parent.child.grandchild = {};
+parent.child.grandchild.name = 'Sam';
+parent.child.grandchild.age = 30;
 
 // Log the parent object's name
+console.log(parent.name);
+
 
 // Log the child's age
+console.log(parent.child.age); 
 
 // Log the name and age of the grandchild
+console.log(parent.child.grandchild.name, parent.name.child.grandchild.age)
 
 // Have the parent speak
+// const letSpeak = function() {
+//   return `Hello, my name is ${parent.name}!`;  } 
+//   parent.speak = letSpeak;
+//   console.log(parent.speak());
 
 // Have the child speak
+parent.child.speak = letSpeak;
+console.log(parent.child.speak());
 
 // Have the grandchild speak
+parent.child.grandchild.speak = letSpeak;
+console.log(parent.child.grandchild.speak());
