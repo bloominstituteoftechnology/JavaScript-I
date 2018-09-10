@@ -98,6 +98,7 @@ for (let i = 0; i < inventory.length; i++) {
       oldCars.push(inventory[i].car_year);  
     } 
 }
+oldCars.sort();
 console.log(oldCars);
 
 // ==== Challenge 6 ====
