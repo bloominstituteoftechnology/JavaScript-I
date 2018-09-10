@@ -131,15 +131,21 @@ console.log(Antonietta.multiplyNums(3, 4))
 const parent = {
   name: 'Susan',
   age: 70,
-  speak: function() { console.log(this.name) },
+  speak: function() {
+    console.log(this.name)
+  },
   child: {
     name: 'George',
     age: 50,
-    speak: function() { console.log(this.name) },
+    speak: function() {
+      console.log(this.name)
+    },
     grandchild: {
       name: 'Sam',
       age: 30,
-      speak: function() { console.log(this.name) },
+      speak: function() {
+        console.log(this.name)
+      }
     }
   }
 }
@@ -168,3 +174,13 @@ parent.child.speak()
 // Have the grandchild speak
 
 parent.child.grandchild.speak()
+
+// with .call()
+
+const speak = function() {
+  console.log(this.name)
+}
+
+speak.call(parent)
+speak.call(parent.child)
+speak.call(parent.child.grandchild)
