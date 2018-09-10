@@ -328,8 +328,8 @@ console.log(`${inventory[inventory.length - 1].car_make} ${inventory[inventory.l
 let carModels = [];
 for (let i = 0; i < inventory.length; i++) {
     carModels.push(inventory[i].car_model);
-    carModels.sort();
-}
+ }
+carModels.sort();
 console.log(carModels);
 
 // ==== Challenge 4 ====
