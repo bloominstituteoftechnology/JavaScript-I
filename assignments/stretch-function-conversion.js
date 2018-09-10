@@ -32,3 +32,7 @@ let subtract = (param1, param2) => {
 // });
 // console.log(triple);
 
+const triple = exampleArray.map(num => {
+    return num * 3;
+  });
+  console.log(triple);
