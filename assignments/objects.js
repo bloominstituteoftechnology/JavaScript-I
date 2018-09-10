@@ -30,9 +30,7 @@ const kennan = {
   name: "Kennan",
   email: "kdiben1@tinypic.com",
   gender: "M",
-  speak: function() {
-    console.log("Hello, my name is Kennan!");
-  }
+  speak: () => "Hello, my name is Kennan!"
 };
 
 const keven = {
