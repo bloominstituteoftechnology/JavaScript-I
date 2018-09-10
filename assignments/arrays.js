@@ -84,9 +84,8 @@ let inventory = [
   let carModels = [];
     for (let i = 0; i < inventory.length; i++) {
       let first = inventory[i].car_make;
-      let second = inventory[i+1].car_make;
+      let second = inventory[i++].car_make;
     
-      console.log(second);
   
       if (inventory[i].car_make > second.charAt(0) ) {
         carModels.push(first);
