@@ -58,7 +58,7 @@ const interInfo ={
 console.log(interInfo[1].name);
 
 // Kennan's ID
-console.log(interInfo.)
+console.log(interInfo[2].id);
 
 // Keven's email
 console.log(interInfo[3].email);
