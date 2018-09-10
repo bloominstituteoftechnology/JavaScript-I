@@ -30,7 +30,7 @@ const kennan = {
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M",
-  speak: () => console.log('Hello, my name is Kennan!'),
+  speak: () => console.log(`Hello, my name is ${kennan.name}!`),
 };
 const keven = {
   "id": 2,
@@ -88,7 +88,8 @@ const parent = {
   age: 70,
   // speak: () => console.log(this.name),
   // speak: () => console.log(this),
-  speak: () => console.log(JSON.stringify(this)),
+  // speak: () => console.log(JSON.stringify(this)),
+  speak: () => console.log(parent.name),
   child: {
     name: 'George',
     age: 50,
@@ -108,9 +109,10 @@ console.log(parent.name);
 console.log(parent.child.name);
 
 // Log the name and age of the grandchild
-
-const { name, age } = parent.child.grandchild;
-console.log(name, age);
+{
+  const { name, age } = parent.child.grandchild;
+  console.log(name, age);
+}
 
 // Have the parent speak
 parent.speak();
