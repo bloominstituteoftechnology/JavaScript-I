@@ -83,7 +83,26 @@ console.log(`Last Car: ${lastCar.car_make} ${lastCar.car_model}`);
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
-console.log();
+outerLoop: for(let inventoryIndex = 0; inventoryIndex < inventory.length; inventoryIndex++){
+    // For each car, get the model and compare to previous models.
+    const indexedModel = inventory[inventoryIndex].car_model;
+    for(let modelIndex = 0; modelIndex < carModels.length; modelIndex++){
+        const testModel = carModels[modelIndex];
+    // Don't add indexed model if that model already exists in list.
+        if(indexedModel.toLowerCase() === testModel.toLowerCase()){
+            continue outerLoop;
+        }
+    // Find the first index where the new model is alphabetically less than the rest.
+    // Insert model there.
+        if(indexedModel.toLowerCase() < testModel.toLowerCase()){
+            carModels.splice(modelIndex, 0, indexedModel);
+            continue outerLoop;
+        }
+    }
+    // Otherwise, add new model to end of list.
+    carModels.push(indexedModel);
+}
+console.log(carModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
