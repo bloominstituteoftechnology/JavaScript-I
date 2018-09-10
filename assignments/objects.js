@@ -54,7 +54,7 @@ const Antonietta = {
   "first name": "Antonietta",
   "gender": "F",
   multiplyNums: function (num1, num2) {
-    console.log(num1 + num2);
+    console.log(num1 * num2);
   }
 };
 
