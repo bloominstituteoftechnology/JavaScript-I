@@ -85,12 +85,11 @@ let inventory = [
     for (let i = 0; i < inventory.length; i++) {
       let first = inventory[i].car_make;
       let second = inventory[i++].car_make;
-    
-  
-      if (inventory[i].car_make > second.charAt(0) ) {
-        carModels.push(first);
-      } else {
+
+      if (first.charAt(0) > second.charAt(0) ) {
         carModels.pop(first);
+      } else {
+        carModels.push(second);
       }
     }
   
