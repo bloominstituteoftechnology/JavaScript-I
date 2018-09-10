@@ -18,39 +18,41 @@ const example = {
 }
 
 // Write your intern objects here:
-const internInfo = {
+const intern1 = {
   'id': 1,
   'email': 'mmelloy0@psu.edu',
   'firstName': 'Mitzi',
-  'gender': 'F';
+  'gender': 'F'
 
 }
-const internInfo = {
+const intern2 = {
   'id': 2,
   'email': 'kdiben1@tinypic.com',
   'firstName': 'Kennan',
-  'gender': 'M';
+  'gender': 'M',
+  'speak': 'Hello, my name is Kennan!'
+  }
 
-}
-const internInfo = {
+
+const intern3 = {
   'id': 3,
   'email': 'kmummery2@wikimedia.org',
   'firstName': 'Kevin',
-  'gender': 'M';
+  'gender': 'M'
 
 }
-const internInfo = {
+const intern4 = {
   'id': 4,
   'email': 'gmartinson3@illinois.edu',
   'firstName': 'Gannie',
-  'gender': 'M';
+  'gender': 'M'
 
 }
-const internInfo = {
+const intern5 = {
   'id': 5,
   'email': 'adaine5@samsung.com',
   'firstName': 'Antonietta',
-  'gender': 'F';
+  'gender': 'F'
 
 }
 
@@ -58,22 +60,30 @@ const internInfo = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(intern1.firstName);
 
 // Kennan's ID
+console.log(intern2.id);
 
 // Keven's email
+console.log(intern3.email);
 
 // Gannie's name
+console.log(intern4.firstName);
 
 // Antonietta's Gender
+console.log(intern5.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-
+console.log(intern2.speak);
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+intern5.doMath = function(num1, num2) {
+  console.log(num1 * num2);
+}
+intern5.doMath(3,4)
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
