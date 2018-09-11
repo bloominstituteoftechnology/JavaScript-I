@@ -19,37 +19,37 @@ const example = {
 
 // Write your intern objects here:
 
-const interInfo = [
-  {
-  "id": 1,
-  "name": "Mitzi,F",
-  "email": "mmelloy0@psu.edu",
-  "gender": "F"
-}
-const interInfo ={
-  "id": 2,
-  "name": "Kennan,M",
-  "email": "kdiben1@tinypic.com",
-  "gender": "M"
-}
-const interInfo ={
-  "id": 3,
-  "name": "Keven,M",
-  "email": "kmummery2@wikimedia.org",
-  "gender": "M"
-}
-const interInfo ={
-  "id": 4,
-  "name": "Gannie,M",
-  "email": "gmartinson3@illinois.edu",
-  "gender": "F"
-}
-const interInfo ={
-  "id": 5,
-  "name": "Antonietta,F",
-  "email": "adaine5@samsung.com",
-  "gender": "F"
-}
+const interInfo = [{
+    "id": 1,
+    "name": "Mitzi,F",
+    "email": "mmelloy0@psu.edu",
+    "gender": "F",
+  }
+
+  const interInfo = {
+    "id": 2,
+    "name": "Kennan,M",
+    "email": "kdiben1@tinypic.com",
+    "gender": "M"
+  }
+  const interInfo = {
+    "id": 3,
+    "name": "Keven,M",
+    "email": "kmummery2@wikimedia.org",
+    "gender": "M"
+  }
+  const interInfo = {
+    "id": 4,
+    "name": "Gannie,M",
+    "email": "gmartinson3@illinois.edu",
+    "gender": "F"
+  }
+  const interInfo = {
+    "id": 5,
+    "name": "Antonietta,F",
+    "email": "adaine5@samsung.com",
+    "gender": "F"
+  }
 ]
 
 
@@ -57,7 +57,9 @@ const interInfo ={
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(interInfo[0].name);
+if (interInfo.id === 0) {
+  console.log(interInfo[i].name);
+}
 
 // Kennan's ID
 console.log(interInfo[1].id);
@@ -77,7 +79,7 @@ console.log(Kennan.speak(greet));
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-console.log(antonietta.doMath(2*2));
+console.log(antonietta.doMath(2 * 2));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
