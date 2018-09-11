@@ -1,7 +1,7 @@
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
 // let myFunction = function () {};
-let myFunction = () => 
+let myFunction = () => null;
 
 // let anotherFunction = function (param) {
 //   return param;
