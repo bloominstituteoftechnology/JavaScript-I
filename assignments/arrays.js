@@ -87,6 +87,12 @@ for (let i = 0; i < inventory.length; i++) {
   }
 };
 
+// Stretch
+const car33 = inventory.find(car => {
+	if (car.id === 33) { return car };
+});
+console.log(car33);
+
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory. What is the make
@@ -102,6 +108,10 @@ for (let i = 0; i < inventory.length; i++) {
   }
 }
 
+// stretch
+const lastCar = inventory[inventory.length - 1];
+console.log(lastCar);
+
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all
 // the car model names into alphabetical order and log the results in the console
@@ -111,6 +121,10 @@ for (let i = 0; i < inventory.length; i++) {
 }
 console.log(carModels.sort());
 
+// Stretch
+const alphaModels = inventory.map(arg => arg.car_model).sort();
+console.log(alphaModels);
+
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array
 // from the dealer data containing only the car years and log the result in the console.
@@ -118,6 +132,10 @@ let carYears = [];
 for (let i = 0; i < inventory.length; i++) {
   carYears.push(inventory[i].car_year);
 }
+console.log(carYears);
+
+// Stretch
+const carYears = inventory.map(arg => arg.car_year);
 console.log(carYears);
 
 // ==== Challenge 5 ====
@@ -132,6 +150,10 @@ for (let i = 0; i < carYears.length; i++) {
 }
 console.log(oldCars);
 
+// Stretch
+const oldCars = carYears.filter(carYear => carYear < 2000);
+console.log(oldCars);
+
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an
 // array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array,
@@ -142,4 +164,7 @@ for (let i = 0; i < inventory.length; i++) {
     BMWAndAudi.push(inventory[i]);
   }
 }
+console.log(JSON.stringify(BMWAndAudi));
+
+const BMWAndAudi = inventory.filter(car => car.car_make === 'BMW' || car.car_make === 'Audi');
 console.log(JSON.stringify(BMWAndAudi));
