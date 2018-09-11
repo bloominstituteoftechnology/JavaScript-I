@@ -50,9 +50,9 @@ const gannie = {
   "gender": "M"
 }
 
-const antoinietta = {
+const antonietta = {
   "id": 5,
-  "name": "Antoinietta",
+  "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F",
   multiplyNums: function (num1, num2) {
@@ -85,7 +85,7 @@ kennan.speak();
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-antoinietta.multiplyNums(3, 4);
+antonietta.multiplyNums(3, 4);
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -97,24 +97,15 @@ antoinietta.multiplyNums(3, 4);
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
 const parent = {
-  'name': Susan,
+  'name': 'Susan',
   'age': 70,
   'child': {
-    'name': George,
+    'name': 'George',
     'age': 50,
     'grandchild': {
-      'name': Sam,
+      'name': 'Sam',
       'age': 30,
-      speak: function () {
-        return this;
-      }
     },
-    speak: function () {
-
-    }
-  }
-  speak: function () {
-
   }
 }
 
