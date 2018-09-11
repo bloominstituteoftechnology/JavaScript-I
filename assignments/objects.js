@@ -19,32 +19,46 @@
 
 // Write your intern objects here:
 
-const theInterns = [{
+const mitzi = {
   "id": 1,
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
   "gender": "F"
-}, {
+}
+
+const kennan = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
-  "gender": "M"
-}, {
+  "gender": "M",
+  speak: function () {
+    console.log('Hello, my name is Kennan!')
+  }
+}
+
+const keven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M"
-}, {
+}
+
+const gannie = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
   "gender": "M"
-}, {
+}
+
+const antoinietta = {
   "id": 5,
-  "name": "Antonietta",
+  "name": "Antoinietta",
   "email": "adaine5@samsung.com",
-  "gender": "F"
-}]
+  "gender": "F",
+  multiplyNums: function (num1, num2) {
+    console.log(num1 * num2)
+  }
+};
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
