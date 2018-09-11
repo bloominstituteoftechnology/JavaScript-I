@@ -87,17 +87,15 @@ const parent = {
   name: 'Susan',
   age: 70,
   // speak: () => console.log(this.name),
-  // speak: () => console.log(this),
-  // speak: () => console.log(JSON.stringify(this)),
-  speak: () => console.log(parent.name),
+  speak: function() {console.log(this.name)},
   child: {
     name: 'George',
     age: 50,
-    speak: () => console.log(parent.child.name),
+    speak: function() {console.log(this.name)},
     grandchild: {
       name: 'Sam',
       age: 30,
-      speak: () => console.log(parent.child.grandchild.name),
+      speak: function() {console.log(this.name)},
     }
   },
 }
