@@ -85,7 +85,7 @@ function lastMake (err) {
   return err[lastCar].car_make + " " + err[lastCar].car_model
 }
 
-console.log(lastMake(inventory));
+console.log(lastMake(inventory));;
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
@@ -122,7 +122,7 @@ console.log(carDate(inventory));
 let oldCars =[];
 function getOlder (orr) {
   for (let i = 0; i < carYears.length; i++){
-    if (carYears[i] > 2000){
+    if (carYears[i] < 2000){
       oldCars.push(carYears[i]);
       console.log(oldCars);
     }
@@ -148,6 +148,8 @@ function getBMW(drr){
   console.log(BMWAndAudi)
 }
 console.log(getBMW(inventory));
+
+JSON.stringify(BMWAndAudi);
 
 
 
