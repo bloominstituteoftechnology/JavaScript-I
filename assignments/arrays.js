@@ -82,7 +82,6 @@ for (let i = 0; i < inventory.length; i ++) {
 for (let x = 0; x < 50; x++) {
     for (let i = 0; i < carModels.length - 1; i ++) {
         if (carModels[i].toUpperCase() > carModels[i + 1].toUpperCase()) {
-            console.log(carModels[i], "<", carModels[i + 1]);
             let currentModel = carModels[i];
             carModels[i] = carModels[i + 1];
             carModels[i + 1] = currentModel;
