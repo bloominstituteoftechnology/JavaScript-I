@@ -96,11 +96,20 @@ console.log(Antonietta.multiplyNums(3, 4));
 
 const parent = {
   name: 'Susan',
-  age: 70 {
+  age: 70
+  speak: () => {
+    console.log('Hello, my name is Susan')
+  } {
     name: 'George',
-    age: 50 {
+    age: 50,
+    speak: () => {
+      console.log('Hello, my name is Susan')
+    } {
       name: 'Sam',
-      age: 30
+      age: 30,
+      speak: () => {
+        console.log('Hello, my name is Sam')
+      }
     }
   }
 }
