@@ -19,7 +19,8 @@ const example = {
 
 // Write your intern objects here:
 
-const interInfo ={
+const interInfo = [
+  {
   "id": 1,
   "name": "Mitzi,F",
   "email": "mmelloy0@psu.edu",
@@ -49,22 +50,24 @@ const interInfo ={
   "email": "adaine5@samsung.com",
   "gender": "F"
 }
+]
 
 
 // ==== Challenge 2: Reading Object Data ====
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(interInfo[1].name);
+console.log(interInfo[0].name);
 
 // Kennan's ID
-console.log(interInfo[2].id);
+console.log(interInfo[1].id);
 
 // Keven's email
-console.log(interInfo[3].email);
+console.log(interInfo[2].email);
 // Gannie's name
 
 // Antonietta's Gender
+console.log(interInfo[4].gender);
 
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
@@ -74,6 +77,7 @@ console.log(Kennan.speak(greet));
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+console.log(antonietta.doMath(2*2));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
