@@ -112,7 +112,7 @@ console.log(parent.name);
 // Log the child's age
 console.log(parent.child.age);
 // Log the name and age of the grandchild
-console.log(Object.values(parent.child.grandchild))
+console.log(parent.child.grandchild.name, parent.child.grandchild.age);
 // Have the parent speak
 parent.speak();
 // Have the child speak
