@@ -76,8 +76,8 @@ console.log(`${inventory[49].car_make} ${inventory[49].car_model}`);
 let carModels = [];
 for (let i = 0; i < inventory.length; i++) {
   carModels.push(inventory[i].car_model)
-  carModels.sort();
 }
+carModels.sort();
 console.log(carModels);
 
 // ==== Challenge 4 ====
