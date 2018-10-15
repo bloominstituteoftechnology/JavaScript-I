@@ -97,12 +97,15 @@ console.log(Antonietta.multiplyNums(3,4));
 const parent = {
   'name': 'Susan',
   'age': 70,
+  'speak': function() {return "Hello, my name is" + " " + this.name + "!";},
   child: {
     'name': 'George',
     'age': 50,
+    'speak': function() {return "Hello, my name is" + " " + this.name + "!";},
     grandChild: {
       'name': 'Sam',
-      'age': 30
+      'age': 30,
+      'speak': function() {return "Hello, my name is" + " " + this.name + "!";}
     }
   }
 }
@@ -114,10 +117,10 @@ console.log(parent.child.age);
 console.log(parent.child.grandChild,name.age);
 
 // Have the parent speak
-console.log(`Hello, my name is ${parent.name}!`);
+console.log(parent.speak());
 
 // Have the child speak
-console.log(`Hello, my name is ${parent.child.name}!`);
+console.log(parent.child.speak());
 
 // Have the grandchild speak
-console.log(`Hello, my name is ${parent.child.grandChild.name}!`);
+console.log(parent.child.grandChild.speak());
