@@ -10,67 +10,71 @@
 // 5,adaine5@samsung.com,Antonietta,F
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
-const example = {
-    "id": 0,
-    "name": "Example",
-    "email": "examples@you.edu",
-    "gender": "F"
+// const example = {
+//     "id": 0,
+//     "name": "Example",
+//     "email": "examples@you.edu",
+//     "gender": "F"
+// };
+/* prettier-ignore */
+// Write your intern objects here:
+let intern0 = {
+    'id': 0,
+    'name': 'Mitzi',
+    'email': 'mmelloy@psu.edu',
+    'gender': 'F'
 };
 
-// Write your intern objects here:
-let intern = [{
-        'id': 0,
-        'name': 'Mitzi',
-        'email': 'mmelloy@psu.edu',
-        'gender': 'F'
-    },
-
-    {
-        'id': 1,
-        'name': 'Kennan',
-        'email': 'kdiben1@tinypic.com',
-        'gender': 'F'
-    },
-
-    {
-        'id': 2,
-        'name': 'Keven',
-        'email': 'kmummery2@wikimedia.org',
-        'gender': 'F'
-    },
-
-    {
-        'id': 3,
-        'name': 'Gannie',
-        'email': 'gmartinson3@illinois.edu',
-        'gender': 'F'
-    },
-
-    {
-        'id': 4,
-        'name': 'Antonietta',
-        'email': 'adaine5@samsung.com',
-        'gender': 'F'
+let intern1 = {
+    'id': 1,
+    'name': 'Kennan',
+    'email': 'kdiben1@tinypic.com',
+    'gender': 'F',
+    letSpeak: function() {
+        return `Hello, my name is ${this.name}!`;
     }
-];
+};
+
+let intern2 = {
+    'id': 2,
+    'name': 'Keven',
+    'email': 'kmummery2@wikimedia.org',
+    'gender': 'F'
+};
+
+let intern3 = {
+    'id': 3,
+    'name': 'Gannie',
+    'email': 'gmartinson3@illinois.edu',
+    'gender': 'F'
+};
+
+let intern4 = {
+    'id': 4,
+    'name': 'Antonietta',
+    'email': 'adaine5@samsung.com',
+    'gender': 'F'
+};
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(intern0.name);
 // Kennan's ID
-
+console.log(intern1.id);
 // Keven's email
-
+console.log(intern2.email);
 // Gannie's name
-
+console.log(intern3.name);
 // Antonietta's Gender
-
+console.log(intern4.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+
+Kennan.speak = letSpeak;
+console.log(Kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
