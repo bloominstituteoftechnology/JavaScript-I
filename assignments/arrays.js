@@ -99,6 +99,9 @@ for (let i = 0; i < inventory.length; i++) {
   carModels.push(inventory[i].car_model);
 }
 carModels.sort();
+// carModels[carModels.length-1].toUpperCase();
+// console.log(carModels[carModels.length-1]);
+
 console.log(carModels);
 
 // ==== Challenge 4 ====
@@ -128,4 +131,4 @@ for (let i = 0; i < inventory.length; i++) {
   }
 }
 console.log(BMWAndAudi);
-JSON.stringify(BMWAndAudi);
+console.log(JSON.stringify(BMWAndAudi));
