@@ -2,6 +2,7 @@
 
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
 
+/* prettier-ignore */
 let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
 {"id":2,"car_make":"Mazda","car_model":"Miata MX-5","car_year":2001},
 {"id":3,"car_make":"Land Rover","car_model":"Defender Ice Edition","car_year":2010},
@@ -62,35 +63,100 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // }
 
 // ==== Challenge 1 ====
+console.log('\n\n==== Challenge 1 ====');
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
+let car33 = {}; // initialize to an empty object
+
+for (let i=0; i < inventory.length && car33 !== {}; i++) {
+  if (inventory[i].id === 33) {
+    car33 = inventory[i];
+  }
+}
+
+console.log(`Car 33 is a ${car33.car_year} ${car33.car_make} ${car33.car_model}` );
+
+// Stretch covert to .filter
+let car33Filter = inventory.filter(e => e.id === 33)[0];
+console.log(`Stretch using .filter: Car 33 is a ${car33Filter.car_year} ${car33Filter.car_make} ${car33Filter.car_model}`)
 
 
 
 // ==== Challenge 2 ====
+console.log('\n\n==== Challenge 2 ====');
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log();
+let lastCar = inventory[inventory.length-1];
+console.log(`The last car in the inventory is a ${lastCar.car_make} ${lastCar.car_model}`);
 
 // ==== Challenge 3 ====
+console.log('\n\n==== Challenge 3 ====');
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
-console.log();
+for (let i=0; i < inventory.length; i++) {
+  carModels.push(inventory[i].car_model);
+}
+carModels = carModels.sort();
+console.log(carModels);
+
+// Stretch covert to .map
+let carModelsMap = inventory.map(e => e.car_model).sort();
+console.log('Stretch using .map:');
+console.log(carModelsMap);
+
 
 // ==== Challenge 4 ====
+console.log('\n\n==== Challenge 4 ====');
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-console.log();
+for (let i=0; i < inventory.length; i++) {
+  carYears.push(inventory[i].car_year);
+}
+console.log(carYears);
+
+// Stretch covert to .map
+let carYearsMap = inventory.map(e => e.car_year);
+console.log('Stretch using .map:');
+console.log(carYearsMap);
 
 // ==== Challenge 5 ====
+console.log('\n\n==== Challenge 5 ====');
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars =[];
-console.log(); 
+for (let i=0; i < inventory.length; i++) {
+  if (inventory[i].car_year < 2000) {
+    oldCars.push(inventory[i]);
+  }
+}
+console.log(oldCars.length); 
+
+// Stretch covert to .filter
+let oldCarsFilter = inventory.filter(e => e.car_year < 2000)
+console.log('Stretch using .filter:');
+console.log(oldCarsFilter.length);
+
+// Stretch covert to .reduce:
+console.log('Stretch using .reduce:');
+console.log(inventory.reduce((s, a) => {
+  if (a.car_year < 2000) {
+    return s+1;
+  }
+  return s;
+},0));
+
+// Stretch convert to .reduce and arrow function:
+console.log('Stretch using .reduce and arrow function:');
+console.log(inventory.reduce((s,a) => a.car_year < 2000 ? s+1 : s, 0))
 
 // ==== Challenge 6 ====
+console.log('\n\n==== Challenge 6 ====');
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi =[];
-console.log();
+for (let i=0; i < inventory.length; i++) {
+  if (inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi') {
+    BMWAndAudi.push(inventory[i]);
+  }
+}
+console.log(JSON.stringify(BMWAndAudi));
 
-
-
+// Stretch convert to .filter
+console.log('Stretch using .filter:');
+console.log(JSON.stringify(inventory.filter(e => e.car_make === 'BMW' || e.car_make === 'Audi')));
