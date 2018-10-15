@@ -93,8 +93,6 @@ parent.child.grandchild.Speak = function(){
   return this.name;
 }
 
-
-
 // Log the parent object's name
 console.log(parent.name);
 // Log the child's age
@@ -106,5 +104,50 @@ console.log(parent.Speak());
 // Have the child speak
 console.log(parent.child.Speak());
 // Have the grandchild speak
-console.log(parent.child.grandchild.Speak());
+console.log(parent.child.grandchild.Speak()); 
 
+/////////////////////////////////////
+// Speak only has to be written once
+/* parent.Speak = function(){
+  return this.name;
+}
+// Have the parent speak
+console.log(parent.Speak());
+// Have the child speak
+console.log(parent.Speak.call(parent.child));
+// Have the grandchild speak
+console.log(parent.Speak.call(parent.child.grandchild)); */
+
+/////////////////////////////////////
+
+// // Have Speak be inherited using prototypes
+// function Person(name,age) {
+//   this.name = name;
+//   this.age = age;
+//   }
+// Person.prototype.Speak = function(){
+//     return this.name;
+// };
+
+
+// const parent = new Person("Susan",70);
+// // 2. Nest a child object in the parent object with name and age as well.  The name will be George and the age will be 50.
+// parent.child = new Person("George",50);
+// // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
+// parent.child.grandchild = new Person("Sam",30);
+
+
+// // Log the parent object's name
+// console.log(parent.name);
+// // Log the child's age
+// console.log(parent.child.age);
+// // Log the name and age of the grandchild
+// console.log(parent.child.grandchild.name,parent.child.grandchild.age);
+// // Have the parent speak
+// console.log(parent.Speak());
+// // Have the child speak
+// console.log(parent.child.Speak());
+// // Have the grandchild speak
+// console.log(parent.child.grandchild.Speak());
+
+// console.log(parent);
