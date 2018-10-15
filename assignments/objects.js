@@ -98,15 +98,20 @@ const parent = {
   child: {
     name: "George",
     age: 50,
+    speak: function() {
+      return this.name},
     grandchild: {
       name: "Sam",
-      age: 30
+      age: 30,
+      speak: function() {
+        return this.name}
     }
   },
- }
+  
+  speak: function() {
+    return this.name}
+}
 
-
- parent.speak = () => { console.log("Hi, my name is " + this.name)};
 
 // Log the parent object's name
 console.log(parent.name);
@@ -118,8 +123,11 @@ console.log(parent.child.age);
 console.log(parent["child"]["grandchild"]["name"], parent.child.grandchild.age);
 
 // Have the parent speak
-parent.speak()
+console.log(parent.speak());
 
 // Have the child speak
-
+console.log(parent.child.speak());
 // Have the grandchild speak
+console.log(parent.child.grandchild.speak());
+
+// *************** I feel like there should be a way to use a universal speak method that all inner objects can access but not sure how to inplement *******************
