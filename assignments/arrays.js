@@ -77,8 +77,9 @@ console.log('the make is ' +inventory[49].car_make + ', and the model is ' + inv
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
 for (i = 0; i < inventory.length; i++) {
-    carModels[i] = inventory[i].car_model;
+    carModels[i] = inventory[i].car_model.toLowerCase();
 }
+
 carModels.sort();
 console.log(carModels);
 
