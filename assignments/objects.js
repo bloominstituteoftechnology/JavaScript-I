@@ -96,22 +96,34 @@ console.log(antonietta.multiplyNums(3,4));
 
 const parent = {
   name: "Susan",
-  age: 70
-    [{
-      name: "George",
-    age: 50}]
+  age: 70,
+  speak: `Hello my name is Susan`,
+  child: {
+    name: "George",
+    age: 50,
+    speak: `Hello my name is George`,
+    grandchild: {
+      name: "Sam",
+      age: 30,
+      speak: `Hello my name is Sam`,
+    }
+  }
 };
 
 // Log the parent object's name
 console.log(parent.name);
 
 // Log the child's age
-// console.log(parent[1].name);
+console.log(parent.child.name)
 
 // Log the name and age of the grandchild
+console.log(parent.child.grandchild.name)
 
 // Have the parent speak
+console.log(parent.speak)
 
 // Have the child speak
+console.log(parent.child.speak)
 
 // Have the grandchild speak
+console.log(parent.child.grandchild.speak)
