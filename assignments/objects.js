@@ -71,13 +71,13 @@ let intern4 = {
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 
-console.log(intern1.letSpeak);
+// console.log(intern1.letSpeak);
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-// Antonietta.multiplyNums = function(a, b) {
-//     return a * b;
-// }
-// console.log(Antonietta.multiplyNums(3, 4));
+intern4.multiplyNums = function(a, b) {
+    return a * b;
+}
+console.log(intern4.multiplyNums(3, 4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
