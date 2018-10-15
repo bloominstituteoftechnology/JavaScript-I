@@ -111,7 +111,8 @@ for(let i=0;i<inventory.length;i++){
     }
 }
 console.log(BMWAndAudi);
-console.log(JSON.stringify(BMWAndAudi));
+let myVar = JSON.stringify(inventory);
+console.log(typeof myVar);
 
 
 //use map, reduce, or filter 
