@@ -67,7 +67,7 @@ inventory.carInfo = function (info) {
 for (let i = 0; i < inventory.length; i++) {
         if (i === info -1) {
         console.log(`Car 33 is a ${inventory[i].car_year} ${inventory[i].car_make} ${inventory[i].car_model} `);
-        }    
+        }
     }
 }
 inventory.carInfo(33)
@@ -117,12 +117,13 @@ console.log(oldCars.length);
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi =[];
 for (let i = 0; i < inventory.length; i++) {
-    if (inventory[i].car_model === "BMW" || inventory[i].car_model === "Audi") {
-        BMWAndAudi.push(inventory[i])
+    // console.log(inventory[i].car_model)
+    if (inventory[i].car_make === "BMW" || inventory[i].car_make === "Audi") {
+        BMWAndAudi.push(inventory[i]);
     }
-    
+    // return BMWAndAudi;
 }
-
+console.log(BMWAndAudi);
 console.log(JSON.stringify(BMWAndAudi));
 
                                                      
