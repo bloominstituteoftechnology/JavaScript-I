@@ -122,3 +122,19 @@ for (let i = 0; i < inventory.length; i++) {
 }
 
 console.log(JSON.stringify(BMWAndAudi));
+
+// stretch goals
+
+// challenge 4
+let SGCarYears = inventory.map(item => item.car_year);
+console.log(SGCarYears, "stretch challenge");
+
+// challenge 5
+let SGOldCars = inventory.filter(item => item.car_year < 2000);
+console.log(SGOldCars.length, "stretch challenge");
+
+// challenge 6
+let SGBMWAndAudi = inventory.filter(
+  item => item.car_make === "BMW" || item.car_make === "Audi"
+);
+console.log(JSON.stringify(SGBMWAndAudi), "\n stretch challenege");
