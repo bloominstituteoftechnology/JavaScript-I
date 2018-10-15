@@ -131,5 +131,6 @@ console.log(parent.speak());
 
 // Have the child speak
 console.log(parent.child.speak());
+
 // Have the grandchild speak
 console.log(parent.child.grandchild.speak());
