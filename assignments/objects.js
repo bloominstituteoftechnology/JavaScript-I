@@ -1,7 +1,8 @@
 // Let's get some practice writing a few objects for a new group of interns at a small business.
 
 // ==== Challenge 1: Writing Objects ==== 
-// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
+// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. 
+// Create an object for each person in the company list:
 
 // 1,mmelloy0@psu.edu,Mitzi,F
 // 2,kdiben1@tinypic.com,Kennan,M
@@ -18,27 +19,83 @@ const example = {
 }
 
 // Write your intern objects here:
+const mitzi = {
+  "id": 1,
+  "email": "mmelloy0@psu.edu",
+  "first name": "Mitzi",
+  "gender": "F"
+}
 
+const kennan = {
+  "id": 2,
+  "email": "kdiben1@tinypic.com",
+  "first name": "Kennan",
+  "gender": "M"
+}
+
+const keven = {
+  "id": 3,
+  "email": "kmummery2@wikimedia.org",
+  "first name": "Keven",
+  "gender": "M"
+}
+
+const gannie = {
+  "id": 4,
+  "email": "gmartinson3@illinois.edu",
+  "first name": "Gannie",
+  "gender": "M"
+}
+
+const antonietta = {
+  "id": 5,
+  "email": "adaine5@samsung.com",
+  "first name": "Antonietta",
+  "gender": "F"
+}
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+mitzi["first name"];
 
 // Kennan's ID
+kennan.id;
 
 // Keven's email
+keven.email;
 
 // Gannie's name
+gannie["first name"];
 
 // Antonietta's Gender
+antonietta["gender"];
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+const kennan = {
+  "id": 2,
+  "email": "kdiben1@tinypic.com",
+  "first name": "Kennan",
+  "gender": "M",
+  speak: function () {
+    console.log("Hello, my name is Kennan!");
+  }
+}
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+const antonietta = {
+  "id": 5,
+  "email": "adaine5@samsung.com",
+  "first name": "Antonietta",
+  "gender": "F",
+  multiplyNumns: function(num1, num2) {
+    return num1 + num2;
+  }
+}
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
