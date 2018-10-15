@@ -11,7 +11,7 @@ anotherFunction('dog');
 //   return param1 + param2;
 // };
 // add(1,2);
-let add = (a, b) => a+b;
+let add = (a, b) => a + b;
 add(1,2);
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
