@@ -76,8 +76,8 @@ for (let i=0; i < inventory.length && car33 !== {}; i++) {
 console.log(`Car 33 is a ${car33.car_year} ${car33.car_make} ${car33.car_model}` );
 
 // Stretch covert to .filter
-let car33Filter = inventory.filter(e => e.id === 33);
-console.log(`Stretch using .filter: Car 33 is a ${car33.car_year} ${car33.car_make} ${car33.car_model}`)
+let car33Filter = inventory.filter(e => e.id === 33)[0];
+console.log(`Stretch using .filter: Car 33 is a ${car33Filter.car_year} ${car33Filter.car_make} ${car33Filter.car_model}`)
 
 
 
