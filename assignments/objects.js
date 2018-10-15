@@ -1,7 +1,8 @@
 // Let's get some practice writing a few objects for a new group of interns at a small business.
 
 // ==== Challenge 1: Writing Objects ==== 
-// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
+// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender.
+//  Create an object for each person in the company list:
 
 // 1,mmelloy0@psu.edu,Mitzi,F
 // 2,kdiben1@tinypic.com,Kennan,M
@@ -18,27 +19,75 @@ const example = {
 }
 
 // Write your intern objects here:
+const mitzi = {
+  id: 0,
+  Name: "mitzi",
+  email: "mmelloy0@psu.eduF",
+  gender: "F", 
+
+}
+const kennan = {
+  id: 1,
+  Name: "kennan",
+  email: "kdiben1@tinypic.com",
+  gender: "M", 
+  speak: "Hello, my name is Kennan!",
+}
+const kevin = {
+  id: 2,
+  Name: "kevin",
+  email: "kmummery2@wikimedia.org",
+  gender: "M", 
+
+}
+const gannie = {
+  id: 3,
+  Name: "Gannie",
+  email: "gmartinson3@illinois.edu",
+  gender: "M", 
+
+}
+const antonietta = {
+  id: 4,
+   Name: "Antonietta",
+  email: "adaine5@samsung.com",
+  gender: "F", 
+  domath: function(parameter1, parameter2){
+    console.log(parameter1 * parameter2)
+  }
+}
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(mitzi.name)
 // Kennan's ID
-
+console.log(kennan.id)
 // Keven's email
-
+console.log(kevin.email)
 // Gannie's name
-
+console.log(gannie.name)
 // Antonietta's Gender
+console.log(antonietta.gender)
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-
+console.log(kennan.speak)
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+console.log(antonietta.domath(3,4));
+
+
+
+
+
+
+
+
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
