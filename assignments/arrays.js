@@ -80,7 +80,7 @@ let carModels = [];
 
 for (let i = 0; i < inventory.length; i++) {
 
-    carModels[i] = inventory[i]["car_model"];
+    carModels[i] = inventory[i]["car_model"].toLocaleLowerCase();
 }
 carModels.sort();
 console.log(carModels);
