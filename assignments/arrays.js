@@ -97,6 +97,7 @@ for (let i=0; i < inventory.length; i++) {
 carModels = carModels.sort();
 console.log(carModels);
 
+// Stretch covert to .map
 let carModelsMap = inventory.map(e => e.car_model).sort();
 console.log('Stretch using .map:');
 console.log(carModelsMap);
@@ -111,6 +112,7 @@ for (let i=0; i < inventory.length; i++) {
 }
 console.log(carYears);
 
+// Stretch covert to .map
 let carYearsMap = inventory.map(e => e.car_year);
 console.log('Stretch using .map:');
 console.log(carYearsMap);
@@ -126,11 +128,12 @@ for (let i=0; i < inventory.length; i++) {
 }
 console.log(oldCars.length); 
 
+// Stretch covert to .filter
 let oldCarsFilter = inventory.filter(e => e.car_year < 2000)
 console.log('Stretch using .filter:');
 console.log(oldCarsFilter.length);
 
-// another way using .reduce:
+// Stretch covert to .reduce:
 console.log('Stretch using .reduce:');
 console.log(inventory.reduce((s, a) => {
   if (a.car_year < 2000) {
@@ -139,7 +142,7 @@ console.log(inventory.reduce((s, a) => {
   return s;
 },0));
 
-// another way using .reduce and arrow function:
+// Stretch convert to .reduce and arrow function:
 console.log('Stretch using .reduce and arrow function:');
 console.log(inventory.reduce((s,a) => a.car_year < 2000 ? s+1 : s, 0))
 
@@ -154,6 +157,6 @@ for (let i=0; i < inventory.length; i++) {
 }
 console.log(JSON.stringify(BMWAndAudi));
 
+// Stretch convert to .filter
 console.log('Stretch using .filter:');
 console.log(JSON.stringify(inventory.filter(e => e.car_make === 'BMW' || e.car_make === 'Audi')));
-
