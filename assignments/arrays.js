@@ -97,10 +97,11 @@ for(let i = 0 ; i < carModels.length; i++){
 let carYears = [];
 for(let i = 0; i < inventory.length; i++){
     carYears.push(inventory[i]["car_year"]);
-}
-for(let i = 0; i < carYears.length; i++){
     console.log(carYears[i]);
 }
+// for(let i = 0; i < carYears.length; i++){
+//     console.log(carYears[i]);
+// }
 
 
 // ==== Challenge 5 ====
@@ -108,7 +109,7 @@ for(let i = 0; i < carYears.length; i++){
 let oldCars =[];
 for(let i = 0; i < carYears.length; i++){
     if(carYears[i] < 2000){
-        oldCars.push(carYears);
+        oldCars.push(carYears[i]);
     }
 }
 console.log(oldCars.length); 
