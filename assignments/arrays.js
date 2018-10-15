@@ -1,5 +1,6 @@
 // To help us use arrays with real world problems we are going to simulate a used car dealer that has 50 cars in their inventory.
 
+
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
 
 let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},

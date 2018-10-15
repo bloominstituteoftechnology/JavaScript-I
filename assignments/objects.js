@@ -9,6 +9,7 @@
 // 4,gmartinson3@illinois.edu,Gannie,M
 // 5,adaine5@samsung.com,Antonietta,F
 
+
 // Example format of an intern object: 1,examples@you.edu,Example,F
 const example = {
   "id": 0,
