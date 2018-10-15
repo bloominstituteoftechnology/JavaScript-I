@@ -113,6 +113,15 @@ for (let i = 0; i < carYears.length; i++){
 }
 console.log(oldCars.length + ' cars are older than 2000');
 
+//// Stretch use reduce()
+let totalNumOldCars = 0;
+carYears.reduce(function (totalOldCars, carYear) {
+  if (carYear < 2000){
+    return totalNumOldCars++;
+  }
+}, {});
+console.log("Stretch reduce(): " + totalNumOldCars + ' cars are older than 2000');
+
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi = [];
