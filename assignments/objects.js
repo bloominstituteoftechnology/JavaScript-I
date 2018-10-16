@@ -23,7 +23,7 @@ let ken = {
   "name":"Kennan",
   "email":"kdiben1@tinypic.com",
   "gender":"m",
-   "speak": function(name) { console.log (`Hello, my name is ${this.name}`);
+   "speak": function(name) { return (`Hello, my name is ${this.name}`);
 }
 }
 
@@ -73,15 +73,15 @@ console.log(ant.multiplyNums(3,4));
 const parent = {
   name:'susan',
   age:70,
-  speak: function (){console.log(this.name)},
+  speak: function (){return(this.name)},
   child: {
     name:'George',
     age:50,
-    speak: function () {console.log(this.name)},
+    speak: function () {return(this.name)},
     grandchild:{
       name:'Sam',
       age:30,
-      speak:function () {console.log(this.name)}
+      speak:function () {return(this.name)}
     }
     
   }
