@@ -68,7 +68,7 @@ const internDB = [{
   },
   {
     'id': 5,
-    'name': 'Antoinette',
+    'name': 'Antonietta',
     'email': 'adaine5@samsung.com',
     'gender': 'F',
     speak: function () {
@@ -86,29 +86,74 @@ const internDB = [{
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(internDB[0].name);
+{
+  for (let i = 0; i < internDB.length; i++) {
+    if (internDB[i].name === 'Mitzi') {
+      console.log(internDB[i].name);
+    }
+  }
+}
 
 // Kennan's ID
-console.log(internDB[1].id);
+{
+  for (let i = 0; i < internDB.length; i++) {
+    if (internDB[i].name === 'Kennan') {
+      console.log(internDB[i].id);
+    }
+  }
+}
+//console.log(internDB[1].id);
 
 // Keven's email
-console.log(internDB[2].email);
+{
+  for (let i = 0; i < internDB.length; i++) {
+    if (internDB[i].name === 'Keven') {
+      console.log(internDB[i].email);
+    }
+  }
+}
+//console.log(internDB[2].email);
 
 // Gannie's name
-console.log(internDB[3].name);
+{
+  for (let i = 0; i < internDB.length; i++) {
+    if (internDB[i].name === 'Gannie') {
+      console.log(internDB[i].name);
+    }
+  }
+}
+//console.log(internDB[3].name);
 
 // Antonietta's Gender
-console.log(internDB[4].gender);
+{
+  for (let i = 0; i < internDB.length; i++) {
+    if (internDB[i].name === 'Antonietta') {
+      console.log(internDB[i].gender);
+    }
+  }
+}
+//console.log(internDB[4].gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-console.log(internDB[1].speak());
-
+{
+  for (let i = 0; i < internDB.length; i++) {
+    if (internDB[i].name === 'Kennan') {
+      console.log(internDB[1].speak());
+    }
+  }
+}
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-console.log(internDB[4].multiplyNums(3, 4));
+{
+  for (let i = 0; i < internDB.length; i++) {
+    if (internDB[i].name === 'Antonietta') {
+      console.log(internDB[4].multiplyNums(3, 4));
+    }
+  }
+}
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
