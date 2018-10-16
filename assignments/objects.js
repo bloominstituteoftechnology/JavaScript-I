@@ -80,10 +80,10 @@ intern2.speak();
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-intern2.multiplyNums = function(a, b) {
+intern5.multiplyNums = function(a, b) {
   console.log(a * b);
 };
-intern2.multiplyNums(3, 4);
+intern5.multiplyNums(3, 4);
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -106,7 +106,7 @@ const parent = {
     speak: function() {
       console.log(this.name);
     },
-    grandchild: {
+    grandChild: {
       name: "Sam",
       age: 30,
       speak: function() {
@@ -123,7 +123,7 @@ console.log(parent.name);
 console.log(parent.child.age);
 
 // Log the name and age of the grandchild
-console.log(parent.child.grandchild.name, parent.child.grandchild.age);
+console.log(parent.child.grandChild.name, parent.child.grandChild.age);
 
 // Have the parent speak
 parent.speak();
@@ -132,4 +132,4 @@ parent.speak();
 parent.child.speak();
 
 // Have the grandchild speak
-parent.child.grandchild.speak();
+parent.child.grandChild.speak();
