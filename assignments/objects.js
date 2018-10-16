@@ -17,6 +17,7 @@ const example = {
   "gender": "F"
 }
 
+console.log("Objects Begin")
 console.log("challenge 1");
 // Write your intern objects here:
 const mitzi = {
@@ -93,6 +94,9 @@ antonietta.multiplyNums = function(num1, num2) {
 console.log(antonietta.multiplyNums(3,4));
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
+console.log();
+console.log("stretch begins");
+
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
 
 // 1. Create a parent object with properties for name and age.  Make the name Susan and the age 70.
@@ -100,16 +104,39 @@ console.log(antonietta.multiplyNums(3,4));
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {}
+const parent = {
+  name: "Susan",
+  age: 70,
+
+  child: {
+    name: "George",
+    age: 50,
+
+    grandchild: {
+      name: "Sam",
+      age: 30
+    }
+  }
+}
+
+parent.speak = parent.child.speak = parent.child.grandchild.speak = function() {
+  console.log(`Hi, my name is ${this.name}!`);
+}
 
 // Log the parent object's name
+console.log(parent.name);
 
 // Log the child's age
+console.log(parent.child.age);
 
 // Log the name and age of the grandchild
+console.log(parent.child.grandchild.name, parent.child.grandchild.age)
 
 // Have the parent speak
+parent.speak();
 
 // Have the child speak
+parent.child.speak();
 
 // Have the grandchild speak
+parent.child.grandchild.speak();

@@ -61,7 +61,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 //     arr[i]; // 1,2,3,4
 // }
 console.log();
-console.log("Array Begins");
+console.log("Arrays Begin");
 console.log("challenge 1");
 
 // ==== Challenge 1 ====
@@ -142,5 +142,3 @@ for (let i = 0; i < inventory.length; i++) {
 }
 
 console.log(JSON.stringify(BMWAndAudi));
-
-
