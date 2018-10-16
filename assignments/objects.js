@@ -106,9 +106,9 @@ console.log(intern4.multiplyNums(3, 4));
 //     }
 // };
 
-// Log the parent object's name
+// Log the parent object 's name
 // console.log(parent.name);
-// Log the child's age
+// Log the child 's age
 // console.log(parent.child.age);
 // Log the name and age of the grandchild
 // console.log(parent.child.grandchild.name, parent.child.grandchild.age);
