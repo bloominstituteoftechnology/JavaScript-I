@@ -71,8 +71,8 @@ console.log(`Car 33 is a *2011* *jeep*  *Wrangler*` );
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.
 //   What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log(`car is a *1999* *lincoln* *Town Car*`);
+let lastCar = inventory[inventory.length - 1];
+console.log(`$[lastCar.car_make] $[lastCar.car_model]`);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. 
@@ -105,10 +105,10 @@ console.log(carYears);
 // The car lot manager needs to find out how many cars are older than the year 2000. 
 // Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array
 //  oldCars and logging it's length.
-let oldCars =['1983', '1990', '1995', '1987', '1996', '1997', '1999', '1987', '1995', '1994', '1985', '1997', '1992', '1993', '1964', '1999',
-'1991', '1997', '1992', '1998', '1965', '1996', '1995', '1996', '1999'];
+let oldCars =[];
 for(let i = 0; i < inventory.length; i++){
     if (carYears[i] < 2000) {
+      oldCars.push (inventory[i]["car_year"]);
     }
 }
 console.log(oldCars.length); 
