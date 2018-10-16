@@ -68,8 +68,6 @@ console.log(`Car 33 is a *car year goes here* *car make goes here* *car model go
 for (let i = 0; i < inventory.length; i++) {
     if (inventory[i]["id"] === 33) {
         console.log(`Car 33 is a ${inventory[i]["car_year"]} ${inventory[i]["car_make"]} ${inventory[i]["car_model"]}`)
-    } else {
-    //do nothing
     }
   };
 
@@ -94,11 +92,20 @@ console.log(carModels);
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-console.log();
+for (var i = 0; i < inventory.length; i++) {
+   carYears.push(inventory[i].car_year);
+}
+carYears.sort();
+
+console.log(carYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars =[];
+for (var i = 0; i < inventory.length; i++) {
+   oldCars.push(inventory[i].car_year) >== 2000;
+}
+carYears.sort();
 console.log();
 
 // ==== Challenge 6 ====
