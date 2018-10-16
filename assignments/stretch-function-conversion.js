@@ -2,22 +2,69 @@
 
 // let myFunction = function () {};
 
+let myFunction = () => {};
+
 // let anotherFunction = function (param) {
 //   return param;
 // };
+
+let anotherFunction = param => param;
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
 // add(1,2);
 
+let add = (param1, param2) => param1 + param2;
+
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
 // };
 // subtract(1,2);
 
-// exampleArray = [1,2,3,4];
+let subtract = (param1, param2) => param1 - param2;
+
+let exampleArray = [1,2,3,4];
 // const triple = exampleArray.map(function (num) {
 //   return num * 3;
 // });
 // console.log(triple);
+
+const triple = exampleArray.map(num => num * 3);
+
+console.log();
+console.log("stretch arrow stuff");
+
+console.log(anotherFunction(4));
+
+console.log(add(4, 5));
+
+console.log(subtract(5, 3));
+
+console.log(triple);
+
+
+
+/* example from FCC
+
+function timesTwo(params) {
+  return params * 2
+}
+
+timesTwo(4);  // 8
+
+var timesTwo = params => params * 2
+
+timesTwo(4);  // 8
+*/
+
+
+/* mdn map example
+var array1 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
+*/
