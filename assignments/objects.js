@@ -10,35 +10,99 @@
 // 5,adaine5@samsung.com,Antonietta,F
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
-const example = {
-  "id": 0,
-  "name": "Example",
-  "email": "examples@you.edu",
-  "gender": "F"
-}
+// const example = {
+//   "id": 0,
+//   "name": "Example",
+//   "email": "examples@you.edu",
+//   "gender": "F"
+// }
 
 // Write your intern objects here:
+// const person1 = {
+//   "id": 1,
+//   "name": "Mitzi",
+//   "email": "mmelloy0@psu.edu",
+//   "gender": "F"
+// }
+// const person2 = {
+//   "id": 2,
+//   "name": "Kennan",
+//   "email": "kdiben1@tinypic.com",
+//   "gender": "M"
+// }
+// const person3 = {
+//   "id": 3,
+//   "name": "Keven",
+//   "email": "kmummery2@wikimedia.org",
+//   "gender": "M"
+// }
+// const person4 = {
+//   "id": 4,
+//   "name": "Gannie",
+//   "email": "gmartinson3@illinois.edu",
+//   "gender": "M"
+// }
+// const person5 = {
+//   "id": 5,
+//   "name": "Antonietta",
+//   "email": "adaine5@samsung.com",
+//   "gender": "F"
+// }
+class Person {
+  constructor(id, email, name, gender) {
+    this.id = id;
+    this.email = email;
+    this.name = name;
+    this.gender = gender;
+  }
+  
+}
+const mitzi = new Person(1,'mmelloy0@psu.edu', 'Mitzi', 'F');
+const kennan = new Person(2, 'kdiben1@tinypic.com', 'Kennan', 'M');
+const keven = new Person(3, 'kmummery2@wikimedia.org', 'Keven', 'M');
+const gannie = new Person(4, 'gmartinson3@illinois.edu', 'Gannie', 'M');
+const antonietta = new Person(5, 'adaine5@samsung.com', 'Antonietta', 'F');
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
-// Mitzi's name
+// // Mitzi's name
+// console.log(person1.name);
+// // Kennan's ID
+// console.log(person2.id);
+// // Keven's email
+// console.log(person3.email);
+// // Gannie's name
+// console.log(person4["name"]); //Just to show bracket notation
+// // Antonietta's Gender
+// console.log(person5.gender);
+// // ==== Challenge 3: Object Methods ==== 
+// // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 
-// Kennan's ID
+// person2.speak = () => {
+//   console.log(`Hello, my name is ${person2.name}`)
+// };
+// console.log(person2.speak());
+// // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
+// person5.multiplyNums = (x, y) => x * y;
+// console.log(person5.multiplyNums(3, 4));
 
-// Keven's email
+console.log(mitzi.name);
+console.log(kennan.id);
+console.log(keven.email);
+console.log(gannie.name);
+console.log(antonietta.gender);
 
-// Gannie's name
+kennan.speak = function() {
+  return `${this.name}`;
+}
+//kennan.speak = () => `Hello, my name is Kennan`; No this keyword with Arrow functions
+console.log(kennan.speak());
 
-// Antonietta's Gender
+antonietta.multiplyNums = (x, y) => x * y;
 
-// ==== Challenge 3: Object Methods ==== 
-// Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
-
-// Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+console.log(antonietta.multiplyNums(33, 11));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -49,16 +113,32 @@ const example = {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {}
+const parent = {
+  'name': 'Susan',
+  'age': 70,
+  'child': {
+    'name': 'George',
+    'age': 50,
+    'grandchild': {
+      'name': 'Sam',
+      'age': 30,
+    }
+  }
+}
 
 // Log the parent object's name
-
+console.log(parent.name)
 // Log the child's age
-
+console.log(parent.child.age)
 // Log the name and age of the grandchild
+console.log(`Name: ${parent.child.grandchild.name}, Age: ${parent.child.grandchild.age}`)
 
 // Have the parent speak
-
+parent.speak = () => console.log(`I am the parent`);
+parent.speak();
 // Have the child speak
-
+parent.child.speak = () => console.log(`I am the child`);
+parent.child.speak();
 // Have the grandchild speak
+parent.child.grandchild.speak = () => console.log(`I am the grandchild`)
+parent.child.grandchild.speak();
