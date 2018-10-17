@@ -53,6 +53,7 @@ const internMitzi = addIntern(5, "Antonietta", "adaine5@samsung.com", "F");
 
 // Mitzi's name
 
+
 // Kennan's ID
 
 // Keven's email
