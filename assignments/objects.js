@@ -18,24 +18,98 @@ const example = {
 }
 
 // Write your intern objects here:
-
+const interns = [
+	{
+		"id": 1,
+		"name": "Mitzi",
+		"email": "mmelloy0@psu.edu",
+		"gender": "F"
+	},
+	{
+		"id":2,
+		"name": "Kennan",
+		"email": "kdiben1@tinypic.com",
+		"gender":"M",
+		"Speak": function() {
+			console.log("Hello my name is" + " " + this.name);
+		}
+	},
+	{
+		"id":3,
+		"name": "Keven",
+		"email": "kmummery2@wikimedia.org",
+		"gender":"M"
+	},
+	{
+		"id":4,
+		"name": "Gannie",
+		"email": "gmartinson3@illinois.edu",
+		"gender":"M"
+	},
+	{
+		"id":5,
+		"name": "Antonietta",
+		"email": "adaine5@samsung.com",
+		"gender":"F",
+		"multiply": function(num1, num2) {
+			console.log(num1 * num2);
+		}
+	}]
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+function findName(name) {
+	for(i = 0; i<interns.length; i++) {
+	  if(interns[i].name = name){
+	    console.log(interns[i]);
+      break;
+	  }
+  }
+}
 
 // Kennan's ID
-
+function findID(name) {
+	for(i = 0; i<interns.length; i++) {
+	  if(interns[i].name === name){
+	    console.log(interns[i].name + "'s id is" + " " + interns[i].id);
+      break;
+	  }
+  }
+}
 // Keven's email
-
+function findEmail(name) {
+	for(i = 0; i<interns.length; i++) {
+	  if(interns[i].name === name){
+	    console.log(interns[i].name + "'s email is" + " " + interns[i].email);
+      break;
+	  }
+  }
+}
 // Gannie's name
+function findName(name) {
+	for(i = 0; i<interns.length; i++) {
+	  if(interns[i].name = name){
+	    console.log(interns[i]);
+      break;
+	  }
+  }
+}
 
 // Antonietta's Gender
-
+function findGender(name) {
+	for(i = 0; i<interns.length; i++) {
+	  if(interns[i].name = name){
+	    console.log(interns[i].gender);
+      break;
+	  }
+  }
+}
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+
+// console.log(interns.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
