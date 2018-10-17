@@ -18,7 +18,35 @@ const example = {
 }
 
 // Write your intern objects here:
+const genericIntern = {
+  id: undefined,
+  name: undefined,
+  email: undefined,
+  gender: undefined,
 
+  sayHi () {
+    console.log(`Hello, my name is ${name}!`)
+  },
+
+  multiply (num1, num2) {
+    return num1 * num2;
+  }
+}
+
+function addIntern (id, name, email, gender) {
+  var intern = Object.create(genericIntern);
+  intern.id = id;
+  intern.name = name;
+  intern.email = email;
+  intern.gender = gender;
+  return intern;
+}
+
+const internMitzi = addIntern(1, "Mitzi", "mmelloy0@psu.edu", "F");
+const internMitzi = addIntern(2, "Kennan", "kdiben1@tinypic.com", "M");
+const internMitzi = addIntern(3, "Keven", "kmummery2@wikimedia.org", "M");
+const internMitzi = addIntern(4, "Gannie", "gmartinson3@illinois.edu", "M");
+const internMitzi = addIntern(5, "Antonietta", "adaine5@samsung.com", "F");
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
