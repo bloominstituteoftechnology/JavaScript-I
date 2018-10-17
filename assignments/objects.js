@@ -19,6 +19,46 @@ const example = {
 
 // Write your intern objects here:
 
+const intern1 = {
+  id: 0,
+  email: 'mmelloy0@psu.edu',
+  firstName: 'Mitzi',
+  gender: 'F'
+}
+
+const intern2 = {
+  id: 1,
+  email: 'kdiben1@tinypic.com',
+  firstName: 'Kennan',
+  gender: 'M'
+}
+
+const intern3 = {
+  id: 2,
+  email: 'kmummery2@wikimedia.org',
+  firstName: 'Keven',
+  gender: 'M'
+}
+
+const intern4 = {
+  id: 3,
+  email: 'gmartinson3@illinois.edu',
+  firstName: 'Gannie',
+  gender: 'M',
+}
+
+const intern5 = {
+  id: 5,
+  email: 'adaine5@samsung.com',
+  firstName: 'Antonietta',
+  gender: 'F'
+}
+
+console.log(intern1)
+console.log(intern2)
+console.log(intern3)
+console.log(intern4)
+console.log(intern5)
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
