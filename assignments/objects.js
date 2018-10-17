@@ -18,60 +18,91 @@
 // }
 
 // Write your intern objects here:
-const person1 = {
-  "id": 0,
-  "name": "Mitzi",
-  "email": "mmelloy0@psu.edu",
-  "gender": "F"
+// const person1 = {
+//   "id": 1,
+//   "name": "Mitzi",
+//   "email": "mmelloy0@psu.edu",
+//   "gender": "F"
+// }
+// const person2 = {
+//   "id": 2,
+//   "name": "Kennan",
+//   "email": "kdiben1@tinypic.com",
+//   "gender": "M"
+// }
+// const person3 = {
+//   "id": 3,
+//   "name": "Keven",
+//   "email": "kmummery2@wikimedia.org",
+//   "gender": "M"
+// }
+// const person4 = {
+//   "id": 4,
+//   "name": "Gannie",
+//   "email": "gmartinson3@illinois.edu",
+//   "gender": "M"
+// }
+// const person5 = {
+//   "id": 5,
+//   "name": "Antonietta",
+//   "email": "adaine5@samsung.com",
+//   "gender": "F"
+// }
+class Person {
+  constructor(id, email, name, gender) {
+    this.id = id;
+    this.email = email;
+    this.name = name;
+    this.gender = gender;
+  }
+  
 }
-const person2 = {
-  "id": 1,
-  "name": "Kennan",
-  "email": "kdiben1@tinypic.com",
-  "gender": "M"
-}
-const person3 = {
-  "id": 2,
-  "name": "Keven",
-  "email": "kmummery2@wikimedia.org",
-  "gender": "M"
-}
-const person4 = {
-  "id": 3,
-  "name": "Gannie",
-  "email": "gmartinson3@illinois.edu",
-  "gender": "M"
-}
-const person5 = {
-  "id": 4,
-  "name": "Antonietta",
-  "email": "adaine5@samsung.com",
-  "gender": "F"
-}
+const mitzi = new Person(1,'mmelloy0@psu.edu', 'Mitzi', 'F');
+const kennan = new Person(2, 'kdiben1@tinypic.com', 'Kennan', 'M');
+const keven = new Person(3, 'kmummery2@wikimedia.org', 'Keven', 'M');
+const gannie = new Person(4, 'gmartinson3@illinois.edu', 'Gannie', 'M');
+const antonietta = new Person(5, 'adaine5@samsung.com', 'Antonietta', 'F');
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
-// Mitzi's name
-console.log(person1.name);
-// Kennan's ID
-console.log(person2.id);
-// Keven's email
-console.log(person3.email);
-// Gannie's name
-console.log(person4["name"]); //Just to show bracket notation
-// Antonietta's Gender
-console.log(person5.gender);
-// ==== Challenge 3: Object Methods ==== 
-// Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
+// // Mitzi's name
+// console.log(person1.name);
+// // Kennan's ID
+// console.log(person2.id);
+// // Keven's email
+// console.log(person3.email);
+// // Gannie's name
+// console.log(person4["name"]); //Just to show bracket notation
+// // Antonietta's Gender
+// console.log(person5.gender);
+// // ==== Challenge 3: Object Methods ==== 
+// // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 
-person2.speak = () => {
-  console.log(`Hello, my name is ${person2.name}`)
-};
-console.log(person2.speak());
-// Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-person5.multiplyNums = (x, y) => x * y;
-console.log(person5.multiplyNums(3,4));
+// person2.speak = () => {
+//   console.log(`Hello, my name is ${person2.name}`)
+// };
+// console.log(person2.speak());
+// // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
+// person5.multiplyNums = (x, y) => x * y;
+// console.log(person5.multiplyNums(3, 4));
+
+console.log(mitzi.name);
+console.log(kennan.id);
+console.log(keven.email);
+console.log(gannie.name);
+console.log(antonietta.gender);
+
+kennan.speak = function() {
+  return `${this.name}`;
+}
+//kennan.speak = () => `Hello, my name is Kennan`; No this keyword with Arrow functions
+console.log(kennan.speak());
+
+antonietta.multiplyNums = (x, y) => x * y;
+
+console.log(antonietta.multiplyNums(33, 11));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
