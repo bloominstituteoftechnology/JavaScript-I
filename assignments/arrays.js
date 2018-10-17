@@ -61,6 +61,13 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 //     arr[i]; // 1,2,3,4
 // }
 
+/////////////////////////////////////////////////
+//                                             //
+//        This is where we keep the            //
+//              Lööps, bröther.                //
+//                                             //
+/////////////////////////////////////////////////
+
 function loopToID(idArray, id){
     for (var i in idArray){
         if (idArray[i].id == id){
@@ -78,6 +85,37 @@ function loopToLast (thisArray) {
     return lastCarInArray;
 }
 
+function loopAlphaModelSort(thisArray) {
+    let tempArray = thisArray;
+    let tempObject = null;
+    for (var i in tempArray){
+        for(var f in tempArray){
+            if (tempArray[i].car_model < tempArray[f].car_model){
+                tempObject = tempArray[i];
+                tempArray[i] = tempArray[f];
+                tempArray[f] = tempObject;
+            }
+        }
+    }
+    let modelArray = []
+    for (var i in tempArray){
+        modelArray.push(tempArray[i].car_model);
+    }
+    return modelArray;
+}
+
+function pullCarYears (thisArray) {
+    tempArray = [];
+    for (var i in thisArray){
+        tempArray.push(thisArray[i].car_year);
+    }
+    return tempArray;
+}
+
+/////////////////////////////////////////////////
+//               No more Lööps...              //
+/////////////////////////////////////////////////
+
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 console.log(`Car 33 is a ${loopToID(inventory, 33).car_year} ${loopToID(inventory, 33).car_make} ${loopToID(inventory, 33).car_model}` );
@@ -93,12 +131,14 @@ console.log(`The last car in inventory is a ${lastCar.car_make} ${lastCar.car_mo
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
-console.log();
+carModels = loopAlphaModelSort(inventory);
+console.log(carModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-console.log();
+carYears = pullCarYears(inventory);
+console.log(carYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
