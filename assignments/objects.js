@@ -48,6 +48,15 @@ const internKeven = addIntern(3, "Keven", "kmummery2@wikimedia.org", "M");
 const internGannie = addIntern(4, "Gannie", "gmartinson3@illinois.edu", "M");
 const internAntonietta = addIntern(5, "Antonietta", "adaine5@samsung.com", "F");
 
+////////////////////////////////////////////////////////////////////////////////
+//  I attempted to write the intern objects in such a way as to make them     //
+//as reusable as possible. Also, using this method of creating the intern     //
+//objects from a base object makes it easy to add behavior to all interns.    //
+//As an example, I'm certain that not all but one intern is a mute or is too  //
+//shy to say hi. Lastly, and my favorite reason, writing the interns objects  //
+//in this fashion saves a lot of typing time and space.                       //
+////////////////////////////////////////////////////////////////////////////////
+
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
@@ -77,16 +86,49 @@ console.log(internAntonietta.multiply(8, 13));
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {}
+const parent = {
+  name: "Susan",
+  age: 70,
+  child : {
+    name: "George",
+    age: 50,
+    grandchild : {
+      name: "Sam",
+      age: 30,
+      sayName () {
+        return `My name is ${this.name}`
+      }
+    },
+    sayName () {
+      return `My name is ${this.name}`
+    }
+  },
+  sayName () {
+    return `My name is ${this.name}`
+  }
+}
+
+/////////////////////////////////////////////////////////////////////
+//  The reason I did not go for reusable code here is because it   //
+// it would have taken longer with a lot more typing involved.     //
+// While I know it's not a valid excuse in the real world, I don't //
+// feel that this is a real world example in that if I wanted the  //
+// name of an object in an introductory fashion, I would just make //
+// a function that accepted the name of the object as a parameter  //
+// because it is far more reusable and a lot less time consuming.  //
+// I have a few other reasons that aren't really relevant as well. //
+/////////////////////////////////////////////////////////////////////
 
 // Log the parent object's name
-
+console.log(parent.name);
 // Log the child's age
-
+console.log(parent.child.age);
 // Log the name and age of the grandchild
-
+console.log(parent.child.grandchild.name);
+console.log(parent.child.grandchild.age);
 // Have the parent speak
-
+console.log(parent.sayName());
 // Have the child speak
-
+console.log(parent.child.sayName());
 // Have the grandchild speak
+console.log(parent.child.grandchild.sayName());
