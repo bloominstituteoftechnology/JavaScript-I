@@ -32,21 +32,21 @@ const hrKennan = {
   "gender": "M"
 }
 
-const hrMitzi = {
+const hrKeven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M"
 }
 
-const hrMitzi = {
+const hrGannie = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
   "gender": "M"
 }
 
-const hrMitzi = {
+const hrAntonietta = {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
