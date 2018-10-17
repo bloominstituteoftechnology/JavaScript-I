@@ -43,25 +43,24 @@ function addIntern (id, name, email, gender) {
 }
 
 const internMitzi = addIntern(1, "Mitzi", "mmelloy0@psu.edu", "F");
-const internMitzi = addIntern(2, "Kennan", "kdiben1@tinypic.com", "M");
-const internMitzi = addIntern(3, "Keven", "kmummery2@wikimedia.org", "M");
-const internMitzi = addIntern(4, "Gannie", "gmartinson3@illinois.edu", "M");
-const internMitzi = addIntern(5, "Antonietta", "adaine5@samsung.com", "F");
+const internKennan = addIntern(2, "Kennan", "kdiben1@tinypic.com", "M");
+const internKeven = addIntern(3, "Keven", "kmummery2@wikimedia.org", "M");
+const internGannie = addIntern(4, "Gannie", "gmartinson3@illinois.edu", "M");
+const internAntonietta = addIntern(5, "Antonietta", "adaine5@samsung.com", "F");
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
-
+console.log(internMitzi.name);
 // Kennan's ID
-
+console.log(internKennan.id);
 // Keven's email
-
+console.log(internKeven.email);
 // Gannie's name
-
+console.log(internGannie.name);
 // Antonietta's Gender
-
+console.log(internAntonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
