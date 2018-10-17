@@ -1,23 +1,36 @@
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
 // let myFunction = function () {};
-
+myfunction =  ()  =>{};
+console.log(myfunction());
 // let anotherFunction = function (param) {
 //   return param;
 // };
+
+anotherFunction = (param) =>{return param;}
+console.log(anotherFunction(3));
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
 // add(1,2);
+add = (param1, param2) =>{return param1 + param2;};
+console.log(add(1,2));
 
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
 // };
 // subtract(1,2);
+subtract= (param1, param2) =>{return (param1 - param2);};
+console.log(subtract(1,2));
 
-// exampleArray = [1,2,3,4];
+
+ //exampleArray = [1,2,3,4];
 // const triple = exampleArray.map(function (num) {
 //   return num * 3;
 // });
 // console.log(triple);
+exampleArray = [1,2,3,4];
+const triple =exampleArray.map((num)=>{return num*3});
+console.log(triple);
+
