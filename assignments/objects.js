@@ -53,21 +53,25 @@ const person5 = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(person1.name);
 // Kennan's ID
-
+console.log(person2.id);
 // Keven's email
-
+console.log(person3.email);
 // Gannie's name
-
+console.log(person4["name"]); //Just to show bracket notation
 // Antonietta's Gender
-
+console.log(person5.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
 
+person2.speak = () => {
+  console.log(`Hello, my name is ${person2.name}`)
+};
+console.log(person2.speak());
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+person5.multiplyNums = (x, y) => x * y;
+console.log(person5.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
