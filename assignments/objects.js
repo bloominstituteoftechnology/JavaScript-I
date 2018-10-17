@@ -96,20 +96,20 @@ const parent = {
   name: "Susan",
   age: 70,
   speak: function () {
-    console.log("My name is susan");
+    console.log(`My name is ${this.name}`);
   },
   child : {
   name: "George",
   age: 50,
   speak: function () {
-    console.log("My name is George");
+    console.log(`My name is ${this.name}`);
   },
   
   grandchild : {
   name: "Same",
   age: 30,
   speak: function () {
-    console.log("My name is Sam");
+    console.log(`My name is ${this.name}`);
   },
   }
   }
