@@ -54,14 +54,19 @@ const interFive = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(interOne.name);
 
 // Kennan's ID
+console.log(interTwo.id);
 
 // Keven's email
+console.log(interThree.email);
 
 // Gannie's name
+console.log(interFour.name);
 
 // Antonietta's Gender
+console.log(interFive.gender);
 
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
