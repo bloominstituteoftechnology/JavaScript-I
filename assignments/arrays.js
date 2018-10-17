@@ -150,7 +150,7 @@ let BMWAndAudi =[];
 
 //Advanced array answer
 
-BMWAndAudi = inventory.filter(item => item.car_make === 'BMW' || item.car_make === 'Audi')
+BMWAndAudi = inventory.filter(item =>  item.car_make === 'BMW' || item.car_make === 'Audi')
 
 JSON.stringify(BMWAndAudi);
 console.log(BMWAndAudi);
