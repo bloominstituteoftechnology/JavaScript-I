@@ -131,7 +131,8 @@ for (let i = 0; i < inventory.length; i++){
 				// push specified car model into the BMWAndAudi array
 				BMWAndAudi.push(inventory[i]["car_make"])
 		} 
-		console.log("checking console for bmw/audi", BMWAndAudi);
+		
+		// console.log("checking console for bmw/audi", BMWAndAudi);
 }
 console.log(BMWAndAudi);
 
