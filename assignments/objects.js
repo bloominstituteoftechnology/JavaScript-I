@@ -112,7 +112,7 @@ const parent = {
   }
 }
 log('\n')
-log("stretch goals of object.js:")
+log("stretch challenge of object.js:")
 // Log the parent object's name
 log(parent.name)
 // Log the child's age
