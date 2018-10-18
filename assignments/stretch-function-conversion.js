@@ -2,6 +2,11 @@
 
 // let myFunction = function () {};
 
+let myFunction = () => {
+    console.log('working');
+}
+myFunction();
+
 // let anotherFunction = function (param) {
 //   return param;
 // };
