@@ -120,7 +120,7 @@ for (i = 0; i < carYears.length; i++) {
         oldCars.push(currentYear);
     }
 }
-console.log(oldCars); 
+console.log(oldCars.length); 
     
 
 
@@ -130,9 +130,9 @@ console.log(oldCars);
 let BMWAndAudi =[];
 for (i = 0; i < inventory.length; i++) {
     currentModel = inventory[i]['car_make'];
-    if (currentModel === "BMW" || currentModel === "Audi") {
-        BMWAndAudi.push(currentModel);
-        console.log(BMWAndAudi);
+    if (inventory[i]['car_make'] === "BMW" || inventory[i]['car_make'] === "Audi") {
+        BMWAndAudi.push(inventory[i]);
+        console.log(JSON.stringify(BMWAndAudi));
     }
 }
 console.log(BMWAndAudi);
