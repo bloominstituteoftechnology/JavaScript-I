@@ -143,7 +143,8 @@ for (let i = 0; i < inventory.length; i++){
 	// set condition to check for bmw or audi (car_model) from inventory 
 		if (inventory[i]["car_make"] === "BMW" || inventory[i]["car_make"] === "Audi") {
 				// push specified car model into the BMWAndAudi array
-				BMWAndAudi.push(inventory[i]["car_make"])
+				// BMWAndAudi.push(inventory[i]["car_make"])
+				BMWAndAudi.push(inventory[i])
 		} 
 		
 		// console.log("checking console for bmw/audi", BMWAndAudi);
