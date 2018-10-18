@@ -1,6 +1,6 @@
 // Let's get some practice writing a few objects for a new group of interns at a small business.
 
-// ==== Challenge 1: Writing Objects ==== 
+// ==== Challenge 1: Writing Objects ====
 // HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
 
 // 1,mmelloy0@psu.edu,Mitzi,F
@@ -18,31 +18,70 @@ const example = {
 }
 
 // Write your intern objects here:
+const personMitzi = {
+  "id": 0,
+  "name": " Mitzi Melloy",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}
 
+const personKennan = {
+  "id": 1,
+  "name": "Kennan Diben",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M",
+    speak() {
+    return "Hello,my name is Kennan!"
+  }
+}
 
-// ==== Challenge 2: Reading Object Data ==== 
+const personKeven = {
+  "id": 2,
+  "name": "Keven Mummery",
+  "email": "kmummery2@kikimedia.org",
+  "gender": "M"
+}
+
+const personGannie= {
+  "id": 3,
+  "name": "Gannie martinson",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
+}
+
+const personAntonietta  = {
+  "id": 4,
+  "name": "Antonietta Daine",
+  "email": "adaine5@samsung.com",
+  "gender": "F",
+  multiplyNums(x,y) {
+    return x * y;
+  }
+}
+// ==== Challenge 2: Reading Object Data ====
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(personMitzi.name);
 // Kennan's ID
-
+console.log(personKennan.id);
 // Keven's email
-
+console.log(personKeven.email);
 // Gannie's name
-
+console.log(personGannie.name);
 // Antonietta's Gender
-
-// ==== Challenge 3: Object Methods ==== 
+console.log(personAntonietta.gender);
+// ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+ console.log(personKennan.speak()) // see personKennan object above
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+console.log(personAntonietta.multiplyNums(3,4));
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
-// ==== Stretch Challenge: Nested Objects and the this keyword ==== 
+// ==== Stretch Challenge: Nested Objects and the this keyword ====
 
 // 1. Create a parent object with properties for name and age.  Make the name Susan and the age 70.
 // 2. Nest a child object in the parent object with name and age as well.  The name will be George and the age will be 50.
