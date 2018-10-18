@@ -118,9 +118,20 @@ for (let i = 0; i < inventory.length; i++){
 	// console.log(oldCars); 
 
 // ==== Challenge 6 ====
-// A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
+// A buyer is interested in seeing only BMW and Audi cars within the inventory. 
+// Return an array that only contains BMW and Audi cars. 
+// Once you have populated the BMWAndAudi array, use JSON.stringify() to show 
+//the results of the array in the console.
+
 let BMWAndAudi =[];
-console.log();
-
-
+// count through the for loop 
+for (let i = 0; i < inventory.length; i++){
+	// set condition to check for bmw or audi (car_model) from inventory 
+		if (inventory[i]["car_make"] === "BMW" || inventory[i]["car_make"] === "Audi") {
+				// push specified car model into the BMWAndAudi array
+				BMWAndAudi.push(inventory[i]["car_make"])
+		} 
+		console.log("checking console for bmw/audi", BMWAndAudi);
+}
+console.log(BMWAndAudi);
 
