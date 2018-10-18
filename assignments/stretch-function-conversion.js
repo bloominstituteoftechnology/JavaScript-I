@@ -11,6 +11,12 @@ myFunction();
 //   return param;
 // };
 
+let anotherFunction = (param + 2) {
+    
+    console.log(param);
+};
+
+anotherFunction();
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
