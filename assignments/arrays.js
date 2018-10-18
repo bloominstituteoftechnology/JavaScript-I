@@ -105,9 +105,11 @@ function sorted() {
   for (let i = 0; i < inventory.length; i++) {
     carModels.push(inventory[i].car_model);
   }
-  carModels = carModels.forEach(n => {
-    uppModels.push(n.charAt(0).toUpperCase() + n.slice(1));
-  });
+  for (let i = 0; i < carModels.length; i++) {
+    uppModels.push(
+      carModels[i].charAt(0).toUpperCase() + carModels[i].slice(1),
+    );
+  }
   return uppModels;
 }
 console.log(sorted());
