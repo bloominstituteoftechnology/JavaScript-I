@@ -9,7 +9,6 @@
 // 3,kmummery2@wikimedia.org,Keven,M
 // 4,gmartinson3@illinois.edu,Gannie,M
 // 5,adaine5@samsung.com,Antonietta,F
-
 // Example format of an intern object: 1,examples@you.edu,Example,F
 const example = {
   "id": 0,
@@ -20,7 +19,7 @@ const example = {
 
 // setting console.log to log
 const log = console.log;
-
+// log("Object.js: challenge 1")
 // Write your intern objects here:
 
 const mitzi = {
@@ -60,7 +59,7 @@ const antonietta = {
 // log(intern)
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
-
+log("Object.js: challenge 2")
 // Mitzi's name
  log(mitzi["name"]);
 // Kennan's ID
@@ -73,6 +72,8 @@ log(gannie["name"]);
 log(antonietta["gender"]);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
+log('\n')
+log("Object.js: challenge 3")
 
   kennan.speak = function(){
    return "Hello, my name is Kennan!";
@@ -110,6 +111,8 @@ const parent = {
      }
   }
 }
+log('\n')
+log("stretch goals of object.js:")
 // Log the parent object's name
 log(parent.name)
 // Log the child's age
@@ -127,11 +130,14 @@ log(parent.child.grandchild["age"])
   return `hello, my name is ${parent["name"]}`;
  }
  log(parent.speak());
+ 
+
 // Have the child speak
 parent.child.speak = function () {
   return `hello, my name is ${parent.child["name"]}`;
 }
 log(parent.child.speak());
+
 //
 // Have the grandchild speak
 parent.child.grandchild.speak = function () {

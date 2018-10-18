@@ -59,6 +59,7 @@ let inventory = [
 
 // PROJECT RESTRICTION: You can't use map, reduce, or filter to solve these problems.  Only use native JavaScript for loops.
 
+
 // Example for loop:
 // arr = [1,2,3,4];
 // for (i = 0; i < arr.length; i++) {
@@ -66,12 +67,17 @@ let inventory = [
 // }
 
 // ==== Challenge 1 ====
+log('\n')
+log("array.js: Challenge 1")
+log('\n')
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 console.log(` Car 33 is a ${inventory[32].car_make} ${inventory[32].car_model}` );
 // console.log(inventory[32].car_make);
 // ` Car 33 is a *car make goes here* *car model goes here* 
 
 // ==== Challenge 2 ====
+log("array.js: Challenge 2")
+log('\n')
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = 0;
 lastCar = inventory[inventory.length -1];
@@ -79,6 +85,8 @@ console.log(lastCar["car_make"], lastCar["car_model"])
 
 
 // ==== Challenge 3 ====
+log("array.js: Challenge 3")
+log('\n')
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
 for (let i = 0; i < inventory.length; i++){
@@ -89,6 +97,8 @@ for (let i = 0; i < inventory.length; i++){
 }
 console.log(carModels);
 // ==== Challenge 4 ====
+log("array.js: Challenge 4")
+log('\n')
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
 for (let i = 0; i < inventory.length; i++){
@@ -97,6 +107,8 @@ for (let i = 0; i < inventory.length; i++){
 console.log(carYears);
 
 // ==== Challenge 5 ====
+log("array.js: Challenge 5")
+log('\n')
 // The car lot manager needs to find out how many cars are older than the year 2000. 
 //Using the carYears array you just created, find out how many cars were made before the year 2000
 // by populating the array oldCars and logging it's length.
@@ -118,6 +130,8 @@ for (let i = 0; i < inventory.length; i++){
 	// console.log(oldCars); 
 
 // ==== Challenge 6 ====
+log("array.js: Challenge 6")
+log('\n')
 // A buyer is interested in seeing only BMW and Audi cars within the inventory. 
 // Return an array that only contains BMW and Audi cars. 
 // Once you have populated the BMWAndAudi array, use JSON.stringify() to show 
