@@ -85,13 +85,15 @@ console.log(Antonietta.gender)
 const parent = {}
 
 // Log the parent object's name
-
+return(parent.name);
 // Log the child's age
-
+return(parent.child.name);
 // Log the name and age of the grandchild
-
+return(parent.child.grandChild.name);
+return(parent.child.grandChild.age);
 // Have the parent speak
-
+return(parent.speak());
 // Have the child speak
-
+return(parent.child.speak());
 // Have the grandchild speak
+return(parent.child.grandChild.speak());
