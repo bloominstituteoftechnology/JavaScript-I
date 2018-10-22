@@ -32,7 +32,9 @@ const intern = [
     'email': 'kdiben1@tinypic.com',
     'gender': 'M',
     speak: function() {
+      console.log(`Hello, my name is ${intern[1].name}!'`);
       console.log(`Hello, my name is ${this.name}!'`);
+    }  
   },
   {
     'id': 3,
@@ -53,6 +55,7 @@ const intern = [
     'gender': 'F',
     multiplyNums: function(num1, num2) {
       console.log(num1 * num2);
+    }
   }
   ];
 
@@ -61,23 +64,23 @@ const intern = [
 
 // Mitzi's name
 
-console.log(Mitzi.name);
+console.log(intern[0].name);
 
 // Kennan's ID
 
-console.log(Kennan.id);
+console.log(intern[1].id);
 
 // Keven's email
 
-console.log(Keven.email);
+console.log(intern[2].email);
 
 // Gannie's name
 
-console.log(Gannie.name);
+console.log(intern[3].name);
 
 // Antonietta's Gender
 
-console.log(Antonietta.gender);
+console.log(intern[4].gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
