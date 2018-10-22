@@ -106,7 +106,7 @@ console.log(intern[4].multiplyNums(3,4));
 const parent = [
 {
   'name': 'Susan',
-  'age': 70
+  'age': 70,
   speak: function() {
     console.log(`Hello my name is ${this.name}!`);
   }
