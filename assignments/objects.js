@@ -95,20 +95,20 @@ intern5.multiplyNums = function(num1, num2){
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
 const parent = {
-  "name": "Grandpa Simpson",
-  "age": 87,
+  "name": "Susan",
+  "age": 70,
   speak: function(){
     return `My name is ${this.name}!`;
   },
   child: {
-    "name": "Homer Simpson",
-    "age": 38,
+    "name": "George",
+    "age": 50,
     speak: function(){
       return `My name is ${this.name}!`;
     },
     grandchild: {
-      "name": "Bart Simpson",
-      "age": 10,
+      "name": "Sam",
+      "age": 30,
       speak: function(){
         return `My name is ${this.name}!`;
       }
