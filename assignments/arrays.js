@@ -321,43 +321,35 @@ let inventory = [{
 //     }
 //   }
 
-// Using filter() method
-function myFunction(inNum) {
-  const result = inventory.filter(function (car) {
-    return car.id === inNum;
-  });
-
-  return `Car ${result[0].id} is a ${result[0].car_make} ${result[0].car_model}`;
+// Using filter() method arrow syntax
+const getCarInfo = inNum => {
+  const result = inventory.filter(car => car.id === inNum);
+  return `Car ${result[0].id} is a ${result[0].car_make} ${result[0].car_model}`
 }
 
-console.log(myFunction(33));
+console.log(getCarInfo(33));
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = inventory.length - 1;
-console.log(`${inventory[lastCar].car_make} ${inventory[lastCar].car_model}`);
+// let lastCar = inventory.length - 1;
+// console.log(`${inventory[lastCar].car_make} ${inventory[lastCar].car_model}`);
+
+const getLast = () => `${inventory[inventory.length-1].car_make} ${inventory[inventory.length-1].car_model}`
+console.log(getLast());
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-// Using for loop method
+//Using for loop method
 // let carModels = [];
 // for (let i = 0; i < inventory.length; i++) {
 //   carModels.push(inventory[i].car_model);
 // }
 // console.log(carModels.sort());
 
-// using map() method
-function getCarModel(item,index) {
-  let model = item.car_model;
-  return model;
-}
+// Using .map() arrow syntax
+const getModels = inventory.map(cars => cars.car_model).sort();
 
-function myFunction() {
-  let carModels = inventory.map(getCarModel).sort();
-  return carModels;
-}
-
-console.log(myFunction());
+console.log(getModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
@@ -368,8 +360,11 @@ console.log(myFunction());
 // }
 // console.log(carYears);
 
-// map method
- // map method
+// using .map and arrow syntax
+const getAllYears = inventory.map(years => years.car_year);
+console.log(getAllYears);
+
+ // map method and es5 syntax
  function getYears(item,index) {
   let year = item.car_year;
   return year;
@@ -393,19 +388,13 @@ console.log(myFunction());
 // }
 // console.log(`There are ${oldCars.length} cars older than the year 2000`);
 
-// filter and map method combined
+// filter method using arrow syntax
+let olderCars = getAllYears.filter(years => years < 2000);
+console.log(olderCars.length);
 
 function checkOlderCars(year) {
   return year < 2000;
 }
-
-function myFunction2() {
-  let carYears = inventory.map(getYears);  // uses get years function above in challenge 4
-  let oldCars = carYears.filter(checkOlderCars);
-  return oldCars.length;
-}
-
-console.log(`There are ${myFunction2()} cars older than the year 2000`);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
@@ -420,16 +409,8 @@ console.log(`There are ${myFunction2()} cars older than the year 2000`);
 // const myJSON = JSON.stringify(BMWAndAudi);
 // console.log(myJSON);
 
-// filter method
-// filter method
-function checkBMWAudi(car) {
-  return car.car_make === 'BMW' || car.car_make === 'Audi';
-}
+const getBMWAudi = inventory.filter(auto => auto.car_make === 'BMW' || auto.car_make === 'Audi');
+//return getBMWAudi;
+const myJSON = JSON.stringify(getBMWAudi);
+console.log(myJSON);
 
-function getSpecificModel() {
-  let BMWAndAudi = inventory.filter(checkBMWAudi);
-  const myJSON = JSON.stringify(BMWAndAudi);
-  return myJSON;
-}
-
-console.log(getSpecificModel());
