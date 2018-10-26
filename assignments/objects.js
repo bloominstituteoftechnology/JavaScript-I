@@ -30,7 +30,7 @@ const kennan = {
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M",
-  "speak"() {
+  "speak": function() {
     return "Hello, my name is Kennan!";
   }
 }
@@ -54,7 +54,7 @@ const antonietta = {
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F",
-  "multiplyNums"(x,y) {
+  "multiplyNums": function(x,y) {
     return x*y;
   }
 }
@@ -91,19 +91,19 @@ console.log(antonietta.multiplyNums(3,4));
 const parent = {
   "name": "Susan",
   "age": 70,
-  "speak"() {
+  "speak": function() {
     return this.name;
   },
   child: {
     "name": "George",
     "age": 50,
-    "speak"() {
+    "speak": function() {
       return this.name;
     },
     grandchild: {
       "name": "Sam",
       "age": 30,
-      "speak"() {
+      "speak": function() {
         return this.name;
       }
     }
