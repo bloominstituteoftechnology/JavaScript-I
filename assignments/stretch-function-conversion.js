@@ -1,7 +1,7 @@
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
 // let myFunction = function () {};
-
+//const myFunction 
 // let anotherFunction = function (param) {
 //   return param;
 // };
@@ -21,3 +21,16 @@
 //   return num * 3;
 // });
 // console.log(triple);
+//
+//function timesTwo(params) {
+//    return params * 2
+//}
+//console.log(timesTwo(4))
+
+//const timesTwo = params => params * 2
+//
+//console.log(timesTwo(4))
+//
+
+
+
