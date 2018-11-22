@@ -122,7 +122,7 @@ for (i in inventory){
     }
 }
 
-console.log(BMWAndAudi);
+JSON.stringify(BMWAndAudi);
 
 
 
