@@ -69,8 +69,11 @@ console.log(`Car 33 is a ${inventory.filter(item => item.id === 33)[0].car_year}
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = inventory.length - 1;
-console.log(`The last car in the inventory is a ${inventory[lastCar].car_make} ${inventory[lastCar].car_model}`);
+let lastCar = inventory[inventory.length - 1];
+console.log(`The last car in the inventory is a ${lastCar.car_make} ${lastCar.car_model}`);
+// Stretch version:
+lastCar = inventory.filter(item => item.id === inventory.length);
+console.log(`The last car in the inventory is a ${lastCar[0].car_make} ${lastCar[0].car_model}`);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
