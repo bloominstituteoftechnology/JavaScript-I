@@ -100,12 +100,22 @@ console.log(intern5.multiplyNums(3,4));
 const parent = {
   name: 'Susan',
   age: 70,
+  speak: function() {
+    return `Hello, it's nice to meet you! My name is ${parent.name}.`
+  },
   child: {
     name: 'George',
     age: 50,
+    speak: function() {
+      return `Hello, my name is ${parent.child.name}!`
+    },
     grandchild: {
       name: 'Sam',
       age: 30,
+      speak: function() {
+        return "Hello, it's nice to meet you!"
+      },
+     
     }
   }
 }
@@ -120,7 +130,10 @@ console.log(parent.child.age);
 console.log(`${parent.child.grandchild.name}  ${parent.child.grandchild.age}`);
 
 // Have the parent speak
+console.log(parent.speak());
 
 // Have the child speak
+console.log(parent.child.speak());
 
 // Have the grandchild speak
+console.log(parent.child.grandchild.speak());
