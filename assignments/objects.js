@@ -18,46 +18,48 @@ const example = {
 
 // Write your intern objects here:
 
-const internObjects = [
-  {
-    "id": 1,
-    "name": "Mitzi",
-    "email": "mmelloy0@psu.edu",
-    "gender": "F"
-  },
+const mitzi = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}
 
-  {
-    "id": 2,
-    "name": "Kennan",
-    "email": "kdiben1@tinypic.com",
-    "gender": "M"
-  },
+const kennan = {
 
-  {
-    "id": 3,
-    "name": "Keven",
-    "email": "kmummery2@wikimedia.org",
-    "gender": "M"
-  },
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+}
 
-  {
-    "id": 4,
-    "name": "Gannie",
-    "email": "kdiben1@tinypic.com",
-    "gender": "M"
-  },
-  
-  {
-    "id": 5,
-    "name": "Antonietta",
-    "email": "adaine5@samsung.com",
-    "gender": "F"
-  }]
-  
+const keven = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}
+
+const gannie = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+}
+
+const antonietta = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F"
+}
+
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+
+
 
 // Kennan's ID
 
