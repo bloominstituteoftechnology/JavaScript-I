@@ -96,17 +96,35 @@ console.log(antonietta["gender"])
 const parent = {
   "name": "Susan",
   "age": 70,
-  "child": {"name": "George", "age": 50}
+  "speak": function() {
+    console.log(`Hi, my name is ${this.name}`)
+  },
+  "child": {
+    "name": "George",
+    "age": 50,
+    "speak": function() {
+      console.log(`Hi, my name is ${this.name}`)
+    },
+    "grandchild": {
+      "name": "Sam",
+      "age": 30,
+      "speak": function() {
+        console.log(`Hi, my name is ${this.name}`)
+      },
+    }
+  }
 }
 
 // Log the parent object's name
-
+console.log(parent.name);
 // Log the child's age
-
+console.log(parent.child.age);
 // Log the name and age of the grandchild
+console.log(parent.child.grandchild.name, parent.child.grandchild.age);
 
 // Have the parent speak
-
+parent.speak();
 // Have the child speak
-
+parent.child.speak();
 // Have the grandchild speak
+parent.child.grandchild.speak();
