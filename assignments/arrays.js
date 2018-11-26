@@ -7,7 +7,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":3,"car_make":"Land Rover","car_model":"Defender Ice Edition","car_year":2010},
 {"id":4,"car_make":"Honda","car_model":"Accord","car_year":1983},
 {"id":5,"car_make":"Mitsubishi","car_model":"Galant","car_year":1990},
-{"id":6,"car_make":"Audi","car_model":"riolet","car_year":1995},
+{"id":6,"car_make":"Audi","car_model":"Riolet","car_year":1995},
 {"id":7,"car_make":"Smart","car_model":"Fortwo","car_year":2009},
 {"id":8,"car_make":"Audi","car_model":"4000CS Quattro","car_year":1987},
 {"id":9,"car_make":"Ford","car_model":"Windstar","car_year":1996},
@@ -77,7 +77,10 @@ console.log(`The last car in the inventory is a ${lastCar.car_year} ${lastCar.ca
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
-console.log();
+for (let i = 0; i < inventory.length; i++) {
+    carModels.push(inventory[i].car_model);
+}
+console.log(carModels.sort());
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
