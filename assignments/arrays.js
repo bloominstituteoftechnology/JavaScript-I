@@ -101,6 +101,10 @@ for (let i = 0; i < carYears.length; i++) {
 }
 console.log(`There are ${oldCars.length} old cars`); 
 
+// Stretch version:
+let oldCars2 = inventory.filter(item => item.car_year < 2000);
+console.log(`There are ${oldCars.length} old cars`); 
+
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi =[];
