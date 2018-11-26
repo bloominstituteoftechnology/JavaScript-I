@@ -81,46 +81,74 @@ console.log(lastCar.car_make, lastCar.car_model);
 
 let carModels = [];
 
-for(let i = 0; i < inventory.length; i++) {
-  if(!carModels.includes(inventory[i].car_make)){
-    carModels.push(inventory[i].car_make);
+// for(let i = 0; i < inventory.length; i++) {
+//   if(!carModels.includes(inventory[i].car_make)){
+//     carModels.push(inventory[i].car_make);
+//   }
+// }
+// console.log(carModels.sort());
+
+carModels = inventory.reduce((acc, cur) => {
+  if(!acc.includes(cur.car_model)) {
+    acc.push(cur.car_model)
   }
-}
-console.log(carModels.sort());
+  return acc;
+}, []).sort();
+
+// console.log(carModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing 
 // only the car years and log the result in the console.
 let carYears = [];
 
-for(let i = 0; i < inventory.length; i++) {
-  carYears.push(inventory[i].car_year);
-}
-console.log(carYears.sort());
+// for(let i = 0; i < inventory.length; i++) {
+//   carYears.push(inventory[i].car_year);
+// }
+// console.log(carYears.sort());
+
+carYears = inventory.reduce((acc, current) => {
+  acc.push(current.car_year);
+  return acc;
+}, []);
+
+// console.log(carYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, 
 // find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars = [];
 
-for(let i = 0; i < carYears.length; i++) {
-  if(carYears[i] < 2000) {
-    oldCars.push(carYears[i])
-  }
-}
+// for(let i = 0; i < carYears.length; i++) {
+//   if(carYears[i] < 2000) {
+//     oldCars.push(carYears[i])
+//   }
+// }
 
-console.log(oldCars.length);
+oldCars = carYears.filter(year => year < 2000);
+
+
+
+// console.log(oldCars.length);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  
 // Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi = [];
-for(let i = 0; i < inventory.length; i++) {
-  if(inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi') {
-    BMWAndAudi.push(inventory[i]);
+// for(let i = 0; i < inventory.length; i++) {
+//   if(inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi') {
+//     BMWAndAudi.push(inventory[i]);
+//   }
+// }
+
+BMWAndAudi = inventory.reduce((acc, cur) => {
+  if(cur.car_make === 'BMW' || cur.car_make === 'Audi') {
+    acc.push(cur);
   }
-}
-console.log(JSON.stringify(BMWAndAudi));
+  return acc;
+}, [])
+
+console.log(BMW);
 
 
 
