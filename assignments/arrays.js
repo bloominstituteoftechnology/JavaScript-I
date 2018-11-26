@@ -119,5 +119,10 @@ for (let i = 0; i < BMWAndAudi.length; i++) {
   console.log(JSON.stringify(BMWAndAudi[i]));
 }
 
-
-
+// Stretch Version:
+let BMWAndAudi2 = inventory.filter(item => item.car_make === "BMW" || item.car_make === "Audi")
+console.log(JSON.stringify(BMWAndAudi2));
+// logging each object individually is a bit easier to read:
+for (let i = 0; i < BMWAndAudi2.length; i++) {
+  console.log(JSON.stringify(BMWAndAudi2[i]));
+}
