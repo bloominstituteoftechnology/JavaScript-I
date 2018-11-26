@@ -25,7 +25,38 @@ const intern1 = {
   "email": "mmelloy0@psu.edu",
   "gender": "F"
 }
-console.log(intern1);
+
+const intern2 = {
+  "id": 1,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+}
+
+const intern3 = {
+  "id": 2,
+  "name": "Kevin",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}
+
+const intern4 = {
+  "id": 3,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
+}
+
+const intern4 = {
+  "id": 4,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F"
+}
+
+
+
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
