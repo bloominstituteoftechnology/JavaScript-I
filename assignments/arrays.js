@@ -69,8 +69,10 @@ for(let car in inventory){
   }
 }
 
+// ----------------------------Stretch Version---------------------------------------- \\
 // let car33 = inventory.filter(car => car.id === 33);
 // console.log(`Car 33 is a ${car33[0].car_year} ${car33[0].car_make} ${car33[0].car_model}`)
+// ----------------------------Stretch Version---------------------------------------- \\
 
 
 // ==== Challenge 2 ====
@@ -100,8 +102,10 @@ for(let year in carYears){
 };
 console.log(`There are ${oldCars.length} with a make older than 2000`); 
 
+// ----------------------------Stretch Version---------------------------------------- \\
 // const oldCars = carYears.filter(year => year < 2000);
 // console.log(`There are ${oldCars.length} with a make older than 2000`);
+// ----------------------------Stretch Version---------------------------------------- \\
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
@@ -113,7 +117,8 @@ for(let car in inventory){
 }
 console.log(JSON.stringify(BMWAndAudi));
 
+// ----------------------------Stretch Version---------------------------------------- \\
 // const BMWAndAudi = inventory.filter(car => car.car_make === 'BMW' || car.car_make === 'Audi');
 // console.log(JSON.stringify(BMWAndAudi));
-
+// ----------------------------Stretch Version---------------------------------------- \\
 
