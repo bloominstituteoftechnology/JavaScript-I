@@ -87,6 +87,22 @@ carModels.sort();
 
 console.log(carModels);
 
+// Attempted alternate solution without .sort()
+// let altCarModels = [];
+// for (let i = 0; i < inventory.length; i++) {
+//     altCarModels.push(inventory[i].car_model);   
+// }
+
+// let sortedCarModels = [];
+// for (let i = 0; i < altCarModels.length; i++) {
+
+//     if (altCarModels[i][0] > altCarModels[i+=1][0]) {
+//       sortedCarModels.push(altCarModels[i]);
+// }
+// }
+
+// console.log(sortedCarModels);
+
 
 // Stretch Solution for Challenge 3
 let stretchCarModels = inventory.map((model) => {
@@ -159,4 +175,3 @@ let stretchBMWAudi = inventory.filter((fancy) => {
 })
 
 console.log(JSON.stringify(stretchBMWAudi));
-
