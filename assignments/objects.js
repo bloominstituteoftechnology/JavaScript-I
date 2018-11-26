@@ -82,15 +82,28 @@ const intern2 = {
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M",
-  "speak": function(){
-    console.log("Hello, my name is Kennan!");
+  "speak": "Hello, my name is Kennan!"
   }
-}
+
+console.log(intern2.speak)
 
 
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+const intern5 = {
+  "id": 4,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F",
+  "number1": "4",
+  "number2": "5",
+  "math": 4*5
+
+}
+
+console.log(intern5.math)
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 

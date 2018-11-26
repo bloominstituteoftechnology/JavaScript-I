@@ -1,13 +1,9 @@
-const intern1 = {
-    "id": 0,
-    "name": "Mitzi",
-    "email": "mmelloy0@psu.edu",
-    "gender": "F"
-  }
-
-
-  console.log(intern1);
-
-
-
-
+const intern2 = {
+    "id": 1,
+    "name": "Kennan",
+    "email": "kdiben1@tinypic.com",
+    "gender": "M",
+    "speak": "Hello, my name is Kennan!"
+    }
+  
+console.log(intern2.speak)
