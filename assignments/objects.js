@@ -29,19 +29,19 @@ const newInterns = [
     id: 2,
     name: "Kennan",
     email: "kdiben1@tinypic.com",
-    gender: "F"
+    gender: "M"
   },
   {
     id: 3,
     name: "Keven",
     email: "kmummery2@wikimedia.org",
-    gender: "F"
+    gender: "M"
   },
   {
     id: 4,
     name: "Gannie",
     email: "gmartinson3@illinois.edu",
-    gender: "F"
+    gender: "M"
   },
   {
     id: 5,
@@ -49,21 +49,26 @@ const newInterns = [
     email: "adaine5@samsung.com",
     gender: "F"
   }
-]
+];
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(newInterns[0].name);
 
 // Kennan's ID
+console.log(newInterns[1].id);
 
 // Keven's email
+console.log(newInterns[2].email);
 
 // Gannie's name
+console.log(newInterns[3].name);
 
 // Antonietta's Gender
+console.log(newInterns[4].gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
