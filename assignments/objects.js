@@ -25,9 +25,37 @@ const newInterns = {
   "email": "mmellloy0@psu.edu",
   "gender": "F"
 }
+
+const Kennan = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+}
+
+const Keven = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}
+
+const Gannie = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartison3@illinois.edu",
+  "gender": "M"
+}
+
+const Antonietta = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F"
+}
  
 
-console.log(newInterns.name);
+console.log(Mitzi.name);
 
 
 // ==== Challenge 2: Reading Object Data ==== 
