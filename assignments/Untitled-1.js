@@ -7,7 +7,7 @@ const intern1 = {
 
 
   console.log(intern1);
-  
+
 
 
 
