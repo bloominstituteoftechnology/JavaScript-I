@@ -116,4 +116,5 @@ for (let i = 0; i < inventory.length; i++) {
 		BMWAndAudi.push(inventory[i]);
 	}
 }
+
 console.log(BMWAndAudi);
