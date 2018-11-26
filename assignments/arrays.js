@@ -81,8 +81,8 @@ console.log(lastCar.carModel);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
-console.log();
+let carModels = ["Navigator", "Mita MX-5", "Defender Ice Edition", "Accord", "Galant", "riolet", "Fortwo", "4000CS Quattro", "Windstar", "E-Class", "G35", "Esprit", "Cavalier", "Ram Van 1500", "Intrepid", "Montero Sport", "Skylark", "Prizm", "Bravada", "Familia", "Express 1500", "Wwrangler", "Talon", "MR2", "525", "Escalade", "Q", "Aerio", "Topaz", "6 Series", "GTO", "Ram Van 3500", "Wrangler", "Escort", "300M", "XC70", "LSS", "Camry", "Econoline E250", "Evora", "Mustang", "Yukon", "R-Class", "Q7", "TT", "Ciera", "Jetta", "Magnum", "Sebring", "Town Car"];
+console.log(carModels.sort());
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
