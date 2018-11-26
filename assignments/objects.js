@@ -26,10 +26,17 @@ const Student1 = {
 }
 
 const Student2 = {
-  "id": 2,
-  "email": "kdiben1@tinypic.com",
-  "name": "Kennan",
-  "gender": "M"
+  id: 2,
+  email: "kdiben1@tinypic.com",
+  name: "Kennan",
+  gender: "M",
+  // speak: function() {
+  //   return("Hello, my name is ${this.name}!");
+  // }
+
+  speak: function() {
+    return(`Hello, my name is ${this.name}!`);
+  }
 }
 
 const Student3 = {
@@ -47,10 +54,13 @@ const Student4 = {
 }
 
 const Student5 = {
-  "id": 5,
-  "email": "adaine5@samsung.com",
-  "name": "Antonietta",
-  "gender": "F"
+  id: 5,
+  email: "adaine5@samsung.com",
+  name: "Antonietta",
+  gender: "F",
+  multiplyNums: function(Num1, Num2) {
+    return(Num1 * Num2);
+  }
 }
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -60,19 +70,25 @@ const Student5 = {
 console.log(Student1.name);
 
 // Kennan's ID
+console.log(Student2["id"]);
 
 // Keven's email
+console.log(Student3.email);
 
 // Gannie's name
+console.log(Student4["name"]);
 
 // Antonietta's Gender
+console.log(Student5.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+console.log(Student2.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+console.log(Student5.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
