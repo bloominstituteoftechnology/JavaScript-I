@@ -36,7 +36,10 @@ const interns = [
   'id': 3,
   'name': 'Keven',
   'email': 'kmummery2@wikimedia.org',
-  'gender': 'M'
+  'gender': 'M',
+  speak: function () {
+    console.log("Hello, my name is Kennan!")
+  },
 },
 {
   'id': 4,
@@ -48,7 +51,10 @@ const interns = [
   'id': 5,
   'name': 'Antionette',
   'email': 'adaine5@samsung.com',
-  'gender': 'F'
+  'gender': 'F',
+  multiplyNums: function (a,b) {
+    return a*b;
+  },
 }
 ];
 
@@ -80,8 +86,12 @@ console.log(interns[4]['gender']);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+console.log(interns[2].speak());
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+console.log(interns[4].multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
