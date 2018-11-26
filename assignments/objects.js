@@ -7,7 +7,7 @@
 // 2,kdiben1@tinypic.com,Kennan,M
 // 3,kmummery2@wikimedia.org,Keven,M
 // 4,gmartinson3@illinois.edu,Gannie,M
-// 5,adaine5@samsung.com,Antonietta,F
+// 5,adaine5@samsung.com,Antonietta,Fg
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
 const example = {
@@ -19,19 +19,38 @@ const example = {
 
 // Write your intern objects here:
 
+function Intern(idNumber, email, firstName, gender) {
+  this.id = idNumber;
+  this.name = firstName;
+  this.email = email;
+  this.gender = gender;
+}
+
+const Mitzi = new Intern(1, 'mmelloy0@psu.edu', 'Mitzi', 'F');
+const Kennan = new Intern(2, 'kdiben1@tinypic.com', 'Kennan', 'M');
+const Keven = new Intern(3, 'kmummery2@wikimedia.org', 'Keven', 'M');
+const Gannie = new Intern(4, 'gmartinson3@illinois.edu', 'Gannie', 'M');
+const Antonietta = new Intern(5, 'adaine5@samsung.com', 'Antonietta', 'F');
+
+console.log(Antonietta);
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(Mitzi.name);
 
 // Kennan's ID
+console.log(Kennan.id);
 
 // Keven's email
+console.log(Keven.email);
 
 // Gannie's name
+console.log(Gannie.name);
 
 // Antonietta's Gender
+console.log(Antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
