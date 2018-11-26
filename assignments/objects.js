@@ -78,19 +78,19 @@ console.log(antonietta.gender);
 // console.log(kennan.speak());
 
 kennan.speak = function(){
-  console.log("Hello, my name is " + kennan.name);
+  console.log(`Hello, my name is ${this.name}!`);
 };
-console.log(kennan.speak());
+kennan.speak();
+// console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
 antonietta.multiplyNums = function(firstNum, secondNum){
-  const product = firstNum * secondNum;
-  console.log(product);
+  console.log(firstNum * secondNum);
 };
-
-console.log(antonietta.multiplyNums(3,4));
+antonietta.multiplyNums(3,4);
+// console.log(antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -111,15 +111,15 @@ const parent = {
       "name": "Sam",
       "age": 30,
       speak: function(){
-        console.log("Hello, my name is " + this.name);
+        console.log(`Hello, my name is ${this.name}!`);
       }
     },
     speak: function(){
-      console.log("Hello, my name is " + this.name);
+      console.log(`Hello, my name is ${this.name}!`);
     }
   },
   speak: function(){
-    console.log("Hello, my name is " + this.name);
+    console.log(`Hello, my name is ${this.name}!`);
   }
 }
 
