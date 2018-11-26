@@ -53,6 +53,8 @@ const Antonietta = {
   gender: 'F'
 }
 
+// console.log(Antonietta)
+
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
@@ -65,6 +67,9 @@ const Antonietta = {
 // Gannie's name
 
 // Antonietta's Gender
+
+console.log(Mitzi.name, Kennan.id, Keven.email, Gannie.name, Antonietta.gender)
+
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
