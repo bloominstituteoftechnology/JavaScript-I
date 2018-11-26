@@ -28,7 +28,10 @@ const Kennan = {
   id: 2,
   email: 'kdiben1@tinypic.com',
   name: 'Kennan',
-  gender: 'M'
+  gender: 'M',
+  speak: function() {
+    console.log(`Hello, my name is ${this.name}!`);
+  }
 }
 const Keven = {
   id: 3,
@@ -46,7 +49,10 @@ const Antonietta = {
   id: 5,
   email: 'adaine5@samsung.com',
   name: 'Antonietta',
-  gender: 'F'
+  gender: 'F',
+  multiplyNums: function(x,y) {
+    return x * y;
+  }
 }
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -65,10 +71,10 @@ console.log(Antonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-
+console.log(Kennan.speak());
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+console.log(Antonietta.multiplyNums(3,4));
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
