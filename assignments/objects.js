@@ -64,14 +64,19 @@ console.log(antonietta);
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(`The employee's name is ${mitzi.name}.`);
 
 // Kennan's ID
+console.log(`The employee's ID is ${kennan.id}.`);
 
 // Keven's email
+console.log(`The employee's email is ${keven.email}.`);
 
 // Gannie's name
+console.log(`The employee's name is ${gannie.name}.`);
 
 // Antonietta's Gender
+console.log(`The employee's gender is ${antonietta.gender}.`);
 
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
