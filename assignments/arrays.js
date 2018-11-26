@@ -139,3 +139,42 @@ for (let i = 0; i < inventory.length; i++) {
   }
 }
 console.log(JSON.stringify(BMWAndAudi));
+
+//
+//
+//
+// ==== Stretch Array Method Question Answers ====
+// Questions are numbered 1 through 6 and correpond directly to their counterparts above
+
+// ==== Stretch Challenge 1 ====
+// The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33.
+const carID33 = inventory.filter(car => car.id === 33);
+console.log(carID33);
+
+// ==== Stretch Challenge 2 ====
+//
+// I still think the fastest way to write this is my origional method used above in the origional question
+
+// ==== Stretch Question 3 ====
+// The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
+let modelsArr = inventory.map(car => car.car_model).sort();
+
+console.log(modelsArr);
+
+// ==== Stretch Question 4 ====
+// The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
+const yearOfCars = inventory.map(car => car.car_year);
+
+console.log(yearOfCars);
+
+// ==== Stretch Question 5 ====
+// The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array olderCars and logging it's length.
+const olderCars = inventory.filter(car => car.car_year < 2000);
+console.log(olderCars.length);
+
+// ==== Stretch Question 6 ====
+// A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
+const europeanCars = inventory.filter(
+  car => car.car_make === "BMW" || car.car_make === "Audi"
+);
+console.log(JSON.stringify(europeanCars));
