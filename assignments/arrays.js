@@ -70,10 +70,11 @@ for(let i = 0; i<inventory.length; i++) {
     }
 }
 
-/*
-es6
-let car33  = x.find( (object, ix) => object.id === 33 )
-*/
+
+console.log('es6 challenge 1');
+let car33  = x.find( (object, ix) => object.id === 33 );
+console.log(`Car 33 is a ${car33.car_year} ${car33.car_make} ${car33.car_model}`);
+
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
@@ -111,8 +112,12 @@ for(let car of inventory) {
         oldCars.push(car.car_year);
     }
 }
-
 console.log(oldCars.length); 
+
+console.log('es6 challenge 5');
+let BMWAndAudiES6 = inventory.filter( (car) => {
+    return car.car_year < 2000;
+})
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
@@ -123,6 +128,16 @@ for(let car of inventory) {
         BMWAndAudi.push(car);
         console.log(JSON.stringify(car));
     }
+}
+
+//es6
+
+let BMWAndAudiES6 = inventory.filter( (car) => {
+    return car.car_make === "BMW" || car.car_make === "Audi"
+})
+console.log('es6 challenge 6');
+for(let car of BMWAndAudiES6) {
+    console.log(JSON.stringify(car));
 }
 
 
