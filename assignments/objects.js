@@ -64,19 +64,19 @@ console.log(antonietta);
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(`The employee's name is ${mitzi.name}.`);
+console.log(`This employee's name is ${mitzi.name}.`);
 
 // Kennan's ID
-console.log(`The employee's ID is ${kennan.id}.`);
+console.log(`This employee's ID is ${kennan.id}.`);
 
 // Keven's email
-console.log(`The employee's email is ${keven.email}.`);
+console.log(`This employee's email is ${keven.email}.`);
 
 // Gannie's name
-console.log(`The employee's name is ${gannie.name}.`);
+console.log(`This employee's name is ${gannie.name}.`);
 
 // Antonietta's Gender
-console.log(`The employee's gender is ${antonietta.gender}.`);
+console.log(`This employee's gender is ${antonietta.gender}.`);
 
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
@@ -109,26 +109,25 @@ console.log(`The answer is ${antonietta.multiply(3, 4)}.`);
 const parent = {
   name: "Susan",
   age: "70",
-  speak: function() {
-    return `Hello, my name is ${this.name}!`;
-  },
 
   child: {
     name: "George",
     age: "50",
-    speak: function() {
-      return `Hello, my name is ${this.name}!`;
-    },
 
     grandchild: {
       name: "Sam",
-      age: "30",
-      speak: function() {
-        return `Hello, my name is ${this.name}!`;
-      }
+      age: "30"
     } // grandchild
   } // child
 }; // parent
+
+const speech = function() {
+  return `Hello, my name is ${this.name}!`;
+};
+
+parent.speak = speech;
+parent.child.speak = speech;
+parent.child.grandchild.speak = speech;
 
 // Log the parent object's name
 console.log(parent.name);

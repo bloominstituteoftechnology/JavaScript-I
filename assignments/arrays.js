@@ -81,7 +81,6 @@ for (let i = 0; i < inventory.length; i++) {
     car33 = inventory[i];
   }
 }
-
 console.log(
   `Car 33 is a ${car33.car_year} ${car33.car_make} ${car33.car_model}`
 );
