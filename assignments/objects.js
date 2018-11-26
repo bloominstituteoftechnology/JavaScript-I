@@ -53,21 +53,23 @@ const Antonietta = {
   "email": "adaine5@samsung.com",
   "gender": "F"
 }
- 
 
-console.log(Mitzi.name);
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(Mitzi.name);
 
 // Kennan's ID
+console.log(Kennan.id);
 
 // Keven's email
+console.log(Keven.email);
 
 // Gannie's name
+console.log(Gannie.name);
 
 // Antonietta's Gender
 
