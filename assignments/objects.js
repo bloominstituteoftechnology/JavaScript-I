@@ -50,8 +50,7 @@ const example = {
     console.log(antonietta.name);
 console.log("========================================")
 // ==== Challenge 3: Object Methods ==== 
-// Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+// Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.console.log(kennan.speak());
 
 kennan.sayHello = function (){
   console.log("say Hello");

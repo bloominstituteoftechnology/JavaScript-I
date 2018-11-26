@@ -136,7 +136,6 @@ for ( var i = 0 ; i<inventory.length ; i++){
 console.log(BMWAndAudi);
 let objStr = JSON.stringify(BMWAndAudi);
 console.log(objStr);
-
 console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 
