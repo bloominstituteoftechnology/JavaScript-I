@@ -30,7 +30,10 @@ const kennan = {
   id: 2,
   email: 'kdiben1@tinypic.com',
   "first name": 'Kennan',
-  gender: 'M'
+  gender: 'M',
+  speak: function() {
+    console.log(`Hello my name is ${this["first name"]}`);
+  }
 }
 
 const keven = {
@@ -51,7 +54,10 @@ const antonietta = {
   id: 5,
   email: 'adaine5@samsung.com',
   "first name": 'Antonietta',
-  gender: 'F'
+  gender: 'F',
+  multiplyNums: function(x,y) {
+    console.log(x*y);
+  }
 }
 
 
