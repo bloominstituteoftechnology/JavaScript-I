@@ -98,6 +98,12 @@ for (i = 0; i < inventory.length; i++){
 }
 console.log(carYears);
 
+// =========== STRETCH
+const mappedCarYears = inventory.map((item) => {
+    return item.car_year;
+});
+console.log(mappedCarYears);
+
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars =[];
@@ -107,6 +113,13 @@ for (i = 0; i < carYears.length; i++){
     }
 }
 console.log(oldCars.length); 
+
+// =========== STRETCH
+const filteredOldCars = inventory.filter((item) => {
+    return item.car_year < 2000;
+});
+console.log(filteredOldCars.length);
+
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
@@ -120,5 +133,13 @@ for (i = 0; i < inventory.length; i++){
 }
 console.log(JSON.stringify(BMWAndAudi));
 
-
+// =========== STRETCH
+const filteredBMWAndAudi = inventory.filter((item) => {
+    if (item.car_make === ('BMW')) {
+        return item;
+    } else if (item.car_make === ('Audi')) {
+        return item;
+    }
+});
+console.log(JSON.stringify(filteredBMWAndAudi));
 
