@@ -82,7 +82,7 @@ const sorted = inventory.sort((a, b) => {
     return ((x < y) ? -1 : ((x > y) ? 1 : 0));
   });
   
-let carModels = [];
+let sortedAlphabetically = [];
 
 for(var item in sorted) {
     const firstLetter = sorted[item].car_model[0];
@@ -97,8 +97,17 @@ for(var item in sorted) {
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
-let carYears = [];
-console.log();
+
+function getFields(input, field) {
+    let output = [];
+    for (var i=0; i < input.length ; ++i)
+        output.push(input[i][field]);
+    return output;
+}
+
+let result = getFields(inventory, "car_year"); // returns [ 1, 3, 5 ]
+
+console.log(result);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
