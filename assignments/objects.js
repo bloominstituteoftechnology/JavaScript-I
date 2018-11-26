@@ -32,7 +32,7 @@ const intern2 = {
   name: 'Kennan',
   gender: 'M',
   speak: function() {
-    console.log(`Hello, my name is ${intern2.name}!`)
+    return(`Hello, my name is ${intern2.name}!`)
   }
 }
 
