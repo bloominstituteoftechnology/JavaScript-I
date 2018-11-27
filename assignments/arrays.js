@@ -2,7 +2,8 @@
 
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
 
-let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
+let inventory = [
+{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
 {"id":2,"car_make":"Mazda","car_model":"Miata MX-5","car_year":2001},
 {"id":3,"car_make":"Land Rover","car_model":"Defender Ice Edition","car_year":2010},
 {"id":4,"car_make":"Honda","car_model":"Accord","car_year":1983},
@@ -72,7 +73,8 @@ for(let i = 0; i<inventory.length; i++) {
 
 
 console.log('es6 challenge 1');
-let car33  = x.find( (object, ix) => object.id === 33 );
+let car33  = inventory.find( (object, ix) => object.id === 33 );
+
 console.log(`Car 33 is a ${car33.car_year} ${car33.car_make} ${car33.car_model}`);
 
 
@@ -90,6 +92,7 @@ inventory.sort(function(a, b){
         return 0;
     }
 });
+
 for(let car of inventory) {
     console.log(car.car_model);
 }
@@ -132,11 +135,11 @@ for(let car of inventory) {
 
 //es6
 
-let BMWAndAudiES6 = inventory.filter( (car) => {
+let BMWAndAudiES62 = inventory.filter( (car) => {
     return car.car_make === "BMW" || car.car_make === "Audi"
 })
 console.log('es6 challenge 6');
-for(let car of BMWAndAudiES6) {
+for(let car of BMWAndAudiES62) {
     console.log(JSON.stringify(car));
 }
 
