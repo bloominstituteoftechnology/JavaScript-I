@@ -30,11 +30,47 @@ function writeObject(intern) {
   const newObject = { id, email, name, gender };
   return newObject;
 }
+
 const Mitzi = writeObject("1,mmelloy0@psu.edu,Mitzi,F");
 const Kennan = writeObject("2,kdiben1@tinypic.com,Kennan,M");
 const Keven = writeObject("3,kmummery2@wikimedia.org,Keven,M");
 const Gannie = writeObject("4,gmartinson3@illinois.edu,Gannie,M");
 const Antonietta = writeObject("5,adaine5@samsung.com,Antonietta,F");
+
+let mitzi = {
+  id: 1,
+  name: "Mitzi",
+  email: "mmelloy0@psu.edu",
+  gender: "F"
+};
+
+let kennan = {
+  id: 2,
+  name: "Kennan",
+  email: "kdiben1@tinypic.com",
+  gender: "M"
+};
+
+let keven = {
+  id: 3,
+  name: "Keven",
+  email: "kmummery2@wikimedia.org",
+  gender: "M"
+};
+
+let gannie = {
+  id: 4,
+  name: "Gannie",
+  email: "gmartinson3@illinois.edu",
+  gender: "M"
+};
+
+let antonietta = {
+  id: 5,
+  name: "Antonietta",
+  email: "adaine5@samsung.com",
+  gender: "F"
+};
 
 console.log(Mitzi);
 console.log(Kennan);
