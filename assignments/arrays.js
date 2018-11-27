@@ -83,7 +83,8 @@ console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${i
 
 let lastCar = ()=> inventory.map((item)=> {
   if (inventory.indexOf(item)===inventory.length-1){
-    return "hello"
+    console.log(item.car_make)
+    return `${item.car_make} ${item.car_model}`
   }
 });
 console.log(lastCar())
