@@ -31,6 +31,8 @@ const mitzi = {
   "gender": "F"
 }
 
+console.log(mitzi.name);
+
 // Kennan's ID
 const kennan = {
   "id": 0,
@@ -41,6 +43,8 @@ const kennan = {
     return `Hello, my name is ${this.name}!`
   }
 }
+
+console.log(mitzi.id);
 // Keven's email
 const keven = {
   "id": 0,
@@ -48,7 +52,7 @@ const keven = {
   "email": "kmummery2@wikimedia.org",
   "gender": "M"
 }
-
+console.log(keven.email);
 // Gannie's name
 const gannie = {
   "id": 0,
@@ -56,6 +60,7 @@ const gannie = {
   "email": "gmartinson3@illinois.edu",
   "gender": "M"
 }
+console.log(gannie.name);
 // Antonietta's Gender
 const antonietta = {
   "id": 0,
@@ -66,6 +71,7 @@ const antonietta = {
     return (num1 * num2);
   }
 }
+console.log(antonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 console.log(kennan.speak());
