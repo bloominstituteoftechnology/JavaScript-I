@@ -112,7 +112,7 @@ for (let i = 0; i < inventory.length; i++) {
   if ("BMW" == inventory[i]["car_make"] || "Audi" == inventory[i]["car_make"])
     BMWAndAudi.push(carInfo(i + 1));
 }
-console.log(BMWAndAudi);
+console.log(JSON.stringify(BMWAndAudi));
 
 function carInfo(carnumber) {
   for (i = 0; i < inventory.length; i++) {
