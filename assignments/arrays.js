@@ -81,12 +81,11 @@ console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${i
 // }
 // console.log(lastCar);
 
-let lastCar = ()=> inventory.map((item)=> {
+let lastCar = ()=> inventory.filter((item)=> {
   if (inventory.indexOf(item)===inventory.length-1){
-    console.log(item.car_make)
     return `${item.car_make} ${item.car_model}`
   }
-});
+}).map((item)=> `${item.car_make} ${item.car_model}` );
 console.log(lastCar())
 
 // ==== Challenge 3 ====
