@@ -19,7 +19,7 @@ const example = {
 
 // Write your intern objects here:
 
-function writeObject(intern) {
+function WriteObject(intern) {
   let data = intern.split(",");
   for (let i = 0; i < intern.length; i++) {
     this.id = Number(data[0]);
