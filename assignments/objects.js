@@ -114,11 +114,11 @@ console.log(speak(Kennan));
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
-Antonietta.multiplyNumbs = function(x, y) {
+antonietta.multiplyNumbs = function(x, y) {
   return x * y;
 };
 
-console.log(Antonietta.multiplyNumbs(3, 4));
+console.log(antonietta.multiplyNumbs(3, 4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -161,8 +161,7 @@ console.log(parent.child.age);
 
 // Log the name and age of the grandchild
 
-console.log(parent.child.grandchild.name);
-console.log(parent.child.grandchild.age);
+console.log(parent.child.grandchild.name, parent.child.grandchild.age);
 
 // Have the parent speak
 
