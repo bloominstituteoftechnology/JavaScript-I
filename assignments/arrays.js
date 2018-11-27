@@ -336,9 +336,10 @@ console.log(
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
 for (let i = 0; i < inventory.length; i++) {
-  carModels.push(inventory[i].car_model);
-  carModels.sort();
+  let capped = inventory[i].car_model[0].toUpperCase();
+  carModels.push(capped + inventory[i].car_model.slice(1));
 }
+carModels.sort();
 console.log(carModels);
 
 // ==== Challenge 4 ====
