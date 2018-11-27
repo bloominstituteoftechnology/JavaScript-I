@@ -32,7 +32,7 @@ const Kennan = {
   "name": "Kennan",
   "gender": "M",
   speak: function(){
-    console.log("Hello, my name is Kennan!");
+    return "Hello, my name is Kennan!";
   }
 
 }
@@ -57,7 +57,7 @@ const Antonietta = {
   "name": "Antonietta",
   "gender": "F",
   multiplyNums: function(x,y){
-   console.log(x*y);
+   return x*y;
   }
 }
 
@@ -89,7 +89,7 @@ console.log(Antonietta["gender"]);
  console.log(Kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-console.log(Antonietta.multiplyNums(13,40));
+console.log(Antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
