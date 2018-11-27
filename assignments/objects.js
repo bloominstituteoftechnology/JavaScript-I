@@ -18,7 +18,7 @@ const example = {
 }
 
 // Write your intern objects here:
-const intern1 = {
+const Mitzi = {
   "id": 1,
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
@@ -32,14 +32,14 @@ const Kennan = {
   gender: "M",
 }
 
-const intern3 = {
+const Keven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M"
 }
 
-const intern4 = {
+const Gannie = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
@@ -57,13 +57,13 @@ const Antonietta = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(intern1.name);
+console.log(Mitzi.name);
 // Kennan's ID
 console.log(Kennan.id);
 // Keven's email
-console.log(intern3.email);
+console.log(Keven.email);
 // Gannie's name
-console.log(intern4.name);
+console.log(Gannie.name);
 // Antonietta's Gender
 console.log(Antonietta.gender);
 
