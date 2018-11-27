@@ -92,15 +92,18 @@ console.log(lastCar());
 let carModels = [];
 
 const alphabeticalModels = function() {
-  inventory = inventory.sort(function(a, b) {
+  newInventory = inventory.sort(function(a, b) {
+
+    // return a.car_model.charCodeAt(0) - b.car_model.charCodeAt(0);
+
     if(a.car_model < b.car_model) { return -1; }
     if(a.car_model > b.car_model) { return 1; }
     return 0;
-  })
-  for (let i = 0; i < inventory.length; i++) {
-    carModels.push(inventory[i].car_model);
+  });
+  for (let i = 0; i < newInventory.length; i++) {
+    carModels.push(newInventory[i].car_model);
   }
-}
+};
 
 alphabeticalModels();
 
