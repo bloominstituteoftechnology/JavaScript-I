@@ -31,7 +31,7 @@ const newInterns = [
     email: "kdiben1@tinypic.com",
     gender: "M",
     speak: function () {
-      console.log("Hello, my name is Kennan");
+      console.log(`Hello, my name is ${this.name}`);
     }
   },
   {
