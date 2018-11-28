@@ -73,6 +73,17 @@ let inventory = [
 //     arr[i]; // 1,2,3,4
 // }
 
+//==== Functions =====
+const carInfo = carnumber => {
+  for (i = 0; i < inventory.length; i++) {
+    if (i == carnumber - 1) {
+      return `Car ${i + 1} is a ${inventory[i]["car_year"]} ${
+        inventory[i]["car_make"]
+      } ${inventory[i]["car_model"]} `;
+    }
+  }
+};
+
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 console.log(carInfo(33) + "\n");
@@ -120,12 +131,5 @@ for (let i = 0; i < inventory.length; i++) {
 }
 console.log(JSON.stringify(BMWAndAudi));
 
-function carInfo(carnumber) {
-  for (i = 0; i < inventory.length; i++) {
-    if (i == carnumber - 1) {
-      return `Car ${i + 1} is a ${inventory[i]["car_year"]} ${
-        inventory[i]["car_make"]
-      } ${inventory[i]["car_model"]} `;
-    }
-  }
-}
+// Functions
+// Gets car info for given ID
