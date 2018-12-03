@@ -63,28 +63,27 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help  the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 
-const car_33 = [
-    'id' = '33',
-    'make' = 'Jeep',
-    'model' = 'Wrangle',
-    'year' = '1993'
-]
-
+const car_33 = []
+for (i =0; i < inventory.length; i++){
+    car_33.push(inventory[i])
+}
+console.log(car_33[32]);
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = [
-    make = 'Lincoln',
-    model = 'Town Car'
-]
-console.log();
+let lastCar = []
+for (i = 0; i < inventory.length ; i++){
+    lastCar.push(inventory[i].car_make + ' ' + inventory.car_model)
+}
+console.log(lastCar[49]);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [
-    inventory.sort(function(a,b){return a.car_model - b.car_model})
-]
+let carModels = []
+for (let i = 0; i < inventory.length ; i++){
+  carModels.push(inventory[i].car_model)
+}
+carModels.sort();
 console.log(carModels);
 
 // ==== Challenge 4 ====
