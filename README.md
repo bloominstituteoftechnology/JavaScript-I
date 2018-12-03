@@ -16,8 +16,8 @@
 ### Objects
 To better understand objects, you really just need to write more of them. The [objects.js](assignments/objects.js) file contains several challenges centered around a theme of interns starting at a new job. The Human Resources team needs information about the new hires. Use your new found object skills answer vital questions for HR.
 
-* [x]Read the instructions found within the file carefully to finish the challenges. 
-* [x]Complete each challenge presented before moving on to Arrays.
+* [x] Read the instructions found within the file carefully to finish the challenges. 
+* [x] Complete each challenge presented before moving on to Arrays.
 
 ### Arrays
 The [arrays.js](assignments/arrays.js) assignment takes us through a large data set of used cars.  You have been asked to help a used car business with some customer requests based on their inventory.  Use for loops and arrays to solve their problems.
