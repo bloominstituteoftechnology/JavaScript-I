@@ -1,4 +1,4 @@
-// hi. To help us use arrays with real world problems we are going to simulate a used car dealer that has 50 cars in their inventory.
+// To help us use arrays with real world problems we are going to simulate a used car dealer that has 50 cars in their inventory.
 
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
 
@@ -63,8 +63,11 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
-
+for(let i = 0; i < inventory.length; i++){
+    console.log(`Car 33 is a ${inventory[33].car_year} ${inventory[33].car_make} ${inventory[33].car_model}`);
+    
+    // *car year goes here* *car make goes here* *car model goes here*` 
+}
 
 
 // ==== Challenge 2 ====
