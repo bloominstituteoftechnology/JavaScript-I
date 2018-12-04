@@ -83,7 +83,7 @@ const intern2 = {
   "email": "kdiben1@tinypic.com",
   "gender": "M",
   "speak": function  (greeting) {
-    return "Hello my name is this.name";
+    return "Hello my name is" + " " + this.name;
   },
  };
 
@@ -119,24 +119,24 @@ console.log(intern5.math)
 const parent = {
   "name": Susan,
   "age": 70,
-  speak: function(greetings) {
-    return 'Hello, my name is this.name'
-  }
-}
+  "speak": function  (greeting) {
+    return "Hello my name is" + " " + this.name;
+  },
+ };
   const child = {
   "name": George,
   "age": 50,
-  speak: function(greetings) {
-    return 'Hello, my name is this.name'
-  }
-},
+  "speak": function  (greeting) {
+    return "Hello my name is" + " " + this.name;
+  },
+ };
 grandChild = {
   "name": Sam,
   "age": 30,
-  speak: function(greetings) {
-    return 'Hello, my name is this.name'
-  }
-}
+  "speak": function  (greeting) {
+    return "Hello my name is" + " " + this.name;
+  },
+ };
 
 
 
