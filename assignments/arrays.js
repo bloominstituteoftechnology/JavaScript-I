@@ -1,8 +1,13 @@
-// To help us use arrays with real world problems we are going to simulate a used car dealer that has 50 cars in their inventory.
+// To help us use arrays with real world problems we are going to simulate a used car dealer that has 50
+// cars in their inventory.
 
-// The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
+// The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out
+// how you can help the car dealer.
 
-let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
+let inventory = [{"id":1,
+                  "car_make":"Lincoln",
+                  "car_model":"Navigator",
+                  "car_year":2009},
 {"id":2,"car_make":"Mazda","car_model":"Miata MX-5","car_year":2001},
 {"id":3,"car_make":"Land Rover","car_model":"Defender Ice Edition","car_year":2010},
 {"id":4,"car_make":"Honda","car_model":"Accord","car_year":1983},
@@ -53,7 +58,8 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":49,"car_make":"Chrysler","car_model":"Sebring","car_year":1996},
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
 
-// PROJECT RESTRICTION: You can't use map, reduce, or filter to solve these problems.  Only use native JavaScript for loops.
+// PROJECT RESTRICTION: You can't use map, reduce, or filter to solve these problems.  Only use native JavaScript
+// for loops.
 
 // Example for loop:
 // arr = [1,2,3,4];
@@ -61,36 +67,138 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 //     arr[i]; // 1,2,3,4
 // }
 
-// ==== Challenge 1 ====
-// The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 
+///////////////////////    Added expression helper function
+var resetArr = function(arr) {                     // Easier helper function expression to deep clone
+  return JSON.parse(JSON.stringify(arr));
+};
+
+
+
+
+
+
+
+
+// ==== Challenge 1 ====
+// The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which
+// car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
+//console.log(`Car ${inventory[32].id} is a ${inventory[32].car_year} ${inventory[32].car_make} ${inventory[32].car_model}` );
+
+let c1 = inventory[33];
+console.log(`Car ${c1.id} is a ${c1.car_year} ${c1.car_make} ${c1.car_model}`);
 
 
 // ==== Challenge 2 ====
-// The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log();
+// The dealer needs the information on the last car in their inventory.  What is the make and model of the last car
+// in the inventory?  Log the make and model into the console.
+let lastCar = inventory[49];
+console.log(`The last car is a ${lastCar.car_make} ${lastCar.car_model}`);
 
 // ==== Challenge 3 ====
-// The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
-console.log();
+// The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into
+// alphabetical order and log the results in the console
+
+
+
+
+function sortByModel(arrObj) {
+  let clonedArr = JSON.parse(JSON.stringify(arrObj));   // deep copy orig array so we don't mutate
+  sortArr = [];
+
+
+  for(let i = 0; i < clonedArr.length; i++) {    // verify first letter of Model is UpperCase
+    sortArr.push( {clonedArr[i].id, clonedArr[i].car_make, clonedArr[i].car_model[0].toUpperCase() + clonedArr[i].car_model[0].slice(1) , clonedArr[i].car_year} );
+  }
+
+  sortArr.sort(function (a,b) {
+    if(a.car_model < b.car_model)  return -1;
+    if(a.car_model > b.car_model)  return 1;
+    return 0;
+  });
+          // would rather just return sorted array, but req to log each element
+  for(let i = 0; i < sortArr.length; i++){
+    console.log(`Car ${sortArr[i].id} is a ${sortArr[i].car_year} ${sortArr[i].car_make} ${sortArr[i].car_model}`);
+  }
+
+  return sortArr;
+}
+
+sortByModel(inventory);
+
 
 // ==== Challenge 4 ====
-// The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
-let carYears = [];
+// The accounting team needs all the years from every car on the lot. Create a new array from the dealer data
+// containing only the car years and log the result in the console.
+
 console.log();
+function justYears (arrObj) {
+  let clonedArr = JSON.parse(JSON.stringify(arrObj));   // deep copy orig array so we don't mutate
+  let yearArr = [];
+
+  for(let i = 0; i < clonedArr.length; i++) {
+      yearArr.push(clonedArr[i].car_year);
+  }
+
+  return yearArr;
+  for(let i = 0; i < yearArr.length; i++) {
+    console.log(yearArr[i]);
+  }
+
+
+}
+
+justYears(inventory);
+
+
 
 // ==== Challenge 5 ====
-// The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
-let oldCars =[];
-console.log(); 
+// The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you
+// just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging
+// it's length.
 
+
+function before2000(arrObj) {
+  let sortArr = JSON.parse(JSON.stringify(arrObj));
+  let oldCars =[];
+
+  for(let i = 0 ; i < sortArr.length; i++) {
+    if(sortArr[i].car_year < 2000) {
+      oldCars.push(sortArr[i].car_year);
+      count += 1;
+    }
+  }
+  console.log(oldCars.length);
+}
+
+
+
+
+before2000(inventory);
 // ==== Challenge 6 ====
-// A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
-let BMWAndAudi =[];
-console.log();
+// A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains
+// BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the
+// array in the console.
+
+function onlyBMW_Audi(arrObj) {
+  //let filteredArr = JSON.parse(JSON.stringify(arrObj));
+  filteredArr = resetArr(inventory);
+  let BMWAndAudi =[];
+
+
+  for(let i = 0; i < filteredArr.length; i++) {
+    if(filteredArr[i].car_make === 'BMW' || filteredArr[i].car_make === 'Audi') {
+      BMWAndAudi.push(filteredArr[i]);
+    }
+
+  }
+
+   return BMWAndAudi;
+  // console.log(JSON.stringify(BMWAndAudi));
+
+}
+
+onlyBMW_Audi(inventory);
 
 
 
