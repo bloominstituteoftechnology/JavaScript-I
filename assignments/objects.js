@@ -16,30 +16,76 @@ const example = {
   "email": "examples@you.edu",
   "gender": "F"
 }
+const interns = `1,mmelloy0@psu.edu,Mitzi,F
+2,kdiben1@tinypic.com,Kennan,M
+3,kmummery2@wikimedia.org,Keven,M
+4,gmartinson3@illinois.edu,Gannie,M
+5,adaine5@samsung.com,Antonietta,F`;
+const parseInterns = (str, offset) => {
+  let strArr = str.split(/\r?\n/).map( s => s.split(','));
+  let outputObj = {};
+  let i = 0;
+  while (i < strArr.length) {
+    outputObj[strArr[i][2]] = {
+      id: strArr[i][0],
+      email: strArr[i][1],
+      name: strArr[i][2],
+      gender: strArr[i][3]
+    }
+    i += 1;
+  }
+  return outputObj;
+}
 
 // Write your intern objects here:
+internObjs = parseInterns(interns, interns.split(/\r?\n/).length/ interns.split(',').length);
 
-
+const Mitzi = { 
+  id: '1', email: 'mmelloy0@psu.edu', name: 'Mitzi', gender: 'F' },
+  Kennan =   { 
+    id: '2',
+    email: 'kdiben1@tinypic.com',
+    name: 'Kennan',
+    gender: 'M' },
+  Keven =   { 
+    id: '3',
+    email: 'kmummery2@wikimedia.org',
+    name: 'Keven',
+    gender: 'M' },
+  Gannie = { 
+    id: '4',
+    email: 'gmartinson3@illinois.edu',
+    name: 'Gannie',
+    gender: 'M' },
+  Antonietta = { 
+    id: '5',
+    email: 'adaine5@samsung.com',
+    name: 'Antonietta',
+    gender: 'F' 
+  };
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
-
+// console.log(internObjs)
 // Mitzi's name
-
+console.log(Mitzi.name);
 // Kennan's ID
-
+console.log(Kennan.id);
 // Keven's email
-
+console.log(Keven.email);
 // Gannie's name
-
+console.log(Gannie.name);
 // Antonietta's Gender
-
+console.log(Antonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-
+Kennan.speak = function(person) {
+  console.log('Hello, my name is', this.name + '!');
+}
+Kennan.speak();
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
-
+Antonietta.multiplyNums = (x,y) => x * y;
+console.log(Antonietta.multiplyNums(3,4));
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
