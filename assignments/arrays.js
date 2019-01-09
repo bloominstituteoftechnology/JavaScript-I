@@ -89,8 +89,10 @@ console.log(carModels.reverse());
 
 // TO DO BELOW
 
-let carYears = inventory.forEach(function(year) {
-    console.log(year.car_year);
+let carYears = []
+
+inventory.forEach(function(car) {
+    carYears.push(car.car_year);
   });
 
 console.log(carYears);
@@ -100,13 +102,27 @@ console.log(carYears);
 // Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars = [];
 
+inventory.forEach(function(car) {
+  if (car.car_year > 2000) {
+    oldCars.push(car.car_year);
+  }
+});
+
 console.log(oldCars);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.
-// Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
-let BMWAndAudi =[];
-// console.log();
+// Return an array that only contains BMW and Audi cars.
+// Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 
+let BMWAndAudi =[];
+
+inventory.forEach(function(car) {
+  if ((car.car_make == 'BMW') || (car.car_make == 'Audi')) {
+    BMWAndAudi.push(car);
+  }
+});
+
+console.log(JSON.stringify(BMWAndAudi));
 
 
