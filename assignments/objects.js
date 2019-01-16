@@ -26,12 +26,12 @@ const Mitzi = {
   "gender": "F"
 }
 
-const Kennan = {
+const kennan = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M",
-  speak: function(){
+  speak: function (){
     console.log('Hello my name is Kennan!');
   }
 }
@@ -67,7 +67,7 @@ const Antonietta = {
  console.log(Mitzi['name']);
 
 // Kennan's ID
-console.log(Kennan["id"]);
+console.log(kennan["id"]);
 
 // Keven's email
 console.log(Keven["email"]);
@@ -81,7 +81,7 @@ console.log(Antonietta["gender"]);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-console.log(Kennan.speak());
+console.log(kennan.speak());
 
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
@@ -101,7 +101,7 @@ console.log(Antonietta.multiplyNums(3,4));
 const parent = {}
 
 // Log the parent object's name
-*
+
 // Log the child's age
 
 // Log the name and age of the grandchild
