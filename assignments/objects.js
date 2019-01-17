@@ -87,6 +87,8 @@ intern5.multiplyNums(4, 2);
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
+// :D
+
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
 
 // 1. Create a parent object with properties for name and age.  Make the name Susan and the age 70.
