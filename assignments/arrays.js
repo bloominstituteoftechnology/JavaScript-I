@@ -64,7 +64,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 
-console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${inventory[32].car_model}` );
+console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${inventory[32].car_model}`);
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
@@ -82,7 +82,7 @@ console.log(`The make is ${inventory[i].car_make} and the model is ${inventory[i
 
 let carModels = [];
 
-    for (let i = 0; i < inventory.length; i++){
+    for (let i = 0; i < inventory.length; i++) {
     let models = inventory[i].car_model;
     carModels.push(models);
     carModels.sort();
@@ -94,7 +94,7 @@ let carModels = [];
 
 let carYears = [];
 
-for (let i = 0; i < inventory.length; i++){
+for (let i = 0; i < inventory.length; i++) {
   let years = inventory[i].car_year;
   carYears.push(years);
   console.log(years);
@@ -105,8 +105,7 @@ for (let i = 0; i < inventory.length; i++){
 
 let oldCars =[];
 
-console.log(); 
-for (i=0; i<carYears.length;i++){
+for (i = 0; i < carYears.length; i++) {
     if (carYears[i] < 2000){
         oldCars.push(carYears[i])
     }
@@ -119,10 +118,9 @@ console.log(oldCars.length);
 
 let BMWAndAudi =[];
 
-console.log();
-for (let i=0; i<inventory.length; i++){
-    if (inventory[i]["car_make"] === "BMW" || inventory[i]["car_make"] === "Audi"){
-        BMWAndAudi.push(inventory[i])
+for (let i = 0; i < inventory.length; i++) {
+    if (inventory[i].car_make === "BMW" || inventory[i].car_make === "Audi") {
+        BMWAndAudi.push(inventory[i]);
     }
 }
 
