@@ -18,47 +18,87 @@ const example = {
 }
 
 // Write your intern objects here:
+class employee {
+  constructor(id, name, email, gender) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+    this.gender = gender;
+  }
+}
+let mitzi = new employee(1, "Mitzi", "mmelloy0@PushSubscription.edu", "F");
+let kennan = new employee(2, "Kennan", "kdiben1@tinypic.com", "M");
+let keven = new employee(3, "Keven", "kmummery2@wikimedia.org", "M");
+let gannie = new employee(4, "Gannie", "gmartinson3@illinois.edu", "M");
+let antonietta = new employee(5, "Antonietta", "adaine5@samsung.com", "F");
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(mitzi.name);
 
 // Kennan's ID
+console.log(kennan.id);
 
 // Keven's email
+console.log(keven.email);
 
 // Gannie's name
+console.log(gannie.name);
 
 // Antonietta's Gender
+console.log(antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+kennan.speak = function() {return "Hello, my name is " + this.name + "!"};
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+antonietta.multiplyNums = function(a,b) {return a * b;}
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
 
 // 1. Create a parent object with properties for name and age.  Make the name Susan and the age 70.
+class person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+let susan = new person("Susan", 70);
 // 2. Nest a child object in the parent object with name and age as well.  The name will be George and the age will be 50.
+let george = new person("George Costanza", 50);
+susan.child = george;
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
+let sam = new person("Sam Puckett", 30);
+george.child = sam;
 // 4. Give each of the objects the ability to speak their names using the this keyword.
+person.prototype.speak = function() {
+  console.log("Hi, I'm " + this.name + " and I'm an alcoholic.");
+}
 
-const parent = {}
+const parent = {} //ummm. no.
 
 // Log the parent object's name
+console.log(susan.name);
 
 // Log the child's age
+console.log(susan.child.age);
 
 // Log the name and age of the grandchild
+console.log(susan.child.child.age + " | " + susan.child.child.name);
 
 // Have the parent speak
+susan.speak();
 
 // Have the child speak
+susan.child.speak();
 
 // Have the grandchild speak
+susan.child.child.speak();
