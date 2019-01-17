@@ -18,46 +18,47 @@ const example = {
 }
 
 // Write your intern objects here:
+
+
 const mitzi = {
   "id": 1,
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
   "gender": "F"
-};
+}
 
 const kennan = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M",
-  "speak": "Hello, my name is Kennan!"
-};
+  "speak": 'Hello my name is Kennan!'
+}
 
 const keven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M"
-};
+  
+}
 
 const gannie = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
-  "gender": "M",
-};
+  "gender": "M"
+}
 
 const antonietta = {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F",
-  multiplyNums: function (x,y) {
+  multiplyNums: function(x,y) {
     return x*y;
   }
-};
-
-
+}
 
 
 
@@ -65,15 +66,15 @@ const antonietta = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(mitzi.name);
+console.log(mitzi.name)
 // Kennan's ID
-console.log(kennan.id);
+console.log(kennan.id)
 // Keven's email
-console.log(keven.email);
+console.log(keven.email)
 // Gannie's name
-console.log(gannie.name);
+console.log(gannie.name)
 // Antonietta's Gender
-console.log(antonietta.gender);
+console.log(antonietta.gender)
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 console.log(kennan.speak);
@@ -92,19 +93,20 @@ console.log(antonietta.multiplyNums(3,4));
 
 const parent = {
   name: 'Susan',
-  age: 70,
-  speak: 'My name is Susan!',
+  age: "70",
+  speak: 'Hello my name is {this.name}',
   child: {
     name: 'George',
     age: 50,
-    speak: 'My name is George!',
+    speak: 'Hello my name is {this.name}',
     grandchild: {
       name: 'Sam',
       age: 30,
-      speak: 'My name is Sam'
-    }
-  }
-};
+      speak: 'Hello my name is {this.name}'
+      }
+   }
+}
+
 
 // Log the parent object's name
 console.log(parent.name);
