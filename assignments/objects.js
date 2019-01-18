@@ -52,10 +52,8 @@ const interns = [
     email: 'adaine5@samsung.com',
     firstName: 'Antonietta',
     gender: 'F',
-    multiplyNumbers :
+    multiplyNumbers:
       function (a,b) {
-        // let product = a * b;
-        // console.log(interns[4].multiplyNumbers);
         return a*b;
       }
   }
