@@ -74,8 +74,8 @@ console.log(Kennan.speak());
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
-interns.prototype.speak = function(){
-  return `Hello my name is ${this.name}!`
+interns.prototype.multiplyNums = function(a,b){
+  return a * b;
 }
 
 console.log(Antonietta.multiplyNums(3,4));
