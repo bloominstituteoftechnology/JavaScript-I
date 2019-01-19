@@ -129,4 +129,4 @@ const luxury = inventory.filter(make => {
 
 BMWAndAudi.push(luxury);
 
-console.log(BMWAndAudi);
+console.log(JSON.stringify(BMWAndAudi));
