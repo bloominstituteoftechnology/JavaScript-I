@@ -122,9 +122,7 @@ console.log(oldCars);
 let BMWAndAudi = [];
 
 const luxury = inventory.filter(make => {
-  if (make.car_make === 'BMW' || make.car_make === 'Audi') {
-    return true;
-  }
+  return make.car_make === 'BMW' || make.car_make === 'Audi';
 });
 
 BMWAndAudi.push(luxury);
