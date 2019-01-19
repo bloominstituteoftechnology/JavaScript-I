@@ -53,9 +53,9 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":49,"car_make":"Chrysler","car_model":"Sebring","car_year":1996},
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
 
-// PROJECT RESTRICTION: You can't use map, reduce, or filter to solve these problems.  Only use native JavaScript for loops.
 
 // Example for loop:
+
 // arr = [1,2,3,4];
 // for (i = 0; i < arr.length; i++) {
 //     arr[i]; // 1,2,3,4
