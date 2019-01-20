@@ -18,54 +18,60 @@ const example = {
 }
 
 // Write your intern objects here:
-const interns = [
-    {
-      "id": 1,
-      "name": "Mitzi",
-      "email": "mmelloy0@psu.ed",
-      "gender": "F"
-    },
-    {
-      "id": 2,
-      "name": "Kennan",
-      "email": "0",
-      "gender": "M"
-    },
-    {
-      "id": 3,
-      "name": "Kevin",
-      "email": "examples@you.edu",
-      "gender": "M"
-    },
-    {
-      "id": 4,
-      "name": "Gannie",
-      "email": "examples@you.edu",
-      "gender": "M"
-    },
-    {
-      "id": 5,
-      "name": "Antonietta",
-      "email": "examples@you.edu",
-      "gender": "F"
-    }
-]
+const mitzi = {
+  id: 1, 
+  name: 'Mitzi',
+  email: 'mmelloy0@psu.edu',
+  gender: 'F'
+ };
+const kennan = { 
+  id: 2, 
+  name: 'Kennan', 
+  email: 'kdiben1@tinypic.com', 
+  gender: 'M' ,
+  speak: function(){
+    return `Hello, my name is ${this.name}`
+  }
+};
+const kevan = { 
+  id: 3, 
+  name: 'Kevan', 
+  email: 'kmummery2@wikimedia.org', 
+  gender: 'M' 
+};
+const gannie = { 
+  id: 4, 
+  name: 'Gannie', 
+  email: 'gmartinson3@illinois.edu', 
+  gender: 'M' 
+};
+const antonietta = { 
+  id: 5, 
+  name: 'Antonietta', 
+  email: 'adaine5@samsung.com', 
+  gender: 'F' 
+};
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(interns[0].name)
+console.log(mitzi.name);
+
 // Kennan's ID
-console.log(interns[1].id)
+console.log(kennan.id);
+
 // Keven's email
-console.log(interns[2].email)
+console.log(kevan.email);
+
 // Gannie's name
-console.log(interns[3].name)
+console.log(gannie.name);
+
 // Antonietta's Gender
-console.log(interns[4].gender)
+console.log(antonietta.gender);
+
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
