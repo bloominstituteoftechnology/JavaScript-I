@@ -126,13 +126,13 @@ const insertAtIndex = (ix, arr, val) =>
   ix === -1 ? [...arr, val] : [...arr.slice(0, ix), val, ...arr.slice(ix)] 
 const ch3 = inventory => inventory.reduce(
   (acc, car) => insertAtIndex(
-    acc.findIndex(({ car_model }) => car_model > car.car_model), 
+    acc.findIndex(c => c > car.car_model), 
     acc,
-    car  
+    car.car_model
   ), []
 )
 
-// console.log(ch3(inventory))
+console.log(ch3(inventory))
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
@@ -182,6 +182,7 @@ const ch5 = inventory =>
 //   return BMWAndAudi
 // }
 
-const ch6 = inventory => inventory.filter(({ car_make }) => /(BMW|Audi)/.test(car_make))
+const ch6 = inventory => 
+  inventory.filter(({ car_make }) => /(BMW|Audi)/.test(car_make))
 
 // console.log(JSON.stringify(ch6(inventory)))
