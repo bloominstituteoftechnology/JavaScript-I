@@ -1,30 +1,25 @@
-// Take the commented ES5 syntax and convert it to ES6 arrow Syntax
-
-// let myFunction = function () {};
-let myFunction = () =>
-
-// let anotherFunction = function (param) {
-//   return param;
-// };
+// Base function
+var myFunction = param => param
+console.log(myFunction('Hi'));
+// I wasn't too sure what this wanted to accomplish because you can't just do nothing with arrow syntax ^
 
 
-// let add = function (param1, param2) {
-//   return param1 + param2;
-// };
-// add(1,2);
+// Return function
+let anotherFunction = param => param
+console.log(anotherFunction('Hi Again'))
 
 
-// let subtract = function (param1, param2) {
-//   return param1 - param2;
-// };
-// subtract(1,2);
+// Add function
+let add = (param1, param2) => param1 + param2
+console.log(add(5, 12));
 
 
-// exampleArray = [1,2,3,4];
-// const triple = exampleArray.map(function (num) {
-//   return num * 3;
-// });
-// console.log(triple);
-exampleArray = [1,2,3,4];
-const triple = exampleArray.map( num => num *3 )
+// Subtract function
+let subtract = (param1, param2) => param1 - param2
+console.log(subtract(12, 5));
+
+
+// Triple map function
+exampleArray = [1, 2, 3, 4];
+const triple = exampleArray.map(el => el * 3);
 console.log(triple);
