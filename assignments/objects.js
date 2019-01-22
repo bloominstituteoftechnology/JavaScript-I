@@ -18,15 +18,40 @@ const example = {
 }
 
 // Write your intern objects here:
-const Mitzi = { "id": 1, "email": "mmelloy0@psu.edu", "name": "Mitzi", "gender": "F" }
+const Mitzi = {
+    "id": 1,
+    "email": "mmelloy0@psu.edu",
+    "name": "Mitzi",
+    "gender": "F"
+}
 
-const Kennan = { "id": 2, "email": "kdiben1@tinypic.com", "name": "Kennan", "gender": "M" }
+const Kennan = {
+    "id": 2,
+    "email": "kdiben1@tinypic.com",
+    "name": "Kennan",
+    "gender": "M"
+}
 
-const Keven = { "id": 3, "email": "kmummery2@wikimedia.org", "name": "Keven", "gender": "M" }
+const Keven = {
+    "id": 3,
+    "email": "kmummery2@wikimedia.org",
+    "name": "Keven",
+    "gender": "M"
+}
 
-const Gannie = { "id": 4, "email": "gmartinson3@illinois.edu", "name": "Gannie", "gender": "M" }
+const Gannie = {
+    "id": 4,
+    "email": "gmartinson3@illinois.edu",
+    "name": "Gannie",
+    "gender": "M"
+}
 
-const Antonietta = { "id": 5, "email": "adaine5@samsung.com", "name": "Antonietta", "gender": "F" }
+const Antonietta = {
+    "id": 5,
+    "email": "adaine5@samsung.com",
+    "name": "Antonietta",
+    "gender": "F"
+}
 
 
 
@@ -38,30 +63,32 @@ const Antonietta = { "id": 5, "email": "adaine5@samsung.com", "name": "Antoniett
 
 // Mitzi's name
 console.log(Mitzi.name)
-    // Kennan's ID
+// Kennan's ID
 console.log(Kennan.id)
-    // Keven's email
+// Keven's email
 console.log(Keven.email)
-    // Gannie's name
+// Gannie's name
 console.log(Gannie.name)
-    // Antonietta's Gender
+// Antonietta's Gender
 console.log(Antonietta.gender)
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-Kennan.speak = function() {
-    return "Hello, my name is" + " " + this.name;
-};
-console.log(Kennan.speak());
+const speak = student => {
+    return console.log(`Hi my name is ${student.name}!`);
+}
+
+speak(Kennan);
 
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
-Antonietta.multiplyNums = function(x, y) {
+
+Antonietta.multiplyNums = (x, y) => {
     return x * y;
 };
 
+console.log(Antonietta.multiplyNums(3, 4));
 
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
@@ -74,19 +101,19 @@ Antonietta.multiplyNums = function(x, y) {
 const parent = {
     name: "Susan",
     age: "70",
-    speak: function() {
+    speak: function () {
         console.log("My name is " + this.name);
     },
     child: {
         name: "George",
         age: "50",
-        speak: function() {
+        speak: function () {
             console.log("My name is " + this.name);
         },
         grandchild: {
             name: "Sam",
             age: "30",
-            speak: function() {
+            speak: function () {
                 console.log("My name is " + this.name);
             }
         }
