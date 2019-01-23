@@ -75,21 +75,11 @@ console.log("Car " + inventory[lastCar].id + " is a " + inventory[lastCar].car_m
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 
-//  for (i = 0; i < carModels.length; i++){
-//     if(carModels[i].car_model < carModels[i].car_model) { return -1; }
-//     if(carModels[i].car_model > carModels[i].car_model) { return 1; }
-//     return carModels;
-// }
-
-// console.log(carModels);
-// for(i=0; i < inventory.length; i++){
-//   let carModels = [inventory[i].car_model];
-//   console.log(carModels.sort());
-// }
-
-var carModels = inventory;
-for(i=0; i < inventory.length; i++){
-  console.log(carModels[i]);
+let carModels = inventory;
+for (i = 0; i < carModels.length; i++){
+  let forSorting = carModels[i].car_model;
+  // forSorting.sort();
+  console.log(forSorting);
 }
 
 // ==== Challenge 4 ====
