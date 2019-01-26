@@ -94,10 +94,13 @@ for (let lastCar = 49; lastCar < inventory.length; lastCar++ ){
 
 //my solution
 
+ let carModels = inventory.sort(function (a, b) {
+  if (a < b) return -1;
+  else if (a > b) return 1;
+  return 0;
+});
 
-for (let carModels = 0; carModels < inventory.length; carModels++){
-  console.log(`${inventory[carModels].car_model}`);
-}
+console.log(carModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
@@ -107,9 +110,10 @@ for (let carModels = 0; carModels < inventory.length; carModels++){
 
 //my solution
 
-let carYears = inventory["car_year"];
 
-console.log('Sorted:', carYears.sort());
+// let carYears = inventory["car_year"];
+
+// console.log('Sorted:', carYears.sort());
 
 // inventory.sort(function(a, b){ //?
 //   return a - b;
