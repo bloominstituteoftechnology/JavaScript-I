@@ -78,8 +78,18 @@ console.log(interns[4].gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+function speak(){
+  return()
+}
+console.log(kennan.speak());
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+function multiplyNums(){
+  return()
+}
+console.log(aintonietta.multiplyNums(3,4))
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -94,12 +104,32 @@ const parent = {}
 
 // Log the parent object's name
 
+let name = "susan"
+
 // Log the child's age
+
+let name = "george"
+let age = 50
 
 // Log the name and age of the grandchild
 
+let name = "sam"
+let age = 30
+
 // Have the parent speak
+
+sayHello function(){
+  return "hello, my name is ${this.name}";
+}
 
 // Have the child speak
 
+sayHello function(){
+  return "hello, my name is ${this.name}";
+}
+
 // Have the grandchild speak
+
+sayHello function(){
+  return "hello, my name is ${this.name}";
+}
