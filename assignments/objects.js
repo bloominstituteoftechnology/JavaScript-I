@@ -118,18 +118,18 @@ let age = 30
 
 // Have the parent speak
 
-sayHello function(){
+speak function(){
   return "hello, my name is ${this.name}";
 }
 
 // Have the child speak
 
-sayHello function(){
+speak function(){
   return "hello, my name is ${this.name}";
 }
 
 // Have the grandchild speak
 
-sayHello function(){
+speak function(){
   return "hello, my name is ${this.name}";
 }
