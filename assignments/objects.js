@@ -23,7 +23,10 @@ const same2 = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
-  "gender": "M"
+  "gender": "M",
+  speak: function () {
+    console.log("Hello, my name is Kennan!")
+  }
 }
 const same3 = {
   "id": 3,
@@ -41,7 +44,7 @@ const same5 = {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
-  "gender": "F"
+  "gender": "F",
 }
 
 
@@ -67,8 +70,15 @@ console.log(same5.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+same2.speak();
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+same5.multiplyNums = function(a,b){
+  console.log(a*b);
+}
+console.log(same5.multiplyNums(3,4));
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
