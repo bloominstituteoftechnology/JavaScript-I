@@ -10,7 +10,7 @@
 * To test your `console.log()` statements open up the index.html file found in the assignments folder and use the developer tools to view the console.  
 
 **Note:**You could also run `node /assignments/<fileName>` and see what prints in your terminal.
-
+ 
 * Once you finish the exercises in each file, commit your code, and push it to your fork. 
 
 ### Objects
