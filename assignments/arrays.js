@@ -1,5 +1,5 @@
 // To help us use arrays with real world problems we are going to simulate a used car dealer that has 50 cars in their inventory.
-//creating pull request
+
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
 
 let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
@@ -65,17 +65,22 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 
+console.log(inventory[32].id, inventory[32].car_make, inventory[32].car_model)
+
 
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = 0;
-console.log();
+lastCar = inventory[inventory.length - 1].car_make + " " + inventory[inventory.length - 1].car_model 
+console.log(lastCar);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
 console.log();
+//add new array filled with the car models 
+//then sort the models within the new array, apply this to to the other 
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
