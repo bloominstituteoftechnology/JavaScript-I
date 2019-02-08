@@ -81,6 +81,13 @@ let carModels = [];
 console.log();
 //add new array filled with the car models 
 //then sort the models within the new array, apply this to to the other 
+inventory.forEach(car => {
+    carModels.push(car.car_model)
+})
+console.log(carModels)
+carModels.sort();
+console.log(carModels)
+
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
