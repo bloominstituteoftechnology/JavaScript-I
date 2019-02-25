@@ -1,5 +1,5 @@
 # JavaScript - I
-
+Dayton
 * The point of these assignments is to take your knowledge of JavaScript and start putting into practice the principles learned throughout JavaScript I.
 
 ## Set Up The Project With Git
