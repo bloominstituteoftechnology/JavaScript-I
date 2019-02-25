@@ -81,11 +81,11 @@ const ch1 = array => {
     }
   }
 };
-// ! console.log(
-//   `Car 33 is a ${ch1(inventory).car_year} ${ch1(inventory).car_make} ${
-//     ch1(inventory).car_year
-//   }`
-// );
+console.log(
+  `Car 33 is a ${ch1(inventory).car_year} ${ch1(inventory).car_make} ${
+    ch1(inventory).car_year
+  }`
+);
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
@@ -102,7 +102,7 @@ const carModels = array => {
   }
   return newArr.sort();
 };
-// ! console.log(carModels(inventory));
+console.log(carModels(inventory));
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
