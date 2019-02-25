@@ -5,13 +5,19 @@ let myFunction = () => {
 };
 myFunction();
 
-let anotherFunction = (param) => param
+
+
+let anotherFunction = param => param
 
 console.log(anotherFunction("Example"));
+
+
 
 let add = (param1, param2) => param1 + param2
 
 console.log(add(1, 2));
+
+
 
 let subtract = (param1, param2) => param1 - param2
 

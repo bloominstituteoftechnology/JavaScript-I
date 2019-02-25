@@ -321,6 +321,11 @@ console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${i
 let lastCar = inventory.length - 1;
 console.log(inventory[lastCar].car_make, inventory[lastCar].car_model);
 
+//Stretch: not working!!! ...yet 
+// let lastCarStretch = inventory.slice(-1);
+// console.log(inventory[lastCarStretch].car_make, inventory[lastCarStretch].car_model);
+
+
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 
@@ -330,6 +335,12 @@ for (i = 0; i < inventory.length; i++) {
 }
 
 console.log(carModels.sort());
+
+//Stretch:
+
+console.log(inventory.map(obj => obj.car_model).sort());
+
+
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
