@@ -1,0 +1,17 @@
+{
+  "name": "js-one",
+  "version": "1.0.0",
+  "description": "* The point of these assignments is to take your knowledge of JavaScript and start putting into practice the principles learned throughout JavaScript I.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glweems/JavaScript-I.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glweems/JavaScript-I/issues"
+  },
+  "homepage": "https://github.com/glweems/JavaScript-I#readme"
+}
