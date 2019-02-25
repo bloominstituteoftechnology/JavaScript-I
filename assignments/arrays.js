@@ -135,4 +135,4 @@ const BMWAndAudi = array => {
   }
   return newArray;
 };
-console.log(BMWAndAudi(inventory));
+// ! console.log(BMWAndAudi(inventory));
