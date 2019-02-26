@@ -47,11 +47,11 @@ const intern4 = {
 }
 const intern5 = {
   'id': 5,
-  'email': "adaine5@samsung.com",
+  'email': "adaine5@samsung.com", 
   'name': "Antonietta",
   'gender': "F",
   multiplyNums: function(num1, num2) {
-    return num1 * num2;
+    return num1 * num2; 
   }
 }
 
@@ -100,3 +100,5 @@ const parent = {}
 // Have the child speak
 
 // Have the grandchild speak
+
+
