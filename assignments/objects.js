@@ -99,20 +99,20 @@ console.log(intern5.multiplyNums(3,4));
 const parent = {
   name: "Susan",
   age: 70,
-  child: {
-    name: "George",
-    age: 50,
-  },
-    grandchild: {
-      name: "sam",
-      age: 30,
-   }
+    child: {
+      name: "George",
+      age: 50,
+    },
+      grandchild: {
+        name: "sam",
+        age: 30,
+    },
 }
 
 // Log the parent object's name
-console.log 
-// Log the child's age
-
+console.log(parent.name); 
+// Log the child's age 
+console.log(parent.child.age);
 // Log the name and age of the grandchild
 
 // Have the parent speak
