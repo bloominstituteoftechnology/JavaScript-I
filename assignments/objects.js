@@ -21,37 +21,37 @@ const example = {
 const mitzi = {
   "id": 1,
   "fname": "Mitzi",
-  "linitial": "F",
+  "gender": "F",
   "email": "mmelloy@psu.edu",
-}
+};
 
 const kennan = {
   "id": 2,
   "fname": "Kennan",
-  "linitial": "M",
+  "gender": "M",
   "email": "kdiben1@tinypic.com",
-}
+};
 
 const keven = {
   "id": 3,
   "fname": "Keven",
-  "linitial": "M",
+  "gender": "M",
   "email": "kmummery2@wikimedia.org",
-}
+};
 
 const gannie = {
   "id": 4,
   "fname": "Gannie",
-  "linitial": "M",
+  "gender": "M",
   "email": "gmartinson3@illinois.edu",
-}
+};
 
 const antonietta = {
   "id": 5,
   "fname": "Antonietta",
-  "linitial": "F",
+  "gender": "F",
   "email": "adaine5@samsung.com",
-}
+};
 
 
 
@@ -61,14 +61,16 @@ const antonietta = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(mitzi.fname);
 
 // Kennan's ID
-
+console.log(kennan.id);
 // Keven's email
-
+console.log(keven.email);
 // Gannie's name
-
+console.log(gannie.fname);
 // Antonietta's Gender
+console.log (antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
