@@ -95,7 +95,7 @@ var gucci = 2000;
 
 for (var i = 0; i < carYears.length; i++) {
 	if (carYears[i] < gucci) {
-		oldCars.push(carYears[i]);
+		oldCars.unshift(carYears[i]);
 	}
 }
 console.log(oldCars);  
