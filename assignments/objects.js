@@ -18,27 +18,77 @@ const example = {
 }
 
 // Write your intern objects here:
+ 
 
+const intern1 = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}
+
+const intern2 = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender":  "F",
+  speak: function(){
+    return "Hello, my name is " + name
+  }
+}
+
+const intern3 = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}
+
+const intern4 = {
+  "id": 4,
+  "name": "Gennie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
+}
+
+const intern5 = {
+  "id": 5,
+  "name": "Antonietta" ,
+  "email": "adaine5@samsung.com",
+  "gender": "F",
+  multiplyNums: function(a, b){
+    return a * b
+  }
+}
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(intern1.name)
 // Kennan's ID
-
+console.log(intern2.id)
 // Keven's email
-
+console.log(intern3.email)
 // Gannie's name
-
+console.log(intern4.name)
 // Antonietta's Gender
-
+console.log(intern5.gender)
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+speak: function(){
+  return "Hello, my name is " + name
+}
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+multiplyNums: function(a, b){
+  return a * b
+}
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
