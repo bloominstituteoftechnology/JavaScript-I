@@ -52,3 +52,5 @@ The [arrays.js](assignments/arrays.js) assignment takes us through a large data 
 
 * Move on to tomorrow's content and start studying callbacks, write a few of your own to get the hang of it.
 * Look at array methods like .map(), .reduce(), .filter(). use them on the data in the arrays assignment to accomplish the same things you did with the ES5 for loop.
+
+#init commit
