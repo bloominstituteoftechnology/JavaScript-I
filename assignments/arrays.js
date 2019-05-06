@@ -67,7 +67,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 //logging the car's year, make, and model in the console log provided to you below:
 
 function carCheck(obj,id){
-    for ( var i = 0 ; i < obj.length ;i++){
+    for ( let i = 0 ; i < obj.length ;i++){
         if(obj[i].id === id) {
             console.log(`Car ${id} is a ${obj[i].car_year} ${obj[i].car_make} ${obj[i].car_model}` );
             }
@@ -88,7 +88,7 @@ function carCheck(obj,id){
     // alphabetical order and log the results in the console
     
     let carModels = [];
-    for (var i = 0 ; i < inventory.length ;i++){
+    for (let i = 0 ; i < inventory.length ;i++){
     carModels.push(inventory[i].car_make);
     }
     carModels = carModels.sort();
@@ -102,7 +102,7 @@ function carCheck(obj,id){
     //dealer data containing only the car years and log the result in the console.
     console.log("===========================================================")
     let carYears = [];
-    for (var i = 0 ; i < inventory.length ;i++){
+    for (let i = 0 ; i < inventory.length ;i++){
     carYears.push(inventory[i].car_year);
     }
     console.log("The list of years is \n" + carYears+"\n");
@@ -113,7 +113,7 @@ function carCheck(obj,id){
     //oldCars and logging it's length.
     console.log("===========================================================")
     let oldCars =[];
-    for ( var i = 0 ; i < carYears.length ; i++){
+    for ( let i = 0 ; i < carYears.length ; i++){
             if(carYears[i] <2000){
                 oldCars.push(carYears[i]);
             }
@@ -126,7 +126,7 @@ function carCheck(obj,id){
     //Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, 
     //use JSON.stringify() to show the results of the array in the console.
     let BMWAndAudi=[];
-    for ( var i = 0 ; i<inventory.length ; i++){
+    for ( let i = 0 ; i<inventory.length ; i++){
             let make = inventory[i].car_make.toLowerCase();
             if(make ==="audi" || make ==="bmw"){
                 BMWAndAudi.push(make);
