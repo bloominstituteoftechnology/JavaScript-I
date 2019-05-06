@@ -95,12 +95,12 @@ inventory.forEach((car) => {
   carYears.push(car.car_year);
 });
 
-// const sortedCarYears = carYears.sort((a, b) => {
-//   return a - b;
-// })
+const sortedCarYears = carYears.sort((a, b) => {
+  return a - b;
+})
 
 console.log(carYears);
-// console.log(sortedCarYears);
+console.log('sorted car years: ',sortedCarYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
