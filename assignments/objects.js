@@ -18,35 +18,35 @@ const example = {
 }
 
 // Write your intern objects here:
-const intern1 = {
+const mitzi = {
   "id": 1,
   "name": "Mitzi",
   "email": "mmelloy0@psu.edu",
   "gender": "F"
 }
 
-const intern2 = {
+const kennan = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M"
 }
 
-const intern3 = {
+const keven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M"
 }
 
-const intern4 = {
+const gannie = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
   "gender": "M"
 }
 
-const intern5 = {
+const antonietta = {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
@@ -55,15 +55,29 @@ const intern5 = {
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
+function fetch(stick) {
+  return stick;
+}
+
 // Mitzi's name
+
+console.log("Mitzi's name:", fetch(mitzi["name"]))
 
 // Kennan's ID
 
+console.log("Kennan's ID:", fetch(kennan["id"]))
+
 // Keven's email
+
+console.log("Keven's email:", fetch(keven["email"]))
 
 // Gannie's name
 
+console.log("Gannie's name:", fetch(gannie["name"]))
+
 // Antonietta's Gender
+
+console.log("Antonietta's gender:", fetch(antonietta["gender"]))
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
