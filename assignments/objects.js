@@ -70,11 +70,19 @@ console.log(newIntern1.firstName);
 
 // Kennan's ID
 
+console.log(newIntern2.id);
+
 // Keven's email
+
+console.log(newIntern3.email);
 
 // Gannie's name
 
+console.log(newIntern4.firstName);
+
 // Antonietta's Gender
+
+console.log(newIntern5.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
