@@ -76,13 +76,17 @@ for (let i = 0; i <inventory.length; i++) {
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log();
+let lastCar = inventory.pop();
+console.log(`The make and model of the last car is ${lastCar.car_make} and ${lastCar.car_model}`);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
-console.log();
+inventory.forEach((car) => {
+  carModels.push(car.car_model);
+});
+const sortedCarModels = carModels.sort();
+console.log(sortedCarModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
