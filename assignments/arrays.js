@@ -72,18 +72,8 @@ console.log(arrExample);
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 
-// let filteredArray = inventory.filter((car) => {
-//     if (car.id === 33) {
-//         return true;
-//     }
-//     return false;
-// });
-
-
-
 console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${inventory[32].car_model}`)
 
-// console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
@@ -92,27 +82,40 @@ console.log(`The make and model of the last car in the inventory is a ${inventor
 
 let lastMakeModel = inventory.pop();
 
+console.log(`The make and model of the last car in the inventory is a ${lastMakeModel.car_make} ${lastMakeModel.car_model}`);
+
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
-
-// let carModels = inventory.sort(function(carA, carB) {
-//     if(carA.car_model < carB.car_model) {
-//         return -1;
-//     }
-//         return 1;
-// });
 
 
+let carModels = inventory.sort(function(car1, car2) {
+    if (car1.car_model < car2.car_model) {
+        return -1
+    }
+    return 1
+});
 
-console.log();
+console.log(carModels);
 
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-console.log();
+// console.log();
+
+function getYears(objArray, field) {
+    for (let i = 0; i < objArray.length; i++) {
+        carYears.push(objArray[i][field]);
+    }
+    return carYears
+};
+
+console.log(getYears(inventory, "car_year"));
+
+
+
+
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
