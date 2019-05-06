@@ -31,7 +31,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":27,"car_make":"Infiniti","car_model":"Q","car_year":2000},
 {"id":28,"car_make":"Suzuki","car_model":"Aerio","car_year":2005},
 {"id":29,"car_make":"Mercury","car_model":"Topaz","car_year":1993},
-{"id":30,"car_make":"BMW","car_model":"6 Series","car_year":2010},
+{"id":30,"car_make":"BMW","car_model":"5 Series","car_year":2006},
 {"id":31,"car_make":"Pontiac","car_model":"GTO","car_year":1964},
 {"id":32,"car_make":"Dodge","car_model":"Ram Van 3500","car_year":1999},
 {"id":33,"car_make":"Jeep","car_model":"Wrangler","car_year":2011},
