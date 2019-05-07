@@ -75,7 +75,7 @@ console.log(antonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 kennan.speak = function() {
-  return "Hello, my name is Kennan!";
+  return "Hello, my name is " + this.name;
 }
 console.log(kennan.speak());
 
@@ -98,19 +98,19 @@ const parent = {
   name: 'Susan',
   age: 70,
   speak: function() {
-    return "My name is " + parent.name;
+    return "My name is " + this.name;
   },
   child: {
     name: 'George',
     age: 50,
     speak: function() {
-      return "My name is " + parent.child.name;
+      return "My name is " + this.name;
     },
     grandchild: {
       name: 'Sam',
       age: 30,
       speak: function() {
-        return "My name is " + parent.child.grandchild.name;
+        return "My name is " + this.name;
       },
     }
   }
