@@ -18,28 +18,39 @@ const example = {
 }
 
 // Write your intern objects here:
-
-
+function Intern(id, email, firstName, gender){
+	this.id = id;
+	this.email = email;
+	this.firstName = firstName;
+	this.gender = gender;
+}
+let interns = [
+	new Intern(1,'mmelloy0@psu.edu','Mitzi','F'),
+	new Intern(2,"kdiben1@tinypic.com","Kennan","M"),
+	new Intern(3,"kmummery2@wikimedia.org","Keven","M"),
+	new Intern(4,"gmartinson3@illinois.edu","Gannie","M"),
+	new Intern(5,"adaine5@samsung.com","Antonietta","F")
+]
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+interns[0].name;
 // Kennan's ID
-
+interns[1].id;
 // Keven's email
-
+interns[2].email;
 // Gannie's name
-
+interns[3].name;
 // Antonietta's Gender
-
+interns[4].gender;
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-
+interns[1].speak = () => "Hello, my name is Kennan!";
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+interns[4].multiplyNums = (a,b) => a*b;
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
