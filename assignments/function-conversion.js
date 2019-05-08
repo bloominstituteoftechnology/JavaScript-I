@@ -11,7 +11,7 @@ myFunction();
 // let anotherFunction = function (param) {
 //   return param;
 // };
-const anotherFunction = (param) => param;
+const anotherFunction = param => param;
 
 console.log(anotherFunction("Example"));
 
