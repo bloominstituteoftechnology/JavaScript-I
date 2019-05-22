@@ -78,6 +78,13 @@ intern5.gender;
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+let kennan = {};
+	kennan.speak = function(line) {
+		console.log(`Hello, my name is '${line}' `);
+	};
+
+	kennan.speak("Kennan!");
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
