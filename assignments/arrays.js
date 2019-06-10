@@ -124,9 +124,8 @@ console.log();
 for (let i = 0; i < inventory.length; i++){
     let inventoryModels = inventory[i].car_year;
     oldCars.push(inventoryModels);
-    oldCars.sort();
-    // console.log(carYears);
-    console.log(oldCars.length);
+    // oldCars.sort();
+    console.log(carYears <= 2000);
     }
 
 // ==== Challenge 6 ====
@@ -134,4 +133,9 @@ for (let i = 0; i < inventory.length; i++){
 let BMWAndAudi = [];
 console.log();
 
-
+for (let i = 0; i < inventory.length; i++){
+    let inventoryModels = inventory[i].car_year;
+    BMWAndAudi.push(inventoryModels);
+    // oldCars.sort();
+    console.log(BMWAndAudi.includes('BMW', 'Audi'));
+    }
