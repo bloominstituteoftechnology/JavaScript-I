@@ -19,38 +19,41 @@ const example = {
 
 // Write your intern objects here:
 const intern1 = {
-  "id": 0,
-  "name": "Mitzi",
-  "email": "mmelloy0@psu.edu",
-  "gender": "F"
+  "id": 1,
+  "name": 'Mitzi',
+  "email": 'mmelloy0@psu.edu',
+  "gender": 'F',
 }
 
 const intern2 = {
-  "id": 1.
-  "name": "Kennan",
-  "email": kdiben1@tinypic.com,
-  "gender": "M"
+  "id": 2,
+  "name": 'Kennan',
+  "email": 'kdiben1@tinypic.com',
+  "gender": 'M',
 }
 
 const intern3 = {
-  "id": 2,
-  "name": "Keven",
-  "email": kmummery2@wikimedia.org,
-  "gender": "M"
+  "id": 3,
+  "name": 'Keven',
+  "email": 'kmummery2@wikimedia.org',
+  "gender": 'M',
 }
 
 const intern4 = {
-  "id": 3.
-  "name": "Gannie",
-  "email": gmartinson3@illinois.edu,
-  "gender": "F"
+  "id": 4,
+  "name": 'Gannie',
+  "email": 'gmartinson3@illinois.edu',
+  "gender": 'F',
 }
 
 const intern5 = {
-  "id": 4.
-  "name": "Antonietta",
-  "email": adaine5@samsung.com,
-  "gender": "M"
+  "id": 5,
+  "name": 'Antonietta',
+  "email": 'adaine5@samsung.com',
+  "gender": 'M',
+  "multiplyNums": function (num1, num2) {
+    return num1 * num2;
+  }
 }
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -75,7 +78,7 @@ console.log(intern2.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-console.log(intern5.multiply(5,7))
+console.log(intern5.multiplyNums(3, 4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
