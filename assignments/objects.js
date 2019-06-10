@@ -30,6 +30,9 @@ const intern2 = {
   "name": 'Kennan',
   "email": 'kdiben1@tinypic.com',
   "gender": 'M',
+  "speak": function () {
+    return "Hello my name is Kennan" 
+  }
 }
 
 const intern3 = {
