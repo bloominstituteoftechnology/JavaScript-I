@@ -323,6 +323,20 @@ for (let i = 0; i < inventory.length; i++) {
     }
 }
 
+let carDetails = inventory.forEach((item, i) => {
+    if (inventory[i].id === 33) {
+        console.log(`Car 33 is a ${inventory[i].car_year} ${inventory[i].car_make} ${inventory[i].car_model}`);
+    }
+})
+
+console.log(carDetails, 'carDetails')
+
+//Alternatively
+let carDetails_Alt = inventory.filter((item, i) => inventory[i].id === 33);
+console.log(carDetails_Alt, 'carDetails')
+
+
+
 //console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*`);
 
 // ==== Challenge 2 ====
@@ -341,6 +355,9 @@ for (let i = 0; i < inventory.length; i++) {
 }
 console.log(carModels.sort());
 
+let carModelsAlphaOrder = inventory.filter((item, i) => inventory[i].car_model).map(item => item.car_model).sort();
+console.log(carModelsAlphaOrder, 'carModelsAlphaOrder')
+
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array 
 //from the dealer data containing only the car years and log the result in the console.
@@ -349,7 +366,10 @@ for (let i = 0; i < inventory.length; i++) {
     carYears.push(inventory[i].car_year);
 }
 
-console.log(carYears);
+console.log(carYears, 'carYears');
+
+let justCarYear = inventory.filter((item, i) => inventory[i].car_year).map(item => item.car_year);
+console.log(justCarYear, 'justCarYear');
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the 
@@ -358,6 +378,9 @@ console.log(carYears);
 let oldCars = carYears.filter(item => item < 2000).length;
 console.log(oldCars);
 
+let carsBefore2000 = inventory.filter((item, i) => inventory[i].car_year < 2000).map(item => item.car_year).length;
+console.log(carsBefore2000, 'carsBefore2000');
+
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  
 //Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, 
@@ -365,13 +388,13 @@ console.log(oldCars);
 let BMWAndAudi = [];
 for (let i = 0; i < inventory.length; i++) {
     if (inventory[i].car_make === "BMW" || inventory[i].car_make === "Audi") {
-        BMWAndAudi.push(inventory[i].car_make);
+        BMWAndAudi.push(inventory[i]);
 
     }
 }
 
 console.log(JSON.stringify(BMWAndAudi));
-// console.log(BMWAndAudi);
+console.log(BMWAndAudi, 'BMWAndAudi');
 
 let BMWAndAudi_Alt = [];
 
@@ -386,3 +409,6 @@ function bMWAudi_Alt(inventory) {
 }
 
 console.log(bMWAudi_Alt(inventory))
+
+let justBMWAndAudi = inventory.filter((item, i) => inventory[i].car_make === "BMW" || inventory[i].car_make === "Audi");
+console.log(JSON.stringify(justBMWAndAudi), 'justBMWAndAudi');
