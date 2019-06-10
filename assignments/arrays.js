@@ -143,5 +143,3 @@ BMWAndAudi = inventory.filter(
   car => car.car_make === "BMW" || car.car_make === "Audi"
 );
 console.log(BMWAndAudi);
-
-/*just making a comment so i have something to commit*/
