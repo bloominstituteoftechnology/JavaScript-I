@@ -101,9 +101,15 @@ let oldCars = inventory.filter(function (a) {
 });
 console.log(oldCars.length);
 
+let olderCars = inventory.filter(inventory => inventory.car_year < 2000);
+console.log(olderCars.length);
+
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi = inventory.filter(function (inventory) {
     return inventory.car_make === "Audi" || inventory.car_make === "BMW"
 });
 console.log(BMWAndAudi);
+
+let BMWAndAudiA = inventory.filter(inventory => inventory.car_make === "Audi" || inventory.car_make === "BMW");
+console.log(BMWAndAudiA);
