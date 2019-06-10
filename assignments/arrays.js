@@ -2,7 +2,8 @@
 
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
 
-let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
+let inventory = [
+{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
 {"id":2,"car_make":"Mazda","car_model":"Miata MX-5","car_year":2001},
 {"id":3,"car_make":"Land Rover","car_model":"Defender Ice Edition","car_year":2010},
 {"id":4,"car_make":"Honda","car_model":"Accord","car_year":1983},
@@ -95,8 +96,8 @@ console.log(carYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
-let oldCars = inventory.filter(function (inventory) {
-    return inventory.car_year < 2000;
+let oldCars = inventory.filter(function (a) {
+    return a.car_year < 2000;
 });
 console.log(oldCars.length);
 
