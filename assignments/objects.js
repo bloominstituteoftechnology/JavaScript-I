@@ -91,18 +91,20 @@ const parent = {
   "age": 70,
   child: {"name": "George", 
   "age": 50,
-  grandchild: {"name": "Sam", "age": 30}
+  grandchild: {"name": "Sam", "age": 30},
+  },
+  speak: function() {
+    console.log(`Hi! My name is ${this.name}`);
   }
 }
 
 // Log the parent object's name
-
+console.log(parent.name);
 // Log the child's age
-
+console.log(parent.child.age);
 // Log the name and age of the grandchild
-
+console.log(parent.child.grandchild.name);
+console.log(parent.child.grandchild.age);
 // Have the parent speak
+parent.speak();
 
-// Have the child speak
-
-// Have the grandchild speak
