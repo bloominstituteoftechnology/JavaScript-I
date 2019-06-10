@@ -5,7 +5,8 @@
 // };
 // myFunction();
 
-
+let myFunction = () => {console.log("Function was invoked!");}
+myFunction();
 
 // let anotherFunction = function (param) {
 //   return param;
@@ -14,7 +15,7 @@
 
 let anotherFunction = parm => console.log(parm);
 
-console.log(anotherFunction("Example"));
+anotherFunction("Example");
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
@@ -41,3 +42,9 @@ console.log(subtract(1, 2));
 //   return num * 3;
 // });
 // console.log(triple);
+
+exampleArray = [1,2,3,4];
+
+const triple = exampleArray.map(x => x * 3);
+
+console.log(triple);
