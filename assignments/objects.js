@@ -18,24 +18,89 @@ const example = {
 }
 
 // Write your intern objects here:
+// const interns = [
+//   {
+//     id: 1,
+//     email: 'melloy0@psu.edu',
+//     fName: 'Mitzi',
+//     gender: 'F' },
+//   {
+//     id: 2,
+//     email: 'kdiben1@tinypic.com',
+//     fName: 'Kennan',
+//     gender: 'M', 
+//     speak: ( ) => console.log(`Hello, my name is ${this.fName}`)},
+//   {
+//     id: 3,
+//     email: 'kmummery2@wikimedia.org',
+//     fName: 'Keven',
+//     gender: 'M' },
+//   {
+//     id: 4,
+//     email: 'gmartinson3@illinois.edu',
+//     fName: 'Gannie',
+//     gender: 'M' },
+//   {
+//     id: 5,
+//     email: 'adaine5@samsung.com',
+//     fName: 'Antonietta',
+//     gender: 'F' }
+// ]
 
+const Mitzi = {
+  id: 1,
+  email: 'melloy0@psu.edu',
+  fName: 'Mitzi',
+  gender: 'F'
+}
+
+const Kennan = {
+  id: 2,
+  email: 'kdiben1@tinypic.com',
+  fName: 'Kennan',
+  gender: 'M',
+  speak: ( ) => console.log("Hello my name is " + this.fName)
+}
+
+const Keven = {
+  id: 3,
+  email: 'kmummery2@wikimedia.org',
+  fName: 'Keven',
+  gender: 'M' 
+}
+
+const Gannie = {
+  id: 4,
+  email: 'gmartinson3@illinois.edu',
+  fName: 'Gannie',
+  gender: 'M' 
+}
+
+const Antonietta = {
+  id: 5,
+  email: 'adaine5@samsung.com',
+  fName: 'Antonietta',
+  gender: 'F'
+}
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(Mitzi.fName)
 // Kennan's ID
-
+console.log(Kennan.email)
 // Keven's email
-
+console.log(Keven.email)
 // Gannie's name
-
+console.log(Gannie.fName)
 // Antonietta's Gender
+console.log(Antonietta.gender)
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+
+console.log(Kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
