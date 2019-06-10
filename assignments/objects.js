@@ -19,11 +19,38 @@ const example = {
 
 // Write your intern objects here:
 const interns = [
-{"id": 1, "name":"Mitzi", "email":"mmelloy0@psu.edu", "gender":"F"},
-{"id": 2, "name":"Kennan", "email":"kdiben1@tinypic.com", "gender":"M"},
-{"id": 3, "name":"Keven", "email":"kmummery2@wikimedia.or", "gender":"M"},
-{"id": 4, "name":"Gannie", "email":"gmartinson3@illinois.edu", "gender":"M"},
-{"id": 5, "name":"Antonietta", "email":"tom@gmail.com", "gender":"F"}
+    {"id": 1,
+    "name":"Mitzi",
+    "email":"mmelloy0@psu.edu",
+    "gender":"F",
+},
+    {"id": 2,
+    "name":"Kennan",
+    "email":"kdiben1@tinypic.com",
+    "gender":"M",
+    speak: function() {
+        console.log(`Hello, my name is ${interns[1].name}`);
+    }
+},
+    {"id": 3,
+    "name":"Keven",
+    "email":"kmummery2@wikimedia.or",
+    "gender":"M",
+
+},
+    {"id": 4,
+    "name":"Gannie",
+    "email":"gmartinson3@illinois.edu",
+    "gender":"M",
+},
+    {"id": 5,
+    "name":"Antonietta",
+    "email":"tom@gmail.com",
+    "gender":"F",
+    multiplyNums: function () {
+        (x, y) => x * y;
+    }
+}
 ]
 
 console.log(interns);
@@ -45,11 +72,13 @@ console.log(interns[4].gender);
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-console.log(`Hello, my name is ${interns[1].name}`);
+// console.log(`Hello, my name is ${interns[1].name}`);
+interns[1].speak();
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 const multiplyNums = (x, y) => x * y;
 console.log(multiplyNums(3, 4));
+interns[4].multiplyNums(3, 4);
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ====
@@ -62,12 +91,21 @@ console.log(multiplyNums(3, 4));
 const parent = {
     "name": "Susan",
     "age": "70",
+    speak: function() {
+        console.log("Hello, my name is " + this.name + ".");
+    },
     "child": {
         "name": "George",
         "age": 50,
+        speak: function() {
+            console.log("Hello, my name is " + this.name + ".");
+        },
         "grandchild": {
             "name": "Sam",
             "age": 30,
+            speak: function() {
+                console.log("Hello, my name is " + this.name + ".");
+            },
         }
     }
 }
@@ -80,7 +118,10 @@ console.log(parent.child.age);
 console.log(parent.child.grandchild.name + " " + parent.child.grandchild.age);
 // Have the parent speak
 console.log(`Hello, my name is ${parent.name}.`);
+parent.speak();
 // Have the child speak
 console.log(`My name is ${parent.child.name} and I am ${parent.child.age} years old.`);
+parent.child.speak();
 // Have the grandchild speak
 console.log(`My name is ${parent.child.grandchild.name} and I am ${parent.child.grandchild.age} years old.`);
+parent.child.grandchild.speak();
