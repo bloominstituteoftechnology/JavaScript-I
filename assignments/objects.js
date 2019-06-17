@@ -19,35 +19,35 @@ const example = {
 
 // Write your intern objects here:
 
-const firstIntern = {
+const mitzi = {
   id: 0,
   name: "Mitzi",
   email: "mmelloy0@psu.edu",
   gender: "F"
 }; 
 
-const secondIntern = {
+const kennan = {
   id: 1,
   name: "Kennan",
   email: "kdiben1@tinypic.com",
   gender: "M"
 }; 
 
-const thirdIntern = {
+const keven = {
   id: 2,
   name: "Keven",
   email: "kmummery2@wikimedia.org",
   gender: "M"
 }; 
 
-const fourthIntern = {
+const gannie = {
   id: 3,
   name: "Gannie",
   email: "gmartinson3@illinois.edu",
   gender: "M"
 }; 
 
-const fifthIntern = {
+const antonietta = {
   id: 4,
   name: "Antonietta",
   email: "adaine5@samsung.com",
@@ -60,35 +60,38 @@ const fifthIntern = {
 
 // Mitzi's name
 
-console.log(firstIntern.name);
+console.log('Mitzi\'s name: ' + mitzi.name);
 
 // Kennan's ID
 
-console.log(secondIntern.id);
+console.log('Kennan\'s ID: ' + kennan.id);
 
 // Keven's email
 
-console.log(thirdIntern.email);
+console.log('Keven\'s email: ' + keven.email);
 
 // Gannie's name
 
-console.log(fourthIntern.name);
+console.log('Gannie\'s name: ' + gannie.name);
 
 // Antonietta's Gender
 
-console.log(fifthIntern.gender);
+console.log('Antonietta\'s Gender: ' + antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-secondIntern.speak = function () {return `Hello, my name is ${this.name}`};
+kennan.speak = function () {return `Hello, my name is ${this.name}`};
 
-console.log(secondIntern.speak());
+console.log(kennan.speak());
 
-
+// ==== Challenge 4: Object Methods ==== 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+
+antonietta.multiplyNums = function (num1, num2) {return num1 * num2};
+
+console.log(antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -99,19 +102,46 @@ console.log(secondIntern.speak());
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {
-  name: 'Susan',
-  age: 70
-}
-
 // Log the parent object's name
+
+const parent = {
+  name: "Susan",
+  age: 70,
+  speak: function() {
+    return this.name + ' says Hello!';
+  },
+  child: {
+    name: "George",
+    age: 50,
+    speak: function() {
+      return this.name + ' says Hello!';
+    },  
+    grandchild: {
+      name: "Sam",
+      age: 30,
+      speak: function() {
+        return this.name + ' says Hello!';
+      }    
+    }
+  }
+};
 
 // Log the child's age
 
+console.log(parent.child.age);
+
 // Log the name and age of the grandchild
+
+console.log(parent.child.grandchild.name + ', ' + parent.child.grandchild.age);
 
 // Have the parent speak
 
+console.log(parent.speak());
+
 // Have the child speak
 
+console.log(parent.child.speak());
+
 // Have the grandchild speak
+
+console.log(parent.child.grandchild.speak());
