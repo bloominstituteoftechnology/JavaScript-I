@@ -79,7 +79,7 @@ console.log('Last car is ' + inventory[lastCar].car_make, inventory[lastCar].car
 const carModels = [];
 
 for (let i = 0; i < inventory.length; i++) {
-   carModels.push(inventory[i]['car_model']);
+   carModels.push(inventory[i].car_model);
 }
 
 const sorted = carModels.sort();
@@ -90,7 +90,7 @@ console.log(sorted);
 const carYears = [];
 
 for (let i = 0; i < inventory.length; i++) {
-    carYears.push(inventory[i]['car_year']);
+    carYears.push(inventory[i].car_year);
 }
 console.log(carYears);
 
@@ -111,7 +111,7 @@ console.log(oldCars.length);
 const BMWAndAudi =[];
 
 for (let i = 0; i < inventory.length; i++) {
-    if (inventory[i]['car_make'] == 'BMW' || inventory[i]['car_make'] == 'Audi') {
+    if (inventory[i].car_make == 'BMW' || inventory[i].car_make == 'Audi') {
         BMWAndAudi.push(inventory[i]);
     }
 }
