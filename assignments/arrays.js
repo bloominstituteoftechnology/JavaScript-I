@@ -64,7 +64,7 @@ let inventory = [{'id':1,'car_make':'Lincoln','car_model':'Navigator','car_year'
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 for (let i = 0; i < inventory.length; i++) {
-    if (inventory[i].id === 33){
+    if (inventory[i].id === 33) {
         console.log('Car ' + inventory[i].id + ' is a ' + inventory[i].car_year, inventory[i].car_make, inventory[i].car_model );
     }
 }
@@ -100,7 +100,7 @@ const oldCars =[];
 
 for (let i = 0; i < carYears.length; i++) {
 
-    if (carYears[i] < 2000){
+    if (carYears[i] < 2000) {
         oldCars.push(carYears[i]);
     }
 }
