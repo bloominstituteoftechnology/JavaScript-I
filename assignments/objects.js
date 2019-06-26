@@ -45,7 +45,7 @@ const interns = [
     "name": "Antonietta",
     "email": "adaine5@samsung.com",
     "gender": "F",
-    "multiplyNums": function(x,y){return x * y}
+    "multiplyNums": (x,y) => x * y
   }
 ]
 // ==== Challenge 2: Reading Object Data ==== 
