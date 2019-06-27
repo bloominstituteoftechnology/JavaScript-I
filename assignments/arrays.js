@@ -99,7 +99,7 @@ console.log(years(inventory));
 let oldCars = [];
 const old = function (arr) {
     for(let i = 0; i < arr.length; i++) {
-        if(arr[i].car_year < 2000){
+        if(arr[i] < 2000){
             oldCars.push(arr[i].car_year)
         }
     }
