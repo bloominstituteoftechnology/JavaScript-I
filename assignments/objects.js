@@ -30,7 +30,7 @@ const interns = [
     "name": "Kennan",
     "email": "kdiben1@tinypic.com",
     "gender": "M",
-    "speak": function() {return `Hello, my name is ${this.name}`;}
+    "speak": function() {return `Hello, my name is ${this.name}`}
   },
   {
     "name": "Keven",
@@ -90,13 +90,14 @@ const parent = {
     "grandchild": {
       "name": "Sam",
       "age": 30,
-      "speak": 90
+      "speak": function() {
+        return `My name is ${this.name} and I am ${this.age} years old.`
       } 
     },
     "speak": function() {
       return `My name is ${this.name} and I am ${this.age} years old.`
     }
-  },
+    },
   "speak": function() {
     return `My name is ${this.name} and I am ${this.age} years old.`
   }
