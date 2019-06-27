@@ -1,3 +1,4 @@
+console.log(`==== Function-Conversion.js ====`);
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
 // Side note - Let and Const are not ES5 Syntax. Why it no say var?!
@@ -40,6 +41,6 @@ exampleArray = [1,2,3,4];
 // const triple = exampleArray.map(function (num) {
 //   return num * 3;
 // });
-const triple = exampleArray.map((num) => num * 3);
+const triple = exampleArray.map(num => num * 3);
 
 console.log(triple);
