@@ -17,7 +17,7 @@ function last(arr, cb) {
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
-  cd(x + y);
+  cb(x + y);
 }
 
 function multiplyNums(x, y, cb) {
@@ -28,12 +28,11 @@ function multiplyNums(x, y, cb) {
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  for (let i = 0; i < list.length; i++) {
-      if( list[i] === item) {
-        return true;
-      }
+  if (list.indexOf(item) !== -1) {
+    cb(true);
+  } else {
+    cb(false);
   }
-  return false;
 }
 
 /* STRETCH PROBLEM */
@@ -42,12 +41,12 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
-    let unique_array = []
-    for(let i = 0; i < array.length; i++){
-        if(unique_array.indexOf(array[i]) == -1){
-            unique_array.push(array[i])
-        }
+    const sortedArr = array.sort();
+    for (let i = 0; i < sortedArr.length; i++) {
+      if (sortedArr[i] === sortedArr[i + 1]) {
+        sortedArr.splice(i, 1);
+      }
     }
-    cb(unique_array);
+    cb(sortedArr);
 }
 
