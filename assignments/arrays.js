@@ -85,12 +85,16 @@ let inventory = [
 //   }
 // }
 
-let car33 = inventory.filter(car => car.id == 33);
-console.log('>>>>>>>>>>>>', car33);
+const car33 = inventory.filter(car => car.id == 33);
+console.log(
+  `Car 33 is a ${car33[0].car_year} ${car33[0].car_make} ${car33[0].car_model}`
+);
+
+// >>>>>>>>>>>>>>> IS THERE A WAY TO LOG RESULTS DIRECTLY INTO FAT ARROW FUNCTION
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = inventory[inventory.length - 1];
+const lastCar = inventory[inventory.length - 1];
 console.log(lastCar.car_make, lastCar.car_model);
 
 // ==== Challenge 3 ====
@@ -100,19 +104,19 @@ console.log(lastCar.car_make, lastCar.car_model);
 //     if(a.car_model > b.car_model) { return 1; }
 //     return 0;
 // });
-let carModels = inventory.sort((a, b) =>
+const carModels = inventory.sort((a, b) =>
   a.car_model.localeCompare(b.car_model)
 );
 console.log(carModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
-let carYears = inventory.map(a => a.car_year);
+const carYears = inventory.map(a => a.car_year);
 console.log(carYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
-let oldCars = carYears.reduce((a, year) => {
+const oldCars = carYears.reduce((a, year) => {
   if (year < 2000) {
     a++;
   }
@@ -122,8 +126,10 @@ console.log(oldCars);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
-let BMWAndAudi = inventory.filter(
-  make => make.car_make == "Audi" && make.car_make == "BMW"
+const BMWAndAudi = inventory.filter(
+  make => make.car_make == "Audi" || make.car_make == "BMW"
 );
 
 console.log(JSON.stringify(BMWAndAudi));
+
+//>>>>>>>>>>>> AM I DOING THIS RIGHT?
