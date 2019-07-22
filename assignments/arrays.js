@@ -63,9 +63,16 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // console.log('hello');
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${inventory[32].car_model}` );
+// console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${inventory[32].car_model}` );
 
-
+function findCar(array, carId) {
+  return array.find(function(car) {
+    if (car.id === carId) {
+      console.log(`Car 33 is a ${inventory[32].car_year} ${car.car_make} ${car.car_model}`);
+    }
+  });
+}
+console.log(findCar(inventory, 33))
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = inventory.length - 1;
@@ -112,19 +119,15 @@ console.log('Old cars: ', oldCars);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
-// let BMWAndAudi = [];
+let BMWAndAudi = [];
+
 // for (let i = 0; i < inventory.length; i++) {
-//   if (inventory[i].car_make === 'BMW') {
-//     BMWAndAudi.push(inventory[i]);
-//   }
-//   if (inventory[i].car_make === 'Audi') {
+//   if (inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi') {
 //     BMWAndAudi.push(inventory[i]);
 //   }
 // }
-// console.log(BMWAndAudi);
+// console.log('Only BMW & Audi: ', BMWAndAudi);
 
-
-let BMWAndAudi = [];
 
 BMWAndAudi = inventory.filter(function(val) {
   if (val.car_make === 'BMW' || val.car_make === 'Audi') {
@@ -132,5 +135,5 @@ BMWAndAudi = inventory.filter(function(val) {
   }
 });
 
-console.log('Only BMW & Audy: ', BMWAndAudi);
+console.log('Only BMW & Audy: ', JSON.stringify(BMWAndAudi));
 
