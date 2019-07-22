@@ -5,10 +5,25 @@
 // };
 // myFunction();
 
+  const myFunction = () => {
+      console.log("Function was invoked!")};
+
+    myFunction();
+    
+
 // let anotherFunction = function (param) {
 //   return param;
 // };
 // anotherFunction("Example");
+
+const anotherFunction = (param => param)
+
+anotherFunction("Example");
+
+console.log(anotherFunction("Example"));
+
+
+
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
@@ -28,3 +43,4 @@
 //   return num * 3;
 // });
 // console.log(triple);
+
