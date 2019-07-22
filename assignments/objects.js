@@ -99,17 +99,26 @@ console.log(antonietta.multiplyNums(3,4));
 const parent = {
   name: 'Susan',
   age: 70,
+  speak: function() {
+    console.log(`Hello ${this.name}`);
+    // return this;
+  },
+ 
   nestedObj: {
     name: 'George', 
     age: 50,
+    speak: function() {
+      console.log(`Hello ${this.name}`);
+    },
     grandChildObj: {
       name: 'Sam', 
-      age: 30
+      age: 30,
+      speak: function() {
+        console.log(`Hello ${this.name}`);
+      }
     }
-  },
-  speak: function(name) {
-    console.log(`Hello ${this.name}`);
   }
+  
 }
 
 // Log the parent object's name
@@ -121,5 +130,6 @@ console.log(parent.nestedObj.grandChildObj.name, parent.nestedObj.grandChildObj.
 // Have the parent speak
 console.log(parent.speak());
 // Have the child speak
-// console.log(`${parent.nestedObj.grandChildObj.speak()}`);
+console.log(parent.nestedObj.speak());
 // Have the grandchild speak
+console.log(parent.nestedObj.grandChildObj.speak());
