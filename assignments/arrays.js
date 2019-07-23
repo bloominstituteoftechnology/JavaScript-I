@@ -68,17 +68,19 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 function findCar(array, carId) {
   return array.find(function(car) {
     if (car.id === carId) {
-      console.log(`Car 33 is a ${car.car_year} ${car.car_make} ${car.car_model}`);
+      return `Car 33 is a ${car.car_year} ${car.car_make} ${car.car_model}`;
     }
   });
 }
-console.log(findCar(inventory, 33))
+console.log('Find car: ', findCar(inventory, 33));
+
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-// let lastCar = inventory.length - 1;
+// let lastCar = inventory[inventory.length - 1];
 // console.log(inventory[lastCar].car_make, inventory[lastCar].car_model);
 function lastCar(array) {
   var lastCar = array.slice(-1);
+  
   return `${lastCar[0].car_make} ${lastCar[0].car_model}`;
 }
 

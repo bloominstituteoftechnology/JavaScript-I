@@ -31,7 +31,7 @@ const kennan = {
   "gender": "M",
 
   speak: function() {
-    console.log("Hello, my name is Kennan!");
+    return `Hello, my name is ${kennan.firstName}!`;
   }
 }
 const keven = {
@@ -100,21 +100,20 @@ const parent = {
   name: 'Susan',
   age: 70,
   speak: function() {
-    console.log(`Hello ${this.name}`);
-    // return this;
+    return `Hello ${this.name}`
   },
  
   nestedObj: {
     name: 'George', 
     age: 50,
     speak: function() {
-      console.log(`Hello ${this.name}`);
+      return `Hello ${this.name}`;
     },
     grandChildObj: {
       name: 'Sam', 
       age: 30,
       speak: function() {
-        console.log(`Hello ${this.name}`);
+        return `Hello ${this.name}`;
       }
     }
   }
