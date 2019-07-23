@@ -15,18 +15,17 @@ console.log(anotherFunction('Hello'));
 let add = (param1, param2) => {
   return param1 + param2;
 };
-console.log(add(1,2));
+console.log('Adding numbers: ', add(1,2));
 
 let subtract = (param1, param2) => {
   return param1 - param2;
 };
 subtract(1,2);
-
+console.log('Subtract numbers: ', subtract(1,2));
 
 // Stretch
 
 exampleArray = [1,2,3,4];
-const triple = exampleArray.map(num => {
-  return num * 3;
-});
-console.log(triple);
+const triple = exampleArray.map(num => num * 3);
+
+console.log('Stretch: ', triple);

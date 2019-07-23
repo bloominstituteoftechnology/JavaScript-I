@@ -68,25 +68,29 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 function findCar(array, carId) {
   return array.find(function(car) {
     if (car.id === carId) {
-      console.log(`Car 33 is a ${inventory[32].car_year} ${car.car_make} ${car.car_model}`);
+      console.log(`Car 33 is a ${car.car_year} ${car.car_make} ${car.car_model}`);
     }
   });
 }
 console.log(findCar(inventory, 33))
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = inventory.length - 1;
-console.log(inventory[lastCar].car_make, inventory[lastCar].car_model);
+// let lastCar = inventory.length - 1;
+// console.log(inventory[lastCar].car_make, inventory[lastCar].car_model);
+function lastCar(array) {
+  var lastCar = array.slice(-1);
+  return `${lastCar[0].car_make} ${lastCar[0].car_model}`;
+}
 
+console.log('Last car is: ', lastCar(inventory));
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
 
-for (let i = 0; i < inventory.length; i++) {
-  carModels.push(inventory[i].car_model);
-}
+carModels = inventory.map(cars => cars.car_model).sort();
 
-console.log('A-Z: ', carModels.sort());
+console.log('A-Z Sorted array: ', carModels);
+
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
@@ -96,9 +100,7 @@ let carYears = [];
 //   carYears.push(inventory[i].car_year);
 // }
 
-inventory.forEach(function(year) {
-  carYears.push(year.car_year);
-});
+carYears = inventory.map(year => year.car_year);
 
 console.log('Year of cars ', carYears);
 
@@ -140,5 +142,5 @@ BMWAndAudi = inventory.filter(function(val) {
   }
 });
 
-console.log('Only BMW & Audy: ', JSON.stringify(BMWAndAudi));
+console.log('Only BMW & Audi: ', JSON.stringify(BMWAndAudi));
 
