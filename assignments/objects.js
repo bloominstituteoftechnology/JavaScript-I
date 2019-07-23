@@ -100,15 +100,21 @@ console.log(person5.multiplyNums(3,4));
 const parent = {
   "nameFirst" : "susan",
   "age": 70,
-  "speak": function toSpeak() {return "Hello, my name is "+ this.nameFirst},
+  "speak": function toSpeak() {
+    return "Hello, my name is "+ this.nameFirst;
+  },
   "child": {
     "nameFirst": "George",
     "age": 50,
-    "speak": this.toSpeak,
+    "speak": function toSpeak() {
+      return "Hello, my name is "+ this.nameFirst;
+    },
     "grandchild": {
       "nameFirst": "Sam",
       "age": 30,
-      "speak": this.toSpeak
+      "speak": function toSpeak() {
+        return "Hello, my name is "+ this.nameFirst;
+      },
     } 
   }
 };
@@ -120,7 +126,8 @@ console.log(parent.child.nameFirst);
 // Log the name and age of the grandchild
 console.log(parent.child.grandchild.nameFirst);
 // Have the parent speak
-console.log(parent.speak);
+console.log(parent.speak());
 // Have the child speak
-
+console.log(parent.child.speak());
 // Have the grandchild speak
+console.log(parent.child.grandchild.speak());
