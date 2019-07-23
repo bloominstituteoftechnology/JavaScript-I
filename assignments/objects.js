@@ -70,16 +70,16 @@ console.log(person4.nameFirst);
 console.log(person5.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
-// person5.speak = function toSpeak() {
-//   return "Hello, my name is "+ person2.nameFirst;
-// }
-// console.log(person2.speak());
 
-let toSpeak = param => {
-  return "Hello, my name is "+ param.nameFirst;
+person2.speak = function toSpeak() {
+  return "Hello, my name is "+ this.nameFirst;
 }
-console.log(toSpeak(person2));
+console.log(person2.speak());
+
+// let toSpeak = param => {
+//   return "Hello, my name is "+ param.nameFirst;
+// }
+// console.log(toSpeak(person2));
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
@@ -100,7 +100,7 @@ console.log(person5.multiplyNums(3,4));
 const parent = {
   "nameFirst" : "susan",
   "age": 70,
-  "speak": toSpeak(this),
+  "speak": function toSpeak() {return "Hello, my name is "+ this.nameFirst},
   "child": {
     "nameFirst": "George",
     "age": 50,
