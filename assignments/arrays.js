@@ -142,5 +142,6 @@ BMWAndAudi = inventory.filter(function(val) {
   }
 });
 
-console.log('Only BMW & Audi: ', JSON.stringify(BMWAndAudi));
+console.log('Only BMW & Aud: ', JSON.stringify(BMWAndAudi));
 
+console.table(BMWAndAudi)
