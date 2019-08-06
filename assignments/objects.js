@@ -1,3 +1,4 @@
+"use strict";
 // Let's get some practice writing a few objects for a new group of interns at a small business.
 
 // ==== Challenge 1: Writing Objects ==== 
@@ -98,6 +99,9 @@ console.log(antonietta.multiplyNums(3,4));
 // 2. Nest a child object in the parent object with name and age as well.  The name will be George and the age will be 50.
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
+const mySpeak = (object) => {
+
+}
 
 let parent = {
   'name': 'Susan',
@@ -111,8 +115,7 @@ let parent = {
     }
   }
 }
-
-parent.speak = function(){return 'Hello, my name is ' + this.name + '!'}
+parent.speak = () => {return `Hello, my name is ${parent.name}!`}
 parent.child.speak = function(){return 'Hello, my name is ' + this.name + '!'}
 parent.child.grandchild.speak = function(){return 'Hello, my name is ' + this.name + '!'}
 
