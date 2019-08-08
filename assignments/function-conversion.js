@@ -5,9 +5,8 @@ let myFunction = () => {
 };
 myFunction();
 
-let anotherFunction = param => {
-  return param;
-};
+let anotherFunction = param => param;
+
 console.log(anotherFunction("Example"));
 
 let add = (param1, param2) => param1 + param2;
