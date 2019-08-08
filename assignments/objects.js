@@ -3,11 +3,11 @@
 // ==== Challenge 1: Writing Objects ==== 
 // HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
 
-// 1,mmelloy0@psu.edu,Mitzi,F
+// 1,mmelloy0@psu.edu,,F
 // 2,kdiben1@tinypic.com,Kennan,M
 // 3,kmummery2@wikimedia.org,Keven,M
 // 4,gmartinson3@illinois.edu,Gannie,M
-// 5,adaine5@samsung.com,Antonietta,F
+// 5,adaine5@samsung.com,adaine5@samsung.com,F
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
 const example = {
@@ -19,9 +19,54 @@ const example = {
 
 // Write your intern objects here:
 
+const intern1 = {
+  "id": 1,
+  "name": "Mitzi",
+  "gender": "F",
+  "email": "mmelloy0@psu.edu"
+}
+console.log(intern1.name);
+
+const intern2 = {
+  "id": 2,
+  "name":"Kennan" ,
+  "gender": "M",
+  "email": "kmummery2@wikimedia.org"
+}
+console.log(intern2.id);
+
+const intern3 = {
+  "id": 3,
+  "name": "Keven" ,
+  "gender":"M" ,
+  "email": "kmummery2@wikimedia.org"
+}
+console.log(intern3.email);
+
+const intern4 = {
+  "id": 4,
+  "name": "Gannie",
+  "gender":"M" ,
+  "email": "gmartinson3@illinois.edu"
+} 
+console.log(intern4.name);
+
+const intern5 = {
+  "id": 5,
+  "name": "adaine5@samsung.com",
+  "gender": "F",
+  "email": "adaine5@samsung.com"
+}
+console.log(intern5.gender);
+
+
+
+
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
+
 
 // Mitzi's name
 
@@ -49,9 +94,9 @@ const example = {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = susan{
-  
-}
+const parent = {}
+
+
 
 // Log the parent object's name
 
