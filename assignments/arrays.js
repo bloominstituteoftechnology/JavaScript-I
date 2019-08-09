@@ -73,6 +73,8 @@ console.log(inventory[49]);
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
+
+
 console.log();
 
 // ==== Challenge 4 ====
