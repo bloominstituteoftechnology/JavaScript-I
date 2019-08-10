@@ -15,9 +15,9 @@ let myfunction = () => {
 // };
 // anotherFunction("Example");
 
-let anotherfunction = (param) => param;
+let anotherFunction = param => param;
 
-console.log(anotherFunction(param));
+console.log(anotherFunction("This is my Param"));
 
 // let add = function (param1, param2) {
 //   return param1 + param2;

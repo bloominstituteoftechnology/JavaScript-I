@@ -60,33 +60,32 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // for (let i = 0; i < arr.length; i++) {
 //     arr[i]; // 1,2,3,4
 // }
-for(let i=0; 1 < array.length; i++) {
-    inventory[i]
-};
+
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-
-console.log(`Car 33 is a`, inventory[32].car_year, inventory[32].car_make, inventory[32][car_model]);
+let car_model = 0;
+console.log(`Car 33 is a`, [inventory[32].car_year, inventory[32].car_make, inventory[32].car_model]);
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = 0;
-console.log(inventory.slice(-1)]0].car_make + "" + inventory.slice(-1)[0].car_make.model);
+console.log(inventory.length - 1);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
+let carModel = [];
 for (let i = 0; i < inventory.length; i++) {
-    carModels.push([1].car_model);
+    carModel.push(inventory[i].car_model);
 }
 
-console.log(carModel,sort());
+console.log(carModel.sort());
+
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
 for (let i = 0; i < inventory.length; i++) {
-    carYears.push([1].car_year);
+    carYears.push(inventory[i].car_year);
 }
 console.log(carYears);
 
@@ -105,8 +104,8 @@ console.log(oldCars);
 let BMWAndAudi = [];
 for (let i = 0; i < inventory.length; i++) {
     if (inventory[i].car_make == 'BMW' || inventory[i].car_make == 'Audi') {
-        BMWandAudi.push(inventory[i].car_make);
+        BMWAndAudi.push(inventory[i].car_make);
     }
 }
 
-console.log(BMWandAudi);
+console.log(BMWAndAudi);
