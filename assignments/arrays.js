@@ -57,10 +57,10 @@ let inventory = [
 
 // Example for loop:
 
-// arr = [1,2,3,4];
+// arr = ['a', 'b', 'c', 'd'];
 // for (let i = 0; i < arr.length; i++) {
-//     arr[i]; // 1,2,3,4
-// }
+//     console.log(arr[i]);
+// } // 'a' 'b' 'c' 'd'
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
