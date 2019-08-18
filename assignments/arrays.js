@@ -55,12 +55,21 @@ let inventory = [
   { id: 50, car_make: "Lincoln", car_model: "Town Car", car_year: 1999 }
 ];
 
-// Example for loop:
+// Example 1 for loop:
 
 // arr = ['a', 'b', 'c', 'd'];
 // for (let i = 0; i < arr.length; i++) {
 //     console.log(arr[i]);
-// } // 'a' 'b' 'c' 'd'
+// }
+// 'a' 'b' 'c' 'd'
+
+// Example 2 for loop:
+
+// arr = [12, 13, 14, 15];
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) { console.log(arr[i]); }
+// }
+// 12 14 (the even numbers!)
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
