@@ -57,7 +57,7 @@ let inventory = [
 
 // Example 1 for loop:
 
-// arr = ['a', 'b', 'c', 'd'];
+// const arr = ['a', 'b', 'c', 'd'];
 // for (let i = 0; i < arr.length; i++) {
 //     console.log(arr[i]);
 // }
@@ -65,11 +65,13 @@ let inventory = [
 
 // Example 2 for loop:
 
-// arr = [12, 13, 14, 15];
+// const arr = [12, 13, 14, 15];
+// const evens = [];
 // for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] % 2 === 0) { console.log(arr[i]); }
+//     if (arr[i] % 2 === 0) { evens.push(arr[i]); }
 // }
-// 12 14 (the even numbers!)
+// console.log(evens);
+// [12, 14]
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
