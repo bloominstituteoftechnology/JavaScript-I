@@ -37,6 +37,9 @@ const intern2 = {
   name: "Kennan",
   email: "kdiben1@tinypic.com",
   gender: "M",
+  speak: function(){
+
+  }
   }
   console.log(intern2.id)
   console.log(intern2.name)
@@ -101,7 +104,9 @@ console.log(intern5.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 
 function speak(){
-  return "Hello, my name is !";
+  const kennan = 'Kennan';
+  return "Hello, my name is Kennan!";
+  console.log(kennan.speak());
 }
 
  console.log(kennan.speak());
@@ -109,6 +114,9 @@ function speak(){
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+const antonietta = (num1, num2){
+  return num1 * num2;
+console.log(antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
