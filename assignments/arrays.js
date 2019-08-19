@@ -78,11 +78,9 @@ let inventory = [
 const carDetails = () => {
   let car = inventory.filter(index => index.id === 33);
 
-  console.log(
-    `Car 33 is a ${car[0].car_year} ${car[0].car_make} ${car[0].car_model}`);
+  console.log(`Car 33 is a ${car[0].car_year} ${car[0].car_make} ${car[0].car_model}`);
 }
-
-console.log(carDetails())
+ carDetails();
 
 
 // ==== Challenge 2 ====
@@ -119,6 +117,7 @@ const carYears = () => {
   for(let index of inventory) {
     carYears.push(index.car_year);
   }
+  return carYears;
 }
 
 console.log(carYears());
