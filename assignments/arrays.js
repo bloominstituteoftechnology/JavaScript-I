@@ -90,17 +90,14 @@ console.log(inventory[49]);
 console.log('Lincoln, ' + 'Town Car');
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-var car_model = []
+let carModels = [];
+console.log();
+for(let x= 0; x < inventory.length; x++){
+  carModels.push(inventory[x]['car_model'])
+}
+carModels.sort();
+console.log(carModels);
 
-car_model.sort(function(a,b){
-return a.car_model - b.car_model}
-)
-
-var carModels = [inventory.car_model];
-
-
-let carModelisSorted = [inventory.sort];
-console.log(carModelisSorted.sort);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
