@@ -21,6 +21,31 @@
 // subtract(1,2);
 
 
+
+let myFunction = () => {
+ console.log("Function was invoked!");
+};
+
+myFunction();
+
+let anotherFunction = (param) => {
+      return param;
+    };
+    anotherFunction("Example");
+    
+ let add = (param1, param2) => {
+    return param1 + param2; 
+  };
+
+  add(1,2);
+  console.log (add, add(1,2));
+
+  let subtract = (param1, param2) => {
+      return param1 - param2;
+    };
+    subtract(1,2);
+    console.log (subtract, subtract(1,2));
+
 // Stretch
 
 // exampleArray = [1,2,3,4];
