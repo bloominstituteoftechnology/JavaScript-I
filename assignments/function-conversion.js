@@ -5,7 +5,7 @@
 // };
 // myFunction();
 
-const myFunction = () => console.log("Function was invoked!");
+const myFunction = () => "Function was invoked!";
 
 console.log(myFunction())
 
