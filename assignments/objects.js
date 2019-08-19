@@ -20,40 +20,73 @@ console.log(example.email);
 
 
 // Write your intern objects here:
+const mitzi = {
+    id: 1,
+    email: "mmelloy0@psu.edu",
+    name: "Mitzi",
+    gender: "F"
+}
 
+const kennan = {
+    id: 2,
+    email: "kdiben1@tinypic.com",
+    name: "Kennan",
+    gender: "M"
+}
+const keven = {
+    id: 3,
+    email: "kmummery2@wikimedia.org",
+    name: "Keven",
+    gender: "M"
+}
+const gannie = {
+    id: 4,
+    email: "gmartinson3@illinois.edu",
+    name: "Gannie",
+    gender: "M"
+}
+const antonietta = {
+    id: 5,
+    email: "adaine5@samsung.com",
+    name: "Antonietta",
+    gender: "F"
+}
+
+//this is the array acting as database
 let internsInfo = [{
-            id: 1,
-            email: "mmelloy0@psu.edu",
-            name: "Mitzi",
-            gender: "F"
-        },
-        {
-            id: 2,
-            email: "kdiben1@tinypic.com",
-            name: "Kennan",
-            gender: "M"
-        },
-        {
-            id: 3,
-            email: "kmummery2@wikimedia.org",
-            name: "Keven",
-            gender: "M"
-        },
-        {
-            id: 4,
-            email: "gmartinson3@illinois.edu",
-            name: "Gannie",
-            gender: "M"
-        },
-        {
-            id: 5,
-            email: "adaine5@samsung.com",
-            name: "Antonietta",
-            gender: "F"
-        }
-    ]
-    // ==== Challenge 2: Reading Object Data ==== 
-    // Once your objects are created, log out the following requests from HR into the console:
+        id: 1,
+        email: "mmelloy0@psu.edu",
+        name: "Mitzi",
+        gender: "F"
+    },
+    {
+        id: 2,
+        email: "kdiben1@tinypic.com",
+        name: "Kennan",
+        gender: "M"
+    },
+    {
+        id: 3,
+        email: "kmummery2@wikimedia.org",
+        name: "Keven",
+        gender: "M"
+    },
+    {
+        id: 4,
+        email: "gmartinson3@illinois.edu",
+        name: "Gannie",
+        gender: "M"
+    },
+    {
+        id: 5,
+        email: "adaine5@samsung.com",
+        name: "Antonietta",
+        gender: "F"
+    }
+]
+
+// ==== Challenge 2: Reading Object Data ==== 
+// Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
 
@@ -64,7 +97,19 @@ let internsInfo = [{
 // Gannie's name
 
 // Antonietta's Gender
-for (i = 0; i < internsInfo.length; i++) {
+
+
+
+console.log(mitzi.name);
+console.log(kennan.id);
+console.log(keven.email);
+console.log(gannie.name);
+console.log(antonietta.gender);
+
+
+//Here i use for loop to answer the question since i decleared an array as a database to host all the interns as they will all have a unique ID
+
+/**for (i = 0; i < internsInfo.length; i++) {
     if (internsInfo[i].id == 1) {
         console.log(internsInfo[i].name);
     } else if (internsInfo[i].id == 2) {
@@ -77,7 +122,7 @@ for (i = 0; i < internsInfo.length; i++) {
     if (internsInfo[i].id == 5) {
         console.log(internsInfo[i].gender);
     }
-}
+} */
 console.log(internsInfo.length)
 
 // ==== Challenge 3: Object Methods ==== 
