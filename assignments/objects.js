@@ -15,7 +15,7 @@ const example = {
   name: "Example",
   email: "examples@you.edu",
   gender: "F",
-}
+};
 
 // Write your intern objects here:
 
@@ -24,6 +24,7 @@ const example = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+
 
 // Kennan's ID
 
