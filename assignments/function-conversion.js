@@ -5,10 +5,9 @@
 // };
 
 
-let myFunction = () => {console.log("Function was invoked!")};
+const myFunction = () => "Function was invoked!";
 
-// myFunction();
-
+console.log(myFunction())
 
 
 // let anotherFunction = function (param) {
@@ -18,7 +17,7 @@ let myFunction = () => {console.log("Function was invoked!")};
 
 let anotherFunction = (param) => param;
 
-// console.log(anotherFunction(25));
+console.log(anotherFunction("Example"));
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
@@ -27,7 +26,7 @@ let anotherFunction = (param) => param;
 
 let add = (param1, param2) => param1 + param2;
 
-// console.log(add(1,2));
+console.log(add(1,2));
 
 
 
