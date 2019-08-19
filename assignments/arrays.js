@@ -75,23 +75,37 @@ let inventory = [
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
+const arr = [];
+
+console.log(inventory[32].id);
+
+
+console.log("Car 33 is a" + 'inventory[32].car_year' + 'inventory[32].car_make' + 'inventory[32].car_model');
 console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*`);
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = 0;
-console.log();
-
+console.log(inventory[49]);
+console.log('Lincoln, ' + 'Town Car');
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
-let carModelsSorted = [];
-console.log();
+var car_model = []
+
+car_model.sort(function(a,b){
+return a.car_model - b.car_model}
+)
+
+var carModels = [inventory.car_model];
+
+
+let carModelisSorted = [inventory.sort];
+console.log(carModelisSorted.sort);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-console.log();
+console.log(inventory.car_year);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
