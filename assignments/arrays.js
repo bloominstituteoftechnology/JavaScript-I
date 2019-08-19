@@ -98,6 +98,7 @@ for (let i = 0; i < inventory.length; i++) {
     if (carYears[i] > 2000)
     oldCars.push(carYears[i]);
 }
+
 console.log(oldCars.length); 
 
 console.log(`==== Challenge 6 ==== `)

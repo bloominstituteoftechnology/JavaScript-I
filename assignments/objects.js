@@ -11,7 +11,7 @@ console.log(` ==== Challenge 1: Writing Objects ===`)
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
 const example = {
-  "id": 0,
+  "id": 1,
   "name": "Example",
   "email": "examples@you.edu",
   "gender": "F"
@@ -19,15 +19,14 @@ const example = {
 
 // Write your intern objects here:
 
-const interns = 
-  { "id": 1, 
+const interns = { 
+    "id": 1, 
     "email": "mmelloy0@psu.edu", 
     "firstName": " Mitzi", 
     "gender":" F"
   }
 
-  const intern1 =
-    {
+  const intern1 = {
       "id": 2,
       "email": "kdiben1@tinypic.com",
       "firstName": "Kennan",
@@ -36,24 +35,21 @@ const interns =
         return "Hello, my name is Kennan!"}
     }
 
-    const intern2 =
-    {
+    const intern2 = {
       "id": 3,
       "email": "kmummery2@wikimedia.org",
       "firstName": "Keven",
       "gender": "M"
     }
 
-    const intern3 =
-  {
+    const intern3 = {
     "id": 4, 
     "email": "gmartinson3@illinois.edu",
     "firstName": "Gannie",
     "gender": "F"
   }
 
-  const intern4 =
-  {
+  const intern4 = {
     "id": 5,
     "email": "adaine5@samsung.com",
     "firstName": "Antonietta",
