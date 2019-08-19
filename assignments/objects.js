@@ -16,7 +16,26 @@ const example = {
   email: "examples@you.edu",
   gender: "F",
 }
-
+const interns = {
+  1: {
+    id: 0,
+    name: "Example",
+    email: "examples@you.edu",
+    gender: "F",
+  },
+  2: {
+    id: 0,
+    name: "Example",
+    email: "examples@you.edu",
+    gender: "F",
+  },
+  3: {
+    id: 0,
+    name: "Example",
+    email: "examples@you.edu",
+    gender: "F",
+  },
+}
 // Write your intern objects here:
 
 
