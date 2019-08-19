@@ -36,18 +36,22 @@ const intern1 = {
   }
 }
 
+// function add(a, b) => a + b;
+
+// console.log(add(10, 20));
+
 const intern2 = {
   id: 2,
   name: "keven",
   email: "kevenemail@gmail.com",
-  gender: "M",
+  gender: "M"
 }
 
 const intern3 = {
   id: 3,
   name: "gennie",
   email: "gennie@gmail.com",
-  gender: "F",
+  gender: "F"
 }
 
 const intern4 = {
@@ -86,7 +90,7 @@ console.log(intern4.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-console.log(intern1.speak);
+console.log(intern1.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
