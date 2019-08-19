@@ -95,10 +95,7 @@ function lastCar(arr) {
 
 console.log(lastCar(inventory));
 
-function add (z, x){
-  let sum = z + x;
-  return sum;
-} 
+
 
 
 
