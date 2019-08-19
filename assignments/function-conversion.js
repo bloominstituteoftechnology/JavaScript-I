@@ -5,11 +5,16 @@
 // };
 // myFunction();
 
+
+
 // let anotherFunction = function (param) {
 //   return param;
 // };
 // anotherFunction("Example");
 
+
+const add = (param1, param2) => param1 + param2;
+console.log(add(1,2));
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
