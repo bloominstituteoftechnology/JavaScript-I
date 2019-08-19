@@ -1,8 +1,7 @@
 // Let's get some practice writing a few objects for a new group of interns at a small business.
 
 // ==== Challenge 1: Writing Objects ==== 
-// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. 
-//Create an object for each person in the company list:
+// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
 
 // 1, mmelloy0@psu.edu, Mitzi, F
 // 2, kdiben1@tinypic.com, Kennan, M
@@ -54,26 +53,60 @@ const antonietta = {
   sex: "F",
 }
 
-
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
 
+console.log (mitzi.name)
+
 // Kennan's ID
+console.log (kennan.id)
 
 // Keven's email
-
+console.log(kevan.email)
 // Gannie's name
 
-// Antonietta's Gender
+console.log(gannie.name)
+
+// Antonietta's Sex
+
+console.log (antonietta.sex)
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+// console.log(kennan.speak());]
+
+// To create a new property, write out the <object>.<name-of-new-property> = <function or value>
+
+// kennan.speak = "Hello, my name is Kennan!"
+
+// kennan.letSpeak = (name) => console.log(`Hello, my name is ${this.name}`);
+
+
+kennan.speak = function(name){
+  console.log(`Hello, my name is ${this.name}.`);
+}
+
+kennan.speak("Kennan");
+
+
+// WHY DOESNT THIS WORK WITH ARROW!?
+// kennan.speak = (name) => (`Hello, my name is ${this.name}`);
+
+// console.log(kennan.speak("Kennan"));
+// kennan.speak = letSpeak;
+
+// console.log(kennan.letSpeak("Kennan"));
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+antonietta.multiplyNumbers = function(num1, num2){
+  return num1 * num2;
+}
+
+console.log(antonietta.multiplyNumbers(3,4));
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
