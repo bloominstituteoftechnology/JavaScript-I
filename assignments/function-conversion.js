@@ -53,3 +53,6 @@ let anotherFunction = (param) => {
 //   return num * 3;
 // });
 // console.log(triple);
+var exampleArray =[1, 2, 3];
+const triple = exampleArray.map(num => num * 3 ) ;
+    console.log(triple);
