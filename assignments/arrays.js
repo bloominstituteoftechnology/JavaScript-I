@@ -88,11 +88,11 @@ const carDetails = () => {
 
 const lastCarDetails = () => {
   let lastCar = 0;
-  let lastIndex = lastCar = inventory[inventory.length - 1];
-  return lastIndex;
+  return lastCar = console.log((inventory[inventory.length - 1].car_make),
+  (inventory[inventory.length - 1].car_model));
 }
 
-console.log(lastCarDetails());
+lastCarDetails();
 
 
 // ==== Challenge 3 ====
