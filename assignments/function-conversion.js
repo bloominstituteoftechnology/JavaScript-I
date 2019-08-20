@@ -12,9 +12,7 @@ myFunction();
 //   return param;
 // };
 // anotherFunction("Example");
-const anotherFunction = (param) => {
-    return param;
-}
+const anotherFunction = param => param;
 anotherFunction("Example");
 // let add = function (param1, param2) {
 //   return param1 + param2;
@@ -28,7 +26,7 @@ add(1,2);
 //   return param1 - param2;
 // };
 // subtract(1,2);
-const subtract = () => {
+const subtract = (param1, param2) => {
     return param1 - param2;
 }
 subtract(1,2);
