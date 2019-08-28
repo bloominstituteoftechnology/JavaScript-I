@@ -144,7 +144,7 @@ console.log(parent.child.age)
 console.log(parent.child.grandchild.name,parent.child.grandchild.age)
 
 // Have the parent speak
-console.log(this.speaks+this.name)
+console.log(`${parent.speaks} ${parent.name}`)
 
 // Have the child speak
 console.log (`${parent.child.speaks+parent.child.name} !`)
