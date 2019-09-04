@@ -60,12 +60,13 @@ const antonietta = {
 // Mitzi's name
 console.log(mitizi.name)
 // Kennan's ID
-
+console.log(kennan.id)
 // Keven's email
-
+console.log(kevin.email)
 // Gannie's name
-
+console.log(gannie.name)
 // Antonietta's Gender
+console.log(antonietta.gender)
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
@@ -83,7 +84,18 @@ console.log(mitizi.name)
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {}
+const parent = {
+  name: 'Susan',
+  age: 70,
+  child: {
+    name: "George",
+    age: 50,
+    grandparent: {
+      name: 'Sam',
+      age: 30,
+    }
+  }
+}
 
 // Log the parent object's name
 
