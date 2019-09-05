@@ -4,7 +4,7 @@
 // console.log("Function was invoked!");
 // };
 // myFunction();
-var myFunction = () => console.log("Function was invoked!");
+const myFunction = () => console.log("Function was invoked!");
 // myFunction();
 
 
@@ -13,21 +13,21 @@ var myFunction = () => console.log("Function was invoked!");
 //   return param;
 // };
 // anotherFunction("Example");
-var anotherFunction = (param) => param;
+const anotherFunction = (param) => param;
 // anotherFunction("Example");
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
 // add(1,2);
-var add = (param1, param2) => param1 + param2;
+const add = (param1, param2) => param1 + param2;
 // add(5,5);
 
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
 // };
 // subtract(1,2);
-var subtract = (param1, param2) => param1 - param2;
+const subtract = (param1, param2) => param1 - param2;
 // subtract(100,99);
 
 
