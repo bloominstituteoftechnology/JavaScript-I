@@ -143,14 +143,13 @@ console.log(oldCars);
 let BMWAndAudi = [];
 
 for (let i = 0; i<inventory.length; i++){
-    let make=inventory[i].car_make;
+    make=inventory[i].car_make;
     if (make==="BMW"|| make==="Audi")
     {BMWAndAudi.push(inventory[i])};
-    
 
 }
 
 
 
 
-console.log(BMWAndAudi);
+console.log(JSON.stringify(BMWAndAudi));
