@@ -6,22 +6,17 @@
 // myFunction();
 
 let myFunction = () => {
-console.log("wow this actually worked!");
-}
+console.log ("Did it work");
+};
 myFunction();
-
-
 
 // let anotherFunction = function (param) {
 //   return param;
 // };
 // anotherFunction("Example");
-//}
-
-
 
 let anotherFunction = (param) => {
-console.log("wow this actually worked!");
+    console.log("Did it work")
 }
 anotherFunction();
 
@@ -30,19 +25,24 @@ anotherFunction();
 // };
 // add(1,2);
 
+let add = (param1, param2) => {
+    return param1 + param2;
+    console.log(1,2));
+};
+add();
+
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
 // };
 // subtract(1,2);
 
+let subtract = (param1, param2) => {
+    return param1 - param2;
+    console.log(2,1));
+}
+subtract();
 
-let add = (param1, param2) => param1 + param2 
-console.log(add(1000, 2000));
-add();
 
-
-let subtract = (param1, param2) => param1 - param2
-console.log(subtract(1000, 2000));
 // Stretch
 
 // exampleArray = [1,2,3,4];
@@ -50,4 +50,3 @@ console.log(subtract(1000, 2000));
 //   return num * 3;
 // });
 // console.log(triple);
-
