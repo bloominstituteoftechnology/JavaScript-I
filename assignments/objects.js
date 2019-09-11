@@ -73,17 +73,17 @@ console.log(NewInterns[5]["Gender"]);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 const letspeak = function(){
+kennan.speak = letspeak};
 return "Hello, my name is ${this.name}!";
-kennan.speak = letspeak;
 console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
-const NewIntern5 = "antoinetta";
-NewIntern5.multiplyNums = function(a,b);
-return multiplyNums(a*b);
-  console.log(antoinetta.multiplyNums(3,4));
+const NewIntern = "antoinetta";
+NewIntern.multiplyNums = function(a,b){
+return multiplyNums(a*b)};
+  console.log(NewIntern.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
