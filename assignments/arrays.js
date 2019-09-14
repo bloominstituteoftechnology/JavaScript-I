@@ -135,7 +135,7 @@ for (let i = 0; i<inventory.length; i++){
 
 
 
-console.log(oldCars);
+console.log(oldCars.length);
 
 
 // ==== Challenge 6 ====
