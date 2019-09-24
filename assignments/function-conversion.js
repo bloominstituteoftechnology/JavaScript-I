@@ -44,6 +44,8 @@ var subtract = (param1, param2) => {
 // });
 // console.log(triple);
 
-var triple = (exampleArray.map(num)) => {
+var triple = exampleArray.map((num) => {
     return num * 3;
-};
+});
+    
+
