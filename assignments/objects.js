@@ -33,7 +33,7 @@ const people1={
   email:"kdiben1@tinypic.com",
   gender:"M",
    speak(){
-    console.log("Hello, my name is Kennan");
+    console.log("Hello");
   }
  
  
