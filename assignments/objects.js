@@ -29,7 +29,10 @@ const intern_2 = {
   id: 1,
   name: "Kennan",
   email: "kdiben1@tinypic.com",
-  gender:"M"
+  gender:"M",
+  speak() {
+    console.log("Hi my name is " + this.name + "!");
+  }
 };
 
 const intern_3 = {
@@ -50,7 +53,11 @@ const intern_5 = {
   id: 4,
   name: "Antonietta",
   email: "adaine5@samsung.com",
-  gender: "F"
+  gender: "F",
+  multiplyNums(num1, num2) {
+return num1* num2;
+  }
+
 };
 
 console.log(intern_1);
@@ -72,12 +79,13 @@ console.log("Keven's email: " + intern_3.email);
 console.log ("Intern 4's name: " + intern_4.name);
 // Antonietta's Gender
 console.log("Antoinetta's gender: " + intern_5.gender);
+
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+console.log(intern_2.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+console.log(intern_5.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
