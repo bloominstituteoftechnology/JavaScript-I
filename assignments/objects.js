@@ -31,8 +31,12 @@ const people1={
   id: 2,
   name:"Kennan",
   email:"kdiben1@tinypic.com",
-  gender:"M"
-
+  gender:"M",
+   speak(){
+    console.log("Hello, my name is Kennan");
+  }
+ 
+ 
 };
 
 const people2={
@@ -55,13 +59,16 @@ const people4={
   id: 5,
   name:"Antonietta",
   email:"adaine5@samsung.com",
-  gender:"f"
-  this.greeting = function sayHello(){
-    return "Hello, my name is Kennan!" ;
-
+  gender:"f",
+  multiply(a,b){
+    return a +b;
   }
+   
+
+ 
 };
-greeting();
+
+
 
 
 
@@ -81,6 +88,7 @@ console.log(people2.email);
 console.log(people3.name);
 // Antonietta's Gender
 console.log(people4.gender);
+console.log(people4.multiply(3,4));
   
  
 // ==== Challenge 3: Object Methods ==== 
@@ -99,10 +107,13 @@ console.log(people4.gender);
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {}
+const parent = {
+  name :"susan",
+  age :  70
+}
 
 // Log the parent object's name
-
+console.log(parent.name);
 // Log the child's age
 
 // Log the name and age of the grandchild
