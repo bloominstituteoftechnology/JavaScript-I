@@ -317,6 +317,7 @@ let inventory = [{
 // The dealer can't recall the information for a car with an id of 33 on his lot. 
 //Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 //console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
+//======1 way====
 let car = [];
 
 for (let i = 0; inventory.length > i; i++) {
@@ -325,6 +326,26 @@ for (let i = 0; inventory.length > i; i++) {
     }
 }
 console.log(`Car 33 is a ${car[0].car_year} ${car[0].car_make}${car[0].car_model}`);
+//=====================
+
+// //=======2 way=========
+// let carOfInterest = function (e){
+//     return e.id ===33;
+// } 
+// let car= inventory.find(carOfInterest)
+// console.log(car);//returns the whole object
+// console.log(`Car 33 is a ${car.car_year} ${car.car_make}${car.car_model}`);
+// //=======================
+
+
+//=======3way========
+
+let carOfInterest = function (e){
+    return e.id ===33;
+} 
+console.log( 'here is a different way', inventory.find(carOfInterest));//returns the whole object
+console.log(`Car 33 is a ${inventory.find(carOfInterest).car_year} ${inventory.find(carOfInterest).car_make}${inventory.find(carOfInterest).car_model}`);
+//===============
 
 // This works too==> // console.log("Car 33 is a " + inventory[32].car_year +" "+ (inventory[32].car_make) +" "+ (inventory[32].car_model));
 
@@ -339,17 +360,34 @@ let lastCar = inventory[inventory.length - 1];
 console.log(`${lastCar.car_make} ${lastCar.car_model}`)
 
  //This works too==>console.log(lastCar.car_make, lastCar.car_model);
- 
+ //-----another way
+let sliceLastCar = inventory.slice(-1)[0];
+console.log(`${sliceLastCar.car_make} ${sliceLastCar.car_model}`)
+console.log("Used slice to get the last element", inventory.slice(-1)[0]);// returns the whole object
+//-----------
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names 
 //into alphabetical order and log the results in the console
+
 let carModels = [];
 for (let i = 0; i < inventory.length; i++)
     carModels.push(inventory[i].car_model);
 carModels.sort()
 
 console.log(carModels);
+
+//------the other way----
+const getCarsByAlphabeticalOrder = [];
+const alphaName =(arr)=>{
+    getCarsByAlphabeticalOrder.push(`${arr.car_model}`)
+    getCarsByAlphabeticalOrder.sort();
+}
+inventory.map(alphaName);
+
+ console.log("Here are the cars in alphabetical order the other way", getCarsByAlphabeticalOrder);
+
+//---------------
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer
@@ -359,6 +397,16 @@ for (let i = 0; i < inventory.length; i++)
     carYears.push(inventory[i].car_year);
 
 console.log(carYears);
+//------Another way-----
+let yearOfCar = [];
+const carYearFn = (arr) =>{
+    yearOfCar.push(`${arr.car_year}`)
+    yearOfCar.sort();
+}
+inventory.map(carYearFn);
+console.log("New year of car in order", yearOfCar);
+
+//---------------
 
 
 // ==== Challenge 5 ====
@@ -371,11 +419,18 @@ for (let i = 0; i < carYears.length; i++) {
         oldCars.push(carYears[i]);
     }
 }
-console.log(oldCars);
+console.log("Returns the array with car years ", oldCars);
+console.log("Returns the number of cars ", oldCars.length);
+//------Another way------
+const after20sFn = inventory.filter((car) => car.car_year > 2000);
+
+console.log("Number of cars after 2000 is",after20sFn.length);
+//--------------
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains 
 //BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
+
 let BMWAndAudi = [];
 for (let i = 0; i < inventory.length; i++) {
     if (inventory[i].car_make === "BMW" || inventory[i].car_make === "Audi") {
@@ -383,4 +438,8 @@ for (let i = 0; i < inventory.length; i++) {
     }
 }
 console.log(BMWAndAudi);
-console.log(JSON.stringify(BMWAndAudi));
+console.log("JSON.stringify used",JSON.stringify(BMWAndAudi));
+
+//-----------the short way--->>>
+const BMWAndAudi2= inventory.filter((cars)=>cars.car_make==="BMW"||cars.car_make==="Audi");
+console.log("BMW and Audi cars only", BMWAndAudi2);
