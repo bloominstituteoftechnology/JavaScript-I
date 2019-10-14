@@ -78,7 +78,10 @@ console.log("Antonietta's Gender", antonietta.gender);
 console.log("Kenna say's:", kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-console.log(antonietta.multiplyNums(3, 4));
+console.log(
+  "Antonietta multiples 3 and 4 to get:",
+  antonietta.multiplyNums(3, 4)
+);
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
