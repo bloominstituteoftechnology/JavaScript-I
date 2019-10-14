@@ -109,3 +109,54 @@ const parent = {};
 // Have the child speak
 
 // Have the grandchild speak
+
+
+const parent = {
+  name:  "Susan" ,
+  age:   70,
+  speaks: "My name is ",
+  speakUp: function() {
+    console.log(`${this.speaks} ${this.name}`);
+  },
+    child:  {
+      name:   "George",
+      age:    50,
+      speaks: "My name is ", 
+      speakUp: function() {
+        console.log(`${this.speaks} ${this.name}`);
+      },
+      grandchild: {
+        name: "Sam",
+        age:  30,
+        speaks: "My name is ",
+        speakUp: function() {
+          console.log(`${this.speaks} ${this.name}`);
+        },
+      }
+  }
+  };
+   
+  
+   
+  
+  parent.speakUp();
+  parent.child.speakUp();
+  parent.child.grandchild.speakUp();
+  
+  // Log the parent object's name
+  console.log(parent.name);
+  // Log the child's age
+  console.log(parent.child.age)
+  // Log the name and age of the grandchild
+  console.log(parent.child.grandchild.name,parent.child.grandchild.age)
+  // Have the parent speak
+  console.log(this.speaks+this.name)
+  // Have the child speak
+  console.log (`${parent.child.speaks+parent.child.name} !`)
+  // Have the grandchild speak
+  console.log(`${parent.child.grandchild.speaks+parent.child.grandchild.name}`)
+  
+  function speakUp() {
+    console.log(this.name);
+  }
+  
