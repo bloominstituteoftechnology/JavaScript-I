@@ -11,10 +11,10 @@
 
 // Example format of an intern object: 1, examples@you.edu, Example, F
 const example = {
-  id: 0,
-  name: "Example",
-  email: "examples@you.edu",
-  gender: "F",
+	id: 0,
+	name: "Example",
+	email: "examples@you.edu",
+	gender: "F",
 }
 
 // Write your intern objects here:
