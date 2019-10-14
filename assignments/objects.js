@@ -31,6 +31,7 @@ const kennan = {
   name: "Kennan",
   email: 'kdiben1@tinypic.com',
   gender: 'M',
+  speak: () => `Hello my name is Kennan.`
 }
 
 const keven = {
@@ -81,7 +82,8 @@ console.log(antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+
+console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
