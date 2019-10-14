@@ -1,4 +1,4 @@
-// To help us use arrays with real world problems we are going to simulate a used car dealer that has 50 cars in their inventory.
+0// To help us use arrays with real world problems we are going to simulate a used car dealer that has 50 cars in their inventory.
 
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
 
@@ -73,14 +73,35 @@ let inventory = [
 // console.log(evens);
 // [12, 14]
 
+
+
+
+
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*`);
+console.log('Car 33 is a ' + inventory[32].car_year + ' ' + inventory[32].car_make + ' ' + inventory[32].car_model + '.');
+
+for (let i = 0; i < inventory.length; i++){
+  if (inventory[i].id === 33){
+    console.log('Car 33 is a ' + inventory[i].car_year + ' ' + inventory[i].car_make + ' ' + inventory[i].car_model +'.');
+  }
+}
+
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = 0;
-console.log();
+console.log('car 50 is a ' + inventory[49].car_make + ' ' + inventory[49].car_model);
+for (let i = 0; i < inventory.length; i++){
+  if (inventory[i].id === 50){
+    console.log('Car 50 is a ' + inventory[i].car_make + ' ' + inventory[i].car_model +'.');
+  }
+}
+
+
+
+
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
