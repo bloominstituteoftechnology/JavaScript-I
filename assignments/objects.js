@@ -71,7 +71,7 @@ console.log("Keven's email:", keven.email);
 console.log("Gannie's name:", gannie.name);
 
 // Antonietta's Gender
-console.log("Antonietta's Gender", antonietta.gender);
+console.log("Antonietta's gender:", `[${antonietta.gender}]`);
 
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
