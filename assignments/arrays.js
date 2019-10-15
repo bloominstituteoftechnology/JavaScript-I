@@ -131,13 +131,38 @@ console.log(carYears);
 carYears.sort(function(a,b){
   return a - b;
 });
-console.log(carYears);
-let oldCars = [];
-// console.log();
+console.log(carYears)
+
+// let oldCarYears = ["1964", "1965", "1983", "1985", "1987", "1990", "1991", "1992", "1994", "1995", "1995", "1996", "1997", "1997", "1998", "1999", "2000", "2001", "2003", "2004", "2005", "2007", "2008", "2009", "2010", "2011", "2012"];
+const oldCars =
+inventory.filter(function(currentValue){
+  return currentValue.car_year < 2000 ;
+})
+console.log(oldCars.length);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory. Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi = [];
-console.log();
+const audiFilter =
+inventory.filter(function(currentValue){
+return currentValue.car_make === "Audi";
+})
+const BMWFilter =
+inventory.filter(function(currentValue){
+  return currentValue.car_make === "BMW"
+})
+// function getValues(firstValue, secondValue) {
+//   return [getFirstValue(), getSecondValue()];
+// }
+// const{first, second} = getValues();
+
+// // BMWAndAudi.forEach(function(items){
+// //   return BMWAndAudi.push(`${items.car_make} ${items.car_model}`);
+ 
+// });
+console.log(BMWFilter);
+console.log(audiFilter);
+console.log(BMWAndAudi);
+
 
 //if cartype =bmw else audi put into one array
