@@ -75,30 +75,94 @@ let inventory = [
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*`);
+
+
+const findCar = (carInventory, id) => {
+  for (i = 0; i < carInventory.length; i++) {
+    if (carInventory[i].id === id) {
+      return "Car " + id + " is a " + carInventory[i].car_year + " " + carInventory[i].car_make + " " + carInventory[i].car_model;
+    }
+  }
+}
+console.log(findCar(inventory, 33));
+
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log();
+
+const lastCar = [0];
+const last= inventory[inventory.length - 1];
+console.log(last);
+
+
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
-let carModelsSorted = [];
-console.log();
+
+
+
+let carModels = ["Geo", 'Oldsmobile', 'Mazda', 'Chevrolet', 'Jeep','Eagle','Toyota', 'BMW', 'Cadillac', 'Infiniti', 'Suzuki', 'Mercury', 'Pontiac', 'Dodge', 
+'Ford', 'Chrysler', 'Volvo', 'Lotus', 'GMC', 'Mercedes-Benz', 'Audi', 'Volkswagen', 'Lincoln' ];
+
+function alphabeticalOrder (carModels){
+
+  let carModelsSorted = carModels.sort(
+  );
+console.log(carModelsSorted);
+ return carModelsSorted;
+}
+alphabeticalOrder(['Geo', 'Oldsmobile', 'Mazda', 'Chevrolet', 'Jeep','Eagle','Toyota', 'BMW', 'Cadillac', 'Infiniti', 'Suzuki', 'Mercury', 'Pontiac', 'Dodge', 
+'Ford', 'Chrysler', 'Volvo', 'Lotus', 'GMC', 'Mercedes-Benz', 'Audi', 'Volkswagen', 'Lincoln'])
+
+
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
-let carYears = [];
-console.log();
+
+
+inventory.push('car_year');
+ let carYears = ['1997', '1992','1998', '2012', '1996', '2009', '2008', '1995','2007', '1999', '2001', '2010', '1983', '1990', '1995', '1987', '2004', '1997','2000', '1994', '1985', '2003','2005', '1964', '2011', '1991', '1965', ];
+console.log(carYears);
+
+
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
-let oldCars = [];
-console.log();
+carYears.sort(function(a,b){
+  return a - b;
+});
+console.log(carYears)
+
+// let oldCarYears = ["1964", "1965", "1983", "1985", "1987", "1990", "1991", "1992", "1994", "1995", "1995", "1996", "1997", "1997", "1998", "1999", "2000", "2001", "2003", "2004", "2005", "2007", "2008", "2009", "2010", "2011", "2012"];
+const oldCars =
+inventory.filter(function(currentValue){
+  return currentValue.car_year < 2000 ;
+})
+console.log(oldCars.length);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory. Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi = [];
-console.log();
+const audiFilter =
+inventory.filter(function(currentValue){
+return currentValue.car_make === "Audi";
+})
+const BMWFilter =
+inventory.filter(function(currentValue){
+  return currentValue.car_make === "BMW"
+})
+// function getValues(firstValue, secondValue) {
+//   return [getFirstValue(), getSecondValue()];
+// }
+// const{first, second} = getValues();
+
+// // BMWAndAudi.forEach(function(items){
+// //   return BMWAndAudi.push(`${items.car_make} ${items.car_model}`);
+ 
+// });
+console.log(BMWFilter);
+console.log(audiFilter);
+console.log(BMWAndAudi);
+
+
+//if cartype =bmw else audi put into one array
