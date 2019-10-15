@@ -80,12 +80,12 @@ console.log(Antoniette.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-const Keven = {
+Keven = {
     id: 3,
     name: "Keven",
     email: "gmartinson3@illinois.edu",
     gender: "M",
-    speak: function() { reture "Hello, my name is Kennan!" },
+    speak: function() { reture 'Hello, my name is Kennan!'; },
 }
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
