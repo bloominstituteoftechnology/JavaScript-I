@@ -103,12 +103,12 @@ console.log(carYears);
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 let oldCars = [];
 for (i = 0; i < inventory.length; i++){ //finding from the length// out how many cars were made before the year 2000 by populating the array oldCars and logging it's length
-    if (carYears[i] > 2000){ 
+    if (carYears[i] < 2000){ 
         oldCars.push(carYears[i]); //you can write in this solution
         // oldCars.push(inventory[i].car_year); //if just this, prints all car years from top to bottom
     }  
 }
-console.log(oldCars); 
+console.log(oldCars.length); 
 
 
 // ==== Challenge 6 ====
